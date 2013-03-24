@@ -1,0 +1,113 @@
+.seminar-instance{
+	margin: 10px;
+	padding: 0;
+	width: 920px;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+	background: #FFF;
+	overflow: auto;
+}
+
+.seminar-left-instance{
+	margin: 0;
+	width: 75%;
+	border-right: 1px solid #dddddd;
+	overflow: auto;
+	float: left;
+	display: inline;
+}
+
+.seminar-title-instance{
+	font-family : robotoLight;
+	font-size: 18px;
+	padding : 10px 10px 0px 15px; 
+	color: #a0a0a0;
+}
+
+.seminar-img-instance{
+	margin: 15px;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 150px; 
+	width: 220px;
+	float: left;
+}
+
+.seminar-paragraph-instance{
+	font-size: 14px;
+	text-align: justify;
+	word-wrap:break-word;
+	margin: 15px 15px 15px 0;
+	color:#404040;
+	display: right;
+}
+
+#seminar-details{
+	text-align: center;
+	font-family : robotoLight;
+	font-size: 18px;
+	margin : 10px 0px 15px 0px; 
+	color: #a0a0a0;
+}
+
+.seminar-right-instance{
+	margin: 0;
+	width: 24%;
+	float: left;
+	display: inline;
+}
+
+.seminar-date,.seminar-time,.seminar-place{
+	font-size: 12px;
+	margin: 10px 0 0 30px;
+}
+
+#seminar-tulisan-capacity{
+	text-align: center;
+	font-family : robotoLight;
+	font-size: 14px;
+	margin : 20px 10px 10px 0px; 
+}
+
+.seminar-capacity-border{
+	margin: auto;
+	height: 10px;
+	width: 170px;
+	border: 1px solid #a0a0a0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.seminar-capacity-bar{
+	padding:0;
+	margin: 0;
+	width: 56%;
+	height: 100%;
+	background: #ed1c24;
+}
+
+.seminar-register-button{
+	margin: 10px auto;
+	height: 30px;
+	width: 120px;
+	border: 1px solid #a0a0a0;
+	border-radius: 5px;
+	background-color: #ed1c24;
+	color: #FFF;
+	cursor: pointer;
+
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.seminar-register-button:hover{
+	background-color: #ff1c24;
+}
+
+#seminar-tulisan-register{
+	font-size: 14px;
+	text-align: center;
+	margin: 7px;
+	color: white;
+}
