@@ -46,7 +46,26 @@ class Admin extends Admin_Controller {
 		$this->seminar_model->UpdateStatusUserById($id_user, $status);
 
 		if($status == '2') {
-			//kirim email notifikasi disini
+		    $peserta = $this->seminar_model->getUserById($id_user);
+		
+		    $this->load->library('email');
+		    
+		    $config['wordwrap'] = FALSE;
+		    $config['mailtype'] = 'html';
+	            $this->email->initialize($config);
+
+		    $this->email->clear();
+		    $this->email->to($peserta->email);
+		    $this->email->from('seminar@compfest.web.id','Seminar CompFest 2013');
+		    $this->email->subject('Seminar CompFest 2013');
+		    
+		    $body = 'Selamat anda sudah terdaftar dalam seminar CompFest 2013. ';
+		    $body .= 'Silahkan konfirmasi kehadiran anda di halaman berikut. ';
+		    $body .= '<a href="http://www.compfest.web.id/seminar/confirm/'.$peserta->token.'/'.$peserta->id_seminar_user.'/">';
+		    $body .= 'http://www.compfest.web.id/seminar/confirm/'.$peserta->token.'/'.$peserta->id_seminar_user.'/</a>';
+		    
+		    $this->email->message($body);
+		    $this->email->send();
 		}
 
 		redirect(site_url('admin/seminar_user') . '/' . $id_user);
