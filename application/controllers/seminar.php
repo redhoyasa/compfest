@@ -145,6 +145,55 @@ class Seminar extends CI_Controller {
 		}
 		redirect('seminar/register');
 	}
+
+	function confirm() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token) {
+			$data['name'] = $user->name;
+			$data['token'] = $user->token;
+			$data['id_seminar_user'] = $user->id_seminar_user;
+			$data['seminar'] = $this->seminar_model->getSeminarUserById($id_seminar_user);
+
+			$this->template->display('front-end/seminar/seminar_confirm', $data);
+		} else {
+			redirect('seminar/register');
+		}
+	}
+
+	function attend() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token && $user->status == 2) {
+			$this->seminar_model->UpdateStatusUserById($id_seminar_user, 3);
+			$this->template->display('front-end/seminar/seminar_attend');
+		} else {
+			redirect('seminar/register');
+		}
+	}
+
+	function cancel() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token && $user->status == 2) {
+			$this->seminar_model->UpdateStatusUserById($id_seminar_user, 4);
+			$this->template->display('front-end/seminar/seminar_cancel');
+		} else {
+			redirect('seminar/register');
+		}
+	}
 }
 
 
