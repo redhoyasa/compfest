@@ -8,10 +8,10 @@
     case 2: $notif = "Tim ".$team->team_name ." sudah finalisasi sebagai peserta"; break;
   }
 ?>
-  
-  <h2 style="text-align:center;">Selamat Datang Tim <?php echo $nama;?></h2>
-  <div class="wrapper-dash">
-  <div class="span6 well">
+<div class="wrapper-dash">
+  <h1 class="h1" style="text-align:center;">Selamat Datang Tim <?php echo $nama;?></h1><br>
+  <hr>
+  <div class="grid2 span6 well">
     <h3>Profile Tim</h3>
     <form class="form-horizontal">
     <div class="control-group">
@@ -43,13 +43,14 @@
     </div>
     </form>
   </div>
-
-  <div class="span6 well">
+<hr>
+  <div class="grid2 span6 well"><br>
     <h3>Ganti Password</h3>
     <?php 
+    echo "<br>";
     echo validation_errors(); 
     if(isset($passu)) {
-      echo '<div class="well alert-error" style="text-align:center;">Password berhasil diubah</div>';
+      echo '<div class="well alert-error gagal" style="text-align:center;">Password berhasil diubah</div>';
     }
     ?>
 
@@ -68,40 +69,39 @@
     </div>
     </div>
 
-    <div class="control-group">
-    <label class="control-label"></label>
-    <div class="controls">
-      <input type="submit" value="Ganti" class="btn btn-danger">
-    </div>
+    <div class="control-group grid2">
+          <input type="submit" value="Ganti" class="btn btn-danger">
     </div>
     </form>
-  </div>  
+  </div>
+<hr>  
   <div style="clear:both;height:10px;">&nbsp;</div>
-
+<br>
 <?php 
     if($team->payment == '' && $event->payment == '1' ) {
 ?>
-    <div class="well span6 alert-error">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran
+    <div class="grid2 well span6 alert">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran
       <br> 
-      Silahkan unggah bukti pembayaran 
-      <div class="control-group">
-        <label class="control-label"></label>
-      <div class="controls">
-      <input type="submit" value="Unggah Bukti" class="btn btn-primary">
-    </div>
-    </div>
+        <div class="grid2 span6 well"><br>
+        Silahkan unggah bukti pembayaran 
+          <div class=" grid2 control-group"><br>
+          <input type="submit" value="Unggah Bukti" class="grid2 btn btn-primary">
+        </div>
+        </div>
     </div>
 <?php } ?>
-<div class="well span6 alert-error"><?php echo $notif ?>
+<br>
+<hr>
+<div class="grid2 well span6 alert"><?php echo $notif ?>
   <?php 
     if ($team->team_status == 0) {
   ?>
-   <div class="control-group">
-      <div class="controls">
-      <label class="control-label">&nbsp;</label>
-      <input type="submit" value="Edit Tim" class="btn btn-danger">
+   <div class="grid2 span6 well"><br>
+    Silahkan melengkapi profil tim Anda
+    <div class="grid2 control-group"><br>
+        <input type="submit" value="Edit Tim" class="grid2 btn btn-danger">
    </div>
-   </div>
+ </div>
    <?php } ?>
 </div>
 
