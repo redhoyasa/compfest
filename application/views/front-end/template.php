@@ -16,11 +16,12 @@
 					<a href="<?php echo base_url(); ?>"><li id="aa" style="border-bottom: 5px solid #ff00ff"><p>HOME</p></li></a>
 					<a href="<?php echo base_url(); ?>"><li id="bb" style="border-bottom: 5px solid #e8d700"><p>ABOUT</p></li></a>
 					<a href="<?php echo base_url('news'); ?>"><li id="cc" style="border-bottom: 5px solid #f7931e;"><p>NEWS</p></li></a>
-					<a href="<?php echo base_url(); ?>"><div class="login">
+					<a href="#"><div class="login">
+						<br><br><br><br>
 						<form>
-							<input class="input" type="text" placeholder="Username" />
-							<input class="input" type="password" placeholder="Password" />
-							<input class="submit" type="submit" value="Masuk" />
+							<input type="text" placeholder="Username"><br>
+							<input type="password" placeholder="Password"><br>
+							<input type="submit" value="Masuk" >
 						</form>
 					</div></a>
 					<a href="<?php echo base_url('seminar'); ?>"><li id="dd" style="border-bottom: 5px solid #e40613"><p>EVENT</p></li></a>				
