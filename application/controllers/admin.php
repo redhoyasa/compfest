@@ -10,7 +10,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan peserta seminar
 	 */ 
 	public function seminar() {
-		if($this->session->userdata('event') != 2) {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$this->template->admin('admin/seminar');
@@ -20,7 +20,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan detil peserta seminar
 	 */
 	public function seminar_user() {
-		if($this->session->userdata('event') != 2) {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$id_user = $this->uri->segment(3);
@@ -37,7 +37,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk mengupdate status peserta seminar
 	 */
 	function update_seminar_user() {
-		if($this->session->userdata('event') != 2) {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$id_user = $this->uri->segment('3');
@@ -56,7 +56,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan semua peserta kompetisi
 	 */
 	public function competition() {
-		if($this->session->userdata('event') != 1) {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$this->template->admin('admin/team_list');
@@ -66,7 +66,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan detil tim kompetisi
 	 */
 	public function competition_team() {
-		if($this->session->userdata('event') != 1) {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$this->template->admin('admin/team_detail');
@@ -76,7 +76,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk mengubah status tim
 	 */
 	public function team_update() {
-		if($this->session->userdata('event') != 1) {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$id_team = $this->uri->segment('3');
@@ -95,7 +95,7 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menghapus tim
 	 */
 	public function team_delete() {
-		if($this->session->userdata('event') != 1) {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
 		$id_team = $this->uri->segment('3');
