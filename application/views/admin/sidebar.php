@@ -9,7 +9,7 @@
 			<li><a href="<?php echo site_url('admin') ?>">Home</a></li>
 			<li><a href="<?php echo site_url('admin/page') ?>">Page</a></li>
 			<li><a href="<?php echo site_url('admin/news') ?>">News</a></li>
-			<li><a href="<?php echo site_url('auth/logout') ?>">Logout (level <?php echo $this->session->userdata('event'); ?>)</a></li>
+			<li><a href="<?php echo site_url('auth/logout') ?>" data-ajax="false">Logout (level <?php echo $this->session->userdata('event'); ?>)</a></li>
 			
 			<?php if($this->session->userdata('event') == '0' || $this->session->userdata('event') == '1') { ?>
 			<li data-role="list-divider">Competition</li>

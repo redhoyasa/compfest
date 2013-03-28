@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 28. Maret 2013 jam 21:05
+-- Waktu pembuatan: 28. Maret 2013 jam 21:56
 -- Versi Server: 5.1.41
 -- Versi PHP: 5.3.1
 
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `c_news` (
 --
 
 INSERT INTO `c_news` (`id_news`, `title`, `id_category`, `content`, `timestamp`, `publish`, `url`) VALUES
-(5, 'About', 0, '<div id="gambar">\r\n   <ul class="gallery">\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/1.jpg" class="pic-1"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/2.jpg" class="pic-2"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/3.jpg" class="pic-3"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/4.jpg" class="pic-4"></li>\r\n\r\n    \r\n   </ul>\r\n   <div ><br></div> \r\n   <hr>\r\n   <br>\r\n  </div>\r\n', '2013-03-28 20:45:57', 1, 'about');
+(5, 'About', 0, '<div id="gambar">\r\n   <ul class="gallery">\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/1.jpg" class="pic-1"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/2.jpg" class="pic-2"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/3.jpg" class="pic-3"></li>\r\n\r\n    <li><img src="http://localhost:8080/web_rd/resource/gallery/4.jpg" class="pic-4"></li>\r\n\r\n    \r\n   </ul>\r\n   <div><br></div> \r\n   <hr>\r\n   <br>\r\n  </div>\r\n', '2013-03-28 21:11:54', 1, 'about');
 
 -- --------------------------------------------------------
 
@@ -158,6 +158,8 @@ CREATE TABLE IF NOT EXISTS `c_seminar` (
   `id_seminar` int(3) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `time` varchar(16) NOT NULL,
+  `place` varchar(50) NOT NULL,
+  `max_capacity` int(4) NOT NULL,
   `description` text NOT NULL,
   `seat` int(3) NOT NULL,
   `url` int(11) NOT NULL,
@@ -168,9 +170,9 @@ CREATE TABLE IF NOT EXISTS `c_seminar` (
 -- Dumping data untuk tabel `c_seminar`
 --
 
-INSERT INTO `c_seminar` (`id_seminar`, `name`, `time`, `description`, `seat`, `url`) VALUES
-(1, 'HTML5', '08-10-2013 16:00', 'Seminar tentang html 5', 100, 0),
-(2, 'Intel', '09-10-2013 13:00', 'Seminar Intel', 100, 0);
+INSERT INTO `c_seminar` (`id_seminar`, `name`, `time`, `place`, `max_capacity`, `description`, `seat`, `url`) VALUES
+(1, 'HTML5', '08-10-2013 16:00', 'Istora Senayan', 400, 'Seminar tentang html 5', 100, 0),
+(2, 'Intel', '09-10-2013 13:00', 'Istora Senayan', 400, 'Seminar Intel', 100, 0);
 
 -- --------------------------------------------------------
 

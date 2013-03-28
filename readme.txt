@@ -22,5 +22,10 @@ admin
 1 : kompetisi
 2 : seminar
 3 : news
+4 : Kontributor
 
-edit: kandito
+category
+1 : Press
+2 : Kompetisi
+3 : Seminar
+4 : Roadshow
