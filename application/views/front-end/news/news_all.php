@@ -10,6 +10,7 @@
 			<div class="content-main">
 				<div class="title"><a href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a> </div>
 				<div class="thumbnail"></div>
+				<div class="date"><?php echo $r->timestamp; ?></div>
 				<div class="main">
 				<p><?php echo $r->content; ?></p>
 				</div>

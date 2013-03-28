@@ -41,8 +41,9 @@
 $route['default_controller'] = "welcome";
 $route['page/(:any)'] = "webmain/page/$1";
 $route['news/(:any)'] = "webmain/news/$1";
-$route['about'] = "static/about";
-$route['contact'] = "static/contact_us";
+$route['about'] = "state/about";
+$route['contact'] = "state/contact_us";
+$route['roadshow'] = "state/roadshow";
 $route['404_override'] = '';
 
 
