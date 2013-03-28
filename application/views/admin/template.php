@@ -25,7 +25,7 @@
 
 		<div data-role="header" data-theme="b">
 		<h1>Admin Compfest</h1>
-		<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+		<a href="<?php echo site_url('auth/logout') ?>" data-ajax="false" data-icon="delete" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Logout</a>
 	</div><!-- /header -->
 
 	<div data-role="content">
