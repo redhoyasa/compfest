@@ -3,7 +3,7 @@
 	$user = $this->seminar_model->getUserById($id_user);
 ?>
 
-<form class="form-horizontal" method="post" action="http://localhost:8080/compfest/competition/register_competition">
+<form class="form-horizontal" method="post" action="#">
 	<h3>General Information</h3>
 
 	<div class="control-group">
@@ -53,7 +53,7 @@
 	<div class="control-group">
 		<div class="controls">
 		<?php if($user->status == 1) { ?>
-			<a class="btn btn-primary" data-role="none" href="<?php echo site_url('admin/update_seminar_user') .'/'. $id_user .'/2'; ?>"><i class="icon-ok"></i> Accept</a>
+			<a data-ajax="false" class="btn btn-primary" data-role="none" href="<?php echo site_url('admin/update_seminar_user') .'/'. $id_user .'/2'; ?>"><i class="icon-ok"></i> Accept</a>
 		<?php } else { ?>
 			<?php if($user->status == 3) { ?>
 				<span class="alert alert-success">Peserta mengkonfirmasi kehadirannya</span>
