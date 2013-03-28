@@ -9,8 +9,11 @@
 		<th>Nama</th><th>Email</th><th>Status</th><th></th>
 	</tr>
 <?php 
-$seminar = $this->seminar_model->get_seminar_register($this->uri->segment(3));
-
+if($this->uri->segment(3))  {
+ 	$seminar = $this->seminar_model->get_seminar_register($this->uri->segment(3));
+} else {
+	$seminar = $this->seminar_model->get_seminar_register();
+}
 foreach ($seminar as $s) {
 ?>
 	<tr>
