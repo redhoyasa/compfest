@@ -301,6 +301,7 @@ section {
 	border-radius: 5px;
 }
 
+
 /*Contact*/
 .contact-box{
 	float: left;
@@ -382,6 +383,8 @@ form {
 	width: 550px;
 	display: block;
 	margin: 20px auto;
+	font-family: Tahoma, sans-serif;
+	color : #4e4e4e;
 }
 .control-group{
 	overflow: hidden;
@@ -393,8 +396,7 @@ form {
 	text-align: right;
 	margin-bottom: 10px;
 	padding-top: 5px;
-	font-size: 14px;
-	font-family:'Roboto';
+	font-size: 14px;;
 }
 .controls-seminar{
 	float: left;
@@ -402,7 +404,6 @@ form {
 	width: 100px;
 }
 .controls {
-	font-family: Roboto;
 	float: left;
 }
 
@@ -547,8 +548,11 @@ hr {
 }
 /*End Dashboard*/
 
-
-
+/* Competition Form */
+.competition form {
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+}
 
 
 

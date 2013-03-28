@@ -2,8 +2,7 @@
 		<div id="content-title">Daftar Kompetisi</div>
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
-			<div class="main" id="register-main">
-				
+			<div class="main thm" id="register-main">
 				<form class="form-horizontal" method="post" action="<?php echo site_url('competition/register_competition'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama Tim</label>
@@ -23,17 +22,15 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
-							<input type="password" id="inputPassword" name="password">
+							<input type="password" id="inputPassword" name="password"><br>
 							<span class="help-block">Digunakan untuk memasuki member area</span>
-							
 						</div>
 					</div>
-					
+					<br>
 					<div class="control-group">
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
-							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">
-	
+							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">	
 						</div>
 					</div>
 
@@ -45,7 +42,7 @@
 						foreach ($kompetisi as $k) {
 						?>
 							<label class="radio">
-								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?>
+								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?><br>
 							</label>
 						<?php } ?>
 						<?php echo form_error('competition'); ?>
