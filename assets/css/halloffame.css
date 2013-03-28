@@ -1,0 +1,12 @@
+#hof-main {
+	width : 620px;
+	z-index: 0;
+	height : 452px;
+	position : relative;
+	background: white;
+	border : 1px solid #cecece;
+	border-radius: 5px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+	overflow: hidden;;
+}
