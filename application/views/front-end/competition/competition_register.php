@@ -9,6 +9,7 @@
 						<label class="control-label" for="inputNama">Nama Tim</label>
 						<div class="controls">
 							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="">
+							<span id="nameInfo">Nama Tim</span>
 						</div>
 					</div>
 
@@ -16,15 +17,15 @@
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
 							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
-							
+							<span id="emailInfo">Email yang akan digunakan untuk login</span>
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
-							<input type="password" id="inputPassword" name="password">
-							<span class="help-block">Digunakan untuk memasuki member area</span>
+							<input type="password" id="inputPassword" name="password" placeholder="password">
+							<span id="passInfo">Password minimal 6 karakter huruf atau angka</span>
 							
 						</div>
 					</div>
@@ -33,10 +34,10 @@
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
 							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">
-	
+							<span id="institutionInfo">Instansi terkait</span>
 						</div>
 					</div>
-
+					
 					<div class="control-group">
 						<label class="control-label" for="inputCompetition">Kompetisi</label>
 						<div class="controls">
@@ -45,7 +46,7 @@
 						foreach ($kompetisi as $k) {
 						?>
 							<label class="radio">
-								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?>
+								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?></br>
 							</label>
 						<?php } ?>
 						<?php echo form_error('competition'); ?>
@@ -69,3 +70,4 @@
 
 </div>
 </section>
+	<script type="text/javascript" src="../js/validateCompetition.js"></script>

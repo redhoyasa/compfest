@@ -3,12 +3,13 @@
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
 			<div class="main" id="register-main">
-				
+
 				<form class="form-horizontal" method="post" action="<?php echo site_url('seminar/register_seminar'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama</label>
 						<div class="controls">
 							<input type="text" id="inputNama" placeholder="nama lengkap" name="name" value="">
+							<span id="nameInfo">Nama Lengkap</span>
 						</div>
 					</div>
 
@@ -16,6 +17,7 @@
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
 							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
+							<span id="emailInfo">Email yang valid</span>
 						</div>
 					</div>
 
@@ -23,14 +25,15 @@
 						<label class="control-label" for="inputNoid">Nomor Identitas</label>
 						<div class="controls">
 							<input type="text" id="inputNoid" placeholder="nomor identitas" name="id_no" value="">
-							<span class="help-block">Nomor KTP/Kartu Pelajar/Kartu Mahasiswa/SIM</span>
+							<span id="noIdInfo">Nomor KTP/Kartu Pelajar/Kartu Mahasiswa/SIM</span>
 						</div>
 					</div>
 					
 					<div class="control-group">
-						<label class="control-label" for="inputNoid">Nomor Telepon</label>
+						<label class="control-label" for="inputNoTl">Nomor Telepon</label>
 						<div class="controls">
-							<input type="text" id="inputNoid" placeholder="nomor telepon" name="phone" value="">
+							<input type="text" id="inputNoTl" placeholder="nomor telepon" name="phone" value="">
+							<span id="teleponInfo">Nomor HP atau Telepon Rumah</span>
 						</div>
 					</div>
 
@@ -48,7 +51,7 @@
 						?>
 							<div class="control-group">
 								<label class="control-label" for="seminar"><?php echo $r->name; ?></label>
-								<div class="controls seminar">
+								<div class="controls-seminar">
 									<input type="checkbox" id="seminar-<?php echo $r->id_seminar?>" name="seminar-<?php echo $r->id_seminar?>" value="1"
 									<?php if(isset($s['formerror-'.$r->id_seminar])) echo "checked"; ?>>
 									<br>
@@ -83,3 +86,4 @@
 	?>
 </div>
 </section>
+		<script type="text/javascript" src="../js/validateSeminar.js"></script>

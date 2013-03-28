@@ -415,6 +415,16 @@ form {
 .controls input[type="radio"]{
 	margin-right: 5px;
 }
+.controls span{
+	margin-left: 20px;
+	color: #b1b1b1;
+	font-size: 12px;
+	font-style: italic;
+}
+.controls span.error{
+	color: #e46c6e;
+}
+
 
 .radio{
 	margin: 0 0 5px 15px;
@@ -445,7 +455,7 @@ input[type="text"],[type="password"] {
 	width: 300px;
 	border-radius:3px;
 	height: 10px;
-	border: 1px solid #dddddd;
+	border: 1px solid #404040;
 	outline:none;
 	font-family:'Roboto';
 	padding: 10px;
@@ -460,10 +470,16 @@ input[type="text"],[type="password"] {
     -moz-box-shadow: inset 0 0 5px #dddddd;
 }
 input:focus {
-    box-shadow: 0 0 5px rgba(237, 28, 36, 1),  0 0 5px #dddddd inset;
-    -webkit-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset; 
-    -moz-box-shadow: 0 0 5px rgba(237, 28, 36, 1),  0 0 5px #dddddd inset;
-    border:1px solid rgba(237, 28, 36, 0.8); 
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1),  0 0 5px #dddddd inset;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1), 0 0 5px #dddddd inset; 
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1),  0 0 5px #dddddd inset;
+    border:1px solid rgba(0, 0, 255, 0.85); 
+}
+.controls input.error{
+	box-shadow: 0 0 5px rgba(255, 0, 0, 1),  0 0 5px #dddddd inset;
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 1), 0 0 5px #dddddd inset; 
+    -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 1),  0 0 5px #dddddd inset;
+    border:1px solid rgba(255, 0, 0, 0.85); 
 }
 
 form textarea{
