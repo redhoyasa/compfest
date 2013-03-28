@@ -320,6 +320,7 @@ section {
 }
 section #slider {
 	width : 620px;
+	z-index: 0;
 	height : 270px;
 	position : relative;
 	border-radius: 5px;
