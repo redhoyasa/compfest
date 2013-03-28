@@ -133,7 +133,11 @@ class Admin extends Admin_Controller {
 			$data['url'] = $date->format('Y-m-d H:i:s');
 		}
 
-		$data['publish'] =  $this->input->post('publish');
+		if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 0) {
+			$data['publish'] =  $this->input->post('publish');
+		} else {
+			$data['publish'] =  0;
+		}
 		$data['content'] =  $this->input->post('content');
 
 		$this->news_model->update_news($id, $data);

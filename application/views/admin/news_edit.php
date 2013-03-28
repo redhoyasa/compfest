@@ -23,6 +23,7 @@
 		</div>
 	</div>
 
+<?php if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 2) { ?>
 	<div class="control-group">
 		<label class="control-label">Publish</label>
 		<div class="controls">
@@ -32,6 +33,7 @@
 			</select>
 		</div>
 	</div>
+<?php } ?>
 
 	<div class="control-group">
 		<label class="control-label">Content</label>
