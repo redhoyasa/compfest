@@ -5,9 +5,3 @@ README !!
 
 - Assets (css, js, gambar, dll.) buat front-end ada di folder /assets
 
-<<<<<<< HEAD
-coba branch zaka!!!
-tes branch zaka
-=======
-Tes branch zaka ke 2
->>>>>>> origin/zakazai
