@@ -22,3 +22,5 @@ admin
 1 : kompetisi
 2 : seminar
 3 : news
+
+edit: kandito

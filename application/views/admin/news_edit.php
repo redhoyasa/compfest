@@ -27,8 +27,8 @@
 		<label class="control-label">Publish</label>
 		<div class="controls">
 			<select name="publish" data-role="none">
-				<option value="1">Yes</option>
-				<option value="0">No</option>
+				<option value="1" <?php if($page->publish == 1) echo "selected" ?>>Yes</option>
+				<option value="0" <?php if($page->publish == 0) echo "selected" ?>>No</option>
 			</select>
 		</div>
 	</div>

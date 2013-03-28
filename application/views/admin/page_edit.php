@@ -22,17 +22,15 @@
 		</div>
 	</div>
 
-	<?php if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 1) { ?>
 	<div class="control-group">
 		<label class="control-label">Publish</label>
 		<div class="controls">
 			<select name="publish" data-role="none">
-				<option value="1">Yes</option>
-				<option value="0">No</option>
+				<option value="1" <?php if($page->publish == 1) echo "selected" ?>>Yes</option>
+				<option value="0" <?php if($page->publish == 0) echo "selected" ?>>No</option>
 			</select>
 		</div>
 	</div>
-	<?php } ?>
 
 	<div class="control-group">
 		<label class="control-label">Parent</label>
