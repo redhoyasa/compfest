@@ -9,6 +9,10 @@ h1,h2,h3 {
 	font-family: Arial, Helvetica sans-serif;
 }
 
+h1 {
+	font-size : 30px;
+}
+
 .wrapper-dash {
 	padding : 0px 10%;
 	width : 100%;
