@@ -34,3 +34,13 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/slider.css">
 	<script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.slides.min.js" type="text/javascript"></script>
 	<script src="<?php echo base_url(); ?>assets/plugins/slider/slider.js" type="text/javascript"></script>
+	<link href="<?php echo base_url(); ?>assets/plugins/news/ticker-style.css" rel="stylesheet" type="text/css" />
+	<script src="<?php echo base_url(); ?>assets/plugins/news/jquery.ticker.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	    $(function () {
+	        $('#js-news').ticker({
+	        	titleText: 'News :'
+	        });	
+	    });
+	</script>
