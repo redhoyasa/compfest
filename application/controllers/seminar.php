@@ -27,10 +27,10 @@ class Seminar extends CI_Controller {
 
 	public function register_seminar()
 	{
-		$this->form_validation->set_rules('name', 'Nama', 'required');
+		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check');
-		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required');
-		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric');
+		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
+		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric|strip_tags');
 
 		$this->form_validation->set_message('required', '%s wajib diisi');
 		$this->form_validation->set_message('alpha', '%s harus berisi alfabet');
@@ -45,7 +45,7 @@ class Seminar extends CI_Controller {
 		$row = $this->seminar_model->getSeminar();
 		foreach($row as $r) {
 			if($this->input->post('seminar-'. $r->id_seminar) == 1) {
-				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]');
+				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]|strip_tags');
 				$valid = true;
 				$submit['formerror-'.$r->id_seminar] = true;
 			}
