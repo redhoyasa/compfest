@@ -56,7 +56,7 @@ class Auth extends CI_Controller {
 	 */
 	function logout() {
 		$this->access->logout();
-		redirect('admin');
+		redirect(base_url());
 	}
 
 
