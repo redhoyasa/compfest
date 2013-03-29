@@ -10,7 +10,20 @@
 				$this->load->view('front-end/socialbox');
 			?>
 		</div>
-			<div id="news" style="">News</div>
+			<div id="news">
+				<ul id="js-news" class="js-hidden">
+					<?php 
+						$row = $this->news_model->get_all_news();
+						foreach ($row as $r) {
+							if ($r->publish == 1){
+					?>
+						 <li class="news-item"><a href="#"><?php echo $r->title; ?></a></li>
+					<?php
+							} 
+						}
+					?>
+				</ul>
+			</div>
 			<div id="sponsor">
 				<p style="margin: 2px 0 0 2px;">Sponsored by:</p> 
 			</div>
