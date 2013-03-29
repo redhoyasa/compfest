@@ -8,29 +8,33 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama</label>
 						<div class="controls">
-							<input type="text" id="inputNama" placeholder="nama lengkap" name="name" value="">
+							<?php echo form_error('name'); ?>
+							<input type="text" id="inputNama" placeholder="nama lengkap" name="name" value="<?php echo set_value('name'); ?>">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
-							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
+							<?php echo form_error('email'); ?>
+							<input type="text" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Nomor Identitas</label>
 						<div class="controls">
-							<input type="text" id="inputNoid" placeholder="nomor identitas" name="id_no" value="">
-							<span class="help-block">Nomor KTP/Kartu Pelajar/Kartu Mahasiswa/SIM</span>
+							<?php echo form_error('id_no'); ?>
+							<input type="text" id="inputNoid" placeholder="nomor identitas" name="id_no" value="<?php echo set_value('no_id'); ?>">
+							<br><span class="help-block">Nomor KTP/Kartu Pelajar/Kartu Mahasiswa/SIM</span>
 						</div>
 					</div>
 					
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Nomor Telepon</label>
 						<div class="controls">
-							<input type="text" id="inputNoid" placeholder="nomor telepon" name="phone" value="">
+							<?php echo form_error('phone'); ?>
+							<input type="text" id="inputNoid" placeholder="nomor telepon" name="phone" value="<?php echo set_value('phone'); ?>">
 						</div>
 					</div>
 
