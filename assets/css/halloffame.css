@@ -45,13 +45,25 @@
 	cursor: pointer;
 }
 
-#hof-main #description {
+#hof-main #hof-gallery-thumbs {
 	position: absolute;
 	bottom: 0px;
-	height: 80px;
+	height: 90px;
+	width: 910px;
 	background: url('../img/halloffame/bar.png') white no-repeat;
-	padding: 20px 10px 20px 150px;
 	font-size: 15px;
+	padding: 10px;
+	overflow-y: hidden;
+}
+
+#hof-main #hof-gallery-thumbs #hof-overflow-fix {
+	width: auto;
+	padding-right: 20px;
+	white-space: nowrap
+}
+
+#hof-main #hof-gallery-thumbs #hof-overflow-fix img {
+	cursor: pointer;
 }
 
 #hof-list {
@@ -72,7 +84,7 @@
 	margin-bottom: 15px;
 }
 
-#hof-gallery{
+#hof-desc{
 	width : 556px;
 	height : 300px;
 	z-index: 0;
@@ -83,13 +95,10 @@
 	margin: 5px;
 	padding: 15px;
 	float: left;
+	overflow-y: auto;
 }
 
-#hof-gallery img{
-	cursor: pointer;
-}
-
-#hof-gallery h1{
+#hof-desc h1{
 	font-size: 25px;
 	margin-bottom: 15px;
 }
