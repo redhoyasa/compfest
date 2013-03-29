@@ -212,7 +212,7 @@ section {
 	position: relative; 
 	border-radius: 5px;
 	background: white;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 10px 5px;
 	border: 1px solid #dddddd;
 }
 .content-main .title{
@@ -400,7 +400,7 @@ form {
 .controls-seminar{
 	float: left;
 	margin: 5px 0 0 20px;
-	width: 100px;
+	width: 320px;
 }
 .controls {
 	font-family: Roboto;
@@ -415,16 +415,19 @@ form {
 .controls input[type="radio"]{
 	margin-right: 5px;
 }
-.controls span{
+span{
 	margin-left: 20px;
 	color: #b1b1b1;
 	font-size: 12px;
 	font-style: italic;
 }
-.controls span.error{
+span.error{
 	color: #e46c6e;
 }
 
+span.ok {
+	color: #008000;
+}
 
 .radio{
 	margin: 0 0 5px 15px;
@@ -481,7 +484,9 @@ input:focus {
     -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 1),  0 0 5px #dddddd inset;
     border:1px solid rgba(255, 0, 0, 0.85); 
 }
-
+.motivation{
+	width:;
+}
 form textarea{
 	font-family:'Roboto';
 	width: 290px;
@@ -499,13 +504,19 @@ form textarea{
     -moz-box-shadow: inset 0 0 5px #dddddd;
 }
 textarea:focus {
-    box-shadow: 0 0 5px rgba(237, 28, 36, 1),  0 0 5px #dddddd inset;
-    -webkit-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset; 
-    -moz-box-shadow: 0 0 5px rgba(237, 28, 36, 1),  0 0 5px #dddddd inset;
-    border:1px solid rgba(237, 28, 36, 0.8); 
-    border:1px solid rgba(237, 28, 36, 0.8); 
+     box-shadow: 0 0 5px rgba(0, 0, 255, 1),  0 0 5px #dddddd inset;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1), 0 0 5px #dddddd inset; 
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1),  0 0 5px #dddddd inset;
+    border:1px solid rgba(0, 0, 255, 0.85); 
 	
 }
+textarea.error{
+	box-shadow: 0 0 5px rgba(255, 0, 0, 1),  0 0 5px #dddddd inset;
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 1), 0 0 5px #dddddd inset; 
+    -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 1),  0 0 5px #dddddd inset;
+    border:1px solid rgba(255, 0, 0, 0.85); 
+}
+
 
 /*Section End*/
 
