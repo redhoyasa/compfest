@@ -25,11 +25,11 @@ class Competition extends CI_Controller {
 	}
 
 	public function register_competition() {
-		$this->form_validation->set_rules('team_name', 'Nama Tim', 'required|alpha_numeric');
+		$this->form_validation->set_rules('team_name', 'Nama Tim', 'required|strip_tags');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 		$this->form_validation->set_rules('password', 'Password', 'required|max_length[50]|min_length[4]');
-		$this->form_validation->set_rules('institution', 'Instansi', 'required');
-		$this->form_validation->set_rules('competition','kompetisi','required');
+		$this->form_validation->set_rules('institution', 'Instansi', 'required|strip_tags');
+		$this->form_validation->set_rules('competition','kompetisi','required|strip_tags');
 
 		$this->form_validation->set_message('required', '%s wajib diisi');
 		$this->form_validation->set_message('alpha_numeric', '%s harus berisi alpha numeric');

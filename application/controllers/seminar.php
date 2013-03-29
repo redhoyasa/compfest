@@ -28,10 +28,10 @@ class Seminar extends CI_Controller {
 	public function register_seminar()
 	{
 
-		$this->form_validation->set_rules('name', 'Nama', 'required');
-		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check');
-		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required');
-		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric');
+		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check|strip_tags');
+		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
+		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric|strip_tags');
 		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
