@@ -1,0 +1,66 @@
+@import url('reset.css');
+@font-face {
+	font-family: 'Roboto';
+	src : url("../font/Roboto-Light.ttf");
+}
+
+body{
+	background-color: #f6f6f6;
+	width : 100%;
+	padding : 0px;
+	margin  : 0px;
+	font-family: 'robotoLight', TW Cen MT, Arial;
+}
+
+#wrap{
+	width:1180px;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 30px;
+	background-image:url('../img/bg.png');
+	background-repeat: repeat;
+}
+
+nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	clear: both;
+}
+
+	nav ul .first-menu{
+		width: 14.285714286%;
+		height: 93px;
+		float: left;
+		font-size: 0.8em;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+	}
+
+		nav ul .first-menu p{
+			margin-top: 65px;
+		}
+
+		.first-menu ul{
+			height: 10px;
+			display: none;
+		}
+
+			.first-menu ul li{
+				margin: 10px;
+				z-index: 9999999999999;
+			}
+
+#footer{
+	background-color: white;
+	height: 200px;
+}
+
+#sponsors{
+	float: left;
+}
+
+#medparts{
+	float: right;
+}
