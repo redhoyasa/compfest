@@ -1,7 +1,5 @@
 $(document).ready(function() {
-	$(".login").hover(function(){
-		$(this).addClass("move");
-	}, function() {
-		$(this).removeClass("move");
+	$("#menu-event").hover(function() {
+		$("#hover-event").slideToggle("fast","swing");
 	});
 });

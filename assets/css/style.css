@@ -5,22 +5,12 @@
 	src : url("../font/Roboto-Light.ttf");
 }
 html, body {
-	background: #f7f7f7;
+	background: #f6f6f6;
 	width : 100%;
 	padding : 0px;
 	margin  : 0px;
 	padding-bottom: 10px;
 	font-family: 'robotoLight', TW Cen MT, Arial;
-}
-
-
-#background {
-        background: url('../img/background1.png');              
-		top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: fixed;
 }
 
 /*Header Start*/
@@ -38,7 +28,6 @@ header nav{
 header nav a {
 	text-decoration: none;
 	color : black;
-	font-size : 17px;
 	font-family: robotoLight;
 	font-size: 18px;
 }
@@ -61,7 +50,6 @@ header nav .menu{
 	line-height: 62px;
 	font-size: 12px;
 	height: 62px;
-	background:rgba(241,242,242,1);
 	-moz-transition : all 0.15s ease-in-out;
 	-webkit-transition : all 0.15s ease-in-out;
 	-o-transition : all 0.15s ease-in-out;
@@ -71,15 +59,6 @@ header nav .menu{
 	display: block;
 	text-align: center;
 }
-
-.menu #cc { border-right :0;}
-.menu #dd {border-left :0;}
-.menu #aa:hover{background: url("../img/noise.png"),#ff00ff;color: #ffffff;height:72px;line-height:72px;}
-.menu #bb:hover{background: url("../img/noise.png"),#e8d700;color: #ffffff;height:72px;line-height:72px;}
-.menu #cc:hover{background: url("../img/noise.png"),#f7931e;color: #ffffff;height:72px;line-height:72px;}
-.menu #dd:hover{background: url("../img/noise.png"),#e40613;color: #ffffff;height:72px;line-height:72px;}
-.menu #ee:hover{background: url("../img/noise.png"),#3d99d0;color: #ffffff;height:72px;line-height:72px;}
-.menu #ff:hover{background: url("../img/noise.png"),#8cc63f;color: #ffffff;height:72px;line-height:72px;}
 
 header #logo { 
 	height : 159px;
@@ -148,9 +127,6 @@ section {
 	overflow: hidden;
 	margin-top: 100px;
 	position : relative;
-	border-radius: 5px;
-	background-color: rgba(200,200,200, 0.1);
-	border : 1px solid #cecece;
 	margin: 10px auto;
 	margin-bottom: 10px;
 	clear : both;
