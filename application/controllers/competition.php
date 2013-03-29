@@ -39,7 +39,7 @@ class Competition extends CI_Controller {
 		$this->form_validation->set_error_delimiters('<div class="alert alert-error" style="width:200px;">', '</div>');
 
 		if ($this->form_validation->run() == FALSE) {
-			$this->template->display('kompetisi/daftar');
+			$this->template->display('front-end/competition/daftar');
 		} else {
 			$team['team_name'] = $this->input->post('team_name');
 			$team['email'] = $this->input->post('email');
