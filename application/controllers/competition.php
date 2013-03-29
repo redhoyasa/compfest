@@ -54,8 +54,8 @@ class Competition extends CI_Controller {
 
 			$this->email->subject('Pendaftaran Kompetisi COMPFEST 2013');
 			$this->email->message('Halo, ' . $team['team_name'] . '!'. "\n\n" . 'Terima kasih telah mendaftar di ' . 
-		'Kompetisi '.$this->kompetisi_model->getEventById($team['id_event'])->event_name.' Computer Festival 2013. Pendaftaran Anda sedang kami verifikasi. Silakan tunggu email balasan dari kami untuk ' .
-		'mendapatkan tiket seminar Anda.' . "\n\n" . 'Jika ada pertanyaan, silakan disampaikan melalui competiti@compfest.web.id.' . "\n\n\n\n" . 'Terima kasih, ' .
+		'Kompetisi '.$this->kompetisi_model->getEventById($team['id_event'])->event_name.' Computer Festival 2013. Pendaftaran Anda sedang kami verifikasi. Silakan login di halaman http://compfest.web.id/member ' .
+		'untuk melengkapi kelengkapan data tim.' . "\n\n" . 'Jika ada pertanyaan, silakan disampaikan melalui competition@compfest.web.id.' . "\n\n\n\n" . 'Terima kasih, ' .
 		"\n" . 'Panitia Seminar Computer Festival 2013');
 			$this->email->send();
 			
