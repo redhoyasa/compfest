@@ -52,7 +52,7 @@ class Admin extends Admin_Controller {
 		    
 		    $config['wordwrap'] = FALSE;
 		    $config['mailtype'] = 'html';
-	            $this->email->initialize($config);
+	        $this->email->initialize($config);
 
 		    $this->email->clear();
 		    $this->email->to($peserta->email);

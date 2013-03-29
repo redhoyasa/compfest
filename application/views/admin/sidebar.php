@@ -17,18 +17,18 @@
 			$kompetisi = $this->kompetisi_model->getEvent();
 				foreach ($kompetisi as $k) {
 				?>
-				<li><a href="<?php echo site_url('admin/competition') .'/'. $k->id_event ?>"><?php echo $k->event_name ?></a></li>
+				<li><a data-ajax="false" href="<?php echo site_url('admin/competition') .'/'. $k->id_event ?>"><?php echo $k->event_name ?></a></li>
 				<?php } ?>
 			<?php } ?>
 
 			<?php if($this->session->userdata('event') == '0' || $this->session->userdata('event') == '2') { ?>
 			<li data-role="list-divider">Seminar</li>
-			<li><a href="<?php echo site_url('admin/seminar') ?>">Semua</a></li>
+			<li><a data-ajax="false" href="<?php echo site_url('admin/seminar') ?>">Semua</a></li>
 				<?php 
 				$kompetisi = $this->seminar_model->getSeminar();
 				foreach ($kompetisi as $k) {
 				?>
-				<li><a href="<?php echo site_url('admin/seminar') .'/'. $k->id_seminar ?>"><?php echo $k->name ?></a></li>
+				<li><a data-ajax="false" href="<?php echo site_url('admin/seminar') .'/'. $k->id_seminar ?>"><?php echo $k->name ?></a></li>
 				<?php } ?>
 			<?php } ?>
 			
