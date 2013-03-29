@@ -7,6 +7,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama Tim</label>
 						<div class="controls">
+							<?php echo form_error('team_name'); ?>
 							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="">
 						</div>
 					</div>
@@ -14,6 +15,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
+							<?php echo form_error('email'); ?>
 							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
 							
 						</div>
@@ -22,6 +24,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
+							<?php echo form_error('password'); ?>
 							<input type="password" id="inputPassword" name="password"><br>
 							<span class="help-block">Digunakan untuk memasuki member area</span>
 						</div>
@@ -30,6 +33,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
+							<?php echo form_error('institution'); ?>
 							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">	
 						</div>
 					</div>
