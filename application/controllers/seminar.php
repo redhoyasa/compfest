@@ -84,7 +84,6 @@ class Seminar extends CI_Controller {
 						$seminar['motivation'] = $this->input->post('motivation-'. $r->id_seminar);
 						$seminar['approve'] = 0;
 						$this->seminar_model->saveSeminarRegister($seminar);
-
 					}
 				}
 
@@ -140,7 +139,7 @@ class Seminar extends CI_Controller {
 				$this->email->message('Halo, ' . $user->name . '!'. "\n\n" . 'Terima kasih telah mendaftar di ' . 
 			'Seminar Computer Festival 2013. Pendaftaran Anda sedang kami verifikasi. Silakan tunggu email balasan dari kami untuk ' .
 			'mendapatkan tiket seminar Anda.' . "\n\n" . 'Jika ada pertanyaan, silakan disampaikan melalui event@compfest.web.id.' . "\n\n\n\n" . 'Terima kasih, ' .
-			"\n" . 'Panitia Seminar Computer Festival 2012');
+			"\n" . 'Panitia Seminar Computer Festival 2013');
 				$this->email->send();
 			}
 			$this->template->display('front-end/seminar/seminar_registration_complete');
