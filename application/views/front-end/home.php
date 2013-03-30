@@ -1,11 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-	    $('#slider').nivoSlider();
-	});
-</script>
 
 <div id="middle">
 	    <div id="slider" class="nivoSlider">

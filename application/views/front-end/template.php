@@ -27,7 +27,9 @@
 						<p>COMPETITION</p>
 					</li></a>				
 					<a href="<?php echo base_url('competition'); ?>"><li class="first-menu" id="menu-event" style="border-bottom: 5px solid #e40613">
-						<p>EVENT</p>
+						<div class="buffer-menu">
+							<p>EVENT</p>
+						</div>
 						<ul id="hover-event">
 							<li>hai</li>
 							<li>dota</li>
@@ -38,7 +40,7 @@
 					</li></a>
 				</ul>
 			</nav>
-<!--
+
 			<div id="content">
 
 				<?php echo $content; ?>
