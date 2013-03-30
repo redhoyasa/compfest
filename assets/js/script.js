@@ -1,23 +1,29 @@
 $(document).ready(function() {
-	//$('#slider').nivoSlider();
-/*
-	$("#menu-event").hover(function(){
-		$("#hover-event").slideToggle();
-	});
-*/
+	$('#slider').nivoSlider();
 
-	$("#menu-event").mouseover(function(){
-		$("#hover-event").css("display","block");
-		$("#hover-event").animate({
+
+	//MENU BAR
+	$("#menu-event").hover(function(){
+		$("#menu-event>ul").css("display","block");
+		$("#menu-event>ul").animate({
 			opacity:1
 		},200);
-	});
-	$("#menu-event").mouseleave(function(){
-		$("#hover-event").animate({
+	},function(){
+		$("#menu-event>ul").animate({
 			opacity:0
 		},200);
-		setTimeout(function(){
-			$("#hover-event").css("display","none");
+		$("#menu-event>ul").css("display","none");
+	});
+
+	$("#menu-competition").hover(function(){
+		$("#menu-competition>ul").css("display","block");
+		$("#menu-competition>ul").animate({
+			opacity:1
 		},200);
+	},function(){
+		$("#menu-competition>ul").animate({
+			opacity:0
+		},200);
+		$("#menu-competition>ul").css("display","none");
 	});
 });

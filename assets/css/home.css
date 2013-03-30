@@ -11,11 +11,9 @@
 }
 
 .nivoSlider {
-	margin: 0 auto;
 	padding-left: 0;
     position:relative;
     background:url(images/loading.gif) no-repeat 50% 50%;
-    width: 1160px;
     height:475px;
 }
 
@@ -39,14 +37,14 @@
 	height: 120px;
 	background-color: white;
 	color:black;
-	font-size: 3.125em;
+	font-size: 3.0em;
 }
 
 .nivo-controlNav{
 	position: relative;
 	float: center;
 	margin: 0;
-	top: -40px;
+	top: -60px;
 	z-index: 100;
 }
 
