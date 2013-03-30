@@ -10,6 +10,18 @@
 
 	<body>
 		<div id="wrap">
+			<div id="login">
+				<input class="field" type="text" name="username" placeholder=" username" style="margin-left:40px;">
+				<input class="field" type="password" name="password" placeholder=" password">
+				<input id="button-go" type="submit" name="login" value="GO!">
+				<p id="forgot">or, <a href="#">forgot password?</a></p>
+				<div id="button-login">LOGIN</div>
+			</div>
+			<!--
+			<div id="logout">
+				<p>Hi,&nbsp;</p><p id="user" style="font-weight:bold;">RwCn</p><p>&nbsp;:)&nbsp;|&nbsp;</p><a href="#">settings</a><p>&nbsp;|&nbsp;</p><a href="#">LOGOUT</a>
+			</div>
+			-->
 			<a href="#"><div id="logo"></div></a>
 			<nav>
 				<ul id="first">

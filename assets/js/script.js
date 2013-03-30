@@ -2,7 +2,38 @@ $(document).ready(function() {
 	$('#slider').nivoSlider();
 
 
+	//LOGIN BAR
+	var buka = 0;
+	$("#login").css("right",(window.innerWidth-1180)/2+"px");
+	$("#logout").css("right",(window.innerWidth-1180)/2+"px");
+
+	$("#button-login").click(function(){
+		if (buka == 0){
+			$("#login").animate({
+				top:"0"
+			})
+			buka = 1;
+		} else {
+			$("#login").animate({
+				top:"-30px"
+			})
+			buka = 0;
+		}
+	});
+
+
 	//MENU BAR
+	$(".second>li").hover(function(){
+		$(this).animate({
+			opacity:1
+		});
+	},function(){
+		$(this).animate({
+			opacity:0.75
+		});
+	});
+
+
 	$("#menu-event").hover(function(){
 		$("#menu-event>ul").css("display","block");
 		$("#menu-event>ul").animate({

@@ -31,10 +31,13 @@
 	</div>	
 
 	<div id="sharebox">
-		<div id="twitterbox">
+		<a href="#" id="twitterbox">
 			<div id="twitter-logo"></div>
-			<div id="twitter-tweet"></div>
-		</div>
-		<div id="likebox">(y)Like</div>
+			<div id="twitter-tweet">
+				<p id="tweet">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p id="tweet-time">5 mins ago</p>
+			</div>
+		</a>
+		<a href="#" id="likebox"></a>
 	</div>
 </div>
