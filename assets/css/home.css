@@ -1,0 +1,126 @@
+#middle{
+	background-color: white;
+	clear: both;
+	margin:0 0 30px 0;
+}
+
+.imgSlider{
+	width: 100%;
+	height: 10px;
+}
+
+.nivoSlider {
+	padding-left: 0;
+    position:relative;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+    height:475px;
+}
+
+.nivoSlider img {
+	margin: 0;
+	padding-left: 0;
+    position:absolute;
+    height: 500px !important;
+    display:none;
+}
+
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.nivo-caption{
+	position: relative;
+	top: -215px;
+	width: 400px;
+	height: 120px;
+	background-color: white;
+	color:black;
+	font-size: 3.0em;
+}
+
+.nivo-controlNav{
+	position: relative;
+	float: center;
+	margin: 0;
+	top: -60px;
+	z-index: 100;
+}
+
+#box{
+	width: 45%;
+	height:325px;
+	margin: 0 30px 30px 30px;
+	background-color: #ff0000;
+	float: left;
+}
+
+#headline{
+	display: inline;
+	max-height: 325px;
+	overflow: hidden;
+}
+
+#headline-imgBox{
+	width: 270px;
+	height:180px;
+	margin: 5px 15px 5px 0;
+	background-color: #f0f0f0;
+	float: left;
+}
+
+#headline-article{
+	font-size: 0.8em;
+	text-align: justify;
+	margin: 0 60px 10px 0;
+}
+
+#sharebox{
+	width: 100%;
+	height: 48px;
+	margin-top: 40px;
+}
+
+#twitterbox{
+	float: left;
+	width: 1022px;
+	height: inherit;
+	background-color: #29abe2;
+}
+
+	#twitter-logo{
+		width:70px;
+		background-image: url('../img/twitter-bg.png');
+		height: inherit;
+		float: left;
+	}
+
+	#twitter-tweet{
+		margin: 7px 7px 7px 0;
+		width: 945px;
+		float: left;
+		height: 34px;
+		background-color: white;
+	}
+
+		#tweet{
+			float: left;
+			color: black;
+			margin-top: 9px;
+			margin-left: 5px;
+		}
+
+		#tweet-time{
+			float: left;
+			margin-top: 11px;
+			margin-left: 5px;
+			font-size: 0.9em;
+			color: #a3a3a3;
+		}		
+
+#likebox{
+	float: right;
+	width: 158px;
+	height: inherit;
+	background-image: url('../img/fb-like.png') 
+}

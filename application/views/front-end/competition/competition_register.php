@@ -16,6 +16,12 @@
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">Email</label>
+						<div class="controls">
 							<?php echo form_error('email'); ?>
 							<input type="text" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
 							
@@ -40,7 +46,7 @@
 	
 						</div>
 					</div>
-
+					
 					<div class="control-group">
 						<label class="control-label" for="inputCompetition">Kompetisi</label>
 						<div class="controls">
@@ -73,3 +79,4 @@
 
 </div>
 </section>
+	<script type="text/javascript" src="../js/validateCompetition.js"></script>

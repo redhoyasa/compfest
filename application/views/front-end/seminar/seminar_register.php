@@ -3,7 +3,7 @@
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
 			<div class="main" id="register-main">
-				
+
 				<form class="form-horizontal" method="post" action="<?php echo site_url('seminar/register_seminar'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama</label>
@@ -31,7 +31,7 @@
 					</div>
 					
 					<div class="control-group">
-						<label class="control-label" for="inputNoid">Nomor Telepon</label>
+						<label class="control-label" for="inputNoTl">Nomor Telepon</label>
 						<div class="controls">
 							<?php echo form_error('phone'); ?>
 							<input type="text" id="inputNoid" placeholder="nomor telepon" name="phone" value="<?php echo set_value('phone'); ?>">
@@ -52,7 +52,7 @@
 						?>
 							<div class="control-group">
 								<label class="control-label" for="seminar"><?php echo $r->name; ?></label>
-								<div class="controls seminar">
+								<div class="controls-seminar">
 									<input type="checkbox" id="seminar-<?php echo $r->id_seminar?>" name="seminar-<?php echo $r->id_seminar?>" value="1"
 									<?php if(isset($s['formerror-'.$r->id_seminar])) echo "checked"; ?>>
 									<br>
@@ -87,3 +87,4 @@
 	?>
 </div>
 </section>
+		<script type="text/javascript" src="../js/validateSeminar.js"></script>

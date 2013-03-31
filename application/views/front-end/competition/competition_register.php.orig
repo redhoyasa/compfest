@@ -2,61 +2,65 @@
 		<div id="content-title">Daftar Kompetisi</div>
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
-			<div class="main thm" id="register-main">
+			<div class="main" id="register-main">
+				
 				<form class="form-horizontal" method="post" action="<?php echo site_url('competition/register_competition'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama Tim</label>
 						<div class="controls">
-							<?php echo form_error('team_name'); ?>
 <<<<<<< HEAD
-							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="">
-=======
+							<?php echo form_error('team_name'); ?>
 							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="<?php echo set_value('team_name'); ?>">
->>>>>>> ef6dd2eddde1ab13f646f46b64581033b1176c0c
+=======
+							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="">
+							<span id="nameInfo">Nama Tim</span>
+>>>>>>> 0fddf8f32e2602da2f68a62c4b469e5a8a8d1114
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
-							<?php echo form_error('email'); ?>
 <<<<<<< HEAD
-							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
-=======
+							<?php echo form_error('email'); ?>
 							<input type="text" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
->>>>>>> ef6dd2eddde1ab13f646f46b64581033b1176c0c
 							
+=======
+							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
+							<span id="emailInfo">Email yang akan digunakan untuk login</span>
+>>>>>>> 0fddf8f32e2602da2f68a62c4b469e5a8a8d1114
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
-							<?php echo form_error('password'); ?>
 <<<<<<< HEAD
+							<?php echo form_error('password'); ?>
 							<input type="password" id="inputPassword" name="password"><br>
-							<span class="help-block">Digunakan untuk memasuki member area</span>
-=======
-							<input type="password" id="inputPassword" name="password">
 							<br><span class="help-block">Digunakan untuk memasuki member area</span>
+=======
+							<input type="password" id="inputPassword" name="password" placeholder="password">
+							<span id="passInfo">Password minimal 6 karakter huruf atau angka</span>
+>>>>>>> 0fddf8f32e2602da2f68a62c4b469e5a8a8d1114
 							
->>>>>>> ef6dd2eddde1ab13f646f46b64581033b1176c0c
 						</div>
 					</div>
 					<br>
 					<div class="control-group">
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
-							<?php echo form_error('institution'); ?>
 <<<<<<< HEAD
-							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">	
-=======
-							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="<?php echo set_value('institution'); ?>">
+							<?php echo form_error('institution'); ?>
+							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="<?php echo set_value('institution'); ?>">	
 	
->>>>>>> ef6dd2eddde1ab13f646f46b64581033b1176c0c
+=======
+							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">
+							<span id="institutionInfo">Instansi terkait</span>
+>>>>>>> 0fddf8f32e2602da2f68a62c4b469e5a8a8d1114
 						</div>
 					</div>
-
+					
 					<div class="control-group">
 						<label class="control-label" for="inputCompetition">Kompetisi</label>
 						<div class="controls">
@@ -65,7 +69,11 @@
 						foreach ($kompetisi as $k) {
 						?>
 							<label class="radio">
+<<<<<<< HEAD
 								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?><br>
+=======
+								<input type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?></br>
+>>>>>>> 0fddf8f32e2602da2f68a62c4b469e5a8a8d1114
 							</label>
 						<?php } ?>
 						<?php echo form_error('competition'); ?>
@@ -89,3 +97,4 @@
 
 </div>
 </section>
+	<script type="text/javascript" src="../js/validateCompetition.js"></script>
