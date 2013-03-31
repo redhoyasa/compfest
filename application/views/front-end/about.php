@@ -58,14 +58,16 @@
 
 <div id="about-wrapper">
 	
-	<h1>Another Content</h1>
-	<p id="about-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
-	sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
-	leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
-	consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
-	volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
-	sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
-	tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
-	Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
-	lacus.</p>
+	<div id="about-desc">
+		<h1>Another Content</h1>
+		<p id="about-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
+		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
+		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
+		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
+		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
+		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
+		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
+		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
+		lacus.</p>
+	</div>
 </div>
