@@ -78,6 +78,7 @@ class Member extends Member_Controller {
 					$data['register_photo'] = $up['upload_data']['file_name'];
 				} else {
 					$upload = false;
+					echo $this->upload->display_errors();
 				}
 
 
