@@ -4,8 +4,13 @@
 	src : url("../font/Roboto-Light.ttf");
 }
 
+html, body{
+	height: 100%;
+}
+
 body{
-	background-color: #f6f6f6;
+	background-image:url('../img/bg.png');
+	background-repeat: repeat;
 	width : 100%;
 	padding : 0px;
 	margin  : 0px;
@@ -15,9 +20,6 @@ body{
 #wrap{
 	width:1180px;
 	margin: auto;
-	margin-bottom: 30px;
-	background-image:url('../img/bg.png');
-	background-repeat: repeat;
 }
 
 #login{
@@ -140,6 +142,7 @@ nav{
 #footer{
 	background-color: white;
 	height: 200px;
+	width: 1180px;
 }
 
 #sponsors{
@@ -150,4 +153,22 @@ nav{
 #medparts{
 	margin:10px;
 	float: right;
+}
+
+/* - - - - - - - */
+
+#content{
+	position: relative;
+	clear: both;
+	height: auto;
+}
+
+.content-title{
+	font-size:1.9em;
+	padding-bottom:15px;
+}
+
+#container{
+	margin-left: 75px;
+	padding: 30px;
 }

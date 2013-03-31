@@ -1,5 +1,5 @@
-<div id="inner-content">
-		<div id="content-title">Daftar Kompetisi</div>
+<div id="container">
+		<div class="content-title">Daftar Kompetisi</div>
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
 			<div class="main" id="register-main">
@@ -10,12 +10,6 @@
 						<div class="controls">
 							<?php echo form_error('team_name'); ?>
 							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="<?php echo set_value('team_name'); ?>">
-						</div>
-					</div>
-
-					<div class="control-group">
-						<label class="control-label" for="inputEmail">Email</label>
-						<div class="controls">
 						</div>
 					</div>
 
@@ -73,10 +67,5 @@
 			</div>
 	</div>
 </div>
-	<?php
-		$this->load->view('front-end/socialbox');
-	?>
-
-</div>
-</section>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/register.css">
 	<script type="text/javascript" src="../js/validateCompetition.js"></script>

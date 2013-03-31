@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	$('#slider').nivoSlider();
-
 
 	//LOGIN BAR
 	var buka = 0;

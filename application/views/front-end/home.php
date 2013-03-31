@@ -2,13 +2,14 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/default/default.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
 
 <div id="middle">
 	<div id="slider-wrapper" class="theme-default">
 	    <div id="slider" class="nivoSlider">
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/redho.jpg" alt="" title="ini RedhoYasha"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zaka.jpg" alt="" title="ini ZakaZai"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zawwaf.jpg" alt="" title="ini Zawwaf"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/bayu.jpg" alt="" title="ini BayuSur"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szaka.jpg" alt="" title="ini ZakaZai"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szawwaf.jpg" alt="" title="ini Zawwaf"/>
 	    </div>
 	</div>
 	<div id="htmlcaption" class="nivo-html-caption">
@@ -16,15 +17,7 @@
 	</div>
 
 	<div id="box">
-							if ($r->publish == 1){
-					?>
-						 <li class="news-item"><a href="#"><?php echo $r->title; ?></a></li>
-					<?php
-							} 
-						}
-					?>
-				</ul>
-			</div>
+
 	</div>
 
 	<div id="headline">
@@ -50,5 +43,4 @@
 		<a href="#" id="likebox"></a>
 	</div>
 </div>
-	    });
-	</script>
+	    
