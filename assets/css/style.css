@@ -13,6 +13,10 @@ html, body {
 	font-family: 'robotoLight', TW Cen MT, Arial;
 }
 
+h1 {
+	font-size: 30px;
+}
+
 
 #background {
         background: url('../img/background1.png');              
@@ -139,6 +143,7 @@ header nav .logo:hover + .login{
 .login:hover{
 	top: 130px;
 }
+
 /*Header end */
 
 /*Section/Main Start*/
@@ -380,7 +385,6 @@ section #socmed {
 	
 }
 form {
-	width: 550px;
 	display: block;
 	margin: 20px auto;
 	font-family: Tahoma, sans-serif;
@@ -554,7 +558,10 @@ hr {
 	font-size: 12px;
 }
 
-
+.inside input {
+	float : none;
+	margin: 0;
+}
 
 
 
