@@ -10,6 +10,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan peserta seminar
 	 */ 
 	public function seminar() {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/seminar');
 	}
 
@@ -17,6 +20,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan detil peserta seminar
 	 */
 	public function seminar_user() {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id_user = $this->uri->segment(3);
 		$user = $this->seminar_model->getUserById($id_user);
 		if($user == null) {
@@ -31,13 +37,35 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk mengupdate status peserta seminar
 	 */
 	function update_seminar_user() {
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id_user = $this->uri->segment('3');
 		$status = $this->uri->segment('4');
 
 		$this->seminar_model->UpdateStatusUserById($id_user, $status);
 
 		if($status == '2') {
-			//kirim email notifikasi disini
+		    $peserta = $this->seminar_model->getUserById($id_user);
+		
+		    $this->load->library('email');
+		    
+		    $config['wordwrap'] = FALSE;
+		    $config['mailtype'] = 'html';
+	        $this->email->initialize($config);
+
+		    $this->email->clear();
+		    $this->email->to($peserta->email);
+		    $this->email->from('seminar@compfest.web.id','Seminar CompFest 2013');
+		    $this->email->subject('Seminar CompFest 2013');
+		    
+		    $body = 'Selamat anda sudah terdaftar dalam seminar CompFest 2013. ';
+		    $body .= 'Silahkan konfirmasi kehadiran anda di halaman berikut. ';
+		    $body .= '<a href="http://www.compfest.web.id/seminar/confirm/'.$peserta->token.'/'.$peserta->id_seminar_user.'/">';
+		    $body .= 'http://www.compfest.web.id/seminar/confirm/'.$peserta->token.'/'.$peserta->id_seminar_user.'/</a>';
+		    
+		    $this->email->message($body);
+		    $this->email->send();
 		}
 
 		redirect(site_url('admin/seminar_user') . '/' . $id_user);
@@ -47,6 +75,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan semua peserta kompetisi
 	 */
 	public function competition() {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/team_list');
 	}
 
@@ -54,6 +85,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan detil tim kompetisi
 	 */
 	public function competition_team() {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/team_detail');
 	}
 
@@ -61,6 +95,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk mengubah status tim
 	 */
 	public function team_update() {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id_team = $this->uri->segment('3');
 		$status['team_status'] = $this->uri->segment('4');
 
@@ -77,6 +114,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menghapus tim
 	 */
 	public function team_delete() {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id_team = $this->uri->segment('3');
 		$this->member_model->delete_team($id_team);
 
@@ -133,7 +173,11 @@ class Admin extends Admin_Controller {
 			$data['url'] = $date->format('Y-m-d H:i:s');
 		}
 
-		$data['publish'] =  $this->input->post('publish');
+		if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 0) {
+			$data['publish'] =  $this->input->post('publish');
+		} else {
+			$data['publish'] =  0;
+		}
 		$data['content'] =  $this->input->post('content');
 
 		$this->news_model->update_news($id, $data);
@@ -168,6 +212,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan semua halaman
 	 */
 	public function page() {
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/page');
 	}
 
@@ -175,11 +222,16 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menambahkan halaman
 	 */
 	public function add_page() {
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/page_add');
 	}
 
 	public function save_page() {
-		
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$data['title'] =  $this->input->post('title');
 		if($data['title'] == '') {
 			$date = new DateTime();
@@ -202,6 +254,9 @@ class Admin extends Admin_Controller {
 
 
 	public function update_page() {
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id = $this->input->post('id_page');
 
 		$data['title'] =  $this->input->post('title');
@@ -228,6 +283,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menyunting halaman
 	 */
 	public function edit_page() {
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/page_edit');
 	}
 
@@ -235,6 +293,9 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menghapus halaman
 	 */
 	public function delete_page() {
+		if($this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
 		$id = $this->uri->segment(3);
 		$this->page_model->delete_page($id);
 

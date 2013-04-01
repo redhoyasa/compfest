@@ -18,8 +18,7 @@ class News_model extends CI_Model {
 		$this->db->where('id_news',$id); 
 		$query = $this->db->get($this->table);
 		if ($query->num_rows() > 0) {
-			$list = $query->result();
-			return $list[0];
+			return $query->row();
 		} else {
 			return false;
 		}
@@ -29,8 +28,7 @@ class News_model extends CI_Model {
 		$this->db->where('url',$url); 
 		$query = $this->db->get($this->table);
 		if ($query->num_rows() > 0) {
-			$list = $query->result();
-			return $list[0];
+			return $query->row();
 		} else {
 			return false;
 		}

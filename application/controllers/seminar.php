@@ -27,10 +27,11 @@ class Seminar extends CI_Controller {
 
 	public function register_seminar()
 	{
-		$this->form_validation->set_rules('name', 'Nama', 'required');
-		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check');
-		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required');
-		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric');
+
+		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags');
+		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
+		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric|strip_tags');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		$this->form_validation->set_message('required', '%s wajib diisi');
 		$this->form_validation->set_message('alpha', '%s harus berisi alfabet');
@@ -45,7 +46,7 @@ class Seminar extends CI_Controller {
 		$row = $this->seminar_model->getSeminar();
 		foreach($row as $r) {
 			if($this->input->post('seminar-'. $r->id_seminar) == 1) {
-				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]');
+				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]|strip_tags');
 				$valid = true;
 				$submit['formerror-'.$r->id_seminar] = true;
 			}
@@ -125,6 +126,17 @@ class Seminar extends CI_Controller {
 		if($token == $user->token) {
 			if($user->status == 0) {
 				$this->seminar_model->UpdateStatusUserById($id_seminar_user, 1);
+
+				$this->load->library('email');
+				$this->email->from('seminar@compfest.web.id', 'Seminar CompFest 2013');
+				$this->email->to($user->email);
+
+				$this->email->subject('Pendaftaran Seminar COMPFEST 2013');
+				$this->email->message('Halo, ' . $user->name . '!'. "\n\n" . 'Terima kasih telah mendaftar di ' . 
+			'Seminar Computer Festival 2013. Pendaftaran Anda sedang kami verifikasi. Silakan tunggu email balasan dari kami untuk ' .
+			'mendapatkan tiket seminar Anda.' . "\n\n" . 'Jika ada pertanyaan, silakan disampaikan melalui event@compfest.web.id.' . "\n\n\n\n" . 'Terima kasih, ' .
+			"\n" . 'Panitia Seminar Computer Festival 2013');
+				$this->email->send();
 			}
 			$this->template->display('front-end/seminar/seminar_registration_complete');
 		} else  {
@@ -144,6 +156,55 @@ class Seminar extends CI_Controller {
 			$this->seminar_model->DeleteSeminarUserById($id_seminar_user);
 		}
 		redirect('seminar/register');
+	}
+
+	function confirm() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token) {
+			$data['name'] = $user->name;
+			$data['token'] = $user->token;
+			$data['id_seminar_user'] = $user->id_seminar_user;
+			$data['seminar'] = $this->seminar_model->getSeminarUserById($id_seminar_user);
+
+			$this->template->display('front-end/seminar/seminar_confirm', $data);
+		} else {
+			redirect('seminar/register');
+		}
+	}
+
+	function attend() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token && $user->status == 2) {
+			$this->seminar_model->UpdateStatusUserById($id_seminar_user, 3);
+			$this->template->display('front-end/seminar/seminar_attend');
+		} else {
+			redirect('seminar/register');
+		}
+	}
+
+	function cancel() {
+		$id_seminar_user = $this->uri->segment('4');
+		$token = $this->uri->segment('3');
+		$user = $this->seminar_model->getUserById($id_seminar_user);
+		if($user == null) {
+			redirect('seminar/register');
+		}
+		if($token == $user->token && $user->status == 2) {
+			$this->seminar_model->UpdateStatusUserById($id_seminar_user, 4);
+			$this->template->display('front-end/seminar/seminar_cancel');
+		} else {
+			redirect('seminar/register');
+		}
 	}
 }
 

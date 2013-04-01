@@ -5,22 +5,23 @@
 
 <table class="table table-striped">
 	<tr>
-		<th>No</th><th>Title</th><th>URL</th><th></th>
+		<th>No</th><th>Title</th><th>Publish</th><th>URL</th><th></th>
 	</tr>
 <?php 
 $page = $this->news_model->get_all_news();
 if($page != false) {
 $no = 1;
-foreach ($page as $p) {
+	foreach ($page as $p) {
 ?>
-	<tr>
-		<td><?php echo $no++; ?></td>
-		<td><?php echo $p->title; ?></td>
-		<td><?php echo $p->url; ?></td>
-		<td><a data-ajax="false" href="<?php echo site_url('admin/edit_news/' . $p->id_news) ?>">Edit</a> || <a data-ajax="false" href="<?php echo site_url('admin/delete_news/' . $p->id_news) ?>">Hapus</a></td>
-	</tr>
-	<?php
-}
+		<tr>
+			<td><?php echo $no++; ?></td>
+			<td><?php echo $p->title; ?></td>
+			<td><?php echo $p->publish ? "Yes" : "No"; ?></td>
+			<td><?php echo $p->url; ?></td>
+			<td><a data-ajax="false" href="<?php echo site_url('admin/edit_news/' . $p->id_news) ?>">Edit</a> || <a data-ajax="false" href="<?php echo site_url('admin/delete_news/' . $p->id_news) ?>">Hapus</a></td>
+		</tr>
+		<?php
+	}
 }
 ?>
 </table>

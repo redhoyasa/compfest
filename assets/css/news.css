@@ -1,0 +1,19 @@
+.news-main{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.news-title{
+	font-size:1.4em;
+	margin-bottom: 10px;
+}
+
+.news-title a{
+	color: black;
+}
+
+.news-date{
+	margin-bottom: 10px;
+	font-size:1em;
+	color: #5a5a5a;
+}

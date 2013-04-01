@@ -1,20 +1,23 @@
-<div id="inner-content">
-		<div id="content-title">Daftar Kompetisi</div>
+<div id="container">
+		<div class="content-title">Daftar Kompetisi</div>
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
-			<div class="main thm" id="register-main">
+			<div class="main" id="register-main">
+				
 				<form class="form-horizontal" method="post" action="<?php echo site_url('competition/register_competition'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama Tim</label>
 						<div class="controls">
-							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="">
+							<?php echo form_error('team_name'); ?>
+							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="<?php echo set_value('team_name'); ?>">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
-							<input type="text" id="inputEmail" placeholder="email" name="email" value="">
+							<?php echo form_error('email'); ?>
+							<input type="text" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
 							
 						</div>
 					</div>
@@ -22,18 +25,22 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
+							<?php echo form_error('password'); ?>
 							<input type="password" id="inputPassword" name="password"><br>
-							<span class="help-block">Digunakan untuk memasuki member area</span>
+							<br><span class="help-block">Digunakan untuk memasuki member area</span>
+							
 						</div>
 					</div>
 					<br>
 					<div class="control-group">
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
-							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="">	
+							<?php echo form_error('institution'); ?>
+							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="<?php echo set_value('institution'); ?>">	
+	
 						</div>
 					</div>
-
+					
 					<div class="control-group">
 						<label class="control-label" for="inputCompetition">Kompetisi</label>
 						<div class="controls">
@@ -60,9 +67,5 @@
 			</div>
 	</div>
 </div>
-	<?php
-		$this->load->view('front-end/socialbox');
-	?>
-
-</div>
-</section>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/register.css">
+	<script type="text/javascript" src="../js/validateCompetition.js"></script>

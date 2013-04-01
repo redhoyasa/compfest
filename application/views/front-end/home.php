@@ -1,23 +1,46 @@
-		<div id="content-home">
-			<div id="slider">
-				<img src="http://farm6.staticflickr.com/5268/5893255075_0f8787f78c_z.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-			    <img src="http://farm5.staticflickr.com/4091/4833681624_c8b6fa82d7_z.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-			    <img src="http://farm5.staticflickr.com/4071/4298825842_989fa3c187_z.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-			    <img src="http://farm1.staticflickr.com/27/97577796_94967c3555_z.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-			   	<iframe width="640" height="450" src="http://www.youtube.com/embed/zCMEm63Ypfk" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<?php
-				$this->load->view('front-end/socialbox');
-			?>
-		</div>
-			<div id="news" style="">News</div>
-			<div id="sponsor">
-				<p style="margin: 2px 0 0 2px;">Sponsored by:</p> 
-			</div>
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
+<script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
 
-		</div>
-	</section>
+<div id="middle">
+	<div id="slider-wrapper" class="theme-default">
+	    <div id="slider" class="nivoSlider">
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/bayu.jpg" alt="" title="ini BayuSur"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szaka.jpg" alt="" title="ini ZakaZai"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szawwaf.jpg" alt="" title="ini Zawwaf"/>
+	    </div>
+	</div>
+	<div id="htmlcaption" class="nivo-html-caption">
+	    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+	</div>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/plugins/slider/slider.css">
-	<script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.slides.min.js" type="text/javascript"></script>
-	<script src="<?php echo base_url(); ?>assets/plugins/slider/slider.js" type="text/javascript"></script>
+	<div id="box">
+
+	</div>
+
+	<div id="headline">
+		<h2 style="font-size:1.9em; padding-bottom:15px">NEWS</h2>
+		<h3 id="headline-title" style="font-size:1.6em;">Lorem ipsum dolor sit amet, cons...</h3>
+		<p id="headline-date" style="font-size:0.9em;">October 24, 1993</p>
+		<div id="headline-imgBox"></div>
+		<p id="headline-article">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis rutrum sollicitudin. Donec volutpat quam in ligula convallis consequat sodales dolor ornare. Mauris id egestas magna. Duis laoreet ante sapien, bibendum suscipit augue. Nullam pellentesque, risus a lobortis commodo, lacus purus venenatis libero, at ullamcorper lectus augue sollicitudin tellus. Proin commodo, diam eget aliquam gravida, magna tortor iaculis tortor, in feugiat dui odio et leo. Quisque commodo magna eget erat placerat eget bibendum nisi rutrum.
+			<br/><br/>
+			Praesent metus augue, ullamcorper vitae tempor sed, consequat at odio. Praesent libero risus, sodales a feugiat non, faucibus lacinia magna. Praesent dictum malesuada urna ut feugiat. Nam sapien diam, elementum at convallis sed, bibendum pretium erat.
+		</p>
+	</div>	
+
+	<div id="sharebox">
+		<a href="#" id="twitterbox">
+			<div id="twitter-logo"></div>
+			<div id="twitter-tweet">
+				<p id="tweet">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p id="tweet-time">5 mins ago</p>
+			</div>
+		</a>
+		<a href="#" id="likebox"></a>
+	</div>
+</div>
+	    
