@@ -4,7 +4,7 @@ class Competition extends CI_Controller {
 
 	public function index()
 	{
-		redirect('competition/register');
+		$this->template->display('front-end/competition/competition');
 	}
 
 	public function register() {
