@@ -29,6 +29,10 @@
 	color: white;
 }
 
+#overview-header .choose:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 #overview-header .choose p {
 	position: relative;
 	top: 350px;
