@@ -23,8 +23,9 @@
 
 #contact-list {
 	width: 900px;
-	height: 300px;
+	height: 350px;
 	margin: 0 auto;
+	display: block;
 }
 #contact-list li {
 	float: left;
@@ -32,12 +33,34 @@
 
 #contact-list li a {
 	display: block;
-	width: 270px;
-	height:270px;
+	width: 240px;
+	height:300px;
 	margin:5px;
+	padding: 10px 20px;
 	text-align: center;
+	border: 1px solid #EEE;
+	color:black;
+	transition: background 0.5s ease-in-out;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+}
+
+#contact-list li a:hover {
+	background: #3bb347;
+	transition: background 1s ease-in-out;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+}
+
+#contact-list li a h2 {
+	font-size: 30px;
+	margin: 10px 0 10px 0;
 }
 
 #contact-list li a table{
+	width: 260px;
 	text-align: left;
+	margin-top: 10px;
 }
