@@ -39,7 +39,7 @@
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Programming</h1>
 		<div class="competition-register-button">
-			<a href="<?php echo site_url('seminar/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
 		</div>
 		<span id="programing-info">yeyey lalala uts suram</span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
@@ -57,7 +57,7 @@
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Robotic</h1>
 		<div class="competition-register-button">
-			<a href="<?php echo site_url('seminar/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
 		</div>
 		<span id="robotic-info">yeyey lalala uts suram</span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
@@ -75,7 +75,7 @@
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>3D Animation</h1>
 		<div class="competition-register-button">
-			<a href="<?php echo site_url('seminar/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
 		</div>
 		<span id="3Danimation-info">yeyey lalala uts suram</span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
