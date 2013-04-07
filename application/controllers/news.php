@@ -6,5 +6,11 @@ class News extends CI_Controller {
 	{
 		$this->template->display('front-end/news/news_all');
 	}
+
+	public function getNews($url){
+		$data['url'] = $url;
+		$this->template->display('front-end/news/news',$data);
+	}
+
 }
 

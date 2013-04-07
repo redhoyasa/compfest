@@ -40,7 +40,7 @@
 
 $route['default_controller'] = "welcome";
 $route['page/(:any)'] = "webmain/page/$1";
-$route['news/(:any)'] = "webmain/news/$1";
+$route['news/(:any)'] = "/news/getNews/$1";
 $route['about'] = "state/about";
 $route['contact'] = "state/contact_us";
 $route['roadshow'] = "state/roadshow";
