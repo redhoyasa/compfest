@@ -25,7 +25,7 @@
 						<div class="seminar-capacity-border">
 						<div class="seminar-capacity-bar"></div>
 					</div>
-
+					<br>
 					<div class="seminar-register-button">
 						<a href="<?php echo site_url('seminar/register');?>"><p id="seminar-tulisan-register">REGISTER</p></a>
 					</div>
