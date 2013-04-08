@@ -1,3 +1,9 @@
+#container{
+	margin-left: 0;
+	width: 820px;
+	float: left;
+}
+
 .news-main{
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -9,11 +15,50 @@
 }
 
 .news-title a{
-	color: black;
+	color: blue;
 }
 
 .news-date{
 	margin-bottom: 10px;
 	font-size:1em;
 	color: #5a5a5a;
+}
+
+#recent{
+	width: 260px;
+	background: #cecece;
+	margin-left: 870px;
+	margin-top: 30px;
+	position: absolute;
+	padding: 20px;
+	border-radius: 7px;
+}
+
+.news-page-header{
+	color: rgb(190, 31, 69);
+	margin-bottom: 10px;
+	font-size:1.6em;
+}
+
+.recent-header{
+	color: rgb(190, 31, 69);
+	font-size:1.2em;
+	padding-bottom: 15px; 
+	border-bottom: solid 5px gray;
+}
+
+.news-list{
+	color: gray;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(227, 227, 227)
+}
+
+.news-list a{
+	color: gray;
+}
+
+
+#footer{
+	clear: both;
 }

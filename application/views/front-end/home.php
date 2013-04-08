@@ -40,7 +40,16 @@
 				<p id="tweet-time">5 mins ago</p>
 			</div>
 		</a>
-		<a href="#" id="likebox"></a>
-	</div>
+		<script type="text/javascript">
+			function myFunction() {
+				 var x = screen.width/2 - 850/2;
+				var y = screen.height/2 - 400/2;
+				window.open('http://facebook.com/CompFest','_blank','width=850,height=400,left='+x+',top='+y);
+				myWindow.focus();
+				return false;
+			}
+		</script>
+		<a id="likebox" type="button" onclick="myFunction()" value=""></a>
+
 </div>
 	    
