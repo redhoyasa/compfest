@@ -1,6 +1,6 @@
 .seminar-instance{
 	margin: 10px;
-	padding: 0;
+	padding: 20px;
 	width: 920px;
 	border-radius: 5px;
 	border: 1px solid #dddddd;
@@ -18,10 +18,10 @@
 }
 
 .seminar-title-instance{
-	font-family : robotoLight;
+	font-family: Tahoma,Arial,sans-serif;
 	font-size: 18px;
 	padding : 10px 10px 0px 15px; 
-	color: #a0a0a0;
+	color: #666666;
 }
 
 .seminar-img-instance{
@@ -37,6 +37,7 @@
 	font-size: 14px;
 	text-align: justify;
 	word-wrap:break-word;
+	line-height: 20px;
 	margin: 15px 15px 15px 0;
 	color:#404040;
 	display: right;
@@ -44,10 +45,10 @@
 
 #seminar-details{
 	text-align: center;
-	font-family : robotoLight;
+	font-family: Tahoma,Arial,sans-serif;
 	font-size: 18px;
 	margin : 10px 0px 15px 0px; 
-	color: #a0a0a0;
+	color: #666666;
 }
 
 .seminar-right-instance{
@@ -64,7 +65,7 @@
 
 #seminar-tulisan-capacity{
 	text-align: center;
-	font-family : robotoLight;
+	font-family: Tahoma,Arial,sans-serif;
 	font-size: 14px;
 	margin : 20px 10px 10px 0px; 
 }
@@ -73,7 +74,7 @@
 	margin: auto;
 	height: 10px;
 	width: 170px;
-	border: 1px solid #a0a0a0;
+	border: 1px solid #dddddd;
 	border-radius: 5px;
 	overflow: hidden;
 }
@@ -83,26 +84,26 @@
 	margin: 0;
 	width: 56%;
 	height: 100%;
-	background: #ed1c24;
+	background: #ff1155;
 }
 
 .seminar-register-button{
 	margin: 10px auto;
 	height: 30px;
 	width: 120px;
-	border: 1px solid #a0a0a0;
+	border: 1px solid white;
 	border-radius: 5px;
 	background-color: #ed1c24;
 	color: #FFF;
 	cursor: pointer;
 
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out; 
+	-o-transition: all 0.4s ease-in-out;
 }
 
 .seminar-register-button:hover{
-	background-color: #ff1c24;
+	background-color: #ff1155;
 }
 
 #seminar-tulisan-register{

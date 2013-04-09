@@ -14,7 +14,8 @@ body{
 	width : 100%;
 	padding : 0px;
 	margin  : 0px;
-	font-family: 'robotoLight', TW Cen MT, Arial;
+	/*font-family: 'robotoLight', TW Cen MT, Arial;*/
+	font-family: Tahoma,Arial,sans-serif;
 }
 
 #wrap{
@@ -172,3 +173,4 @@ nav{
 	margin-left: 75px;
 	padding: 30px;
 }
+
