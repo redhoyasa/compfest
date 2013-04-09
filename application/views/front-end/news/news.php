@@ -2,6 +2,10 @@
 
 		<?php 
 			$r = $this->news_model->get_news_url($url);
+
+			if ($r == false){
+				show_404();
+			}else{
 				if ($r->publish == 1){
 		?>
 			<div class="news-main">
@@ -14,7 +18,7 @@
 			</div>
 		<?php
 				} 
-			
+			}
 		?>
 </div>
 
