@@ -23,12 +23,12 @@
 }
 
 .news-title a{
-	color: blue;
+	color: #4e4e4e;
 }
 
 .news-date{
 	margin-bottom: 10px;
-	font-size:1em;
+	font-size:0.8em;
 	color: #5a5a5a;
 }
 
@@ -42,6 +42,9 @@
 	border-radius: 7px;
 }
 
+.news-content {
+	font-size: 12px;
+}
 .news-page-header{
 	color: rgb(190, 31, 69);
 	margin-bottom: 10px;
