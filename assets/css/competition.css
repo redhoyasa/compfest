@@ -33,7 +33,9 @@
 	width: auto;
 	overflow: auto;
 	display: inline-block;
-	border-top: solid 1px;
+	border-top: solid 1px #dddddd;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .competition-content-desc img {
 	margin: 10px;
@@ -69,7 +71,6 @@
 	height: 30px;
 	width: 120px;
 	float: left;
-	border: 1px solid #a0a0a0;
 	border-radius: 5px;
 	margin-right:5px;
 	background-color: #ed1c24;
@@ -91,3 +92,5 @@
 	color: white;
 	text-indent:0em;
 }
+
+
