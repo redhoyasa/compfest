@@ -14,6 +14,7 @@
 				<div class="news-content">
 				<p><?php echo substr($r->content,0,400)."..."; ?></p>
 				</div>
+					<a class="news-button" href="<?php echo site_url('news/' . $r->url); ?>">Read more</a>
 			</div>
 		<?php
 				} 

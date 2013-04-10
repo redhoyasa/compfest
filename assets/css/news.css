@@ -4,8 +4,28 @@
 	float: left;
 }
 
+.news-button {
+	float : right;
+	border : none;
+	font-size: 12px !important;
+	background : #FF2323;
+	color : #f7f7f7;
+	padding : 3px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 5px;
+	-webkit-transition : all 0.5 ease-in-out;
+	   -moz-transition : all 0.5 ease-in-out;
+	       -transition : all 0.5 ease-in-out;
+}
+
+.news-button:hover {
+	background: red;
+}
+
 .news-top {
 	padding: 30px;
+	padding-bottom: 50px;
 	background: #f9f9f9;
 	border : 1px solid #dddddd;
 	border-radius: 5px;
@@ -68,6 +88,7 @@
 .news-list a{
 	color: gray;
 }
+
 
 
 #footer{
