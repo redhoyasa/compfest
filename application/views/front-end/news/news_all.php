@@ -7,7 +7,7 @@
 			foreach ($row as $r) {
 				if ($r->publish == 1){
 		?>
-			<div class="news-main">
+			<div class="news-main news-top">
 				<div class="news-title"><a href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a> </div>
 				<div class="news-thumbnail"></div>
 				<div class="news-date"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></div>
