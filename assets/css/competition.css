@@ -1,9 +1,6 @@
 h2 {
 	font-size : 30px;
 }
-p {
-	text-align: justify;
-}
 .competition-wrapper {
 	width: inherit;
 	background: white;
@@ -64,6 +61,7 @@ p {
 .competition-wrapper p {
 	margin-bottom: 10px;
 	text-indent: 3em;
+	text-align: justify;
 }
 
 .competition-another-content {
