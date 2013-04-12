@@ -29,7 +29,7 @@
 						<div><p>HOME</p></div>
 					</a></li>
 
-					<li id="menu-about" style="border-bottom: 5px solid #f7931e"><a href="<?php echo base_url(); ?>">
+					<li id="menu-about" style="border-bottom: 5px solid #f7931e"><a href="<?php echo base_url('about'); ?>">
 						<div><p>ABOUT</p></div>
 					</a></li>
 
@@ -53,12 +53,12 @@
 						<div><p>EVENT</p></div></a>
 
 						<ul class="second">
-							<li><a href="#"><div><p>ROADSHOW</p></div></a></li>
-							<li><a href="#"><div><p>SEMINAR</p></div></a></li>
+							<li><a href="<?php echo base_url('roadshow'); ?>"><div><p>ROADSHOW</p></div></a></li>
+							<li><a href="<?php echo base_url('seminar'); ?>"><div><p>SEMINAR</p></div></a></li>
 						</ul>
 					</li>
 
-					<li id="menu-contact" style="border-bottom: 5px solid #8cc63f"><a href="<?php echo base_url(); ?>">
+					<li id="menu-contact" style="border-bottom: 5px solid #8cc63f"><a href="<?php echo base_url('contact'); ?>">
 						<div><p>CONTACT</p></div></a>
 					</li>
 				</ul>
