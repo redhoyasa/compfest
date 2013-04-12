@@ -1,3 +1,4 @@
+<br><br><br>
 <?php
   $team = $this->users_model->get_login_info($this->session->userdata('email'));
   $event = $this->kompetisi_model->getEventById($team->id_event);
@@ -43,7 +44,6 @@
     </div>
     </form>
   </div>
-<hr>
   <div class="grid2 span6 well"><br>
     <h3>Ganti Password</h3>
     <?php 
@@ -74,35 +74,38 @@
     </div>
     </form>
   </div>
-<hr>  
+
   <div style="clear:both;height:10px;">&nbsp;</div>
 <br>
+<hr>
 <?php 
     if($team->payment == '' && $event->payment == '1' ) {
 ?>
     <div class="grid2 well span6 alert">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran
       <br> 
-        <div class="grid2 span6 well"><br>
+        <br>
         Silahkan unggah bukti pembayaran 
           <div class=" grid2 control-group"><br>
           <input type="submit" value="Unggah Bukti" class="grid2 btn btn-primary">
         </div>
-        </div>
     </div>
 <?php } ?>
-<br>
-<hr>
-<div class="grid2 well span6 alert"><?php echo $notif ?>
+
+
+<div class="grid2 span6 alert"><?php echo $notif ?>
+  <br>
   <?php 
     if ($team->team_status == 0) {
   ?>
-   <div class="grid2 span6 well"><br>
+   <br>
     Silahkan melengkapi profil tim Anda
     <div class="grid2 control-group"><br>
         <input type="submit" value="Edit Tim" class="grid2 btn btn-danger">
    </div>
- </div>
+ 
    <?php } ?>
 </div>
 
 </div>
+<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">

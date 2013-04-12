@@ -10,8 +10,8 @@
     <div class="control-group">
     <label class="control-label">Nama</label>
     <div class="controls">
-    <input type="text" name="register_name_p">   
-    <?php echo form_error('register_name_p'); ?>
+    <input type="text" name="register_name_p"> 
+    <br><?php echo form_error('register_name_p'); ?>
     </div>
     </div>
 
@@ -64,7 +64,7 @@
     <label class="control-label">Nama</label>
     <div class="controls">
     <input type="text" name="register_name_<?php echo $r; ?>">   
-    <?php echo form_error('register_name_' . $r); ?>
+    <br><?php echo form_error('register_name_' . $r); ?>
     </div>
     </div>
 
@@ -110,3 +110,4 @@
 </div>
 </form>
 </div>
+<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">

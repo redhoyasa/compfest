@@ -4,6 +4,7 @@
 body {
 	overflow-x : hidden;
 }
+
 h1,h2,h3 {
 	text-align: center;
 	font-family: Arial, Helvetica sans-serif;
@@ -14,15 +15,25 @@ h1 {
 }
 
 .wrapper-dash {
-	padding : 0px 10%;
-	width : 100%;
+	padding : 0px 5%;
+}
+.well {
+	height : 300px;
 }
 
 .alert {
 	text-align:center;
-	width:400px;
-	float:left;
+	width:450px!important;
 	margin-left: 20px;
+	height : 140px;
+}
+
+.control-group {
+	text-align: center;
+}
+
+.btn-danger {
+	text-align: center!important;
 }
 
 .span12 {
