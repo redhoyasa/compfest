@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	var logoLeft = (window.innerWidth-145)/2;
+	$("#logo").css("left",logoLeft+"px");
+
 
 	//LOGIN BAR
 	var buka = 0;
@@ -19,40 +22,17 @@ $(document).ready(function() {
 		}
 	});
 
-
-	//MENU BAR
-	$(".second>li").hover(function(){
-		$(this).animate({
-			opacity:1
-		});
-	},function(){
-		$(this).animate({
-			opacity:0.75
-		});
-	});
-
-
-	$("#menu-event").hover(function(){
-		$("#menu-event>ul").css("display","block");
-		$("#menu-event>ul").animate({
+	$(".menu").hover(function(){
+		$(this).find("ul").css("display","block");
+		$(this).find("ul").animate({
 			opacity:1
 		},200);
 	},function(){
-		$("#menu-event>ul").animate({
+		$(this).find("ul").animate({
 			opacity:0
 		},200);
-		$("#menu-event>ul").css("display","none");
+		$(this).find("ul").css("display","none");
 	});
 
-	$("#menu-competition").hover(function(){
-		$("#menu-competition>ul").css("display","block");
-		$("#menu-competition>ul").animate({
-			opacity:1
-		},200);
-	},function(){
-		$("#menu-competition>ul").animate({
-			opacity:0
-		},200);
-		$("#menu-competition>ul").css("display","none");
-	});
+
 });

@@ -7,9 +7,9 @@
 <div id="middle">
 	<div id="slider-wrapper" class="theme-default">
 	    <div id="slider" class="nivoSlider">
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/bayu.jpg" alt="" title="ini BayuSur"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szaka.jpg" alt="" title="ini ZakaZai"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/szawwaf.jpg" alt="" title="ini Zawwaf"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/redho.jpg" alt="" title="ini RedhoYasha"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zaka.jpg" alt="" title="ini ZakaZai"/>
+	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zawwaf.jpg" alt="" title="ini Zawwaf"/>
 	    </div>
 	</div>
 	<div id="htmlcaption" class="nivo-html-caption">

@@ -17,6 +17,11 @@ body{
 	font-family: 'robotoLight', TW Cen MT, Arial;
 }
 
+#logo{
+	position: absolute;
+	z-index: 1000000;
+}
+
 #wrap{
 	width:1180px;
 	margin: auto;
@@ -108,36 +113,52 @@ nav{
 	z-index: 10;
 }
 
-#first > a > li{
-	width: 14.285714286%;
-	height: 93px;
-	float: left;
-	font-size: 1.0em;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
-}
-
-	#first > a > li > p{
-		margin-top: 60px;
+	#first > li {
+		height: 93px;
+		width: 14.285714286%;
+		float: left;
+		text-decoration: none;
 	}
 
-	.second{
-		margin-top: 20px;
-		display: none;
-		opacity: 0;
-	}
-
-		.second > li{
-			height: 40px;
-			padding-top: 15px; 
-			background-color: #ffffff;
-			opacity: 0.75;
+		#first > li > a > div{
+			height: 93px;
 		}
 
-			.second > li > p{
-				font-size: 0.8em;
+			#first > li > a > div > p{
+				color: #000;
+				font-size: 1.0em;
+				text-align: center;
+				padding-top: 60px;
+				padding-bottom: 10px;
 			}
+
+.second{
+	position: absolute;
+	display: none;
+	opacity: 0;
+	width: inherit;
+}
+
+	.second > li > a > div{
+		height: 40px;
+		padding-top: 15px; 
+		background-color: white;
+		opacity: 0.75;
+
+		-moz-transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+	}
+
+	.second > li > a > div:hover{
+		opacity: 1;
+	}
+
+		.second > li > a > div > p{
+			font-size: 0.8em;
+			text-align: center;
+			color: #000;
+		}
 
 #footer{
 	background-color: white;
