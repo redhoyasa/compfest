@@ -38,7 +38,7 @@
 	tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
 	Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
 	lacus. </p>
-	
+	<br />
 	<hr />
 	
 	<h1>Contact Us!</h1>
