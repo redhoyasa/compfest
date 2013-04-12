@@ -29,11 +29,23 @@
 	color: white;
 }
 
-#overview-header .choose:hover {
-	background-color: rgba(0, 0, 0, 0.5);
+#overview-header #ch1:hover {
+	background: url('../img/overview/header-bg-hover-1.png');
 }
 
-#overview-header .choose p {
+#overview-header #ch2:hover {
+	background: url('../img/overview/header-bg-hover-2.png');
+}
+
+#overview-header #ch3:hover {
+	background: url('../img/overview/header-bg-hover-3.png');
+}
+
+#overview-header #ch4:hover {
+	background: url('../img/overview/header-bg-hover-4.png');
+}
+
+#overview-header .choose span {
 	position: relative;
-	top: 350px;
+	top: 80px;
 }
