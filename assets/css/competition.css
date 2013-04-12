@@ -102,10 +102,10 @@ h2 {
 	-o-transition: 0.5s;	
 }
 
-#competition-tulisan-button{
+.competition-tulisan-button{
 	font-size: 14px;
 	margin: 7px;
-	text-align: center;
+	text-align: center !important;
 	color: white;
-	text-indent:0em;
+	text-indent:0em !important ;
 }
