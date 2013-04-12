@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Computer Festival 2013</title>
+		<title>CompFest 2013</title>
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 		<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url(); ?>assets/js/script.js" type="text/javascript"></script>
