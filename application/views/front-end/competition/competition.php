@@ -39,7 +39,7 @@
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Programming</h1>
 		<div class="competition-closed-button">
-			<a class="comp-button"  href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a class="comp-button"  href="#"><p id="competition-tulisan-register">REGISTER</p></a>
 		</div>
 		<span id="programing-info"></span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 

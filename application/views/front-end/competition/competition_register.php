@@ -10,15 +10,17 @@
 						<div class="controls">
 							<?php echo form_error('team_name'); ?>
 							<input type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="<?php echo set_value('team_name'); ?>">
+							&nbsp;&nbsp;<span class="info" id="nameInfo"></span>
 						</div>
 					</div>
+
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Email</label>
 						<div class="controls">
 							<?php echo form_error('email'); ?>
-							<input type="text" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
-							
+							<input type="email" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
+							&nbsp;&nbsp;<span class="info" id="emailInfo"></span>
 						</div>
 					</div>
 
@@ -26,9 +28,8 @@
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
 							<?php echo form_error('password'); ?>
-							<input type="password" id="inputPassword" name="password"><br>
+							<input type="password" id="inputPassword" name="password">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
 							<br><span class="help-block">Digunakan untuk memasuki member area</span>
-							
 						</div>
 					</div>
 					<br>
@@ -37,7 +38,7 @@
 						<div class="controls">
 							<?php echo form_error('institution'); ?>
 							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="<?php echo set_value('institution'); ?>">	
-	
+							&nbsp;&nbsp;<span class="info" id="institutionInfo"></span>
 						</div>
 					</div>
 					

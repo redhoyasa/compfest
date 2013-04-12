@@ -1,35 +1,36 @@
 .form-horizontal {
-width: 750px;
 display: block;
+font-family: Tahoma, sans-serif;
 margin: 20px auto;
 }
 
+.control-group input[type="radio"] {
+    text-align: none!important;
+}
+
 .control-group{
-width: 550px;
 overflow: hidden;
 padding: 5px;
 }
 
 .control-label{
-width: 120px;
 float: left;
 text-align: right;
+width : 100px;
 margin-bottom: 10px;
 padding-top: 5px;
 font-size: 14px;
-font-family:'Roboto';
+font-family:Tahoma,sans-serif;
 }
 
 .controls-seminar{
 float: left;
 margin: 5px 0 0 20px;
-width: 100px;
 }
 
 .controls {
-font-family: Roboto;
+font-family: Tahoma,sans-serif;
 float: left;
-width: 350px;
 }
 
 
@@ -46,13 +47,13 @@ margin: 0 0 5px 15px;
 }
 
 .form-horizontal button{
-width: 100px;
 height: 30px;
 margin: 5px auto 10px 150px;
 background : #ed1c24;
 border-radius: 5px;
 color: white;
-font-family: Roboto;
+font-family: Tahoma,sans-serif;
+border: none;
 -moz-transition : all 0.5s ease-in-out;
 -webkit-transition : all 0.5s ease-in-out;
 -o-transition : all 0.5s ease-in-out;
@@ -65,36 +66,32 @@ background: #990013;
 }
 
 
-.control-group input[type="text"],.control-group input[type="password"] {
+.control-group input[type="text"],.control-group input[type="password"],.control-group input[type="email"] {
 float: left;
-width: 300px;
 border-radius:3px;
+min-width: 250px;
 height: 10px;
 border: 1px solid #dddddd;
 outline:none;
-font-family:'Roboto';
+font-family:Tahoma, sans-serif;
 padding: 10px;
 margin-left: 20px;
 margin-bottom: 10px;
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
-/*inner shadow*/
+/*inner shadow
 box-shadow: inset 0 0 5px #dddddd;
     -webkit-box-shadow: inset 0 0 5px #dddddd;
-    -moz-box-shadow: inset 0 0 5px #dddddd;
+    -moz-box-shadow: inset 0 0 5px #dddddd;*/
 }
 
 .form-horizontal input:focus {
-    box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
-    -webkit-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
-    -moz-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
-    border:1px solid rgba(237, 28, 36, 0.8);
+    border:1px solid #4d90fe;
 }
 
 .form-horizontal textarea{
-font-family:'Roboto';
-width: 290px;
+font-family:Tahoma,sans-serif;
 border-radius: 3px;
 margin-left: 10px;
 padding: 10px;
@@ -104,15 +101,28 @@ outline:none;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
 /*inner shadow*/
-box-shadow: inset 0 0 5px #dddddd;
-    -webkit-box-shadow: inset 0 0 5px #dddddd;
-    -moz-box-shadow: inset 0 0 5px #dddddd;
+
 }
 .form-horizontal textarea:focus {
-    box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
-    -webkit-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
-    -moz-box-shadow: 0 0 5px rgba(237, 28, 36, 1), 0 0 5px #dddddd inset;
     border:1px solid rgba(237, 28, 36, 0.8);
     border:1px solid rgba(237, 28, 36, 0.8);
 
+}
+
+.error {
+    color : red;
+    font-size: 12px;
+}
+
+.good {
+    border : 1px solid #5AD800!important;
+}
+
+.good-info {
+    color : #5AD800;
+}
+
+.info {
+    font-size: 12px;
+    line-height: 28px;
 }
