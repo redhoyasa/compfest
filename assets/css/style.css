@@ -175,6 +175,7 @@ nav{
 	background-color: white;
 	height: 200px;
 	width: 1180px;
+	overflow: hidden;
 }
 
 #sponsors{

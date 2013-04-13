@@ -91,21 +91,20 @@
     </div>
 <?php } ?>
 
-
-<div class="grid2 span6 success"><?php echo $notif ?>
-  <br>
-  <?php 
+<?php 
     if ($team->team_status == 0) {
   ?>
+<div class="grid2 span6 alert"><?php echo $notif ?>
+  <br>
    <br>
     Silahkan melengkapi profil tim Anda
     <div class="grid2 control-group"><br>
         <input type="submit" value="Edit Tim" class="grid2 btn btn-danger">
    </div>
- 
-   <?php } ?>
-</div>
-
+</div><?php } 
+else { ?>
+  <div class="grid2 span6 success"><p><?php echo $notif ?></p></div>
+<?php } ?>
 </div>
 <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">
