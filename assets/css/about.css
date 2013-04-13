@@ -36,6 +36,8 @@
 #about-wrapper p {
 	margin-bottom: 10px;
 	text-indent: 3em;
+	line-height: 20px;
+	text-align: justify;
 }
 
 #about-another-content {

@@ -109,3 +109,4 @@
 </div>
 <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
