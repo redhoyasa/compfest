@@ -5,7 +5,12 @@
 <div id="overview-wrapper">
 	<div id="overview-header">
 		<a class="choose" id="ch1" href="<?php echo base_url(); ?>overview/2009">
-			<div id="overview-2009"></div>
+			<div id="ch1content" style="display:none">
+				<img src="<?php echo base_url(); ?>assets/img/overview/logo2009color.png" />
+				<br />
+				<br />
+				2009
+			</div>
 			<span>
 				<img src="<?php echo base_url(); ?>assets/img/overview/logo2009black.png" />
 				<br />
@@ -14,7 +19,12 @@
 			</span>
 		</a>
 		<a class="choose" id="ch2" href="<?php echo base_url(); ?>overview/2010">
-			<div id="overview-2010"></div>
+			<div id="ch2content" style="display:none">
+				<img src="<?php echo base_url(); ?>assets/img/overview/logo2010color.png" />
+				<br />
+				<br />
+				2010
+			</div>
 			<span>
 				<img src="<?php echo base_url(); ?>assets/img/overview/logo2010black.png" />
 				<br />
@@ -23,7 +33,12 @@
 			</span>
 		</a>
 		<a class="choose" id="ch3" href="<?php echo base_url(); ?>overview/2011">
-			<div id="overview-2011"></div>
+			<div id="ch3content" style="display:none">
+				<img src="<?php echo base_url(); ?>assets/img/overview/logo2011color.png" />
+				<br />
+				<br />
+				2011
+			</div>
 			<span>
 				<img src="<?php echo base_url(); ?>assets/img/overview/logo2011black.png" />
 				<br />
@@ -32,7 +47,12 @@
 			</span>
 		</a>
 		<a class="choose" id="ch4" href="<?php echo base_url(); ?>overview/2012">
-			<div id="overview-2012"></div>
+			<div id="ch4content" style="display:none">
+				<img src="<?php echo base_url(); ?>assets/img/overview/logo2012color.png" />
+				<br />
+				<br />
+				2012
+			</div>
 			<span>
 				<img src="<?php echo base_url(); ?>assets/img/overview/logo2012black.png" />
 				<br />
