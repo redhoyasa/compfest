@@ -97,7 +97,7 @@ h2 {
 	border-radius: 4px;
 	margin-right:5px;
 	background-color: #4d4d4d;
-	color: #f2f2f2;
+	color: #f2f2f2 !important;
 	cursor: pointer;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -107,9 +107,9 @@ h2 {
 #competition-tulisan-button{
 	font-size: 14px;
 	margin: 7px;
-	text-align: center;
+	text-align: center !important;
 	color: white;
-	text-indent:0em;
+	text-indent:0em !important;
 }
 
 
