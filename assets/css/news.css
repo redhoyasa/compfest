@@ -89,8 +89,11 @@
 	color: gray;
 }
 
-
+.twitter-share-button {
+	margin-top : 10px!important;
+}
 
 #footer{
 	clear: both;
 }
+
