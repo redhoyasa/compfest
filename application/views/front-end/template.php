@@ -10,18 +10,32 @@
 
 	<body>
 		<div id="wrap">
-			<div id="login">
-				<input class="field" type="text" name="username" placeholder=" username" style="margin-left:40px;">
-				<input class="field" type="password" name="password" placeholder=" password">
-				<input id="button-go" type="submit" name="login" value="GO!">
-				<p id="forgot">or, <a href="#">forgot password?</a></p>
-				<div id="button-login">LOGIN</div>
-			</div>
-			<!--
-			<div id="logout">
-				<p>Hi,&nbsp;</p><p id="user" style="font-weight:bold;">RwCn</p><p>&nbsp;:)&nbsp;|&nbsp;</p><a href="#">settings</a><p>&nbsp;|&nbsp;</p><a href="#">LOGOUT</a>
-			</div>
-			-->
+
+			<?php 
+				if(!$this->access->is_login()) { 
+			?>
+					<div id="login">
+					<form method="post" action="<?php echo site_url('auth/login'); ?>">
+						<input class="field" type="text" name="email" placeholder=" e-mail" style="margin-left:40px;">
+						<input class="field" type="password" name="password" placeholder=" password">
+						<input id="button-go" type="submit" name="login" value="GO!">
+						<p id="forgot">or, <a href="#">forgot password?</a></p>
+						<div id="button-login">LOGIN</div>
+					</form>
+				</div>
+			<?php
+				}else{
+			?>
+				<div id="logout">
+					<p>Login sebagai &nbsp;</p><p id="user" style="font-weight:bold;"><a href="<?php echo site_url('member'); ?>"><?php echo $this->session->userdata('email'); ?></a></p><p>,&nbsp;</p><a style="color:red;"href="<?php echo site_url('auth/logout'); ?>">Logout</a>
+				</div>
+			<?php
+				}	
+			?>
+			
+			
+			
+			
 			<a href="#"><div id="logo"><img src="<?php echo base_url(); ?>assets/img/Logo-web.png"></div></a>
 			<nav>
 				<ul id="first">

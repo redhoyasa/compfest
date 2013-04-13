@@ -39,6 +39,13 @@ body{
 	top:-30px;
 }
 
+#user-info{
+	right: 93px;
+	width: 474px;
+	height: 53px;
+	position: absolute;
+}
+
 .field{
 	width: 110px;
 	border: 1px solid #ed1c24;
@@ -95,7 +102,6 @@ body{
 
 #logout{
 	padding: 7px 20px 0 20px;
-	background-image: url('../img/logout-bg.png');
 	background-repeat: no-repeat;
 	width:215px;
 	height: 24px;
@@ -104,10 +110,12 @@ body{
 	font-size: 0.7em;
 }
 
+
 	#logout p,#logout a{
 		float: left;
-		color: white;
+		color: black;
 	}
+
 
 nav{
 	position: relative;
