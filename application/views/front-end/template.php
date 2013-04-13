@@ -6,6 +6,11 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 		<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url(); ?>assets/js/script.js" type="text/javascript"></script>
+		<style>
+			.logout:hover {
+				text-decoration: underline;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -27,7 +32,7 @@
 				}else{
 			?>
 				<div id="logout">
-					<p>Login sebagai &nbsp;</p><p id="user" style="font-weight:bold;"><a href="<?php echo site_url('member'); ?>"><?php echo $this->session->userdata('email'); ?></a></p><p>,&nbsp;</p><a style="color:red;"href="<?php echo site_url('auth/logout'); ?>">Logout</a>
+					<p>Login sebagai &nbsp;</p><p id="user" style="font-weight:bold;"><a href="<?php echo site_url('member'); ?>"><?php echo $this->session->userdata('email'); ?></a></p><p>,&nbsp;</p><a class="logout" style="color:red;"href="<?php echo site_url('auth/logout'); ?>">logout</a>
 				</div>
 			<?php
 				}	

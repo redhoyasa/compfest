@@ -21,6 +21,8 @@ body{
 #logo{
 	position: absolute;
 	z-index: 1000000;
+	left: 50%!important;
+	margin-left: -72.5px;
 }
 
 #wrap{
