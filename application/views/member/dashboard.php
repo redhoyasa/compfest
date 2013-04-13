@@ -5,7 +5,7 @@
   $nama = $team->team_name;
   switch($team->team_status) {
     case 0: $notif = "Tim ".$team->team_name ." belum melengkapi profile anggota tim"; break;
-    case 1: $notif = "Profil tim ".$team->team_name ." sudah lengkap, harap tunggu finlasisasi panitia unggah bukti pembayaran"; break;
+    case 1: $notif = "Profil tim ".$team->team_name ." sudah lengkap, harap tunggu finalisasi panitia unggah bukti pembayaran"; break;
     case 2: $notif = "Tim ".$team->team_name ." sudah finalisasi sebagai peserta"; break;
   }
 ?>
@@ -13,7 +13,7 @@
   <h1 class="h1" style="text-align:center;">Selamat Datang Tim <?php echo $nama;?></h1><br>
   <hr>
   <div class="grid2 span6 well">
-    <h3>Profile Tim</h3>
+    <h3>Profile Tim</h3><br>
     <form class="form-horizontal">
     <div class="control-group">
     <label class="control-label">Nama Tim</label>
@@ -92,7 +92,7 @@
 <?php } ?>
 
 
-<div class="grid2 span6 alert"><?php echo $notif ?>
+<div class="grid2 span6 success"><?php echo $notif ?>
   <br>
   <?php 
     if ($team->team_status == 0) {

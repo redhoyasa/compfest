@@ -12,7 +12,7 @@
 				<div class="news-thumbnail"></div>
 				<div class="news-date"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></div>
 				<div class="news-content">
-				<p><?php echo substr($r->content,0,400)."..."; ?></p>
+				<p><?php echo substr(strip_tags($r->content),0,400)." ..."; ?></p>
 				</div>
 					<a class="news-button" href="<?php echo site_url('news/' . $r->url); ?>">Read more</a>
 			</div>
