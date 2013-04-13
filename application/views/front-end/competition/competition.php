@@ -10,7 +10,7 @@
 
 	<div class="competition-content-desc">
 		<h1>Competition</h1>
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left;" />
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left;" />
 		<h2>Kompetisi dengan total hadiah 1 miliar pake gopean</h2>
 		<p>Kompetisi tahunan yang diadakan setiap bulan agustus dengan tema merah putih ini merupakan kompetisi bergengsi atar warga se-er-te.
 		Berbagai kompetisi yang dihadirkan adalah lomba masukin kerupuk ke dalam botol, lomba makan pinang, lomba balap tambang, dan lomba tarik kerupuk.
@@ -23,7 +23,7 @@
 	</div>
 	
 	<div class="competition-content-desc">
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail2.gif" alt="Harusnya muncul gambar disini" style="float:right;"  />
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail2.png" alt="Harusnya muncul gambar disini" style="float:right;"  />
 		<p> Hadiahnya lumayan, 1 miliar pake gopean. bisa buat beli gorengan sampe akhir hayat. Ga perlu repot repot lagi nyari gopean 
 		buat parkir misalnya. atau buat ngisengin orang pake telepon umum. duit gopeaannya juga bisa buat maen tepokan, maen tazoz, maen karambol
 		juga bisa pake gopean. so tunggu apa lagi? buruan ikut CompFest! B)
@@ -36,12 +36,12 @@
 
 <div class="competition-wrapper">
 	<div class="competition-content">
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Programming</h1>
-		<div class="competition-register-button">
-			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+		<div class="competition-closed-button">
+			<a class="comp-button"  href="#"><p id="competition-tulisan-button">CLOSED</p></a>
 		</div>
-		<span id="programing-info">yeyey lalala uts suram</span>
+		<span id="programing-info"></span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
 		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
 		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
@@ -54,12 +54,12 @@
 	</div>
 	
 	<div class="competition-content">
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Robotic</h1>
 		<div class="competition-register-button">
-			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-button">REGISTER</p></a>
 		</div>
-		<span id="robotic-info">yeyey lalala uts suram</span>
+		<span id="robotic-info"> Pendaftaran ditutup pada 17 September 2013</span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
 		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
 		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
@@ -72,12 +72,66 @@
 	</div>
 	
 	<div class="competition-content">
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.gif" alt="Harusnya muncul gambar disini" style="float:left" />
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>3D Animation</h1>
 		<div class="competition-register-button">
-			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-register">REGISTER</p></a>
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-button">REGISTER</p></a>
 		</div>
-		<span id="3Danimation-info">yeyey lalala uts suram</span>
+		<span id="3Danimation-info"> Pendaftaran ditutup pada 17 September 2013</span>
+		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
+		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
+		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
+		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
+		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
+		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
+		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
+		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
+		lacus.</p>
+	</div>
+	
+	<div class="competition-content">
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
+		<h1>Makan Karung</h1>
+		<div class="competition-register-button">
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-button">REGISTER</p></a>
+		</div>
+		<span id="makan-karung-info"> Pendaftaran ditutup pada 17 September 2013</span>
+		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
+		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
+		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
+		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
+		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
+		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
+		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
+		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
+		lacus.</p>
+	</div>
+	
+	<div class="competition-content">
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
+		<h1>Tarik Kerupuk</h1>
+		<div class="competition-register-button">
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-button">REGISTER</p></a>
+		</div>
+		<span id="tarik-kerupuk-info"> Pendaftaran ditutup pada 17 September 2013</span>
+		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
+		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
+		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
+		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
+		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
+		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
+		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
+		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
+		lacus.</p>
+	</div>
+	
+	<div class="competition-content">
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
+		<h1>Panjat Botol</h1>
+		<div class="competition-register-button">
+			<a href="<?php echo site_url('competition/register');?>"><p id="competition-tulisan-button">REGISTER</p></a>
+		</div>
+		<span id="panjat-botol-info"> Pendaftaran ditutup pada 17 September 2013</span>
 		<p class="competition-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
 		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
 		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 

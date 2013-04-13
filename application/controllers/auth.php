@@ -6,7 +6,9 @@ class Auth extends CI_Controller {
 	 * Fungsi untuk menampilan login form untuk peserta
 	 */
 	public function index() {
-		$this->template->display('auth/login');
+		if($this->access->is_login()) {
+			redirect("member/dashboard");
+		} else $this->template->display('auth/login');
 	}
 
 	/*

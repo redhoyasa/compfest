@@ -64,3 +64,7 @@
 	text-align: left;
 	margin-top: 10px;
 }
+
+#contact-list li a table tr td{
+	padding-right: 5px;
+}

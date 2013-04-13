@@ -1,0 +1,61 @@
+/**
+	Style for the dashboard
+*/
+body {
+	overflow-x : hidden;
+}
+
+h1,h2,h3 {
+	text-align: center;
+	font-family: Arial, Helvetica sans-serif;
+}
+
+h1 {
+	font-size : 30px;
+}
+
+.wrapper-dash {
+	padding : 0px 5%;
+}
+.well {
+	height : 300px;
+}
+
+.alert {
+	text-align:center;
+	width:450px!important;
+	margin-left: 20px;
+	height : 140px;
+}
+
+.success {
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+	background-color: #8AE26C;
+	border: 1px solid #41A821;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	width: 450px!important;
+	margin-left: 20px;
+	height: 140px;
+}
+
+.success p {
+	color : #41A821;
+	margin-top: 50px;
+}
+
+.control-group {
+	text-align: center;
+}
+
+.btn-danger {
+	text-align: center!important;
+}
+
+.span12 {
+	padding-left: 21%;
+}

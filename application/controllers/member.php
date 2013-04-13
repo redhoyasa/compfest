@@ -17,7 +17,7 @@ class Member extends Member_Controller {
 
 	function update() {
 		$this->form_validation->set_rules('password', 'Password', 'matches[re_password]|required');
-		$this->form_validation->set_error_delimiters('<div class="alert alert-error" style="text-align:center";">', '</div>');
+		$this->form_validation->set_error_delimiters('<div class="alert-error" style="text-align:center;padding:5px;border-radius:5px;">', '</div><br>');
 		$this->form_validation->set_message('matches','%s tidak sesuai');
 		$this->form_validation->set_message('required','%s harus diisi');
 
