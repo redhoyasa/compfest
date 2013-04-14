@@ -1,0 +1,37 @@
+h1 {
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.container {
+	padding : 10px;
+	padding-bottom: 20px;
+	background: #f9f9f9;
+	border : 1px solid #dddddd;
+	border-radius: 5px;
+	margin: auto;
+	max-width: 400px;
+	text-align: center;
+}
+
+form {
+	display: inline;
+}
+
+.btn {
+	border : none;
+	font-size: 14px !important;
+	background : #FF2323;
+	color : #f7f7f7;
+	padding : 5px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 5px;
+	-webkit-transition : all 0.5s ease-in-out;
+	   -moz-transition : all 0.5s ease-in-out;
+	       -transition : all 0.5s ease-in-out;
+}
+
+.btn:hover {
+	background: red;
+}

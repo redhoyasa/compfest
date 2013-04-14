@@ -1,10 +1,10 @@
-    <div class="container">
+<br>
+<div class="container">
 		<div class="row">
             <div class="page-header" style="text-align: center;">
-                <h1>Login</h1>
+                <h3>Login</h3>
             </div>
         </div>
-
         <div class="well" style="margin: auto; width: 40%; text-align: center;">
 			<?php if(validation_errors()) { ?>
 				<div class="alert alert-error">
@@ -12,12 +12,13 @@
 				</div>
 			<?php } ?>
             <form action="<?php echo site_url('auth/login');?>" method="post">
-                <h2>Email</h2>
-                <input type="text" name="email" /><br />
-				<h2>Password</h2>
-				<input type="password" name="password" /><br />
-                <input type="submit" class="btn btn-primary" value="login" />
+                <h4>Email</h4>
+                <input type="text" name="email" />
+				<h4>Password</h4>
+				<input type="password" name="password" /><br><br>
+                <input type="submit" class="btn btn-danger" value="LOGIN" />
             </form>
         </div>
-    </div><!-- /container -->
-    
+    </div><!-- /container >
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/login.css"-->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/bootstrap.min.css">  
