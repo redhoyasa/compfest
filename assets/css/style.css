@@ -4,6 +4,11 @@
 	src : url("../font/Roboto-Light.ttf");
 }
 
+@font-face {
+	font-family: 'OpenSans';
+	src : url("../font/OpenSans-Regular.ttf");
+}
+
 html, body{
 	height: 100%;
 }

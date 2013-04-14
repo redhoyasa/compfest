@@ -2,6 +2,7 @@
 	margin-left: 0;
 	width: 820px;
 	float: left;
+	font-family: 'OpenSans';
 }
 
 .news-button {
@@ -35,6 +36,8 @@
 	margin-top: 30px;
 	margin-bottom: 10px;
 	line-height: 24px;
+	font-size: 14px;
+	text-align: justify;
 }
 
 .news-title{
@@ -89,8 +92,22 @@
 	color: gray;
 }
 
-.fb-like {
+.news-list a:hover {
+	color : #4e4e4e;
+}
+
+
+
+.twitter-hack {
+	vertical-align: top!important;
+}
+
+div {
 	vertical-align: middle!important;
+}
+
+.fb-like {
+	margin-bottom: 10px!important;
 }
 
 #footer{
