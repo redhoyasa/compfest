@@ -16,9 +16,10 @@
                 <input type="text" name="email" />
 				<h4>Password</h4>
 				<input type="password" name="password" /><br><br>
-                <input type="submit" class="btn btn-danger" value="LOGIN" />
+                <input type="submit" class="btn btn-small" value="LOGIN" />
             </form>
         </div>
     </div><!-- /container >
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/login.css"-->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/bootstrap.min.css">  
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/style.css">  
