@@ -20,6 +20,7 @@
       ul.parsley-error-list li {
           line-height: 11px;
           margin-left: 20px;
+          color: red;
       }
 </style>
 
@@ -41,7 +42,7 @@
 
 
 					<div class="control-group">
-						<label class="control-label" for="inputEmail">Email</label>
+						<label class="control-label" for="inputEmail">E-mail</label>
 						<div class="controls">
 							<?php echo form_error('email'); ?>
 							<input data-required="true" data-type="email" data-trigger="change" type="email" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
@@ -53,7 +54,7 @@
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
 							<?php echo form_error('password'); ?>
-							<input data-required="true" data-trigger="change" data-minlength="6" type="password" id="inputPassword" name="password">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
+							<input data-minlength-message="Panjang password minimal 6 karakter" data-required="true" data-trigger="change" data-minlength="6" type="password" id="inputPassword" name="password">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
 							<br><span class="help-block">Digunakan untuk memasuki member area</span>
 						</div>
 					</div>
