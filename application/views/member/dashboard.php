@@ -86,7 +86,9 @@
         <br>
         Silahkan unggah bukti pembayaran 
           <div class=" grid2 control-group"><br>
-          <input type="submit" value="Unggah Bukti" class="grid2 btn btn-primary">
+            <form action="<?php echo site_url('member/payment'); ?>">
+                <input type="submit" value="Unggah Bukti" class="grid2 btn btn-primary">
+            </form>
         </div>
     </div>
 <?php } ?>
@@ -99,7 +101,9 @@
    <br>
     Silahkan melengkapi profil tim Anda
     <div class="grid2 control-group"><br>
+      <form action="<?php echo site_url('member/edit'); ?>">
         <input type="submit" value="Edit Tim" class="grid2 btn btn-danger">
+      </form>  
    </div>
 </div><?php } 
 else { ?>
