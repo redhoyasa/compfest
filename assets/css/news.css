@@ -2,6 +2,7 @@
 	margin-left: 0;
 	width: 820px;
 	float: left;
+	font-family: Tahoma,sans-serif;
 }
 
 .news-button {
@@ -14,9 +15,9 @@
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 	border-radius: 5px;
-	-webkit-transition : all 0.5 ease-in-out;
-	   -moz-transition : all 0.5 ease-in-out;
-	       -transition : all 0.5 ease-in-out;
+	-webkit-transition : all 0.5s ease-in-out;
+	   -moz-transition : all 0.5s ease-in-out;
+	       -transition : all 0.5s ease-in-out;
 }
 
 .news-button:hover {
@@ -35,6 +36,8 @@
 	margin-top: 30px;
 	margin-bottom: 10px;
 	line-height: 24px;
+	font-size: 14px;
+	text-align: justify;
 }
 
 .news-title{
@@ -89,8 +92,22 @@
 	color: gray;
 }
 
-.fb-like {
+.news-list a:hover {
+	color : #4e4e4e;
+}
+
+
+
+.twitter-hack {
+	vertical-align: top!important;
+}
+
+div {
 	vertical-align: middle!important;
+}
+
+.fb-like {
+	margin-bottom: 10px!important;
 }
 
 #footer{
