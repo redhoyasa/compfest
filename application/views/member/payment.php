@@ -1,9 +1,9 @@
-<form class="form-horizontal" method="post" action="<?php echo site_url('member/payment'); ?>" enctype="multipart/form-data">
-
+<div style="height:50px;">&nbsp;</div>
 <!-- Pembimbing -->
-<div class="span6 well" style="text-align:center;">
+<div class="span6 well" style="position:relative;left:50%;margin-left:-250px;">
+<form style="text-align:center;margin:auto;"class="form-horizontal" method="post" action="<?php echo site_url('member/payment'); ?>" enctype="multipart/form-data">
     <h3>Unggah Bukti Pembayaran</h3>
-
+    <br>
     <?php 
         $td = $this->kompetisi_model->get_team($this->users_model->get_login_info($this->session->userdata('email'))->id_team);
         if($td->payment != '') {
@@ -18,12 +18,9 @@
     <input type="file" name="payment">
     </div>
     </div>
-
-    <div class="control-group">
-    <label class="control-label"></label>
-    <div class="controls">
     <input type="submit" value="Unggah" class="btn btn-danger">
-    </div>
-    </div>
-</div>
 </form>
+</div>
+
+<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
