@@ -118,5 +118,7 @@
     </div>
 </div>
  <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" media="screen">
+
 
 <?php } ?>

@@ -178,9 +178,9 @@ nav{
 
 #footer{
 	background-color: white;
-	height: 200px;
-	width: 1180px;
-	
+	height: 200px!important;
+	width: 1180px!important;
+	overflow: hidden;
 }
 
 #sponsors{

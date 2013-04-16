@@ -1,10 +1,11 @@
- <h2 style="text-align:center;">Edit Profile Tim</h2>
+<div style="height:50px;">&nbsp;</div>
+<h2 style="text-align:center;">Edit Profile Tim</h2><br>
 <div class="wrapper-dash">
 <form class="form-horizontal" method="post" action="<?php echo site_url('member/update_member'); ?>" enctype="multipart/form-data">
 
 <!-- Pembimbing -->
 <div class="span6 well">
-    <h3>Pembimbing</h3>
+    <h3>Pembimbing</h3><br><br>
     <input type="hidden" name="register_role_p" value="9">
 
     <div class="control-group">
@@ -54,9 +55,9 @@
 <div class="span6 well">
 
     <?php if($r != 1) { ?>
-    <h3>Anggota <?php echo $r ?></h3>
+    <h3>Anggota <?php echo $r ?></h3><br>
     <?php } else { ?>
-    <h3>Ketua Tim</h3>
+    <h3>Ketua Tim</h3><br>
     <?php } ?>
     <input type="hidden" name="register_role_<?php echo $r; ?>" value="<?php echo $r ?>">
 
@@ -100,14 +101,11 @@
 
 
 
-<div class="span12">
-    <div class="control-group">
-    <label class="control-label"></label>
-    <div class="controls">
-    <input type="submit" value="Simpan" class="btn-large btn btn-danger">
-    </div>
-    </div>
-</div>
+
+        <h3><input type="submit" value="Simpan" class="btn-large btn btn-danger"><br></h3>
+
 </form>
 </div>
 <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">
+<link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" media="screen">
