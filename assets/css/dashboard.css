@@ -18,11 +18,15 @@ h1,h2 {
 	font-weight: bold;
 }
 
+h2 {
+	font-size: 30px!important;
+}
+
 .wrapper-dash {
 	padding : 0px 5%;
 }
 .well {
-	height : 300px;
+	height : 320px;
 }
 
 .alert {
@@ -30,6 +34,11 @@ h1,h2 {
 	width:450px!important;
 	margin-left: 20px;
 	height : 140px;
+}
+
+.edit {
+	text-align : center;
+	margin: auto;
 }
 
 .success {
@@ -66,3 +75,17 @@ h1,h2 {
 	text-shadow : none;
 }
 
+.control-label {
+	font-size : 14px!important;
+}
+
+.well {
+	padding-bottom: 20px!important;
+}
+
+
+.confirm {
+	font-size: 12px!important;
+	padding : 5px!important;
+	border-radius: 5px;
+}
