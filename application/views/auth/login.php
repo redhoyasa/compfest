@@ -1,5 +1,7 @@
-<br>
+
 <div class="container">
+    <div class="space">&nbsp;</div>
+    <div class="login-container">
 		<div class="row">
             <div class="page-header" style="text-align: center;">
                 <h3>Login</h3>
@@ -12,14 +14,14 @@
 				</div>
 			<?php } ?>
             <form action="<?php echo site_url('auth/login');?>" method="post">
-                <h4>Email</h4>
-                <input type="text" name="email" />
-				<h4>Password</h4>
-				<input type="password" name="password" /><br><br>
+                Email
+                <input class="wow" type="text" name="email" />
+				Password
+				<input class="wow" type="password" name="password" /><br><br>
                 <input type="submit" class="btn btn-small" value="LOGIN" />
             </form>
         </div>
-    </div><!-- /container >
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/login.css"-->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/bootstrap.min.css"> 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/style.css">  
+    </div>
+</div><!-- /container --> 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/login.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/style.css"> 

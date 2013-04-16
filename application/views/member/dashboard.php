@@ -8,18 +8,20 @@
     case 2: $notif = "Tim ".$team->team_name ." sudah finalisasi sebagai peserta."; break;
   }
 ?>
-<h2 style="text-align:center;">Selamat Datang Tim <?php echo $nama;?></h2>
+<div style="height:100px;">&nbsp;</div>
+<h2 style="text-align:center;">Selamat Datang Tim <?php echo $nama;?></h2><br>
 <div class="wrapper-dash">
 
 <div class="row-fluid">
     
     <?php if($team->team_status == 0) { ?>
-      <span class="alert span12">
-      <a href="<?php echo site_url('member/edit'); ?>">Edit Tim</a>
-      <a href="<?php echo site_url('member/detail'); ?>">Detail Tim</a>
-      <a href="<?php echo site_url('member/payment'); ?>">Unggah Bukti Pembayaran</a>
+      <span class="menu-team">
+      <a class="btn btn-warning tekan" href="<?php echo site_url('member/edit'); ?>">Edit Tim</a>
+      <a class="btn btn-warning tekan" href="<?php echo site_url('member/detail'); ?>">Detail Tim</a>
+      <a class="btn btn-warning tekan" href="<?php echo site_url('member/payment'); ?>">Unggah Bukti Pembayaran</a>
       </span>
     <?php } ?>
+    <br><br><br>
 
     <?php if($team->team_status == 1) { ?>
       <span class="alert span12">
@@ -36,18 +38,18 @@
     <?php } ?>
 
     <?php if($team->payment == '' && $event->payment == '1' ) { ?>
-    <span class="span12 alert alert-error">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran</span>
+    <span class="well alert alert-error">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran</span>
     <?php } ?>
-    <span class="span12 alert alert-error"><?php echo $notif ?></span>
+    <span class="well alert alert-error"><?php echo $notif ?></span>
     <?php if($team->team_status == 1) { ?>
       <span class="span12 alert">Dengan melakukan konfirmasi, kami menyetujui segala peraturan Kompetisi Compfest 2013. Segala data yang kami kirim dapat kami pertanggung jawabkan kebenarannya (blablabla kaya pesan persetujuan mengikuti kompetisi gitu dah)
       <a href="<?php echo site_url('member/confirm'); ?>">Selesaikan Pendaftaran</a></span>
     <?php } ?>
 </div>
-
+<br>
 <div class="row-fluid">
   <div class="span6 well">
-    <h3>Profile Tim</h3>
+    <h3>Profile Tim</h3><br><br>
     <form class="form-horizontal">
     <div class="control-group">
     <label class="control-label">Nama Tim</label>
@@ -80,7 +82,7 @@
   </div>
 
   <div class="span6 well">
-    <h3>Ganti Password</h3>
+    <h3>Ganti Password</h3><br><br>
     <?php 
     echo validation_errors(); 
     if(isset($passu)) {
@@ -113,8 +115,7 @@
   </div>  
 </div>
 <div style="clear:both;height:10px;">&nbsp;</div>
-
-
 </div>
 <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">

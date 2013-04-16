@@ -14,6 +14,10 @@ h1 {
 	font-size : 30px;
 }
 
+h1,h2 {
+	font-weight: bold;
+}
+
 .wrapper-dash {
 	padding : 0px 5%;
 }
@@ -56,6 +60,9 @@ h1 {
 	text-align: center!important;
 }
 
-.span12 {
-	padding-left: 21%;
+.tekan {
+	padding : 6px!important;
+	font-size: 13px!important;
+	text-shadow : none;
 }
+
