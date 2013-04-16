@@ -21,30 +21,7 @@
       <a class="btn btn-warning tekan" href="<?php echo site_url('member/payment'); ?>">Unggah Bukti Pembayaran</a>
       </span>
     <?php } ?>
-    <br><br><br>
-
-    <?php if($team->team_status == 1) { ?>
-      <span class="alert span12">
-      <a href="<?php echo site_url('member/edit'); ?>" onclick="return confirm('Profile tim anda sudah lengkap, perubahan anggota mengharuskan anda mengisi form anggota dari awal.')">Edit Tim</a>
-      <a href="<?php echo site_url('member/detail'); ?>">Lihat Tim</a>
-      <a href="<?php echo site_url('member/payment'); ?>">Unggah Bukti Pembayaran</a>
-      </span>
-    <?php } ?>
-
-    <?php if($team->team_status == 2) { ?>
-      <span class="alert span12">
-      Anda telah terdaftar sebagai peserta Kompetisi <?php echo $this->kompetisi_model->getEventById($team->id_event)->event_name; ?>
-      </span>
-    <?php } ?>
-
-    <?php if($team->payment == '' && $event->payment == '1' ) { ?>
-    <span class="well alert alert-error">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran</span>
-    <?php } ?>
-    <span class="well alert alert-error"><?php echo $notif ?></span>
-    <?php if($team->team_status == 1) { ?>
-      <span class="span12 alert">Dengan melakukan konfirmasi, kami menyetujui segala peraturan Kompetisi Compfest 2013. Segala data yang kami kirim dapat kami pertanggung jawabkan kebenarannya (blablabla kaya pesan persetujuan mengikuti kompetisi gitu dah)
-      <a href="<?php echo site_url('member/confirm'); ?>">Selesaikan Pendaftaran</a></span>
-    <?php } ?>
+    <br>
 </div>
 <br>
 <div class="row-fluid">
@@ -115,6 +92,31 @@
   </div>  
 </div>
 <div style="clear:both;height:10px;">&nbsp;</div>
+
+
+    <?php if($team->team_status == 1) { ?>
+      <span class="alert span12">
+      <a href="<?php echo site_url('member/edit'); ?>" onclick="return confirm('Profile tim anda sudah lengkap, perubahan anggota mengharuskan anda mengisi form anggota dari awal.')">Edit Tim</a>
+      <a href="<?php echo site_url('member/detail'); ?>">Lihat Tim</a>
+      <a href="<?php echo site_url('member/payment'); ?>">Unggah Bukti Pembayaran</a>
+      </span>
+    <?php } ?>
+
+    <?php if($team->team_status == 2) { ?>
+      <span class="alert span12">
+      Anda telah terdaftar sebagai peserta Kompetisi <?php echo $this->kompetisi_model->getEventById($team->id_event)->event_name; ?>
+      </span>
+    <?php } ?>
+
+    <?php if($team->payment == '' && $event->payment == '1' ) { ?>
+    <span class="well alert alert-error">Tim <?php echo $team->team_name; ?> belum mengunggah bukti pembayaran</span>
+    <?php } ?>
+    <span class="well alert alert-error"><?php echo $notif ?></span>
+    <?php if($team->team_status == 1) { ?>
+      <span class="span12 alert">Dengan melakukan konfirmasi, kami menyetujui segala peraturan Kompetisi Compfest 2013. Segala data yang kami kirim dapat kami pertanggung jawabkan kebenarannya (blablabla kaya pesan persetujuan mengikuti kompetisi gitu dah)
+      <a href="<?php echo site_url('member/confirm'); ?>">Selesaikan Pendaftaran</a></span>
+    <?php } ?>
+
 </div>
 <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet" media="screen">
