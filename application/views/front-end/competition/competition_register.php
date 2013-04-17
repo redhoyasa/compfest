@@ -54,7 +54,7 @@
 						<div class="controls">
 							<?php echo form_error('password'); ?>
 							<input data-minlength-message="Panjang password minimal 6 karakter" data-required="true" data-trigger="change" data-minlength="6" type="password" id="inputPassword" name="password">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
-							<br><span class="help-block">Digunakan untuk memasuki member area</span>
+							<br><span class="help-block">*Digunakan untuk memasuki member area</span>
 						</div>
 					</div>
 					<br>
@@ -87,7 +87,7 @@
 
 				<div class="control-group">
 						<div class="controls">
-							<button onclick="javascript:$('#demo-form').parsley( 'validate' );" type="submit" class="btn">Register</button>
+							<button onclick="javascript:$('#demo-form').parsley( 'validate' );" type="submit" class="btn">REGISTER</button>
 					</div>
 				</div>
 		</form>
