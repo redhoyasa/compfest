@@ -32,17 +32,27 @@
 		</p>
 	</div>	
 
+	<script type="text/javascript">
+		//var url = 'http://search.twitter.com/search.json?q=from:compfest';
+		var url = 'tweet.json';
+		$(document).ready(function() {
+		    $.getJSON(url, function(data) {
+		        alert(data.results[0].text);
+		    });
+		});
+	</script>
+
 	<div id="sharebox">
 		<a href="#" id="twitterbox">
 			<div id="twitter-logo"></div>
 			<div id="twitter-tweet">
-				<p id="tweet">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p id="tweet"></p>
 				<p id="tweet-time">5 mins ago</p>
 			</div>
 		</a>
 		<script type="text/javascript">
 			function myFunction() {
-				 var x = screen.width/2 - 850/2;
+				var x = screen.width/2 - 850/2;
 				var y = screen.height/2 - 400/2;
 				window.open('http://facebook.com/CompFest','_blank','width=850,height=400,left='+x+',top='+y);
 				myWindow.focus();
