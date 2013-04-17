@@ -7,9 +7,9 @@
 <div id="middle">
 	<div id="slider-wrapper" class="theme-default">
 	    <div id="slider" class="nivoSlider">
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/redho.jpg" alt="" title="ini RedhoYasha"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zaka.jpg" alt="" title="ini ZakaZai"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/slider/zawwaf.jpg" alt="" title="ini Zawwaf"/>
+	        <img class="imgSlider" src="http://fc07.deviantart.net/fs71/f/2013/105/c/8/c8c4ef5d1f4852c10c038f4962c8bf52-d61w9jg.jpg" alt="" title="Eiffel Tower"/>
+	        <img class="imgSlider" src="http://fc01.deviantart.net/fs70/f/2013/106/4/7/recall_ok_by_oer_wout-d61xgjy.jpg" alt="" title="Sunset"/>
+	        <img class="imgSlider" src="http://fc07.deviantart.net/fs71/i/2013/106/3/4/peles_castle_by_alex230-d61xtkr.jpg" alt="" title="Castle"/>
 	    </div>
 	</div>
 	<div id="htmlcaption" class="nivo-html-caption">
