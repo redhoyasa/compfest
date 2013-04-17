@@ -23,13 +23,12 @@
           color: red;
       }
 </style>
-
+<div style="height:50px;">&nbsp;</div>
 <div id="container">
-		<div class="content-title">Daftar Kompetisi</div>
-		<div class="content-main">
-			<div class="thumbnail" id="register-thumbnail"></div>
+		<h3>Daftar Kompetisi</h3>
+		<br>
+		<div class="content-main well">
 			<div class="main" id="register-main">
-				
 				<form class="form-horizontal" method="post" action="<?php echo site_url('competition/register_competition'); ?>" data-validate="parsley">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama Tim</label>

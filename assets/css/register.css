@@ -8,6 +8,38 @@ margin: 20px auto;
     text-align: none!important;
 }
 
+#container {
+    padding: 19px;
+    margin-bottom: 20px;
+    width : 500px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    position: relative;
+    left : 50%;
+    margin-left: -250px;
+}
+
+h3 {
+/*    position: absolute;
+    left : 50%;
+    margin-left: -58.5px;*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.well {
+    position: relative;
+    left : 50%;
+    margin-left: -227.5px;
+}
+
 .control-group{
 overflow: hidden;
 padding: 5px;
@@ -126,4 +158,8 @@ outline:none;
 .info {
     font-size: 12px;
     line-height: 28px;
+}
+
+.btn {
+    text-align: center;
 }

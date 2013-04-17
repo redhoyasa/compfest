@@ -48,7 +48,7 @@ class Member extends Member_Controller {
 	    for ($r = 1; $r <= $event->members; $r++) {
 			$this->form_validation->set_rules('register_name_' . $r, 'Nama', 'min_length[3]|max_length[100]|required|strip_tags');
 		}
-		$this->form_validation->set_error_delimiters('<div class="alert-error" style="text-align:center";">', '</div>');
+		$this->form_validation->set_error_delimiters('<div class="	alert-error" style="text-align:center";">', '</div>');
 		$this->form_validation->set_message('matches','%s tidak sesuai');
 		$this->form_validation->set_message('required','%s harus diisi');
 		$this->form_validation->set_message('max_length','panjang maksimal %s adalah 100 karakter');
