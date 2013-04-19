@@ -32,7 +32,7 @@
 				}else{
 			?>
 				<div id="logout">
-					<p>Login sebagai &nbsp;</p><p id="user" style="font-weight:bold;"><a class="under" href="<?php echo site_url('member'); ?>"><?php echo $this->session->userdata('email'); ?></a></p><p>,&nbsp;</p><a class="under" style="color:red;"href="<?php echo site_url('auth/logout'); ?>">logout</a>
+					<p>Login sebagai &nbsp;</p><p id="user" style="font-weight:bold;"><a class="under" href="<?php echo site_url('member'); ?>"><?php echo $this->session->userdata('email'); ?></a></p><p>,&nbsp;</p><a class="under" style="color:black;"href="<?php echo site_url('auth/logout'); ?>">logout</a>
 				</div>
 			<?php
 				}	

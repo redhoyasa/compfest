@@ -41,9 +41,9 @@ body{
 	background-repeat: no-repeat;
 	width:474px;
 	height: 53px;
-	position: absolute;
 	z-index: 99;
-	top:-30px;
+	margin-top:-30px;
+	float : right;
 }
 
 #user-info{
@@ -108,25 +108,47 @@ body{
 }
 
 #logout{
-	padding: 7px 20px 0 20px;
+	padding: 3px 3px 0px 3px;
+	background : #ED1C24;
 	background-repeat: no-repeat;
 	width:auto;
-	height: 24px;
+	height: 20px;
 	position: absolute;
 	z-index: 99;
 	font-size: 0.7em;
+	border-radius: 0px 0px 50px 50px;
 }
 
+#logout:before {
+	display: block;
+	float : left;
+	background-image : url('../img/tab-bg-left.png') no-repeat;
+	width: 33px;
+	height : 26px;
+	z-index : 99;
+	border-radius: 0px 0px 5px 5px;
+	content: " ";
+}
+
+#logout:after {
+	display: block;
+	float : right;
+	background-image : url('../img/tab-bg-right.png') no-repeat;
+	width: 33px;
+	height : 26px;
+	content: " ";
+}
 
 	#logout p,#logout a{
 		float: left;
-		color: black;
+		color: white;
 	}
 
 
 nav{
 	position: relative;
 	z-index: 10;
+	clear: both;
 }
 
 	#first > li {
