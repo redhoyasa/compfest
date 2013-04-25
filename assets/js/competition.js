@@ -1,24 +1,31 @@
 $(document).ready(function(){
-	$(".fancybox").fancybox({
-		type: 'inline',
-		autoSize : false,
-		autoHeight : true,
-		speedIn: 200,
-		speedOut: 200,
-		width : 960,
-		afterLoad   : function() {
-			if ($(this.element).attr('id') == 'cp-link') {
-				this.content = $("#cp");
-			}
-			if ($(this.element).attr('id') == 'open-link') {
-				this.content = $("#open");
-			}
-			if ($(this.element).attr('id') == 'robot-link') {
-				this.content = $("#robot");
-			}
-			if ($(this.element).attr('id') == 'wa-link') {
-				this.content = $("#wa");
-			}
+	$(".fancybox").click(function(){
+		var $nowShow = $(".competition-wrapper:visible");
+		var tinggi;
+		$nowShow.hide();
+		if ($(this).attr('id') == 'cp-link') {
+			$nowShow = $('#cp');
+			height = 30 + $nowShow.height();
+			$(".content-wrapper").height(tinggi);
+			$nowShow.fadeIn();
+		}
+		if ($(this).attr('id') == 'open-link') {
+			$nowShow = $('#open');
+			height = 30 + $nowShow.height();
+			$(".content-wrapper").height(height);
+			$nowShow.fadeIn();
+		}
+		if ($(this).attr('id') == 'robot-link') {
+			$nowShow = $('#robot');
+			height = 30 + $nowShow.height();
+			$(".content-wrapper").height(height);
+			$nowShow.fadeIn();
+		}
+		if ($(this).attr('id') == 'wa-link') {
+			$nowShow = $('#wa');
+			height = 30 + $nowShow.height();
+			$(".content-wrapper").height(height);
+			$nowShow.fadeIn();
 		}
 	});
 });

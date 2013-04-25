@@ -8,12 +8,13 @@
 		</div>
 </div>
 <div class="competition-thumbnail-wrapper"> 
-	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="cp-link" href="#cp" ><img src="<?php echo base_url(); ?>assets/img/competition/logo-cp.jpg" /></a></div>
-	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="open-link" href="#open"><img src="<?php echo base_url(); ?>assets/img/competition/logo-open.jpg" /></a></div>
-	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="robot-link" href="#robot"><img src="<?php echo base_url(); ?>assets/img/competition/logo-robot.jpg" /></a></div>
-	<div class="competition-thumbnail" ><a class="fancybox" id="wa-link" href="#wa"><img src="<?php echo base_url(); ?>assets/img/competition/logo-wa.jpg" /></a></div>
+	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="cp-link" href="#cp" onClick="return false;"><img src="<?php echo base_url(); ?>assets/img/competition/logo-cp.jpg" /></a></div>
+	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="open-link" href="#open"onClick="return false;"><img src="<?php echo base_url(); ?>assets/img/competition/logo-open.jpg" /></a></div>
+	<div class="competition-thumbnail" style="border-right: 1px solid gray"><a class="fancybox" id="robot-link" href="#robot"onClick="return false;"><img src="<?php echo base_url(); ?>assets/img/competition/logo-robot.jpg" /></a></div>
+	<div class="competition-thumbnail" ><a class="fancybox" id="wa-link" href="#wa"onClick="return false;"><img src="<?php echo base_url(); ?>assets/img/competition/logo-wa.jpg" /></a></div>
 </div>
-<div class="competition-wrapper">
+<div class="content-wrapper">
+<div class="competition-wrapper" style="display: block">
 
 	<div class="competition-content-desc">
 		<h1>Competition</h1>
@@ -40,7 +41,7 @@
 	
 </div>
 
-<div class="desc" id="cp">
+<div class="competition-wrapper" id="cp">
 	<div class="competition-content">
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Competitive Programming Competition</h1>
@@ -49,7 +50,12 @@
 		</div>
 		<span id="programing-info"></span>
 		<p class="competition-another-content">Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
-		yaitu tingkat SMA dan Mahasiswa.</p>
+		yaitu tingkat SMA dan Mahasiswa.ompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswaompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswaompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.ompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswaompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa</p>
 		</br>
 		<h2>Hadiah Kompetisi</h2>
 		<ol>
@@ -62,7 +68,7 @@
 		</ol>
 	</div>
 </div>
-<div class="desc" id="wa">
+<div class="competition-wrapper" id="wa">
 	<div class="competition-content">
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Wonderful Apps Challenge</h1>
@@ -71,6 +77,11 @@
 		</div>
 		<span id="wonderful-info"></span>
 		<p class="competition-another-content">Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
 		yaitu tingkat SMA dan Mahasiswa.</p>
 		</br>
 		<h2>Hadiah Kategori Ultrabook Apps</h2>
@@ -104,7 +115,7 @@
 		</ol>
 	</div>
 </div>
-<div class="desc" id="robot">
+<div class="competition-wrapper" id="robot">
 	<div class="competition-content">
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Robotic Competition</h1>
@@ -113,6 +124,13 @@
 		</div>
 		<span id="robot-info"></span>
 		<p class="competition-another-content">Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
 		yaitu tingkat SMA dan Mahasiswa.</p>
 		</br>
 		<h2>Hadiah Kompetisi</h2>
@@ -126,7 +144,7 @@
 		</ol>
 	</div>
 </div>
-<div class="desc" id="open">
+<div class="competition-wrapper" id="open">
 	<div class="competition-content">
 		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
 		<h1>Open Animation Competition</h1>
@@ -135,6 +153,10 @@
 		</div>
 		<span id="open-animation-info"></span>
 		<p class="competition-another-content">Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
+		yaitu tingkat SMA dan Mahasiswa.Kompetisi ini kompetisi pemecahan masalah dengan suatu algoritma tertentu menggunakan bahasa pemrograman. Diadakan untuk 2 jenjang pendidikan,
 		yaitu tingkat SMA dan Mahasiswa.</p>
 		</br>
 		<h2>Hadiah Kompetisi</h2>
@@ -144,4 +166,5 @@
 			<li>Juara 3  = IDR 3.000.000,00</li>
 		</ol>
 	</div>
+</div>
 </div>

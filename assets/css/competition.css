@@ -1,12 +1,17 @@
 h2 {
 	font-size : 30px;
 }
+.content-wrapper {
+	height: 450px;
+	display: block;
+}
 .competition-wrapper {
 	width: inherit;
 	background: white;
 	margin: 0;
 	padding: 10px 100px;
 	overflow: hidden;
+	display: none;
 }
 
 #competition-header {

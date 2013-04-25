@@ -22,7 +22,7 @@
 				<p>Hi,&nbsp;</p><p id="user" style="font-weight:bold;">RwCn</p><p>&nbsp;:)&nbsp;|&nbsp;</p><a href="#">settings</a><p>&nbsp;|&nbsp;</p><a href="#">LOGOUT</a>
 			</div>
 			-->
-			<a href="#"><div id="logo"></div></a>
+			<a href="#"><div id="logo"><img src="<?php echo base_url(); ?>assets/img/Logo-web.png"/></div></a>
 			<nav>
 				<ul id="first">
 					<a href="<?php echo base_url(); ?>"><li id="menu-home" style="border-bottom: 5px solid #000000">
@@ -55,7 +55,7 @@
 					</li></a>
 				</ul>
 			</nav>
-
+	
 			<div id="content">
 
 				<?php echo $content; ?>
