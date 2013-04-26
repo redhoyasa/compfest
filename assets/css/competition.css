@@ -1,15 +1,21 @@
 h2 {
 	font-size : 30px;
 }
+.content-wrapper {
+	height: 450px;
+	display: block;
+}
 .competition-wrapper {
 	width: inherit;
 	background: white;
 	margin: 0;
 	padding: 10px 100px;
+	overflow: hidden;
+	display: none;
 }
 
 #competition-header {
-	background: url('../img/competition/header-bg.png');
+	background: url('../img/competition/header-competition.png');
 	width: 100%;
 	height: 300px;
 	padding-top:50px;
@@ -26,6 +32,25 @@ h2 {
 	font-size: 25px;
 	display: none;
 }
+.competition-thumbnail-wrapper{
+	display: block;
+	width : inherit;
+	padding: 10px 15px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.competition-thumbnail{
+	width: 285px;
+	height: 150px;
+	float: left;
+	
+}
+.competition-thumbnail img{
+	display: block;
+	width: 250px;
+	height : 150px;
+	margin: 0 auto;
+}
 
 .competition-desc {
 	width: auto;
@@ -34,11 +59,15 @@ h2 {
 
 .competition-content{
 	width: auto;
-	overflow: auto;
+	overflow: hidden;
 	display: inline-block;
+<<<<<<< HEAD
 	border-top: solid 1px #dddddd;
 	padding-bottom: 20px;
 	padding-top: 20px;
+=======
+	margin: 5px;
+>>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
 }
 .competition-content-desc img {
 	margin: 10px;
@@ -71,6 +100,19 @@ h2 {
 	padding-top: 5px;
 }
 
+.competition-content h1 {
+	font-size: 40px;
+	margin: 5px 0 10px 0;
+	padding-top:5px;
+}
+
+.competition-content p {
+	margin-bottom: 10px;
+	margin : 
+	text-indent: 3em;
+	text-align: justify;
+}
+
 .competition-register-button{
 	height: 30px;
 	width: 120px;
@@ -78,8 +120,13 @@ h2 {
 	border: 1px solid #d8d8d8;
 	border-radius: 4px;
 	margin-right:5px;
+<<<<<<< HEAD
 	background-color: #ed1c24;
 	color: #f2f2f2!important;
+=======
+	background-color: #007ac3;
+	color: #f2f2f2;
+>>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
 	cursor: pointer;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -87,7 +134,7 @@ h2 {
 }
 
 .competition-register-button:hover{
-	background-color: #d31a28;
+	background-color: #00617f;
 }
 .competition-closed-button{
 	height: 30px;
@@ -104,12 +151,20 @@ h2 {
 	-o-transition: 0.5s;	
 }
 
-#competition-tulisan-button{
+.competition-tulisan-button{
 	font-size: 14px;
 	margin: 7px;
 	text-align: center !important;
 	color: white;
+<<<<<<< HEAD
 	text-indent:0em !important;
 }
 
 
+=======
+	text-indent:0em !important ;
+}
+.desc {
+	display: none;
+}
+>>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01

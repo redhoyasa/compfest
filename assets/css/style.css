@@ -198,6 +198,25 @@ nav{
 			color: #000;
 		}
 
+<<<<<<< HEAD
+=======
+			.second > li > p{
+				font-size: 0.8em;
+			}
+
+#logo{
+	position: absolute;
+	z-index: 7000;
+	left: 50%!important;
+	margin-left: -72.5px;
+}
+
+#spacer{
+	width: 1180;
+	height: 75;
+	margin: 0 auto;
+}
+>>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
 #footer{
 	background-color: white;
 	height: 200px!important;

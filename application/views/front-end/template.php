@@ -15,6 +15,7 @@
 
 	<body>
 		<div id="wrap">
+<<<<<<< HEAD
 
 			<?php 
 				if(!$this->access->is_login()) { 
@@ -42,6 +43,21 @@
 			
 			
 			<a href="#"><div id="logo"><img src="<?php echo base_url(); ?>assets/img/Logo-web.png"></div></a>
+=======
+			<div id="login">
+				<input class="field" type="text" name="username" placeholder=" username" style="margin-left:40px;">
+				<input class="field" type="password" name="password" placeholder=" password">
+				<input id="button-go" type="submit" name="login" value="GO!">
+				<p id="forgot">or, <a href="#">forgot password?</a></p>
+				<div id="button-login">LOGIN</div>
+			</div>
+			<!--
+			<div id="logout">
+				<p>Hi,&nbsp;</p><p id="user" style="font-weight:bold;">RwCn</p><p>&nbsp;:)&nbsp;|&nbsp;</p><a href="#">settings</a><p>&nbsp;|&nbsp;</p><a href="#">LOGOUT</a>
+			</div>
+			-->
+			<a href="#"><div id="logo"><img src="<?php echo base_url(); ?>assets/img/Logo-web.png"/></div></a>
+>>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
 			<nav>
 				<ul id="first">
 					<li id="menu-home" style="border-bottom: 5px solid #000000"><a href="<?php echo base_url(); ?>">
@@ -82,7 +98,7 @@
 					</li>
 				</ul>
 			</nav>
-
+	
 			<div id="content">
 
 				<?php echo $content; ?>
