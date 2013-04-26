@@ -41,7 +41,7 @@
 	
 </div>
 
-<<<<<<< HEAD
+
 
 <div class="competition-wrapper">
 	<div class="competition-content">
