@@ -46,8 +46,21 @@
                    
                    		data.results[c].text = data.results[c].text.length > 90 ? data.results[c].text.substr(0,90) + "..." : data.results[c].text;
                    		data.results[c].created_at = data.results[c].created_at.length > 25 ? data.results[c].created_at.substr(0,25) : data.results[c].created_at;
-                   		$("#tweet").html(data.results[c].text);
-                   		$("#tweet-time").html(data.results[c].created_at);
+                   		$("#twitter-tweet > span").stop().animate({
+							top: -50,
+							opacity: 0,
+						}, 800, function() {
+							$("#tweet").html(data.results[c].text);
+							$("#tweet-time").html(data.results[c].created_at);
+							$(this).stop().animate({
+								top: 100,
+							}, 0, function() {
+								$(this).stop().animate({
+									top: 0,
+									opacity: 1,
+								}, 800);
+							});
+						});
                    		c = c == data.results_per_page - 1 ? 0 : c+1;
                    	
                    },5000)
@@ -58,10 +71,10 @@
 	<div id="sharebox">
 		<a href="https://twitter.com/compfest" target="_blank" id="twitterbox">
 			<div id="twitter-logo"></div>
-			<div id="twitter-tweet">
+			<div id="twitter-tweet"><span>
 				<p id="tweet"></p>
 				<p id="tweet-time"></p>
-			</div>
+			</span></div>
 		</a>
 		<script type="text/javascript">
 			function myFunction() {

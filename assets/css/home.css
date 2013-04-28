@@ -101,6 +101,12 @@
 		float: left;
 		height: 34px;
 		background-color: white;
+		overflow: hidden;
+	}
+	
+	#twitter-tweet span {
+		display: block;
+		position: relative;
 	}
 
 		#tweet{
