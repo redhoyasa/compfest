@@ -1,10 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/about.css" type="text/css" media="screen" />
 
 <div id="about-header">
-	<div id="about-middle-header">
-		<img src="<?php echo base_url(); ?>assets/img/about/header.png" alt="" />
-		compfest.web.id
-	</div>
 </div>
 	
 <div id="about-wrapper">
@@ -43,11 +39,7 @@
 		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
 		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
 		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
-		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
-		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
-		lacus. Suspendisse venenatis vehicula luctus. Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies 
-		risus quis libero suscipit laoreet nec ultrices lacus. ultricies risus quis libero suscipit laoreet nec ultrices 
-		lacus. Suspendisse venenatis vehicula luctus. </p>
+		tristique. </p>
 	</div>
 	
 </div>
