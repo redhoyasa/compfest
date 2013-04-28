@@ -48,7 +48,6 @@
                    		data.results[c].created_at = data.results[c].created_at.length > 25 ? data.results[c].created_at.substr(0,25) : data.results[c].created_at;
                    		$("#tweet").html(data.results[c].text);
                    		$("#tweet-time").html(data.results[c].created_at);
-                   		//console.log(data.results_per_page + " " + c);
                    		c = c == data.results_per_page - 1 ? 0 : c+1;
                    	
                    },5000)
@@ -57,7 +56,7 @@
 	</script>
 
 	<div id="sharebox">
-		<a href="#" id="twitterbox">
+		<a href="https://twitter.com/compfest" target="_blank" id="twitterbox">
 			<div id="twitter-logo"></div>
 			<div id="twitter-tweet">
 				<p id="tweet"></p>
