@@ -45,6 +45,9 @@ h2 {
 	float: left;
 	
 }
+#competition-thumbnail-selected{
+	opacity: 0.3;
+}
 .competition-thumbnail img{
 	display: block;
 	width: 250px;

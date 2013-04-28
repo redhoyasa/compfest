@@ -1,0 +1,16 @@
+6
+King 0.8
+Queen 0.7
+Gin 0.5
+Rizard 0.8
+Arial 0.7
+Leo 0.5
+8
+Discovery Jinx 0.3
+Kindness Rizard
+Probability King Jinx
+Discovery Macco 0.4
+Probability Gin Macco
+Kindness King
+Height King Rizard
+Perfection Gin
