@@ -33,13 +33,27 @@
 	</div>	
 
 	<script type="text/javascript">
-		//var url = 'http://search.twitter.com/search.json?q=from:compfest';
-		var url = 'tweet.json';
-		$(document).ready(function() {
-		    $.getJSON(url, function(data) {
-		        alert(data.results[0].text);
-		    });
-		});
+	var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
+    //var url = 'tweet.json';
+    
+    var tweet;
+    $(document).ready(function() {
+       $.getJSON(url,function (data) {
+                   tweet = data.results;
+                   var c = 0;
+                   
+                   setInterval(function(){
+                   
+                   		data.results[c].text = data.results[c].text.length > 90 ? data.results[c].text.substr(0,90) + "..." : data.results[c].text;
+                   		data.results[c].created_at = data.results[c].created_at.length > 25 ? data.results[c].created_at.substr(0,25) : data.results[c].created_at;
+                   		$("#tweet").html(data.results[c].text);
+                   		$("#tweet-time").html(data.results[c].created_at);
+                   		//console.log(data.results_per_page + " " + c);
+                   		c = c == data.results_per_page - 1 ? 0 : c+1;
+                   	
+                   },5000)
+     	});
+    });
 	</script>
 
 	<div id="sharebox">
@@ -47,7 +61,7 @@
 			<div id="twitter-logo"></div>
 			<div id="twitter-tweet">
 				<p id="tweet"></p>
-				<p id="tweet-time">5 mins ago</p>
+				<p id="tweet-time"></p>
 			</div>
 		</a>
 		<script type="text/javascript">
