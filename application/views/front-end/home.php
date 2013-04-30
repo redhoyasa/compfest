@@ -1,19 +1,46 @@
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/carousel.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
-<script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+<script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
+<script src="<?php echo base_url(); ?>assets/plugins/slider/transitions.min.js" type="text/javascript"></script>
 
 <div id="middle">
-	<div id="slider-wrapper" class="theme-default">
-	    <div id="slider" class="nivoSlider">
-	        <img class="imgSlider" src="http://fc07.deviantart.net/fs71/f/2013/105/c/8/c8c4ef5d1f4852c10c038f4962c8bf52-d61w9jg.jpg" alt="" title="Eiffel Tower"/>
-	        <img class="imgSlider" src="http://fc01.deviantart.net/fs70/f/2013/106/4/7/recall_ok_by_oer_wout-d61xgjy.jpg" alt="" title="Sunset"/>
-	        <img class="imgSlider" src="http://fc07.deviantart.net/fs71/i/2013/106/3/4/peles_castle_by_alex230-d61xtkr.jpg" alt="" title="Castle"/>
+	<!-- CAROUSEL (SLIDER) AREA -->
+	<div id="slider" class="carousel slide">
+		<ol class="carousel-indicators">
+		    <li data-target=".carousel" data-slide-to="0" class="active"></li>
+		    <li data-target=".carousel" data-slide-to="1"></li>
+		    <li data-target=".carousel" data-slide-to="2"></li>
+		</ol>
+
+	  <!-- Carousel items -->
+	  <div class="carousel-inner">
+	    <div class="active item">
+	    	<img src="<?php echo base_url(); ?>assets/img/slider/zawwaf.jpg">
+	    	<div class="carousel-caption">
+	    		<h4>ini zawwaf</h4>
+	    		<p>pelawak yang beriman</p>
+	    	</div>
 	    </div>
-	</div>
-	<div id="htmlcaption" class="nivo-html-caption">
-	    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+	    <div class="item">
+	    	<img src="<?php echo base_url(); ?>assets/img/slider/zaka.jpg">
+	    	<div class="carousel-caption">
+	    		<h4>ini zaka</h4>
+	    		<p>belum bayar hutang</p>
+	    	</div>
+	    </div>
+	    <div class="item">
+	    	<img src="<?php echo base_url(); ?>assets/img/slider/redho.jpg">
+	    	<div class="carousel-caption">
+	    		<h4>ini yasha</h4>
+	    		<p>tidak ikut cgt</p>
+	    	</div>
+	    </div>
+	  </div>
+	  <!-- Carousel nav -->
+	  <a class="carousel-control left" href=".carousel" data-slide="prev">&lsaquo;</a>
+	  <a class="carousel-control right" href=".carousel" data-slide="next">&rsaquo;</a>
 	</div>
 
 	<div id="box">

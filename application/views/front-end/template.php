@@ -54,21 +54,21 @@
 			<a href="#"><div id="logo"><img src="<?php echo base_url(); ?>assets/img/Logo-web.png"/></div></a>
 			<nav>
 				<ul id="first">
-					<li id="menu-home" style="border-bottom: 5px solid #000000"><a href="<?php echo base_url(); ?>">
+					<li class="menu" id="menu-home"><a href="<?php echo base_url(); ?>">
 						<div><p>HOME</p></div>
 					</a></li>
 
-					<li id="menu-about" style="border-bottom: 5px solid #f7931e"><a href="<?php echo base_url('about'); ?>">
+					<li class="menu" id="menu-about"><a href="<?php echo base_url('about'); ?>">
 						<div><p>ABOUT</p></div>
 					</a></li>
 
-					<li id="menu-news" style="border-bottom: 5px solid #e8d700"><a href="<?php echo base_url('news'); ?>">
+					<li class="menu" id="menu-news"><a href="<?php echo base_url('news'); ?>">
 						<div><p>NEWS</p></div>
 					</a></li>
 					
-					<li id="bufferMenu"></li>
+					<li class="menu" id="bufferMenu"></li>
 					
-					<li class="menu" style="border-bottom: 5px solid #3d99d0"><a href="<?php echo base_url('competition'); ?>">
+					<li class="menu" id="menu-competition"><a href="<?php echo base_url('competition'); ?>">
 						<div><p>COMPETITION</p></div></a>
 
 						<ul class="second">
@@ -78,7 +78,7 @@
 						</ul>
 					</li>				
 					
-					<li class="menu" style="border-bottom: 5px solid #e40613"><a href="<?php echo base_url('seminar'); ?>">
+					<li class="menu" id="menu-event"><a href="<?php echo base_url('seminar'); ?>">
 						<div><p>EVENT</p></div></a>
 
 						<ul class="second">
@@ -87,7 +87,7 @@
 						</ul>
 					</li>
 
-					<li id="menu-contact" style="border-bottom: 5px solid #8cc63f"><a href="<?php echo base_url('contact'); ?>">
+					<li class="menu" id="menu-contact"><a href="<?php echo base_url('contact'); ?>">
 						<div><p>CONTACT</p></div></a>
 					</li>
 				</ul>
