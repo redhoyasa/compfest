@@ -1,0 +1,33 @@
+#container{
+	background : white;
+}
+#head p{
+	text-align: left !important;
+	margin-left : 10px;
+}
+.title {
+	margin: 20pt auto;
+	padding: 10px 0;
+	background : grey;
+	border-radius: 5px;
+	
+}
+	.title p {
+		color : white;
+		font-size : 25pt;
+		margin : 0 auto;
+		text-align : center;
+	}
+	
+.sponsor-wrap{
+	width : inherit;
+	overflow : hidden;
+}
+	.sponsor  {
+		display : table;
+		margin : 0 auto;
+	}
+		.sponsor img {
+			float: left;
+			margin: 5px;
+		}
