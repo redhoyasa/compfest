@@ -40,34 +40,8 @@
 			</div>
 			
 		</div>
-<div class="content-wrapper">
-<div class="competition-wrapper" style="display: block">
 
-	<div class="competition-content-desc">
-		<h1>Competition</h1>
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left;" />
-		<h2>Kompetisi dengan total hadiah 1 miliar pake gopean</h2>
-		<p>Kompetisi tahunan yang diadakan setiap bulan agustus dengan tema merah putih ini merupakan kompetisi bergengsi atar warga se-er-te.
-		Berbagai kompetisi yang dihadirkan adalah lomba masukin kerupuk ke dalam botol, lomba makan pinang, lomba balap tambang, dan lomba tarik kerupuk.
-		Lomba masukin kerupuk ke dalam botol merupakan lomba paling inovatif dalam lima dekade terakhir. Perlombaan ini menuntut pesertanya memiliki kecerdasan 
-		kecerdasan emosional dan kecerdasan spiritual yang tinggi. Dengan kata lain lo harus bener bener sabar dan banyak banyak berdoa biar menang kompetisi
-		ini. Lomba makan pinang adalah salah satu cabang ilmu atletik renang gaya bebas yang melibatkan kekuatan otak dalam mengerjakan soal UAS kalkulus lanjut dan
-		fisika dasar. Banyak yang gugur dalam perlombaan ini terutama di level fisika dasar. Lomba balap tambang adalah lomba dengan tingkat kesulitan selevel dengan 
-		latihan paskibranya kopasus. Prinsipnya sama dengan pigeon hole principle dimana disitu ada lobang disitu ada burung (?). 
-		</p>
-	</div>
-	
-	<div class="competition-content-desc">
-		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail2.png" alt="Harusnya muncul gambar disini" style="float:right;"  />
-		<p> Hadiahnya lumayan, 1 miliar pake gopean. bisa buat beli gorengan sampe akhir hayat. Ga perlu repot repot lagi nyari gopean 
-		buat parkir misalnya. atau buat ngisengin orang pake telepon umum. duit gopeaannya juga bisa buat maen tepokan, maen tazoz, maen karambol
-		juga bisa pake gopean. so tunggu apa lagi? buruan ikut CompFest! B)
-		
-		</p>
-	</div>
-	
-</div>
-
+<<<<<<< HEAD
 
 
 <div class="competition-wrapper">
@@ -108,8 +82,15 @@
 	</div>
 	
 =======
-		<div class="competition-wrapper" id="cp">
+<div class="competition-wrapper" id="cp">
 >>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
+	<div class="competition-content">
+		<img src="<?php echo base_url(); ?>assets/img/competition/thumbnail.png" alt="Harusnya muncul gambar disini" style="float:left" />
+		<h1>Competitive Programming Competition</h1>
+		<div class="competition-register-button">
+			<a href="<?php echo site_url('competition/register');?>"><p class="competition-tulisan-button" >REGISTER</p></a>
+=======
+		<div class="competition-wrapper" id="cp">
 			<div class="competition-content">
 				<h1>Competitive Programming Competition</h1>
 				<div class="competition-register-button">
@@ -136,6 +117,7 @@
 					<li>Juara 3 SMA = IDR 3.000.000,00</li>
 				</ol>
 			</div>
+>>>>>>> 4fc9704e113f2577975dcba0df2e2cb200a026b1
 		</div>
 		<div class="competition-wrapper" id="open">
 			<div class="competition-content">

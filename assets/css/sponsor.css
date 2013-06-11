@@ -1,0 +1,43 @@
+#container{
+	background : white;
+}
+#head {
+	display : inline-block;
+	margin : 20pt 0 !important;
+	
+}
+	#head p{
+		text-align: left !important;
+		margin: 0 10px;
+	}
+	
+.title {
+	margin: 20pt auto;
+	margin-right : 10px;
+	padding: 10px 0;
+	background : url(../img/sponsor/background-title.png);
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #888888
+
+}
+	.title p {
+		
+		color : white;
+		font-size : 25pt;
+		margin : 0 auto;
+		text-align : center;
+		font-weight: bold;
+	}
+	
+.sponsor-wrap{
+	width : inherit;
+	overflow : hidden;
+}
+	.sponsor  {
+		display : table;
+		margin : 0 auto;
+	}
+		.sponsor img {
+			float: left;
+			margin: 5px;
+		}

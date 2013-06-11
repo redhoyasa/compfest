@@ -1,17 +1,23 @@
 h2 {
 	font-size : 30px;
 }
-.content-wrapper {
+#slider {
+	width: 960px;
+	margin-left: 100px;
+	overflow: hidden;
+}
+#slider-wrapper {
 	height: 450px;
 	display: block;
+	width: 4850px;
 }
 .competition-wrapper {
-	width: inherit;
+	width: 960px;
 	background: white;
 	margin: 0;
-	padding: 10px 100px;
 	overflow: hidden;
-	display: none;
+	float : left;
+	display: block;
 }
 
 #competition-header {
@@ -44,6 +50,9 @@ h2 {
 	height: 150px;
 	float: left;
 	
+}
+#competition-thumbnail-selected{
+	opacity: 0.3;
 }
 .competition-thumbnail img{
 	display: block;
