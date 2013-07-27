@@ -11,8 +11,8 @@
 	<script src="<?php echo base_url(); ?>js/jquery.mobile.themeswitcher.js"></script>
 	<script src="<?php echo base_url(); ?>js/jqm-docs.js"></script>
 	<script src="<?php echo base_url(); ?>jquery.mobile-1.0.min.js"></script>
-	<link href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <script src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
+	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="<?php echo base_url(); ?>js//nicEdit.js"></script>
 	<script type="text/javascript">

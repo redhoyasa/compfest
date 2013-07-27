@@ -1,9 +1,9 @@
+<div syle="height:50px;">&nbsp;</div><br><br><br>
 <div id="container">
-		<div class="content-title">Daftar Seminar</div>
+		<h3>Daftar Seminar</h3>
 		<div class="content-main">
 			<div class="thumbnail" id="register-thumbnail"></div>
 			<div class="main" id="register-main">
-
 				<form class="form-horizontal" method="post" action="<?php echo site_url('seminar/register_seminar'); ?>">
 					<div class="control-group">
 						<label class="control-label" for="inputNama">Nama</label>
@@ -55,10 +55,9 @@
 								<div class="controls-seminar">
 									<input type="checkbox" id="seminar-<?php echo $r->id_seminar?>" name="seminar-<?php echo $r->id_seminar?>" value="1"
 									<?php if(isset($s['formerror-'.$r->id_seminar])) echo "checked"; ?>>
-									<br>
+									
 									<div class="motivation">
-									Motivasi: 
-									<textarea name="motivation-<?php echo $r->id_seminar?>"><?php echo set_value('motivation-'.$r->id_seminar); ?></textarea>
+		<textarea rows="5" cols="50" name="motivation-<?php echo $r->id_seminar?>" placeholder="Motivasi mengikuti seminar"><?php echo set_value('motivation-'.$r->id_seminar); ?></textarea>
 									</div>
 								</div>
 							</div>
@@ -73,7 +72,7 @@
 
 						<div class="control-group">
 							<div class="controls">
-								<button type="submit" class="btn">Register</button>
+								<button type="submit" class="btn">REGISTER</button>
 							</div>
 						</div>
 				</form>

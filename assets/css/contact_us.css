@@ -1,5 +1,5 @@
 #contact-header {
-	background: url('../img/contact/header-bg.png');
+	background: url('../img/about/header-web-green.png');
 	width: 100%;
 	height: 380px;
 }
@@ -14,57 +14,58 @@
 #contact-wrapper h1 {
 	font-size: 40px;
 	margin: 30px 0 10px 0;
+	margin-left: -20px;
 }
 
 #contact-wrapper p {
 	margin-bottom: 10px;
-	text-indent: 3em;
+	font-size : 12px;
+	line-height:25px;
 }
 
 #contact-list {
-	width: 900px;
-	height: 350px;
+	width: 1100px;
+	height: 100px;
 	margin: 0 auto;
+	margin-left: -25px;
 	display: block;
 }
 #contact-list li {
 	float: left;
+	word-wrap:break-word;
+	text-overflow: ellipsis;
+	width: 270px;
 }
 
 #contact-list li a {
 	display: block;
-	width: 240px;
-	height:300px;
-	margin:5px;
+	margin:5px 5px 50px 5px;
 	padding: 10px 20px;
-	text-align: center;
 	border: 1px solid #EEE;
+	background : #f7f7f7;
+	border-radius: 5px;
 	color:black;
-	transition: background 0.5s ease-in-out;
-	-webkit-transition: background 0.5s ease-in-out;
-	-moz-transition: background 0.5s ease-in-out;
-	-o-transition: background 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
 
 #contact-list li a:hover {
-	background: #3bb347;
-	transition: background 1s ease-in-out;
-	-webkit-transition: background 1s ease-in-out;
-	-moz-transition: background 1s ease-in-out;
-	-o-transition: background 1s ease-in-out;
+	background: #00963f;
+	color : #f7f7f7;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
 
-#contact-list li a h2 {
-	font-size: 30px;
-	margin: 10px 0 10px 0;
+#contact-list li a h3 {
+	font-weight: bold;
+	margin: 15px 0 10px 0;
 }
 
-#contact-list li a table{
-	width: 260px;
-	text-align: left;
-	margin-top: 10px;
-}
-
-#contact-list li a table tr td{
-	padding-right: 5px;
+#contact-list li a p{
+	padding:0;
+	margin:0;
 }

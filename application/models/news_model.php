@@ -9,7 +9,7 @@ class News_model extends CI_Model {
 	}
 	
 	function get_all_news() {
-		$this->db->order_by('timestamp', 'asc'); 
+		$this->db->order_by('timestamp', 'desc'); 
 		$query = $this->db->get($this->table);
 		return ($query->num_rows() > 0) ? $query->result() : false;
 	}

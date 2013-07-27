@@ -2,6 +2,10 @@
 
 class Seminar extends CI_Controller {
 
+	public function pawash(){
+		$this->template->display('front-end/seminar_v1.php');
+	}
+
 	public function index()
 	{
 		$this->template->display('front-end/seminar/seminar');

@@ -22,6 +22,9 @@ class Auth extends CI_Controller {
 	 * Fungsi untuk login peserta
 	 */
 	public function login() {
+		if($this->access->is_login()) {
+			redirect("member/dashboard");
+		}
 		$this->load->library('form_validation');
 		$this->load->helper('form');
 		

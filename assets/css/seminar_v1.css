@@ -1,0 +1,183 @@
+b, b *{
+	font-weight: bold!important;
+}
+
+#wrap-seminar{
+	overflow:hidden;
+}
+
+#seminar-topTitle{
+	text-align:center;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 30px 0;
+	line-height:33px;
+}
+
+.seminar-tanggal{
+	text-align:center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+#seminar-maps{
+	margin: auto;
+	width: 500px;
+	height: 350px;
+	border: solid 3px #dbdfe0;
+	border-radius: 5px;
+}
+	
+table{
+	margin: auto;
+}
+
+.seminar-click{
+	text-decoration: none;
+	color: black;
+}
+
+.seminar-container{
+	width: 250px;
+	height: 250px;
+	margin: 0 45px 30px 0;
+	border: solid 3px #dbdfe0;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.seminar-item{
+	width: 250px;
+	height: 250px;
+	margin: 0 0 30px 0;
+	position: absolute;
+	top:70%;
+	color:white;
+	
+	-moz-transition:0.5s; /* Firefox 4 */
+	-webkit-transition:0.5s; /* Safari and Chrome */
+	-o-transition:0.5s; /* Opera */
+}
+
+	.seminar-red{
+		background-color: #e74c3c;
+	}
+
+	.seminar-yellow{
+		background-color: #f1c40f;
+	}
+
+	.seminar-green{
+		background-color: #2ecc71;
+	}
+
+	.seminar-blue{
+		background-color: #3498db;
+	}
+
+.seminar-container:hover .seminar-item{
+	transform:translate(0,-70.1%);
+	-ms-transform:translate(0,-70.1%); /* IE 9 */
+	-webkit-transform:translate(0,-70.1%); /* Safari and Chrome */
+}
+
+.seminar-top{
+	height: 30%;
+}
+
+.seminar-title{
+	margin: 0;
+	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.seminar-sched{
+	margin: 0 15px 0 15px;
+	padding: 0;
+	font-size: 13px;
+}
+
+.seminar-pic{
+	width: inherit;
+	position: relative;
+	margin: 0;
+	padding: 0; 
+	display: block;
+}
+
+.seminar-sounder{
+	bottom: 0;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	line-height: 18px;
+	position: absolute;
+}
+
+#seminar-Tdetail{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	margin:30px;
+}
+
+#seminar-detailSubs{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#seminar-subscribe{
+	background-color: #E40613;
+	border-radius: 5px 5px 0 0;
+}
+
+#seminar-subscrForm{
+	margin:0 0 20px 40px;
+	text-align:center;
+}
+
+	#seminar-input{
+		font-size: 20px;
+		height: 25px;
+		width: 400px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	#seminar-subscrButton{
+		width: 150px;
+		background-color: #8CC63F;
+		height: 28px;
+		color: white;
+		font-size: 20px;
+		border: 1px solid #8CC63F;
+		border-radius: 5px;
+		text-align: center;
+		cursor: pointer;
+
+		-moz-transition:0.5s; /* Firefox 4 */
+		-webkit-transition:0.5s; /* Safari and Chrome */
+		-o-transition:0.5s; /* Opera */
+	}
+
+		#seminar-subscrButton:hover{
+			background-color: #59930C;
+			border-color: #59930C;
+		}
+
+	#seminar-share{
+		padding: 0 0 30px 40px;
+		text-align : center;
+	}
+
+	.seminar-share{
+		display: inline;
+	}

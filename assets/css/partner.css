@@ -1,0 +1,66 @@
+#content {
+	background : white;
+	border-radius : 0 0 10px 10px;
+	margin-bottom : 10px;
+}
+.title{
+	font-size: 30px;
+	display : table;
+	margin: 0 auto;
+	margin-bottom : 50px;
+}
+#partner-header {
+	background: url('../img/partner/header-web-partner-02.png');
+	width: 100%;
+	height: 300px;
+	padding-top:50px;
+}
+#sponsor-partner {
+	width : 100%;
+	display: block;
+	margin-top: 50px;
+	overflow : hidden;
+}
+	#sponsor {
+		display: block;
+		width : 50%;
+		float : left;
+		height : 100%;
+	}
+	#sponsor img {
+		width : 500px;
+		margin : 0 auto;
+		display : block;
+	}
+	#partner {
+		display: block;
+		width: 50%;
+		float : left;
+	}
+		#partner table {
+			width : 100%;
+		}
+		#partner img {
+			width : 160px;
+			display: block;
+			margin  : 0 auto;
+			
+		}
+		
+#medpart {
+	width : 100%;
+	display: block;
+	margin-top: 50px;
+}
+	#medpart table {
+		width : 70%;
+		margin : 0 auto;
+	}
+	#medpart td {
+		height : 100px;
+	}
+	#medpart img {
+		width : 200px;
+		display: block;
+		margin : 0 auto;
+	}

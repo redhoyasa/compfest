@@ -1,3 +1,4 @@
+<style>#content {background:transparent!important;}#content {border:0!important;}</style>
 <div id="container">
 			<div class="content-title">Roadshow</div>
 			

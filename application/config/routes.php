@@ -44,7 +44,8 @@ $route['news/(:any)'] = "/news/getNews/$1";
 $route['about'] = "state/about";
 $route['contact'] = "state/contact_us";
 $route['roadshow'] = "state/roadshow";
-$route['404_override'] = '';
+$route['medparts'] = "state/medparts";
+$route['404_override'] = "";
 
 
 /* End of file routes.php */

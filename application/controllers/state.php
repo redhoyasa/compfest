@@ -16,5 +16,16 @@ class State extends CI_Controller {
 	public function roadshow(){
 		$this->template->display('front-end/roadshow');
 	}
-}
 
+	public function medparts() {
+		$this->template->display('front-end/medparts');
+	}
+	
+	public function seminar_v1() {
+		$this->template->display('front-end/seminar_v1');
+	}
+	
+	public function zawwaf(){
+		$this->template->display('front-end/404');
+	}
+}

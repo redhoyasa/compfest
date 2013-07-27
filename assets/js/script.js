@@ -5,11 +5,10 @@ $(document).ready(function() {
 
 	//LOGIN BAR
 	var buka = 0;
-	$("#login").css("right",(window.innerWidth-1180)/2+"px");
-	$("#logout").css("right",(window.innerWidth-1180)/2+"px");
+	//$("#login").css("right",(window.innerWidth-1180)/2+"px");
+	//$("#logout").css("right",(window.innerWidth-1180)/2+"px");
 
 	$("#button-login").click(function(){
-
 		if (buka == 0){
 			$("#login").animate({
 				top:"0"

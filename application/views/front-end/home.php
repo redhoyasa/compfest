@@ -2,97 +2,102 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 
 <script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
+<!--script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script-->
 <script src="<?php echo base_url(); ?>assets/plugins/slider/transitions.min.js" type="text/javascript"></script>
 
 <div id="middle">
-	<!-- CAROUSEL (SLIDER) AREA -->
-	<div id="slider" class="carousel slide">
-		<ol class="carousel-indicators">
-		    <li data-target=".carousel" data-slide-to="0" class="active"></li>
-		    <li data-target=".carousel" data-slide-to="1"></li>
-		    <li data-target=".carousel" data-slide-to="2"></li>
-		</ol>
+		<!-- CAROUSEL (SLIDER) AREA -->
+<div id="slider" class="carousel slide">
+<!--ol class="carousel-indicators">
+<li data-target=".carousel" data-slide-to="0" class="active"></li>
+<li data-target=".carousel" data-slide-to="1"></li>
+<li data-target=".carousel" data-slide-to="2"></li>
+</ol-->
 
-	  <!-- Carousel items -->
-	  <div class="carousel-inner">
-	    <div class="active item">
-	    	<img src="<?php echo base_url(); ?>assets/img/slider/zawwaf.jpg">
-	    	<div class="carousel-caption">
-	    		<h4>ini zawwaf</h4>
-	    		<p>pelawak yang beriman</p>
-	    	</div>
-	    </div>
-	    <div class="item">
-	    	<img src="<?php echo base_url(); ?>assets/img/slider/zaka.jpg">
-	    	<div class="carousel-caption">
-	    		<h4>ini zaka</h4>
-	    		<p>belum bayar hutang</p>
-	    	</div>
-	    </div>
-	    <div class="item">
-	    	<img src="<?php echo base_url(); ?>assets/img/slider/redho.jpg">
-	    	<div class="carousel-caption">
-	    		<h4>ini yasha</h4>
-	    		<p>tidak ikut cgt</p>
-	    	</div>
-	    </div>
-	  </div>
-	  <!-- Carousel nav -->
-	  <a class="carousel-control left" href=".carousel" data-slide="prev">&lsaquo;</a>
-	  <a class="carousel-control right" href=".carousel" data-slide="next">&rsaquo;</a>
-	</div>
+<!-- Carousel items -->
+<div class="carousel-inner">
+<div class="active item">
+<img width="1180" src="<?php echo base_url(); ?>assets/img/header-red.png">
 
-	<div id="box">
+</div>
 
-	</div>
+<!-- Carousel nav>
+<a class="carousel-control left" href=".carousel" data-slide="prev">&lsaquo;</a>
+<a class="carousel-control right" href=".carousel" data-slide="next">&rsaquo;</a-->
+</div>
 
-	<div id="headline">
-		<h2 style="font-size:1.9em; padding-bottom:15px">NEWS</h2>
-		<h3 id="headline-title" style="font-size:1.6em;">Lorem ipsum dolor sit amet, cons...</h3>
-		<p id="headline-date" style="font-size:0.9em;">October 24, 1993</p>
-		<div id="headline-imgBox"></div>
-		<p id="headline-article">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis rutrum sollicitudin. Donec volutpat quam in ligula convallis consequat sodales dolor ornare. Mauris id egestas magna. Duis laoreet ante sapien, bibendum suscipit augue. Nullam pellentesque, risus a lobortis commodo, lacus purus venenatis libero, at ullamcorper lectus augue sollicitudin tellus. Proin commodo, diam eget aliquam gravida, magna tortor iaculis tortor, in feugiat dui odio et leo. Quisque commodo magna eget erat placerat eget bibendum nisi rutrum.
-			<br/><br/>
-			Praesent metus augue, ullamcorper vitae tempor sed, consequat at odio. Praesent libero risus, sodales a feugiat non, faucibus lacinia magna. Praesent dictum malesuada urna ut feugiat. Nam sapien diam, elementum at convallis sed, bibendum pretium erat.
-		</p>
-	</div>	
+<div id="box">
+<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>
+</div>
 
-	<script type="text/javascript">
-	var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
-    //var url = 'tweet.json';
+<?php 
+	$row = $this->news_model->get_all_news();
+		foreach ($row as $r) {
+			if ($r->publish == 1){
+?>
+
+<div id="headline">
+<h2 style="font-size:1.9em; padding-bottom:15px">NEWS</h2>
+<h3 id="headline-title" style="font-size:1.6em;"><a style="color: #007ac3;" href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a></h3><br>
+<p id="headline-date" style="font-size:0.9em;"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></p>
+<div id="headline-imgBox"><img src="<?php echo base_url();?>assets/img/home-news.png"></div>
+<p id="headline-article">
+<?php echo substr(strip_tags($r->content),0,380)." ..."; ?>
+</p>
+</div>	
+
+<?php
+	break;
+		} 
+	}
+?>
+	
+	  <script type="text/javascript">
+    		//var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
+    		var url = '<?php echo base_url();?>twitterFetch/Twitter-PHP/fetch.php';
     
     var tweet;
     $(document).ready(function() {
        $.getJSON(url,function (data) {
-                   tweet = data.results;
+                   tweet = data;
                    var c = 0;
                    
                    setInterval(function(){
                    
-                   		data.results[c].text = data.results[c].text.length > 90 ? data.results[c].text.substr(0,90) + "..." : data.results[c].text;
-                   		data.results[c].created_at = data.results[c].created_at.length > 25 ? data.results[c].created_at.substr(0,25) : data.results[c].created_at;
-                   		$("#tweet").html(data.results[c].text);
-                   		$("#tweet-time").html(data.results[c].created_at);
-                   		c = c == data.results_per_page - 1 ? 0 : c+1;
+                   		tweet[c].text = tweet[c].text.length > 100 ? tweet[c].text.substr(0,100) + "..." : tweet[c].text;
+                   		tweet[c].created_at = tweet[c].created_at.length > 25 ? tweet[c].created_at.substr(0,25) : tweet[c].created_at;
+                   		$("#twitter-tweet > span").stop().animate({
+							top: -50,
+							opacity: 0,
+						}, 800, function() {
+							$("#tweet").html(tweet[c].text);
+							//$("#tweet-time").html(tweet[c].created_at);
+							$(this).stop().animate({
+								top: 100,
+							}, 0, function() {
+								$(this).stop().animate({
+									top: 0,
+									opacity: 1,
+								}, 1000);
+							});
+						});
+                   		c = c == tweet.length - 1 ? 0 : c+1;
                    	
                    },5000)
      	});
     });
-	</script>
-
+  	</script>
 	<div id="sharebox">
 		<a href="https://twitter.com/compfest" target="_blank" id="twitterbox">
 			<div id="twitter-logo"></div>
-			<div id="twitter-tweet">
+			<div id="twitter-tweet"><span style="font-size:12px;">
 				<p id="tweet"></p>
 				<p id="tweet-time"></p>
-			</div>
+			</span></div>
 		</a>
 		<script type="text/javascript">
 			function myFunction() {
-				var x = screen.width/2 - 850/2;
+				 var x = screen.width/2 - 850/2;
 				var y = screen.height/2 - 400/2;
 				window.open('http://facebook.com/CompFest','_blank','width=850,height=400,left='+x+',top='+y);
 				myWindow.focus();
@@ -101,5 +106,6 @@
 		</script>
 		<a id="likebox" type="button" onclick="myFunction()" value=""></a>
 
+	</div>
+</div>  
 </div>
-	    

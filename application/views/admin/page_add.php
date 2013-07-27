@@ -1,5 +1,4 @@
 
-
 <h1>Add new Page</h1>
 <form class="form-horizontal" method="post" data-ajax="false" action="<?php echo site_url('admin/save_page'); ?>">
 
@@ -14,16 +13,6 @@
 		<label class="control-label">keyword</label>
 		<div class="controls">
 			<input type="text" name="url" value="<?php echo set_value('url'); ?>" data-role="none">
-		</div>
-	</div>
-
-	<div class="control-group">
-		<label class="control-label">Publish</label>
-		<div class="controls">
-			<select name="publish" data-role="none">
-				<option value="1">Yes</option>
-				<option value="0">No</option>
-			</select>
 		</div>
 	</div>
 

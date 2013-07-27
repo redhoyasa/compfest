@@ -1,8 +1,7 @@
 #container{
 	margin-left: 0;
 	width: 820px;
-	float: left;
-	font-family: Tahoma,sans-serif;
+	font-family: Open Sans,Tahoma,sans-serif!important;
 }
 
 .news-button {
@@ -65,8 +64,8 @@
 	border-radius: 7px;
 }
 
-.news-content {
-	font-size: 13px;
+.news-content, .MsoNormal {
+	font-size: 12px!important;
 }
 .news-page-header{
 	color: rgb(190, 31, 69);
@@ -107,7 +106,7 @@ div {
 }
 
 .fb-like {
-	margin-bottom: 10px!important;
+	margin-bottom: 5px!important;
 }
 
 #footer{

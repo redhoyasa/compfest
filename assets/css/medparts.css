@@ -1,0 +1,25 @@
+#content {
+	overflow :hidden!important;
+}
+
+.wrapper {
+	padding : 10px;
+	margin : 50px;
+}
+
+.wrapper .link {
+	border-radius : 3px;
+	text-decoration: none;
+	padding : 5px 3px 5px 3px;
+	background : #ED2930;
+	color : white;
+	font-weight : bold;
+	margin: 10px;
+	display : block;
+	max-width : 200px;
+	text-align : center;
+}
+
+.wrapper .link:hover {
+	background : #FC4246;
+}

@@ -1,30 +1,23 @@
 h2 {
 	font-size : 30px;
 }
-#slider {
-	width: 960px;
-	margin-left: 100px;
-	overflow: hidden;
-}
-#slider-wrapper {
-	height: 450px;
-	display: block;
-	width: 4850px;
-}
 .competition-wrapper {
-	width: 960px;
+	width: inherit;
 	background: white;
 	margin: 0;
-	overflow: hidden;
-	float : left;
-	display: block;
+	padding: 10px 100px;
+}
+
+b {
+   font-weight : bold;
 }
 
 #competition-header {
-	background: url('../img/competition/header-competition.png');
+	background: url('../img/competition/header-bg.png');
 	width: 100%;
 	height: 300px;
 	padding-top:50px;
+	background-position : center center;
 }
 
 #competition-middle-header {
@@ -38,22 +31,37 @@ h2 {
 	font-size: 25px;
 	display: none;
 }
+
 .competition-thumbnail-wrapper{
 	display: block;
 	width : inherit;
 	padding: 10px 15px;
 	overflow: hidden;
 	margin: 0 auto;
+	background : white;
 }
+
 .competition-thumbnail{
 	width: 285px;
 	height: 150px;
 	float: left;
-	
+	cursor : pointer;
 }
-#competition-thumbnail-selected{
-	opacity: 0.3;
+
+.competition-thumbnail img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+   	filter: gray; /* IE6-9 */
+    	-webkit-filter: grayscale(100%);
+	-webkit-transition : all 0.3s ease-in-out;
+	   -moz-transition : all 0.3s ease-in-out;
+	        transition : all 0.3s ease-in-out;
 }
+.competition-thumbnail img:hover{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+   	-webkit-filter: grayscale(0%);
+	margin-top : -5px;
+}
+
 .competition-thumbnail img{
 	display: block;
 	width: 250px;
@@ -68,15 +76,12 @@ h2 {
 
 .competition-content{
 	width: auto;
-	overflow: hidden;
+	overflow: auto;
 	display: inline-block;
-<<<<<<< HEAD
 	border-top: solid 1px #dddddd;
 	padding-bottom: 20px;
 	padding-top: 20px;
-=======
-	margin: 5px;
->>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
+	color: #434343;
 }
 .competition-content-desc img {
 	margin: 10px;
@@ -102,40 +107,50 @@ h2 {
 	margin-bottom: 10px;
 	text-indent: 3em;
 	text-align: justify;
+	font-size: 14px;
+	line-height: 25px;
 }
 
 .competition-another-content {
 	width: inherit;
 	padding-top: 5px;
+	font-size: 14px;
+	line-height: 25px;
+	text-align : justify;
 }
 
-.competition-content h1 {
-	font-size: 40px;
-	margin: 5px 0 10px 0;
-	padding-top:5px;
+.competition-another-content li{
+	width: inherit;
+	padding-top: 5px;
+	font-size: 14px;
 }
 
-.competition-content p {
-	margin-bottom: 10px;
-	margin : 
-	text-indent: 3em;
-	text-align: justify;
+.competition-another-content ol{
+	width: inherit;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.competition-another-content p{
+	width: inherit;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.content-head {
+	margin-top : 10px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .competition-register-button{
-	height: 30px;
-	width: 120px;
+	height: 35px;
+	width: 180px;
 	float: left;
-	border: 1px solid #d8d8d8;
 	border-radius: 4px;
-	margin-right:5px;
-<<<<<<< HEAD
-	background-color: #ed1c24;
-	color: #f2f2f2!important;
-=======
+	margin-left: 400px;
 	background-color: #007ac3;
-	color: #f2f2f2;
->>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
+	color: #f2f2f2!important;
 	cursor: pointer;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -143,37 +158,56 @@ h2 {
 }
 
 .competition-register-button:hover{
-	background-color: #00617f;
+	background-color: #00617F;
 }
-.competition-closed-button{
+
+.competition-rulebook-button{
 	height: 30px;
-	width: 120px;
 	float: left;
-	border: 1px solid #d8d8d8;
 	border-radius: 4px;
 	margin-right:5px;
-	background-color: #4d4d4d;
-	color: #f2f2f2 !important;
+	background-color: #007ac3;
+	color: #f2f2f2!important;
+	vertical-align:middle;
 	cursor: pointer;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;	
 }
 
-.competition-tulisan-button{
+.competition-rulebook-button:hover{
+	background-color: #00617F;
+}
+
+.competition-closed-button{
+	height: 35px;
+	width: 180px;
+	float: left;
+	border-radius: 4px;
+	margin-left: 400px;
+	background-color: #4d4d4d;
+	color: #f2f2f2!important;
+	cursor: pointer;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;	
+}
+
+#competition-tulisan-button{
 	font-size: 14px;
 	margin: 7px;
+	line-height:14px;
 	text-align: center !important;
 	color: white;
-<<<<<<< HEAD
 	text-indent:0em !important;
 }
 
-
-=======
-	text-indent:0em !important ;
+#competition-register-tulisan{
+	font-size: 16px;
+	margin: 7px;
+	line-height:14px;
+	text-align: center !important;
+	padding-top:4px;
+	color: white;
+	text-indent:0em !important;
 }
-.desc {
-	display: none;
-}
->>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01

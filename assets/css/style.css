@@ -14,25 +14,26 @@ html, body{
 }
 
 body{
-	background-image:url('../img/bg.png');
+	background:url('../img/bg.png'),#f9f9f9;
 	background-repeat: repeat;
 	width : 100%;
 	padding : 0px;
 	margin  : 0px;
 	/*font-family: 'robotoLight', TW Cen MT, Arial;*/
-	font-family: Tahoma,Arial,sans-serif;
+	font-family: Open Sans,Tahoma,Arial,sans-serif;
 }
 
 #logo{
 	position: absolute;
 	z-index: 1000000;
 	left: 50%!important;
-	margin-left: -72.5px;
+	margin-left: -85px;
 }
 
 #wrap{
 	width:1180px;
 	margin: auto;
+	position:relative;
 }
 
 #login{
@@ -41,10 +42,10 @@ body{
 	background-repeat: no-repeat;
 	width:474px;
 	height: 53px;
+	position : absolute;
 	z-index: 99;
-	margin-top:-30px;
-	float : right;
-	position: absolute;
+	top:-30px;
+	right:0;
 }
 
 #user-info{
@@ -57,20 +58,29 @@ body{
 .field{
 	width: 110px;
 	border: 1px solid #ed1c24;
-	border-radius: 5px;
+	border-radius: 3px;
+}
+
+.field:active, .field:focus {
+       background : #dddddd;
+       outline :0;
 }
 
 #button-go{
 	width:60px;
 	height: 20px;
-	background-color: #e2e2e2;
+	background-color: #A00000;
+	border : 0;
 	font-family: Tahoma;
 	border-radius: 5px;
 	font-size: 0.7em;
+	color : white;
+	cursor : pointer;
 }
 
 	#button-go:hover{
 		border-color: #c6c6c6;
+		opacity : 0.8;
 	}
 
 	#button-go:active{
@@ -109,111 +119,98 @@ body{
 }
 
 #logout{
-	padding: 3px 3px 0px 3px;
-	background : #ED1C24;
+	padding: 7px 20px 0 20px;
 	background-repeat: no-repeat;
+	font-family : Tahoma, Arial, sans-serif;
 	width:auto;
-	height: 20px;
+	height: 24px;
 	position: absolute;
 	z-index: 99;
 	font-size: 0.7em;
-	border-radius: 0px 0px 50px 50px;
+	right:0;
 }
 
-#logout:before {
-	display: block;
-	float : left;
-	background-image : url('../img/tab-bg-left.png') no-repeat;
-	width: 33px;
-	height : 26px;
-	z-index : 99;
-	border-radius: 0px 0px 5px 5px;
-	content: " ";
-}
-
-#logout:after {
-	display: block;
-	float : right;
-	background-image : url('../img/tab-bg-right.png') no-repeat;
-	width: 33px;
-	height : 26px;
-	content: " ";
-}
 
 	#logout p,#logout a{
 		float: left;
-		color: white;
+		color: black;
 	}
 
 
 nav{
 	position: relative;
+	clear:both;
 	z-index: 10;
-	clear: both;
 }
 
 /*Styling warna menu*/
+.menu, .menu > a > div > p{
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
 #menu-home{
 	border-bottom: 5px solid #000000;
 }
 
-	#menu-home:hover{
-		background-color: #000000;
-	}
-
-	#menu-home:hover > a > div > p{
-		color: white;
+	#menu-home > a > div > p:hover{
+		color: #555555;
 	}
 
 #menu-about{
 	border-bottom: 5px solid #f7931e;
 }
 
-	#menu-about:hover{
-		background-color: #f7931e;
+	#menu-about > a > div > p:hover{
+		color: #f7931e;
 	}
 
 #menu-news{
 	border-bottom: 5px solid #e8d700;
 }
 
-	#menu-news:hover{
-		background-color: #e8d700;
+	#menu-news > a > div > p:hover{
+		color: #e8d700;
 	}
+
+#bufferMenu { 
+	width: 160px !important; 
+	position: relative;
+	top:5px;	
+}
 
 #menu-competition{
 	border-bottom: 5px solid #3d99d0;
 }
 
-	#menu-competition:hover{
-		background-color: #3d99d0;
+	#menu-competition > a > div > p:hover{
+		color: #3d99d0;
 	}
 
 #menu-event{
 	border-bottom: 5px solid #e40613;
 }
 
-	#menu-event:hover{
-		background-color: #e40613;
+	#menu-event > a > div > p:hover{
+		color: #e40613;
 	}
 
 #menu-contact{
 	border-bottom: 5px solid #8cc63f;
 }
 
-	#menu-contact:hover{
-		background-color: #8cc63f;
+	#menu-contact > a > div > p:hover{
+		color: #8cc63f;
 	}
 
-.menu{
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-}
+	.menu:hover > a > div > p{
+		color: white;
+	}
 
 	#first > li {
 		height: 93px;
-		width: 14.285714286%;
+		width: 170px;
 		float: left;
 		text-decoration: none;
 	}
@@ -223,12 +220,13 @@ nav{
 		}
 
 			#first > li > a > div > p{
-				color: #000;
+				color : #000;
 				font-size: 1.0em;
 				text-align: center;
 				padding-top: 60px;
 				padding-bottom: 10px;
 			}
+			#first > li > a > div > p:hover{ }
 
 .second{
 	position: absolute;
@@ -238,8 +236,8 @@ nav{
 }
 
 	.second > li > a > div{
-		height: 40px;
-		padding-top: 15px; 
+		height: 32px;
+		padding-top: 20px;
 		background-color: white;
 		opacity: 0.75;
 
@@ -258,30 +256,14 @@ nav{
 			color: #000;
 		}
 
-<<<<<<< HEAD
-=======
-			.second > li > p{
-				font-size: 0.8em;
-			}
-
-#logo{
-	position: absolute;
-	z-index: 7000;
-	left: 50%!important;
-	margin-left: -72.5px;
-}
-
-#spacer{
-	width: 1180;
-	height: 75;
-	margin: 0 auto;
-}
->>>>>>> 17935a38357e5bce9fe4f65a9df9729bac345e01
 #footer{
+	margin-top: 50px;
 	background-color: white;
 	height: 200px!important;
 	width: 1180px!important;
 	overflow: hidden;
+	border-radius : 10px;
+	border : 1px solid #ededed;
 }
 
 #sponsors{
@@ -300,6 +282,11 @@ nav{
 	position: relative;
 	clear: both;
 	height: auto;
+	background: #FFFFFF;
+	overflow:auto;
+	border : 1px solid #ededed;
+	border-top : none;
+	border-radius : 0px 0px 10px 10px;
 }
 
 .content-title{
@@ -311,4 +298,3 @@ nav{
 	margin-left: 75px;
 	padding: 30px;
 }
-
