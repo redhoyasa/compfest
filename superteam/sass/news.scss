@@ -1,0 +1,159 @@
+/***********************************
+*  Author : IT Support CompFest 2013
+*  URL    : http://compfest.web.id
+*  sass --watch a.scss:a.css --style compressed
+*  January, 29th 2013
+************************************/
+@import url("reset.css");
+
+body {
+	font-family: Tahoma, Arial,sans-serif;
+	font-size : 12px;
+	//background: url("../img/pattern.png");
+}
+
+a {
+	text-decoration: none;
+	color : black;
+}
+
+/*-----------------MENU ---------------------*/
+$width : 100%;
+$height : 80px;
+@mixin gradient {
+	border-bottom: 3px solid #007bc3 * 1.2;
+}
+nav {
+	height : 20%;
+	width : 100%;
+	.grid {
+		float : left;
+		width : $width/6;
+		line-height: $height;
+		background: transparent;
+		text-align: center;
+		font-weight : bold;
+		vertical-align: middle;
+		font-size : 16px;
+		margin-bottom : 0px;
+		border-bottom: 3px solid transparent;
+		&:hover {
+			@include gradient;
+		}
+	}
+}
+
+
+/*nav .satu {
+	background: #007bc3;
+	
+	&:hover{
+		background: #007bc3 * 1.2;
+		@include gradient;
+	}
+	
+}
+
+nav .dua {
+	background: #e30613 - 20;
+	&:hover{
+		background : #e30613  * 1.2;
+		@include gradient;
+	}
+	
+}
+
+nav .tiga {
+	background: #fdc700;
+	&:hover{
+		background :#fdc700 * 1.2;
+		@include gradient;
+	}
+	
+}
+
+nav .empat {
+	background: #229640;
+	&:hover{
+		background: #229640 * 1.2;
+		@include gradient;
+	}
+	
+}
+
+nav .lima {
+	background: #f39200 - 10;
+	&:hover{
+		background: #f39200 * 1.2;
+		@include gradient;
+	}
+	
+}
+
+nav .enam {
+	background: #4e4e4e;
+	&:hover{
+		background: #4e4e4e * 1.5;
+		@include gradient;
+	}
+	
+}
+/*------------------MAIN----------------------*/
+$x : 67% - 0.3%;
+$y : 50%;
+#main {
+	clear: both;
+	height :441px;
+	background :#dddddd;
+	padding : 20px 100px;
+	#news {
+		margin-top: 40px;
+		float : left;
+		width : $x - 10%;
+		height : 80%;
+		background: rgba(150,150,150,0.8);	
+
+		.column {
+			background : rgba(150,150,150,0.8);
+		}
+
+		#tombol {
+			width : 100px;
+			height : 30px;
+			background: rgba(200,200,200,0.5);
+		}
+
+		.luncur {
+			float: left;
+			width :100px;
+			height : 80px;
+			background: green;
+		}
+
+		&:after {
+			width : 100px;
+			height : 100px;
+			background: black;	
+		}
+	}
+	#taudah {
+		margin-top: 40px;
+		margin-left: 10%;
+		float : left;
+		width : 30%;
+		height : 80%;
+		background: green;
+	}
+}
+
+
+
+/*-----------------FOOTER---------------------*/
+footer {
+	clear: both;
+	position: absolute;
+	bottom : 0;
+	width : $width;
+	height : 20%;
+	background: rgba(0, 123, 195, 0.5);
+}

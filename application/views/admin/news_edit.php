@@ -8,6 +8,7 @@
 <h1>Add new Page</h1>
 <form class="form-horizontal" method="post" data-ajax="false" action="<?php echo site_url('admin/update_news'); ?>">
 	<input type="hidden" value="<?php echo $this->uri->segment(3) ?>" name="id_news">
+	<input type="hidden" value="<?php echo $page->timestamp; ?>" name="timestamp">
 
 	<div class="control-group">
 		<label class="control-label">Title</label>
@@ -17,13 +18,13 @@
 	</div>
 
 	<div class="control-group">
-		<label class="control-label">keyword</label>
+		<label class="control-label">URL</label>
 		<div class="controls">
 			<input type="text" name="url" value="<?php echo $page->url; ?>" data-role="none">
 		</div>
 	</div>
 
-<?php if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 2) { ?>
+<?php if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 3) { ?>
 	<div class="control-group">
 		<label class="control-label">Publish</label>
 		<div class="controls">

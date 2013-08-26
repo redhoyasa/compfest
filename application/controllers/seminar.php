@@ -2,14 +2,46 @@
 
 class Seminar extends CI_Controller {
 
-	public function index()
+	public function pawash(){
+		$this->template->display('front-end/seminar/seminar_v1');
+	}
+
+	public function index2()
 	{
+		redirect('seminar/subscribe');
+		return true;
 		$this->template->display('front-end/seminar/seminar');
+	}
+	
+	//fitur subscribe email, added : kandito
+	//function index buat subscribe dulu
+	function index() {
+		if($this->input->post('email')) {
+			$data['email'] = $this->input->post('email');
+
+			$this->form_validation->set_rules('email', 'Email', 'required|valid_email|strip_tags');
+			$this->form_validation->set_message('required', '%s wajib diisi');
+			$this->form_validation->set_message('valid_email', '%s tidak valid');
+			$this->form_validation->set_error_delimiters('<span class="alert alert-error" style="width:200px;">', '</span></br><div>&nbsp;</div>');
+
+			if ($this->form_validation->run() == FALSE) {
+				$this->template->display('front-end/seminar/subscribe');
+			} else {
+				$this->seminar_model->save_subscribe($data);
+				redirect('seminar/finish_subscribe');
+			}
+		} else {
+			$this->template->display('front-end/seminar/seminar_v1');
+		}
 	}
 	
 	public function register()
 	{
 		$this->template->display('front-end/seminar/seminar_register');
+	}
+	
+	public function register_beta() {
+		redirect('seminar/');
 	}
 
 	public function email_check($str)
@@ -24,14 +56,24 @@ class Seminar extends CI_Controller {
 			return false;
 		}
 	}
+	
+	function alpha_space($str)
+	{
+		$this->form_validation->set_message('alpha_space', 'Nama tidak sesuai format');
+    		return ( ! preg_match("/^([A-Za-z ])+$/i", $str)) ? FALSE : TRUE;
+	} 
 
 	public function register_seminar()
 	{
 
-		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags');
-		$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
+		$this->form_validation->set_rules('name', 'Nama', 'required|strip_tags|callback_alpha_space');
+		//$this->form_validation->set_rules('id_no', 'Nomor Identitas', 'required|strip_tags');
 		$this->form_validation->set_rules('phone', 'Nomor Telepon', 'required|numeric|strip_tags');
-		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check');
+		$this->form_validation->set_rules('inst','Institusi','strip_tags');
+		$this->form_validation->set_rules('tw','Twitter','required|strip_tags');
+		$this->form_validation->set_rules('hope','Field','required|strip_tags');
+		$this->form_validation->set_rules('list','Informasi','required');
 
 		$this->form_validation->set_message('required', '%s wajib diisi');
 		$this->form_validation->set_message('alpha', '%s harus berisi alfabet');
@@ -46,7 +88,7 @@ class Seminar extends CI_Controller {
 		$row = $this->seminar_model->getSeminar();
 		foreach($row as $r) {
 			if($this->input->post('seminar-'. $r->id_seminar) == 1) {
-				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]|strip_tags');
+				$this->form_validation->set_rules('motivation-'. $r->id_seminar, 'Seminar ' . $r->id_seminar, 'required|min_length[100]|max_length[2000]|strip_tags');
 				$valid = true;
 				$submit['formerror-'.$r->id_seminar] = true;
 			}
@@ -59,10 +101,19 @@ class Seminar extends CI_Controller {
 		}
 		else
 		{
+			if($this->input->post('list')) {
+				$informasi = $this->input->post('list');
+			} else {
+				$informasi = $this->input->post('inst2');
+			}
 			$data['name'] = $this->input->post('name');
 			$data['email'] = $this->input->post('email');
 			$data['id_no'] = $this->input->post('id_no');
-			$data['phone'] = $this->input->post('phone');
+			$data['phone'] = '+62'.$this->input->post('phone');
+			$data['hope'] = $this->input->post('hope');
+			$data['twitter'] = $this->input->post('tw');
+			$data['institution'] = $this->input->post('inst');
+			$data['informasi'] = $informasi;
 			$data['token'] = md5($this->input->post('email'));
 			$data['status'] = '0';
 
@@ -206,6 +257,14 @@ class Seminar extends CI_Controller {
 			redirect('seminar/register');
 		}
 	}
+	
+	
+	
+	
+	function finish_subscribe() {
+		$this->template->display('front-end/seminar/finish_subscribe');
+	}
+	
 }
 
 

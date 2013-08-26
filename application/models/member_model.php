@@ -40,6 +40,15 @@ class Member_model extends CI_Model {
 	}
 
 	/*
+	 * Fungsi untuk mengubah member
+	 */
+	public function edit_member($id, $role, $data) {
+		$this->db->where('register_role', $role);
+		$this->db->where('id_team', $id);
+		$this->db->update($this->table, $data); 
+	}
+
+	/*
 	 * Fungsi untuk menghapus member
 	 */
 	public function empty_member($id_team) {
@@ -53,7 +62,9 @@ class Member_model extends CI_Model {
 	public function edit_team($id_team, $data) {
 		$this->db->where('id_team', $id_team);
 		$this->db->update($this->table_team, $data); 
+		return true;
 	}
+	
 
 	/*
 	 * Fungsi untuk menghapus tim

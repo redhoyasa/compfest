@@ -5,6 +5,7 @@ class Kompetisi_model extends CI_Model {
 	public $table_reg = 'c_register';
 	public $table_team = 'c_team';
 	public $primary_key = 'id_event';
+	public $table_cac = 'c_cac';
 	
 	/*
 	 * untuk menampilkan semua seminar
@@ -44,6 +45,20 @@ class Kompetisi_model extends CI_Model {
 			return true;
 		}
 	}
+	
+	/*
+	 * mengecek ketersediaan nama tim
+	 */
+	public function teamAvailable($name) {
+		$this->db->from($this->table_team);
+		$this->db->where('team_name', $name);
+		$result = $this->db->count_all_results();
+		if($result > 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 
 	/*
 	 * Fungsi untuk menyimpan informasi tim
@@ -67,6 +82,27 @@ class Kompetisi_model extends CI_Model {
 			return false;
 		}
 	}
+	
+	function get_team_token($token) {
+		$this->db->where('token',$token);
+		$this->db->limit(1);
+		$query = $this->db->get($this->table_team);
+		if($query->num_rows() > 0)  {
+			$team = $query->result();
+			return $team[0];
+		} else {
+			return false;
+		}
+	}
+	
+	/*
+	 * Fungsi untuk menampilkan tim token
+	 */
+	function active_token($token) {
+		$this->db->where('token', $token);
+		$data['active'] = 1;
+		return $this->db->update($this->table_team, $data);
+	}
 
 		/*
 	 * Fungsi untuk menampilkan tim
@@ -75,5 +111,13 @@ class Kompetisi_model extends CI_Model {
 		$this->db->where('id_event',$id_event);
 		$query = $this->db->get($this->table_team);
 		return ($query->num_rows() > 0) ? $query->result() : false;		
+	}
+	
+	//fungsi untuk menampilkan data cac berdasarkan tim
+	function get_cac_data($id_team){
+		$sql = "SELECT * FROM c_cac a, c_team b WHERE a.id_team = b.id_team AND b.id_team = ?";
+
+		$query = $this->db->query($sql, array($id_team)); 
+		return ($query->num_rows() > 0) ? $query->result() : false;
 	}
 }

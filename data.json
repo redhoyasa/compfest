@@ -1,22 +1,21 @@
-
 {
     "timeline":
     {
-        "headline":"Roadshow: SMAN 8 Jayapura",
+        "headline":"Roadshow: SMK Pembangunan Jaya",
         "type":"default",
-		"startDate":"2009,1",
-		"text":"Info lanjut: Pkl 16.55 WIB LAA(Listrik Aliran Atas) Sudimara-Serpong dipadamkan guna perbaikan KA 749A yg mengalami gangguan. #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6, #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 ",
+		"startDate":"2013,4,26",
+		"text":"",
 		"asset":
         {
             "media":"",
-            "credit":"<a href='http://dribbble.com/shots/221641-iOS-Icon'>iOS Icon by Asher</a>",
+            "credit":"",
             "caption":""
         },
         "date": [
             {
-                "startDate":"2009,2",
-                "headline":"Roadshow: Universitas Wacana ",
-                "text":"Info lanjut: Pkl 16.55 WIB LAA(Listrik Aliran Atas) Sudimara-Serpong dipadamkan guna perbaikan KA 749A yg mengalami gangguan. #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 ",
+                "startDate":"2013,5,3",
+                "headline":"Roadshow: SMA Negeri 14 Jakarta",
+                "text":"",
                 "asset":
                 {
                     "media":"",
@@ -25,83 +24,105 @@
                 }
             },
             {
-                "startDate":"2009,5",
-                "headline":"Redesign of my portfolio",
-                "text":"Info lanjut: Pkl 16.55 WIB LAA(Listrik Aliran Atas) Sudimara-Serpong dipadamkan guna perbaikan KA 749A yg mengalami gangguan. #InfoLintasKRL. Tiba di Polda, Ibas Laporkan Orang Berinisial Y http://republika.co.id/r/mjyft6 ",
+                "startDate":"2013,5,8",
+                "headline":"Roadshow: Binus University",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,10",
+                "headline":"Roadshow: Institut Teknologi Telkom Bandung",
+                "text":"",
 
                 "asset":
                 {
-                    "media":"assets/plugin/img/shots/sidebar_s3.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/401334-Sidebar'>by Chris Brauckmuller</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2009,7",
-                "headline":"Another time-lapse experiment",
-                "text":"",
-                "asset":
-                {
-                    "media":"http://vimeo.com/23237102",
+                    "media":"",
                     "credit":"",
                     "caption":""
                 }
             },
             {
-                "startDate":"2009,10",
-                "headline":"Developed a Gmail Client",
+                "startDate":"2013,4,26",
+                "headline":"Roadshow: SMK Pembangunan Jaya",
                 "text":"",
                 "asset":
                 {
-                    "media":"assets/plugin/img/shots/shot_1298590416.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/120088-Gmail-Pokki-Final-Ui'>by Justalab</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,3",
-                "headline":"Logo Design for a pet shop",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/plugin/img/shots/pet___you.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/444003-Pet-You'>by Nikita Lebedev</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,4",
-                "headline":"Developed an iPad newspaper application",
-                "text":"It was a challenge to create both the design and code in a week.",
-                "asset":
-                {
-                    "media":"assets/plugin/img/shots/proto_v4_decoupe_2.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/228267-Swiss-newspaper-reader-app-for-iPad-UI-UX-iOS'>by Jonathan Moreira</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,8",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/plugin/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,12",
-                "headline":"Advert for Volkswagen",
-                "text":"Created the website for their new advertising campaign.",
-                "asset":
-                {
-                    "media":"http://www.youtube.com/watch?v=0-9EYFJ4Clo",
+                    "media":"",
                     "credit":"",
                     "caption":""
                 }
-            }
+            },
+            {
+                "startDate":"2013,5,11",
+                "headline":"Roadshow: Institut Teknologi Bandung",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,17",
+                "headline":"Roadshow: Universitas Gadjah Mada",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,18",
+                "headline":"Roadshow: SMA Negeri 1 Sukabumi",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+             {
+                "startDate":"2013,5,18",
+                "headline":"Roadshow: Universitas Diponegoro",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,24",
+                "headline":"Roadshow: PENS",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,5,25",
+                "headline":"Roadshow: Universitas Brawijaya",
+                "text":"",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            }             
         ]
     }
 }

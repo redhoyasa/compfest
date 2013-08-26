@@ -1,38 +1,224 @@
-		<div id="container">
-			<h2 class="content-title">Seminar</h2>
-							
-				<div class="seminar-instance">
-
-					<div class="seminar-left-instance">
-						<div class="seminar-title-instance">Seminar Pengembangan Defese of The Ancients</div>
-
-						<div class="seminar-img-instance">
-							<img src="" width="220" height="150" alt="">
-						</div>
-
-						<p class="seminar-paragraph-instance">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						</p>
-
+<link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>assets/css/seminar.css">
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrap-seminar">
+<img src="<?php echo base_url(); ?>assets/img/header-red.png" alt="" style="width:100%;"/>
+	
+	<img src="<?php echo site_url(); ?>assets/img/seminar/header-seminar.png" alt="" style="width:100%; height:190px;">
+	
+	<h3 id="rwcn" class="seminar-tanggal">Hari 1: Sabtu, 21 September 2013</h3>
+	<table>
+		<tr>
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/wisnu.jpg" alt="" />
+						<div class="seminar-item seminar-red">
+							<div class="seminar-top"><h3 class="seminar-title">Encourage Innovation in Indonesia through Research</h3></div>
+							<p class="seminar-sounder">
+								<b>Wisnu Jatmiko</b><br/>
+								Chief of Research Faculty of Computer Science, University of Indonesia<br/>
+							</p>
+							<h4 class="seminar-sched">
+								09.30 &dash; 11.00 WIB
+							</h4>
+						</div>	
 					</div>
-
-					<div class="seminar-right-instance">
-						<div id="seminar-details">Details</div>
-						<div class="seminar-date">Date : March 25th, 2013</div>
-						<div class="seminar-time">Time : 10 PM</div>
-						<div class="seminar-place">Place : Istora Senayan</div>
-						<div id="seminar-tulisan-capacity">Capacity</div>
-						<div class="seminar-capacity-border">
-						<div class="seminar-capacity-bar"></div>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo base_url(); ?>assets/img/seminar/oskar.jpg" alt="" />
+						<div class="seminar-item seminar-yellow">
+							<div class="seminar-top"><h3 class="seminar-title">Innovation of Speech and Natural Language Processing </h3></div>
+							<p class="seminar-sounder">
+								<b>Oskar Riandi</b><br/>
+								Researcher on Speech and Natural Language Processing<br/>
+							</p>
+							<h4 class="seminar-sched">
+								11.00 &dash; 12.30 WIB
+							</h4>
+						</div>	
 					</div>
-					<br>
-					<div class="seminar-register-button">
-						<a href="<?php echo site_url('seminar/register');?>"><p id="seminar-tulisan-register">REGISTER</p></a>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/andri.jpg" alt="" />
+						<div class="seminar-item seminar-green">
+							<div class="seminar-top"><h3 class="seminar-title">Solving today&rsquo;s Enterprise Problem with Big Data Management</h3></div>
+							<p class="seminar-sounder">
+								<b>Andri Rizki</b><br/>
+								Client Technical Professional Information Management Software IBM Indonesia<br/>
+							</p>
+							<h4 class="seminar-sched">
+								13.30 &dash; 15.00 WIB
+							</h4>
+						</div>	
 					</div>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/rene.jpg" alt="" />
+						<div class="seminar-item seminar-blue">
+							<div class="seminar-top"><h3 class="seminar-title">Innovate or Perish</h3></div>
+							<p class="seminar-sounder">
+								<b>Rene Suhardono Canoneo</b><br/>
+								Public Speaker, Author, Career Coach, Business Performance Specialist<br/>
+							</p>
+							<h4 class="seminar-sched">
+								16.00 &dash; 17.30 WIB
+							</h4>
+						</div>	
+					</div>
+				</a>
+			</td>
+		</tr>
+	</table>
+	
+	<h3 class="seminar-tanggal">Hari 2: Minggu, 22 September 2013</h3>
+	
+	<table>
+		<tr>
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/adhicipta.jpg" alt="" />
+						<div class="seminar-item seminar-red">
+							<div class="seminar-top"><h3 class="seminar-title">Indonesian Animation Strategy Goes International</h3></div>
+							<p class="seminar-sounder">
+								<b>Adhicipta R. Wirawan </b><br/>
+								Founder Animotion Academy, CEO PT Mekanima Inspira Nagara<br/>
+							</p>
+							<h4 class="seminar-sched">
+								09.30 &dash; 11.00 WIB
+							</h4>
+						</div>	
+					</div>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/izak.jpg" alt="" />
+						<div class="seminar-item seminar-yellow">
+							<div class="seminar-top"><h3 class="seminar-title">Advance Payment for Mobile and Community </h3></div>
+							<p class="seminar-sounder">
+								<b>Izak Jenie</b><br/>
+								Board Member m-Saku Payment, CEO PT. Metrotech Makmur Sejahtera<br/>
+							</p>
+							<h4 class="seminar-sched">
+								11.00 WIB &dash; 12.30 WIB
+							</h4>
+						</div>	
+					</div>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/ariefalfred.jpg" alt="" />
+						<div class="seminar-item seminar-green">
+							<div class="seminar-top"><h3 class="seminar-title">Gameconomics: Turning Game into Successful Business </h3></div>
+							<p class="seminar-sounder">
+								<b>Arief Widiyasha</b><br/>
+								CEO Agate Studio<br/>
+								<br/>
+								<b>Alfred Boediman</b><br/>
+								Vice President Samsung Media Solution Center Indonesia<br/>
+							</p>
+							<h4 class="seminar-sched">
+								13.30 &dash; 15.30 WIB
+							</h4>
+						</div>	
+					</div>
+				</a>
+			</td>
+	
+			<td>
+				<a href="#" class="seminar-click">
+					<div class="seminar-container">
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/firstman.jpg" alt="" />
+						<div class="seminar-item seminar-blue">
+							<div class="seminar-top"><h3 class="seminar-title">Innovation of Perceptual Computing </h3></div>
+							<p class="seminar-sounder">
+								<b>Firstman Marpaung</b><br/>
+								Manager Marketing APAC Software & Service Group Intel Indonesia<br/>
+							</p>
+							<h4 class="seminar-sched">
+								16.00 &dash; 17.30 WIB
+							</h4>
+						</div>	
+					</div>
+				</a>
+			</td>
+		</tr>
+	</table>	
+	
+	<h2 id="maps-title"/>
+		Venue :<br/>
+		Anex Room Balairung, Universitas Indonesia.
+	</h2>
+	<div id="seminar-maps"></div>
+	
+	<div id="seminar-subscribe">
+		<h3 id="seminar-Tdetail">
+			Pendaftaran akan mulai dibuka pada<br>
+			tanggal 21 Agustus 2013 pukul 16.00 WIB<br>
+			Jadilah bagian dari perubahan teknologi informasi di Indonesia
+		</h3>
+		<p id="seminar-detailSubs">
+			Masukan email kamu ke kotak di bawah ini untuk mendapatkan update terbaru dari Seminar Compfest 2013
+		</p>
+	
+		<form id="seminar-subscrForm" method="post">
+			<?php echo form_error('email'); ?>
+			<input id="seminar-input" type="email"/><br/>
+			<button id="seminar-subscrButton" type="submit" name="seminar-submit">Submit</button>
+		</form>
+	
+		<div id="seminar-share">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/seminar" data-text="Seminar @CompFest akan segera dibuka. dapatkan info terbarunya di sini" data-size="small" data-hashtags="FantasticJourney">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div class="fb-like" data-href="http://compfest.web.id/seminar" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-action="recommend"></div>
 
-				</div>
 		</div>
-				
-	</div>	
+	</div>
+</div>
+<script>
+function initialize() {
+	var map_canvas = document.getElementById('seminar-maps');
+	var myCenter = new google.maps.LatLng(-6.367932,106.829681);
+	var map_options = {
+		center: myCenter,
+		zoom: 16,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
 
-		<link rel="stylesheet" type="text/css" href="<?php site_url();?>assets/css/seminar.css">
+	var map = new google.maps.Map(map_canvas, map_options);
+
+	var marker = new google.maps.Marker({
+		position:myCenter,
+		animation:google.maps.Animation.BOUNCE
+	});
+
+	marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>

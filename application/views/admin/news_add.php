@@ -1,6 +1,5 @@
 
-
-<h1>Add new Page</h1>
+<h1>Add new News</h1>
 <form class="form-horizontal" method="post" data-ajax="false" action="<?php echo site_url('admin/save_news'); ?>">
 
 	<div class="control-group">
@@ -11,7 +10,7 @@
 	</div>
 
 	<div class="control-group">
-		<label class="control-label">keyword</label>
+		<label class="control-label">URL</label>
 		<div class="controls">
 			<input type="text" name="url" value="<?php echo set_value('url'); ?>" data-role="none">
 		</div>

@@ -1,0 +1,57 @@
+body {
+	background : url("img/bg.png");
+	color 	   : white;
+}
+
+@font-face {
+	font-family: "Bebas";
+	src  : url("font/Republic-Heavy.otf");
+}
+
+h1 {
+	font-family: "Bebas";
+	color : black;
+	font-size: 40pt;
+	text-align: center;
+    font-style: normal;
+    margin:0;
+}
+
+#mid {
+	text-align: center;
+	position: absolute;
+	top : 50%;
+	left : 50%;
+	margin-left: -500px;
+	margin-top: -165.5px;
+}
+
+.box {
+	font-family: "Bebas";
+	width : 250px;
+	height : 250px;
+	text-align : center;
+	float: left;
+	
+}
+
+.time {
+	font-family: "Bebas";
+	color : black;
+	font-size: 180px;
+}
+
+
+.plus {
+	font-family: "Bebas";
+	font-weight: bolder;
+	color : black;
+	font-size: 30pt;
+	text-align: center;
+	vertical-align: bottom;
+    font-style: normal;
+    margin : 0 10px 0 10px;
+    border-radius: 5px;
+    padding :0;
+    background: #dddddd;
+}

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Compfest</title>
+    <meta name="google-site-verification" content="DfXfK2mu30XCrE6UguErHz8bxjNCGJ4WuvORTIAoAKQ" />
     <!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>bootstrap/css/dashboard.css" rel="stylesheet" media="screen">
@@ -28,4 +29,3 @@
     <?php echo $content; ?>
   </body>
 </html>
-

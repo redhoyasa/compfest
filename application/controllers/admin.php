@@ -78,6 +78,10 @@ class Admin extends Admin_Controller {
 		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
+		//jika yang login admin dari oac
+		if($this->uri->segment(3) != 5 && $this->session->userdata('id_admin') == 5) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/team_list');
 	}
 
@@ -88,7 +92,29 @@ class Admin extends Admin_Controller {
 		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
 			redirect('admin');
 		}
+		
+		//jika yang login admin dari oac
+		if($this->kompetisi_model->get_team($this->uri->segment(3))->id_event != 5 && $this->session->userdata('id_admin') == 5) {
+			redirect('admin');
+		}
 		$this->template->admin('admin/team_detail');
+	}
+
+
+	/*
+	 * Fungsi untuk mengubah status ide
+	 */
+	public function idea_update() {
+		if($this->session->userdata('event') != 1 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
+		$id_team = $this->uri->segment('3');
+		$status['idea_fix'] = $this->uri->segment('4');
+
+		$this->member_model->edit_team($id_team, $status);
+
+
+		redirect(site_url('admin/competition_team') . '/' . $id_team);
 	}
 
 	/*
@@ -179,6 +205,7 @@ class Admin extends Admin_Controller {
 			$data['publish'] =  0;
 		}
 		$data['content'] =  $this->input->post('content');
+		$data['timestamp'] = $this->input->post('timestamp');
 
 		$this->news_model->update_news($id, $data);
 		redirect('admin/news');
@@ -212,20 +239,23 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menampilkan semua halaman
 	 */
 	public function page() {
-		if($this->session->userdata('event') != 0) {
+		if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 3) {
+			$this->template->admin('admin/page');
+		} else {
 			redirect('admin');
 		}
-		$this->template->admin('admin/page');
+		
 	}
 
 	/*
 	 * Fungsi untuk menambahkan halaman
 	 */
 	public function add_page() {
-		if($this->session->userdata('event') != 0) {
+		if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 3) {
+			$this->template->admin('admin/page_add');
+		} else {
 			redirect('admin');
 		}
-		$this->template->admin('admin/page_add');
 	}
 
 	public function save_page() {
@@ -244,7 +274,7 @@ class Admin extends Admin_Controller {
 			$data['url'] = $date->format('Y-m-d H:i:s');
 		}
 
-		$data['publish'] =  $this->input->post('publish');
+		$data['publish'] = 0;
 		$data['parent'] =  $this->input->post('parent');
 		$data['content'] =  $this->input->post('content');
 
@@ -283,10 +313,12 @@ class Admin extends Admin_Controller {
 	 * Fungsi untuk menyunting halaman
 	 */
 	public function edit_page() {
-		if($this->session->userdata('event') != 0) {
+		if($this->session->userdata('event') == 0 || $this->session->userdata('event') == 3) {
+			$this->template->admin('admin/page_edit');
+		} else {
 			redirect('admin');
 		}
-		$this->template->admin('admin/page_edit');
+		
 	}
 
 	/*

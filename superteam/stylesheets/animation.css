@@ -1,0 +1,33 @@
+@-webkit-keyframes jump {
+  /* line 2, ../sass/animation.scss */
+  0% {
+    background-position: 0px 0px;
+  }
+
+  /* line 6, ../sass/animation.scss */
+  50% {
+    background-position: 30px -78px;
+  }
+
+  /* line 11, ../sass/animation.scss */
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@-webkit-keyframes ubah {
+  /* line 17, ../sass/animation.scss */
+  0% {
+    content: 'Hai Semua :D';
+  }
+
+  /* line 21, ../sass/animation.scss */
+  50% {
+    content: 'Selamat Pagi';
+  }
+
+  /* line 25, ../sass/animation.scss */
+  100% {
+    content: 'Hai Semua :D';
+  }
+}

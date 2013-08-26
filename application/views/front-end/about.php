@@ -1,65 +1,28 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/about.css" type="text/css" media="screen" />
 
 <div id="about-header">
+	<div id="about-middle-header">
+		
+	</div>
 </div>
 	
 <div id="about-wrapper">
 
 	<div id="about-desc">
-		<img src="<?php echo base_url(); ?>assets/img/about/pic1.png" alt="Harusnya muncul gambar disini" style="float:right" />
-		<h1>What is Computer Festival?</h1>
-		<p>Ih si badur bikin  template buat acara ga bener nih. Desainnya ga salah sih, kece-kece semua desainnya. Tapi
-		Masa sama acaranya sendiri aja ga tau sih? Ini kan acara COMPFEST 2013, bukan Computer Festival. Buat yang 
-		belom tau nih ya, gua kasih tau deh, compfest itu BUKAN singkatan dari Computer Festival, tapi emang branding 
-		sendiri. Jadi kalo ditanya apa itu Computer Festival, ya mana gua tau! Gua taunya Compfest, acara Fasilkom UI
-		dan merupakan acara IT paling kece yang gua tau :3</p>
-		
-		<p>Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
-		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
-		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
-		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
-		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
-		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
-		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
-		lacus. </p>
-	</div>
-	
-	<div id="about-desc">
-		<img src="<?php echo base_url(); ?>assets/img/about/pic2.png" alt="Harusnya muncul gambar disini" style="float:left" />
-		<h1>Whats on COMPFEST</h1>
-		<p>Banyak hal, tapi sekarang tuh lagi persiapan, khususnya IT Support nih, lagi sibuk merealisasikan desain 
-		buatan badur menjadi website yang full function. Kemaren kamis malem nginep di ruang lab nokia loh demi 
-		menyelesaikan website ini, walaupun rencana awalnya sih mau main CTR berempat, tapi jadi wacana demi terealisasikannya
-		website compfest looh~.</p>
-		
-		<p>Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
-		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
-		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
-		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
-		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
-		tristique. </p>
-	</div>
+		<img width="105" height="200" src="<?php echo base_url(); ?>assets/img/logo-fix.png" alt="Harusnya muncul gambar disini" style="float:right;padding-right:75px;" />
+		<div style="width:750px;"><h1>What is CompFest?</h1><br>
+		<p>CompFest merupakan <i>one-stop IT event</i> tahunan yang diselenggarakan oleh mahasiswa Fakultas Ilmu Komputer Universitas Indonesia yang terdiri atas rangkaian kompetisi, <i>roadshow</i>, seminar, <i>playground</i>, dan <i>entertainment</i>.
+</p><br/><p>
+CompFest 2013 memiliki tema "Facing National Development Towards Innovation and Collaboration - FANTASTIC" yang bertujuan untuk memacu dan meningkatkan kolaborasi antar akademisi, lembaga pemerintahan, perusahaan, <i>start-up</i>,<i>developer</i>, dan komunitas agar mendapatkan hasil inovasi terbaik untuk kemajuan IT di Indonesia.</p><br/>
+<p>Info lebih detail tentang rangkaian kegiatan CompFest 2013 bisa dibaca pada tautan berikut :
+<ul><li> 1. <a href="/competition">Kompetisi</a></li>
+<li> 2. <a href="/roadshow">Roadshow</a> </li>
+<li>3. <a href="/seminar">Seminar</a></li></ul>
+	</p>
+	</div></div>
 	
 </div>
-
-<div id="about-pic-strip">
+<br><br><br>
+<!--div id="about-pic-strip">
 	<img src="<?php echo base_url(); ?>assets/img/about/pic-strip.png" alt=""/>
-</div>
-
-<div id="about-wrapper">
-	
-	<div id="about-desc">
-		<h1>Another Content</h1>
-		<p id="about-another-content">Gua ga tau mau diisi apaan ini, jadi gua kasih lorem ipsum aja yak : Lorem ipsum dolor 
-		sit amet, consectetur adipiscing elit. Duis porta lacus ut eros convallis a tempor neque laoreet. Vivamus posuere, 
-		leo vitae placerat porttitor, est magna imperdiet diam, eu ornare metus justo eget dolor. Nulla quis est a massa 
-		consequat luctus in eu risus. In vel erat et augue consectetur ultrices vel quis leo. Proin mauris purus, 
-		volutpat nec aliquet sit amet, adipiscing id libero. Vestibulum sit amet mollis dolor. Class aptent taciti 
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi suscipit hendrerit sapien eget 
-		tristique. Phasellus tincidunt purus eget magna vulputate vehicula. Suspendisse venenatis vehicula luctus. 
-		Morbi scelerisque enim vel lacus tempor luctus. Nunc ultricies risus quis libero suscipit laoreet nec ultrices 
-		lacus.</p>
-	</div>
-</div>
+</div-->

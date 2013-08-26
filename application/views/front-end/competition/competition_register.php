@@ -31,38 +31,47 @@
 			<div class="main" id="register-main">
 				<form class="form-horizontal" method="post" action="<?php echo site_url('competition/register_competition'); ?>" data-validate="parsley">
 					<div class="control-group">
+						<?php echo form_error('team_name'); ?>
 						<label class="control-label" for="inputNama">Nama Tim</label>
 						<div class="controls">
-							<?php echo form_error('team_name'); ?>
-							<input data-required="true" data-trigger="change" type="text" id="inputNamaTim" placeholder="nama tim" name="team_name" value="<?php echo set_value('team_name'); ?>">
+							<input data-required="true" data-trigger="change" type="text" id="inputNamaTim" placeholder="nama tim / nama peserta" name="team_name" value="<?php echo set_value('team_name'); ?>">
 							&nbsp;&nbsp;<span class="info" id="nameInfo"></span>
+							
 						</div>
 					</div>
 
-
 					<div class="control-group">
+						<?php echo form_error('email'); ?>
 						<label class="control-label" for="inputEmail">E-mail</label>
 						<div class="controls">
-							<?php echo form_error('email'); ?>
 							<input data-required="true" data-type="email" data-trigger="change" type="email" id="inputEmail" placeholder="email" name="email" value="<?php echo set_value('email'); ?>">
 							&nbsp;&nbsp;<span class="info" id="emailInfo"></span>
 						</div>
 					</div>
 
 					<div class="control-group">
+					<?php echo form_error('password'); ?>
 						<label class="control-label" for="inputNoid">Password</label>
 						<div class="controls">
-							<?php echo form_error('password'); ?>
 							<input data-minlength-message="Panjang password minimal 6 karakter" data-required="true" data-trigger="change" data-minlength="6" type="password" id="inputPassword" name="password">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
-							<br><span class="help-block">*Digunakan untuk memasuki member area</span>
+							<br><!--span class="help-block">*Digunakan untuk memasuki member area</span-->
 						</div>
 					</div>
-					<br>
+					
 					<div class="control-group">
+					<?php echo form_error('repassword'); ?>
+						<label class="control-label" for="inputNoid">Ulangi Password</label>
+						<div class="controls">
+							<input data-minlength-message="Panjang password minimal 6 karakter" data-required="true" data-trigger="change" data-minlength="6" type="password" id="inputPassword" name="repassword">&nbsp;&nbsp;<span class="info" id="passInfo"></span>
+						</div>
+					</div>
+					
+					
+					<div class="control-group">
+						<?php echo form_error('institution'); ?>
 						<label class="control-label" for="inputInstitution">Instansi</label>
 						<div class="controls">
-							<?php echo form_error('institution'); ?>
-							<input type="text" id="inputInstitution" placeholder="nama instansi" name="institution" value="<?php echo set_value('institution'); ?>">	
+							<input type="text" id="inputInstitution" placeholder="Nama Lengkap Instansi" name="institution" value="<?php echo set_value('institution'); ?>">	
 							&nbsp;&nbsp;<span class="info" id="institutionInfo"></span>
 						</div>
 					</div>
@@ -77,13 +86,14 @@
 						foreach ($kompetisi as $k) {
 						?>
 							<label class="radio">
-								<input <?php if(++$i == $n){ echo 'data-required="true"'; }?> type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?>><?php echo $k->event_name; ?><br>
+								<input <?php if(++$i == $n){ echo 'data-required="true"'; }?> type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?> <?php if($k->id_event==3 || $k->id_event==4 || $k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo 'disabled'; ?>><?php echo $k->event_name; ?><?php if($k->id_event==3 || $k->id_event==4 || $k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo ' <b style="font-weight:800;">(Sudah ditutup)</b>'; ?>
+								<br>
 							</label>
 						<?php } ?>
 						<?php echo form_error('competition'); ?>
 						</div>
 					</div>
-
+				<br>
 
 				<div class="control-group">
 						<div class="controls">

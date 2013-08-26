@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>obazavil:googlebot</id>
+	<version>1.00</version>
+
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="before"><![CDATA[			),
+			array(
+				'tag' => 'white',
+				'before' => '<span style="color: white;">',
+				'after' => '</span>',
+			),]]></search>
+			<add><![CDATA[
+            array(
+            'tag' => 'tex',
+            'type' => 'unparsed_content',
+            'content' => '<img src="http://www.forkosh.dreamhost.com/mimetex.cgi?$1" alt="$1" border="0" align="absmiddle" />',
+         ),]]></add>
+		</operation>
+	</file>
+	<file name="$themedir/Post.template.php">
+		<operation>
+			<search position="after"><![CDATA[			'list' => array('code' => 'list', 'before' => '[list]\n[li]', 'after' => '[/li]\n[li][/li]\n[/list]', 'description' => $txt[261]),]]></search>
+					<add><![CDATA[
+								'tex' => array('code' => 'tex', 'before' => '[tex]', 'after' => '[/tex]', 'description' => $txt['latex']),]]></add>
+	</operation>
+	</file>
+	<file name="$themedir/languages/Modifications.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//- LaTeX
+$txt['latex'] = 'LaTeX';]]></add>
+		</operation>
+	</file>
+		<file name="$themedir/languages/Modifications.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//- LaTeX
+$txt['latex'] = 'LaTeX';]]></add>
+		</operation>
+	</file>]		<file name="$themedir/languages/Modifications.brazilian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//- LaTeX
+$txt['latex'] = 'LaTeX';]]></add>
+		</operation>
+	</file>
+</modification>

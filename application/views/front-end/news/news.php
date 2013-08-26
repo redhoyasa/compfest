@@ -26,7 +26,7 @@
 					<tr>	
 					<td><div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="tahoma" data-action="recommend"></div></td>
 					<td>&nbsp;&nbsp;&nbsp;</td>
-					<td><div class="twitter-hack"><a href="https://twitter.com/share" class="twitter-share-button" data-via="CompFest">Tweet</a></div></td>
+					<td><div class="twitter-hack"><a href="https://twitter.com/share" class="twitter-share-button" data-via="CompFest" data-text="<?php echo $r->title;?>" data-hashtags="FantasticJourney">Tweet</a></div></td>
 				</tr>
 				</table>
 				<div class="news-main">
@@ -40,7 +40,7 @@
 		?>
 </div>
 
-<div id="recent">
+<!--div id="recent">
 	<h2 class="recent-header">Berita Terbaru</h2>
 	<ul>
 	<?php 
@@ -55,7 +55,7 @@
 		?>
 	</ul>
 
-</div>
+</div-->
 
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/news.css">

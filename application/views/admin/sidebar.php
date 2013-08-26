@@ -7,18 +7,25 @@
 	
 			<li data-role="list-divider">Menu</li>
 			<li><a href="<?php echo site_url('admin') ?>">Home</a></li>
+			<?php if($this->session->userdata('event') == '0' || $this->session->userdata('event') == '4') { ?>
 			<li><a href="<?php echo site_url('admin/page') ?>">Page</a></li>
 			<li><a href="<?php echo site_url('admin/news') ?>">News</a></li>
+			<?php } ?>
 			<li><a href="<?php echo site_url('auth/logout') ?>" data-ajax="false">Logout (level <?php echo $this->session->userdata('event'); ?>)</a></li>
 			
 			<?php if($this->session->userdata('event') == '0' || $this->session->userdata('event') == '1') { ?>
 			<li data-role="list-divider">Competition</li>
 			<?php 
 			$kompetisi = $this->kompetisi_model->getEvent();
+			?>
+			    <?php if($this->session->userdata('id_admin') == 5) { ?>
+				<li><a data-ajax="false" href="<?php echo site_url('admin/competition') .'/'. 5 ?>">Open Animation Competition</a>
+			    <?php } else { 
 				foreach ($kompetisi as $k) {
 				?>
 				<li><a data-ajax="false" href="<?php echo site_url('admin/competition') .'/'. $k->id_event ?>"><?php echo $k->event_name ?></a></li>
 				<?php } ?>
+			    <?php } ?>
 			<?php } ?>
 
 			<?php if($this->session->userdata('event') == '0' || $this->session->userdata('event') == '2') { ?>

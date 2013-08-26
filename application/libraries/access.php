@@ -19,10 +19,12 @@ class Access {
 		$result = $this->users_model->get_login_info($email);
 		if($result) {
 			$password = md5($password);
-			if($password === $result->password) {
+			if($password === $result->password && $result->active == 1) {
 				$id_team = $result->id_team;
+				$token = $result->token;
 				$this->CI->session->set_userdata('id_team',$id_team);
 				$this->CI->session->set_userdata('email',$email);
+				$this->CI->session->set_userdata('token',$token);
 				return true;
 			}
 			return false;
@@ -34,7 +36,15 @@ class Access {
 	 * cek apakah login
 	 */
 	function is_login() {
-		return ($this->CI->session->userdata('id_team')) ? true : false;
+		//return ($this->CI->session->userdata('id_team')) ? true : false;
+		$id_team_true = ($this->CI->session->userdata('id_team')) ? true : false;
+		
+		$team = $this->CI->users_model->get_login_info($this->CI->session->userdata('email'));
+		if($this->CI->session->userdata('token') == $team->token and $id_team_true) {
+			return true; 
+		} else {
+			return false;
+		}
 	}
 
 

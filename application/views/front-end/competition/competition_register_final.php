@@ -1,5 +1,5 @@
 <div id="box">
-	<p>Pendaftaran berhasil, Silahkan login dengan e-mail tim Anda.</p>
+	<p>Pendaftaran berhasil, konfirmasi di folder inbox/spam email anda.</p>
 </div>
 
 <style type="text/css">
@@ -11,7 +11,7 @@
 	width: 500px;
 	vertical-align: center;
 	text-align: center;
-	margin: auto;
+	margin: auto auto 100px auto;
 	font-size: 13px;
 }
 

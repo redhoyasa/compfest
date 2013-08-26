@@ -1,0 +1,31 @@
+#cac-title{
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+}
+
+table{
+	width: 100%;
+}
+
+.cac-head{
+	background-color: #c5c5c5;
+	padding: 5px 0;
+}
+
+.cac-cell{
+	background-color: #ecf0f1;
+	text-align: center;
+	height: 40px;
+}
+
+#cac-sort-text{
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+#cac-select{
+	background-color: #ecf0f1;
+	display: inline;
+}

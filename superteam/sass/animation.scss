@@ -1,0 +1,29 @@
+@-webkit-keyframes jump{
+	0% {
+		background-position: 0px 0px;
+	}
+	
+	50% {
+		background-position: 30px -78px;
+		//-webkit-transform : rotate(5deg);
+	}
+	
+	100% {
+		background-position: 0px 0px;
+	}
+}
+
+@-webkit-keyframes ubah{
+	0% {
+		content : 'Hai Semua :D';
+	}
+	
+	50% {
+		content : 'Selamat Pagi';
+	}
+	
+	100% {
+		content : 'Hai Semua :D';
+	}
+}
+
