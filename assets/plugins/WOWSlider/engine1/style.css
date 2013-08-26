@@ -163,11 +163,11 @@
 	position:absolute;
 	display:block;
 	bottom: 20px;
-	left: 30px; 
+	right: 30px; 
 	margin-right: 0px;
 	padding:15px 10px;
 	background:rgba(0, 0, 0, 0.9);
-	border-left:5px solid #008AC3;
+	border-right:5px solid #008AC3;
 	color:#E9E9E9;
 	z-index: 50;
 	font-family:'Oswald',Arial,Helvetica,sans-serif;

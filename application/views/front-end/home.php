@@ -39,10 +39,14 @@
 </div>
 
 <br><br>
-<div id="box">
-<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>
+<div id="video-banner">
+	<div id="box">
+	<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div id="banner">
+		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/530x200.gif" />	
+	</div>
 </div>
-
 <?php 
 	$row = $this->news_model->get_all_news();
 		foreach ($row as $r) {
@@ -50,13 +54,16 @@
 ?>
 
 <div id="headline">
-<h2 style="font-size:1.9em; padding-bottom:15px">NEWS</h2>
-<h3 id="headline-title" style="font-size:1.6em;"><a style="color: #007ac3;" href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a></h3><br>
-<p id="headline-date" style="font-size:0.9em;"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></p>
-<div id="headline-imgBox"><img src="<?php echo base_url();?>assets/img/home-news.png"></div>
-<p id="headline-article">
-<?php echo substr(strip_tags($r->content),0,380)." ..."; ?>
-</p>
+	<img id="news-title" src="<?php echo base_url(); ?>assets/img/title-home/news-banner.png" />
+	<h3 id="headline-title" style="font-size:1.6em;"><a style="color: #007ac3;" href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a></h3><br>
+	<p id="headline-date" style="font-size:0.9em;"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></p>
+	<div id="headline-imgBox"><img src="<?php echo base_url();?>assets/img/home-news.png"></div>
+	<p id="headline-article">
+	<?php echo substr(strip_tags($r->content),0,1500)." ..."; ?>
+	</p>
+	<div id="readmore">
+		<a href="<?php echo site_url('news/' . $r->url); ?>">Read More</a>
+	</div>
 </div>	
 
 <?php
@@ -64,7 +71,54 @@
 		} 
 	}
 ?>
-	
+	<div style="clear:both;"></div>
+<div id="seminars" class="content leftcol">
+	<div class="content-text">
+		<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
+		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+		<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
+		<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
+		<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+		<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+		
+		<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+			Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+		</p>
+		<div class="competition-register-button">
+				<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
+		</div>
+	</div>
+	<div id="navi">
+		<div id="nav-left"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a></div>
+		<div id="nav-right"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a></div>
+	</div>
+
+</div>
+<div id="competitions-final" class="content rightcol">
+	<img id="compfinal-title" src="<?php echo base_url(); ?>assets/img/title-home/compfinal-banner.png" style="float:none;"/><br/>
+	<div class="content-text">
+		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+	</div>
+</div>
+<div id="playground" class="content leftcol" style="margin-bottom: 30px">
+	<img id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/><br/>
+	<div class="content-text">
+		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
+		<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
+		<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
+		<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+			Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+		</p>
+	</div>
+	<div id="navi">
+		<div id="nav-left"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a></div>
+		<div id="nav-right"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a></div>
+	</div>
+</div>
+<div id="entertaiment" class="content rightcol" style="margin-bottom: 30px">
+	<img id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/><br/>
+	<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+</div>
 	  <script type="text/javascript">
     		//var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
     		var url = '<?php echo base_url();?>twitterFetch/Twitter-PHP/fetch.php';
