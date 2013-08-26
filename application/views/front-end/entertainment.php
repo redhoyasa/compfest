@@ -1,20 +1,43 @@
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/default/default.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
-<script src="<?php echo base_url(); ?>assets/plugins/slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/carousel.css" type="text/css" media="screen" />
+
 <link rel="stylesheet" type="text/css" href="<?php site_url();?>assets/css/entertainment.css">
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
 
+<script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/plugins/slider/holder.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/plugins/slider/transitions.min.js" type="text/javascript"></script>
 
-	<div id="slider-wrapper" class="theme-default">
-	    <div id="slider" class="nivoSlider">
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/placehold/1180x480.gif" alt="" title="COMPFEST MAIN EVENT"/>
-	        <img class="imgSlider" src="<?php echo base_url(); ?>assets/img/placehold/1180x480.gif" alt="" title="COMPFEST MAIN EVENT 2"/>
-	    </div>
-	</div>
-	<div id="htmlcaption" class="nivo-html-caption">
-	    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-	</div>
+<div id="this-carousel-id" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="<?php echo base_url(); ?>assets/img/header-red.png" width="1200px" height="480px" alt="" />
+      <div class="carousel-caption">
+        <p>Event merah bro</p>
+      </div>
+    </div>
+    <div class="item">
+      <img width="1200" height="480" src="<?php echo base_url(); ?>assets/img/competition/header-bg.png" alt="" />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img width="1200" height="480" src="<?php echo base_url(); ?>assets/img/about/header-web-green.png" alt="" />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next"><span class="icon-next"></span></a>
+</div>
 <div id="entertain-wrapper">	
 	<h2 class="title-content">Entertainment</h2>
 	<div id="guest-star" class="entertain-content"> 	
