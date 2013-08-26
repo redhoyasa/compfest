@@ -1,9 +1,76 @@
+#wrap-seminar {
+	overflow-x: hidden!important;
+	height :auto!important;
+}
+
 b, b *{
 	font-weight: bold!important;
 }
 
+c, c * {
+	font-weight: bold!important;
+	color : #0f9d58;	
+	font-size: 14px;
+}
+
+
+#bomb{
+	width: 200px;
+	height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left : -69px;
+	background : #ed1c24;
+	border-radius: 5px;
+	color: white;
+	cursor : pointer;
+	font-family: Arial,Tahoma,sans-serif;
+	border: none;
+	text-align: center;
+	line-height: 0px;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#bomb:hover{
+    background : #EF3A3E;
+}
+
+#joss {
+	margin-top: 30px;
+	width : 100%;	
+}
+
+#joss tr {
+	height: 500px;	
+}
+
+#joss tr td {
+	width: 590px;
+	text-align: center;
+}
+
+#content {
+position: relative!important;
+clear: both!important;
+height: auto!important;
+overflow: auto!important;
+background: transparent!important;
+border: none!important;
+border-radius: 0px 0px 10px 10px!important;
+}
+
 #wrap-seminar{
-	overflow:hidden;
+	overflow-x:hidden;
+	height : 2170px;
+}
+
+#email-error {
+	
 }
 
 #seminar-topTitle{
@@ -14,19 +81,65 @@ b, b *{
 	line-height:33px;
 }
 
+.maps-title{
+	text-align:center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 30px 0;
+	line-height:33px;
+}
+
 .seminar-tanggal{
 	text-align:center;
 	font-size: 18px;
 	font-weight: bold;
-	margin: 20px 0;
+	margin-bottom: 20px;
 }
 
 #seminar-maps{
 	margin: auto;
-	width: 500px;
-	height: 350px;
+	width: 450px;
+	height: 450px;
 	border: solid 3px #dbdfe0;
 	border-radius: 5px;
+}
+
+#jedar {
+	background: #f9f9f9;
+}
+
+.how-to {
+	text-align: left;
+	padding: 30px;
+	padding-top: 0px;
+}
+
+.how-to a {
+	font-weight: 900;
+	color : #1c91c0;
+}
+
+.how-to a:hover {
+	color : #4dbfd9;
+}
+
+.how-to a:active {
+	color : #43459d;
+}
+
+.how-to ul {
+	font-size: 14px;
+}
+
+.how-to ol {
+	list-style: decimal;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.how-to p {
+	text-align: justify;
+	font-size: 13px;
 }
 	
 table{
@@ -41,7 +154,7 @@ table{
 .seminar-container{
 	width: 250px;
 	height: 250px;
-	margin: 0 45px 30px 0;
+	margin: 0 51.5px 30px 0;
 	border: solid 3px #dbdfe0;
 	border-radius: 5px;
 	overflow: hidden;
@@ -63,7 +176,7 @@ table{
 }
 
 	.seminar-red{
-		background-color: #e74c3c;
+		background-color: rgba(231, 76, 60, 1);
 	}
 
 	.seminar-yellow{
@@ -97,9 +210,10 @@ table{
 }
 
 .seminar-sched{
-	margin: 0 15px 0 15px;
-	padding: 0;
-	font-size: 13px;
+	margin: 25px 15px 0 15px;
+padding: 0;
+font-size: 16px;
+font-weight: bold;
 }
 
 .seminar-pic{
@@ -136,7 +250,7 @@ table{
 
 #seminar-subscribe{
 	background-color: #E40613;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px;
 }
 
 #seminar-subscrForm{
@@ -144,6 +258,13 @@ table{
 	text-align:center;
 }
 
+	.alert-error {
+		color : white;
+		background : #E74C3C;
+		padding : 5px 10px 5px 10px;
+		border-radius : 3px;
+	}
+	
 	#seminar-input{
 		font-size: 20px;
 		height: 25px;

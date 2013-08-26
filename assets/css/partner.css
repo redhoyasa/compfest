@@ -28,7 +28,7 @@
 		height : 100%;
 	}
 	#sponsor img {
-		width : 500px;
+		width : 300px;
 		margin : 0 auto;
 		display : block;
 	}
@@ -47,20 +47,24 @@
 			
 		}
 		
-#medpart {
+.medsup {
 	width : 100%;
 	display: block;
 	margin-top: 50px;
 }
-	#medpart table {
+	.medsup table {
 		width : 70%;
 		margin : 0 auto;
 	}
-	#medpart td {
+	.medsup td {
 		height : 100px;
+		vertical-align: middle;
+		padding : 10px 0 10px 0;
 	}
-	#medpart img {
+	.medsup img {
 		width : 200px;
 		display: block;
 		margin : 0 auto;
 	}
+	
+	

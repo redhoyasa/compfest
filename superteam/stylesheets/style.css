@@ -1,0 +1,236 @@
+@import url("reset.css");
+/***********************************
+*  Author : IT Support CompFest 2013
+*  URL    : http://compfest.web.id
+*  
+*  January, 29th 2013
+************************************/
+/* line 10, ../sass/style.scss */
+body {
+  background-image: url("../img/blue.png"), url("../img/laptop.png");
+  background-size: 100px 100px;
+  color: #2e2e2e;
+}
+
+@font-face {
+  font-family: 'keras';
+  src: url("../font/keras.otf");
+}
+
+/* line 22, ../sass/style.scss */
+nav {
+  position: fixed;
+  bottom: 10px;
+  right: 50%;
+  z-index: 999;
+  margin-right: -105px;
+}
+/* line 29, ../sass/style.scss */
+nav #n1 {
+  background: #007bc3;
+}
+/* line 32, ../sass/style.scss */
+nav #n2 {
+  background: #b10000;
+}
+/* line 35, ../sass/style.scss */
+nav #n3 {
+  background: #f39200;
+}
+/* line 38, ../sass/style.scss */
+nav #n4 {
+  background: #009640;
+}
+/* line 41, ../sass/style.scss */
+nav #n5 {
+  background: #4e4e4e;
+}
+/* line 44, ../sass/style.scss */
+nav #n6 {
+  background: #fdc700;
+}
+/* line 47, ../sass/style.scss */
+nav a {
+  float: left;
+  border: 3px solid white;
+  background: #4e4e4e;
+  color: white;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+/* line 54, ../sass/style.scss */
+nav a div {
+  width: 30px;
+  height: 30px;
+}
+/* line 58, ../sass/style.scss */
+nav a:hover {
+  box-shadow: inset 0px 0px 15px #1e1e1e;
+}
+/* line 61, ../sass/style.scss */
+nav a:visited {
+  border: 3px dashed white;
+}
+
+/* line 67, ../sass/style.scss */
+h1 {
+  font-family: Trebuchet MS;
+  color: #f0f0f0;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px white;
+  text-align: center;
+}
+
+/* line 77, ../sass/style.scss */
+p {
+  font-family: Franklin Gothic Book;
+  text-align: justify;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 86, ../sass/style.scss */
+.box {
+  box-shadow: 0px -1px 10px black;
+  background: #f6f6f6;
+  color: #f6f6f6;
+  height: 1090px;
+}
+/* line 92, ../sass/style.scss */
+.box .isi {
+  float: left;
+}
+/* line 96, ../sass/style.scss */
+.box .lol {
+  margin-left: 500px;
+}
+
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles */
+}
+/* line 113, ../sass/style.scss */
+#a1 {
+  background: url("../img/blue.png") repeat, #4e4e4e;
+}
+/* line 116, ../sass/style.scss */
+#a1 #image {
+  position: relative;
+  width: 900px;
+  height: 624px;
+  margin-left: -450px;
+  left: 50%;
+  content: " ";
+  background: url("../img/CORE.png") no-repeat;
+}
+
+/* line 127, ../sass/style.scss */
+#a2 {
+  background-image: url("../img/blue.png"), #007bc3;
+  background-image: url("../img/blue.png"), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMwMDdiYzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA1OGI3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background-image: url("../img/blue.png"), -moz-linear-gradient(top, #007bc3 51%, #0058b7 100%);
+  background-image: url("../img/blue.png"), -webkit-gradient(linear, left top, left bottom, color-stop(51%, #007bc3), color-stop(100%, #0058b7));
+  background-image: url("../img/blue.png"), -webkit-linear-gradient(top, #007bc3 51%, #0058b7 100%);
+  background-image: url("../img/blue.png"), -o-linear-gradient(top, #007bc3 51%, #0058b7 100%);
+  background-image: url("../img/blue.png"), -ms-linear-gradient(top, #007bc3 51%, #0058b7 100%);
+  background-image: url("../img/blue.png"), linear-gradient(to bottom, #007bc3 51%, #0058b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007bc3', endColorstr='#0058b7',GradientType=0 );
+  color: #37b2fa;
+}
+/* line 138, ../sass/style.scss */
+#a2 h1 {
+  color: #1e3d42;
+  text-shadow: 0px 1px 1px #37b2fa;
+}
+/* line 144, ../sass/style.scss */
+#a2 #image {
+  position: relative;
+  width: 700px;
+  height: 486px;
+  margin-left: -350px;
+  left: 50%;
+  content: " ";
+  background: url("../img/COMPETITION.png") no-repeat;
+  -webkit-animation: jump 3s infinite;
+}
+
+/* line 157, ../sass/style.scss */
+#a3 {
+  background: url("../img/blue.png") repeat, #b10000;
+}
+/* line 159, ../sass/style.scss */
+#a3 #image {
+  position: relative;
+  width: 700px;
+  height: 486px;
+  margin-left: -350px;
+  left: 50%;
+  content: " ";
+  background: url("../img/EVENT.png") no-repeat;
+  -webkit-animation: jump 3s infinite;
+}
+
+/* line 171, ../sass/style.scss */
+#a4 {
+  background: url("../img/blue.png") repeat, #ff9c00;
+}
+/* line 173, ../sass/style.scss */
+#a4 #image {
+  position: relative;
+  width: 700px;
+  height: 486px;
+  margin-left: -350px;
+  left: 50%;
+  content: " ";
+  background: url("../img/RELATION.png") no-repeat;
+  -webkit-animation: jump 3s infinite;
+}
+
+/* line 185, ../sass/style.scss */
+#a5 {
+  background: url("../img/blue.png") repeat, #45b81d;
+}
+/* line 187, ../sass/style.scss */
+#a5 #image {
+  position: relative;
+  width: 900px;
+  height: 624px;
+  margin-left: -470px;
+  left: 50%;
+  content: " ";
+  background: url("../img/SUPPORT.png") no-repeat;
+  -webkit-animation: jump 3s infinite;
+}
+
+/* line 199, ../sass/style.scss */
+#a6 {
+  background: url("../img/blue.png") repeat, #fdc700;
+}
+/* line 201, ../sass/style.scss */
+#a6 #image {
+  position: relative;
+  width: 700px;
+  height: 485px;
+  margin-left: -350px;
+  left: 50%;
+  content: " ";
+  background: url("../img/HRD.png") no-repeat;
+  -webkit-animation: jump 3s infinite;
+}
+
+/* line 212, ../sass/style.scss */
+.trash {
+  height: 1090px;
+  width: 100%;
+  background: transparent;
+}
+
+/* line 218, ../sass/style.scss */
+.jos {
+  height: 30px;
+  width: 100%;
+}

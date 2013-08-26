@@ -137,6 +137,10 @@ class Seminar_model extends CI_Model {
 		} else {
 			return $this->db->query("SELECT * FROM c_seminar_user as u, c_seminar_reg as r WHERE r.id_seminar = $kategori and r.id_seminar_user = u.id_seminar_user and status <> 0")->result();
 		}
+	}		
+	
+	public function save_subscribe($data) {				
+		$this->db->insert('c_subscribe', $data);			
 	}
 
 

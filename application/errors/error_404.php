@@ -35,8 +35,16 @@
 	
 	</style>
 	<script>
+		var x = 0;
 		function bum() {
-			document.getElementById('c').innerHTML = 'LOL just kidding, this is a 404 page';
+				if (x%2==0){
+					document.getElementById('c').innerHTML = 'LOL just kidding, this is a 404 page :3';
+					x++;
+				}
+				if (x%2==1){
+					document.getElementById('c').innerHTML = 'LOL just kidding, this is a 404 page :3';
+					x--;
+				} 
 		}
 	</script>
 </head>

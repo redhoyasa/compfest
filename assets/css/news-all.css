@@ -1,0 +1,154 @@
+#content {
+	background: none;
+	border: none;
+	overflow: hidden;
+}
+
+#container{
+	margin-left: 0;
+	margin-top: 20px;
+	font-family: Open Sans,Tahoma,sans-serif!important;
+}
+
+.content-title {
+	text-align: center;
+}
+
+.news-button {
+	margin-top: 20px!important;
+	float: right;
+	border: none;
+	font-size: 14px !important;
+	background: #db4437;
+	color: #f7f7f7;
+	padding: 3px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 3px;
+	font-family: Arial!important;
+	font-size: 12px!important;
+	font-weight: bolder!important;
+	top: 20%;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-transition: all 0.5s ease-in-out;
+}
+
+.news-button:hover {
+	background: red;
+}
+
+.sup {
+	width : 100%;
+	height: 50px;
+}
+
+.news-top {
+	padding: 30px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+}
+
+#wrap {
+
+}
+
+.news-main{
+	margin-top: 30px;
+	margin: 10px;
+	color: #4d4d4d;
+	overflow: hidden;
+	margin-bottom: 10px;
+	line-height: 24px;
+	font-size: 14px;
+	text-align: justify;
+	width: 200px;
+	height: 300px;
+	float: left;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-transition: all 0.2s ease-in-out;
+}
+
+.news-main:hover {
+	box-shadow: 0px 1px 1px #dedede;
+	cursor: pointer;
+}
+
+.news-title{
+	font-size:1.4em;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+.news-title a{
+	color: inherit;
+	font-weight: 700;
+}
+
+.news-date{
+	margin-bottom: 10px;
+	font-size:0.8em;
+	color: inherit;
+}
+
+#recent{
+	width: 260px;
+	background: #cecece;
+	margin-left: 870px;
+	margin-top: 30px;
+	position: absolute;
+	padding: 20px;
+	border-radius: 7px;
+}
+
+.news-content, .MsoNormal {
+	font-size: 12px!important;
+}
+.news-page-header{
+	color: rgb(190, 31, 69);
+	margin-bottom: 10px;
+	font-size:1.6em;
+}
+
+.recent-header{
+	color: rgb(190, 31, 69);
+	font-size:1.2em;
+	padding-bottom: 15px; 
+	border-bottom: solid 5px gray;
+}
+
+.news-list{
+	color: gray;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(227, 227, 227)
+}
+
+.news-list a{
+	color: gray;
+}
+
+.news-list a:hover {
+	color : #4e4e4e;
+}
+
+
+
+.twitter-hack {
+	vertical-align: top!important;
+}
+
+div {
+	vertical-align: middle!important;
+}
+
+.fb-like {
+	margin-bottom: 5px!important;
+}
+
+#footer{
+	clear: both;
+}
+

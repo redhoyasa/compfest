@@ -77,7 +77,7 @@ class Competition extends CI_Controller {
 			$this->email->from('competition@compfest.web.id', 'Kompetisi CompFest 2013');
 			$this->email->to($team['email']);
 			$this->email->subject('Pendaftaran Kompetisi COMPFEST 2013');
-			$body = 'Dear Tim, ' . $team['team_name'] . '!'. "\n\n".'<br>';
+			$body = 'Dear Tim ' . $team['team_name'] . ','. "\n\n".'<br>';
 			$body .= 'Terima kasih telah mendaftar di kompetisi CompFest 2013.'.'<br>';
 		    	$body .= 'Silakan konfirmasi akun tim Anda di halaman berikut. ';
 		    	$body .= '<a href="http://www.compfest.web.id/competition/confirm/'.$team['token'].'/">';

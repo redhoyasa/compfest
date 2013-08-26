@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mail\.compfest\.web\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mail\.compfest\.web\.id$
+RewriteRule ^/?$ "http\:\/\/outlook\.com\/" [R=301,L]
+

@@ -86,7 +86,8 @@
 						foreach ($kompetisi as $k) {
 						?>
 							<label class="radio">
-								<input <?php if(++$i == $n){ echo 'data-required="true"'; }?> type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?> <?php if($k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo 'disabled'; ?>><?php echo $k->event_name; ?><?php if($k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo ' <b style="font-weight:800;">(Sudah ditutup)</b>'; ?><br>
+								<input <?php if(++$i == $n){ echo 'data-required="true"'; }?> type="radio" value="<?php echo $k->id_event; ?>" name="competition" <?php echo set_radio('competition', $k->id_event); ?> <?php if($k->id_event==3 || $k->id_event==4 || $k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo 'disabled'; ?>><?php echo $k->event_name; ?><?php if($k->id_event==3 || $k->id_event==4 || $k->id_event==6 || $k->id_event==5 || $k->id_event==7 || $k->id_event==1 || $k->id_event==2) echo ' <b style="font-weight:800;">(Sudah ditutup)</b>'; ?>
+								<br>
 							</label>
 						<?php } ?>
 						<?php echo form_error('competition'); ?>

@@ -11,23 +11,21 @@
 <div id="wrap-seminar">
 <img src="<?php echo base_url(); ?>assets/img/header-red.png" alt="" style="width:100%;"/>
 	
-	<h2 id="seminar-topTitle">
+	<!-- h2 id="seminar-topTitle">
 		Tema:<br/>
 		Creative Technopreneurship Towards Globalization<br/>
 		<br/>
-		21 &dash; 22 September 2013<br/>
-		BalaiSidang, Universitas Indonesia<br/>
-	</h2>
+	</h2 -->
 	
-	<div id="seminar-maps"></div>
+	<img src="<?php echo site_url(); ?>assets/img/seminar/header-seminar.jpg" style="width:100%;" alt="">
 	
-	<h3 class="seminar-tanggal"><br/>Hari 1: Sabtu, 21 September 2013</h3>
+	<h3 id="rwcn" class="seminar-tanggal"><br/>Hari 1: Sabtu, 21 September 2013</h3>
 	<table>
 		<tr>
 			<td>
 				<a href="#" class="seminar-click">
 					<div class="seminar-container">
-						<img class="seminar-pic" src="" alt="" />
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/wisnu.jpg" alt="" />
 						<div class="seminar-item seminar-red">
 							<div class="seminar-top"><h3 class="seminar-title">Encourage Innovation in Indonesia through Research</h3></div>
 							<p class="seminar-sounder">
@@ -65,7 +63,7 @@
 					<div class="seminar-container">
 						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/andri.jpg" alt="" />
 						<div class="seminar-item seminar-green">
-							<div class="seminar-top"><h3 class="seminar-title">Solving today&quot;s Enterprise Problem with Big Data Management</h3></div>
+							<div class="seminar-top"><h3 class="seminar-title">Solving today&rsquo;s Enterprise Problem with Big Data Management</h3></div>
 							<p class="seminar-sounder">
 								<b>Andri Rizki</b><br/>
 								Client Technical Professional Information Management Software IBM Indonesia<br/>
@@ -162,7 +160,7 @@
 			<td>
 				<a href="#" class="seminar-click">
 					<div class="seminar-container">
-						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/firstman.png" alt="" />
+						<img class="seminar-pic" src="<?php echo site_url(); ?>assets/img/seminar/firstman.jpg" alt="" />
 						<div class="seminar-item seminar-blue">
 							<div class="seminar-top"><h3 class="seminar-title">Innovation of Perceptual Computing </h3></div>
 							<p class="seminar-sounder">
@@ -179,13 +177,18 @@
 		</tr>
 	</table>	
 	
+	<h2 id="maps-title"/>
+		Anex Room Balairung, Universitas Indonesia.
+	</h2>
+	<div id="seminar-maps"></div>
+	
 	<div id="seminar-subscribe">
 		<h3 id="seminar-Tdetail">
 			Pendaftaran Seminar segera dibuka<br>
-			Jadilah bagian dari perubahan teknogi informasi di Indonesia
+			Jadilah bagian dari perubahan teknologi informasi di Indonesia
 		</h3>
 		<p id="seminar-detailSubs">
-			Masukkan email kamu di bawah ini untuk mendapatkan update berita dari Seminar Compfest 2013
+			Masukan email kamu ke kotak di bawah ini untuk mendapatkan update terbaru dari Seminar Compfest 2013
 		</p>
 	
 		<form id="seminar-subscrForm">
@@ -204,12 +207,12 @@
 <script>
 function initialize() {
 	var map_canvas = document.getElementById('seminar-maps');
-	var myCenter = new google.maps.LatLng(-6.36983,106.828308)
+	var myCenter = new google.maps.LatLng(-6.367932,106.829681);
 	var map_options = {
 		center: myCenter,
 		zoom: 16,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
-	}
+	};
 
 	var map = new google.maps.Map(map_canvas, map_options);
 
@@ -221,4 +224,9 @@ function initialize() {
 	marker.setMap(map);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+if (window.onkeydown = function(e) {
+    return (e.keyCode == 34);
+})
+document.getElementById( 'rwcn' ).scrollIntoView();
 </script>

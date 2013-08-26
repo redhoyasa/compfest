@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Vito:mod</id>
+	<name>Mimetex</name>
+	<version>1.01</version>
+	<type>modification</type>
+    <install for="1.1 - 1.1.99">
+		<readme type="file">readme.txt</readme>
+		<modification type="file">modification.xml</modification>
+		<require-file name="tex.gif" destination="$themedir/images/bbc" />
+	</install>
+	<install for="2.0 - 2.99.99">
+		<readme type="file">readme.txt</readme>
+		<modification type="file">modification2.xml</modification>
+		<require-file name="tex.gif" destination="$themedir/images/bbc" />
+	</install>
+	<install>
+		<readme type="inline" parsebbc="true">[color=red]Warning! This mod has not been tested on your version of SMF. Do not proceed if you get errors![/color]</readme>
+		<modification type="file">modification.xml</modification>
+        <require-file name="tex.gif" destination="$themedir/images/bbc" />
+	</install>	
+    <uninstall for="2.0 - 2.99.99">
+		<readme type="inline">This will uninstall the Mimetex.</readme>
+		<modification type="file" reverse="true">modification2.xml</modification>
+		<remove-file name="tex.gif" destination="$themedir/images/bbc" />
+	</uninstall>
+	<uninstall>
+		<readme type="inline">This will uninstall the Mimetex.</readme>
+		<modification type="file" reverse="true">modification.xml</modification>
+		<remove-file name="tex.gif" destination="$themedir/images/bbc" />
+	</uninstall>
+	<upgrade>
+		<readme type="inline">Sorry, but there is no upgrade package from your version. Please uninstall the previous version, and install this version. You won't lose any data.</readme>
+	</upgrade>	
+</package-info>

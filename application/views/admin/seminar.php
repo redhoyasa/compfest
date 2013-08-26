@@ -6,7 +6,7 @@
 
 <table class="table table-striped">
 	<tr>
-		<th>Nama</th><th>Email</th><th>Status</th><th></th>
+		<th>No.</th><th>Nama</th><th>Email</th><th>Status</th><th></th>
 	</tr>
 <?php 
 if($this->uri->segment(3))  {
@@ -14,10 +14,11 @@ if($this->uri->segment(3))  {
 } else {
 	$seminar = $this->seminar_model->get_seminar_register();
 }
+$count = 1;
 foreach ($seminar as $s) {
 ?>
 	<tr>
-		<td><?php echo $s->name; ?></td><td><?php echo $s->email; ?></td><td><?php echo $this->status->seminar_status($s->status); ?></td><td><a href="<?php echo site_url('admin/seminar_user/') .'/'. $s->id_seminar_user; ?>">Detail</a></td>
+		<td><?php echo $count++; ?></td><td><?php echo $s->name; ?></td><td><?php echo $s->email; ?></td><td><?php echo $this->status->seminar_status($s->status); ?></td><td><a href="<?php echo site_url('admin/seminar_user/') .'/'. $s->id_seminar_user; ?>">Detail</a></td>
 	</tr>
 <?php
 	}

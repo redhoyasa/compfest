@@ -4,7 +4,8 @@
     $nav['selected'] = 3;
 ?>
 <style>#content {overflow:hidden!important;	border : 0!important;
-	background : transparent!important;}</style>
+	background : transparent!important;}
+</style>
 <div style="height:50px;">&nbsp;</div>
 <div class="wrapper-dash">
 

@@ -264,6 +264,7 @@ nav{
 	overflow: hidden;
 	border-radius : 10px;
 	border : 1px solid #ededed;
+	padding-bottom:15px;
 }
 
 #sponsors{

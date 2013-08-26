@@ -11,7 +11,8 @@
 	<div class="competition-thumbnail" style="border-right: 1px solid #dddddd"><a id="open-link" class="fancybox"><img src="<?php echo base_url(); ?>assets/img/competition/logo-oac.png" /></a></div>
 	<div class="competition-thumbnail" style="border-right: 1px solid #dddddd"><a  id="robot-link"><img src="<?php echo base_url(); ?>assets/img/competition/logo-robotic.png" /></a></div>
 	<div class="competition-thumbnail" style="border-right: 1px solid #dddddd" ><a class="fancybox" id="wa-link" ><img src="<?php echo base_url(); ?>assets/img/competition/logo-mobile.png" /></a></div>
-	<div class="competition-thumbnail" ><a class="fancybox" id="eg-link" ><img src="<?php echo base_url(); ?>assets/img/competition/logo-edugames.png" /></a></div>
+	<div class="competition-thumbnail" style="border-right: 1px solid #dddddd" ><a class="fancybox" id="eg-link" ><img src="<?php echo base_url(); ?>assets/img/competition/logo-edugames.png" /></a></div>
+    <div class="competition-thumbnail" ><a class="fancybox" id="cac-link" ><img src="<?php echo base_url(); ?>assets/img/competition/logo-cac.png" /></a></div>
 </div>
 
 <div id="cpc" class="competition-wrapper">
@@ -243,8 +244,8 @@
 
 <div id="rob" class="competition-wrapper">
 	<div class="competition-content">
-		<center><div class="competition-register-button">
-			<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
+		<center><div class="competition-closed-button">
+			<p id="competition-register-tulisan">SUDAH DITUTUP</p>
 		</div></center>
 		<br><br><br>
 	
@@ -652,12 +653,87 @@
 		</div-->
 	</div>
 </div>
-
+    <div id="cac" class="competition-wrapper" style="display: none;">
+        <div class="competition-content">
+		<center><div class="competition-register-button">
+			<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
+		</div></center>
+		<br><br><br>            
+            <h2>CompFest App Center</h2>
+            </br>
+            <p class="competition-another-content">
+                CompFest App Center (CAC) adalah bagian dari kompetisi CompFest 2013 yang menyalurkan aplikasi karya developer-developer pemula di Indonesia ke application store ternama. Tujuan dari CAC adalah mempermudah developer untuk menerbitkan aplikasinya secara global sekaligus menambah konten lokal di application store. CAC juga berperan sebagai sebuah simulasi application store bagi developer di dalam industri aplikasi mobile.  Peserta adalah developer-developer yang ingin mendapatkan pengalaman menerbitkan aplikasi di application store. Melalui CAC, diharapkan semakin banyak developer lokal yang berkecimpung di industri aplikasi mobile dan memajukan industri aplikasi indonesia di kancah internasional.
+                <br/><br/>
+                Target application store antara lain Google Play (Android), Ovi Store (Nokia S40), Windows Phone Store (Windows Phone), dan Windows Store (Windows 8).
+                </br><br/>
+                Keuntungan-keuntungan yang peserta dapatkan melalui CAC antara lain:<br/>
+                    1. Penerbitan aplikasi ke application store ternama secara gratis.<br/>
+                    2. Pengalaman menjadi penerbit aplikasi di industri aplikasi mobile.<br/>
+                    3. Developer dan aplikasi yang diterbitkan akan dikenal pengguna secara luas.<br/>
+                    4. Pengalaman mengembangkan aplikasi yang secara teknis dan kualitas layak terbit dan diterima banyak pengguna.<br/>
+                    5. Kontribusi dalam menerbitkan konten lokal di industri aplikasi internasional.
+                
+            </p>
+            <br/>
+            <div class="competition-rulebook-button"><a class="comp-button" href="http://compfest.web.id/assets/rulebook/CompFest 2013 - Guide Book CompFest App Center.pdf" target="_blank">
+                <p id="competition-tulisan-button">Guide Book CompFest App Center</p></a>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="content-head">Jadwal</div>
+            <div class="competition-another-content">
+                <ul>
+                    <li>Submisi Aplikasi: 29 Juli - 14 September. 2013</li>
+                    <li>Penghitungan jumlah unduhan: 29 Juli - 22 September 2013 pukul 15.00</li>
+                    <li>Pengumuman: 22 September 2013</li>
+                </ul>
+            </div>
+            <br/>
+            <br/>
+            <div class="content-head">Biaya Pendaftaran</div>
+            <div class="competition-another-content">FREE!</div>
+            <br/>
+            <br/>
+            <div class="content-head">Penghargaan</div>
+            <div class="competition-another-content">
+                Jumlah unduhan setiap aplikasi akan dihitung dan penghargaan diberikan kepada peserta yang aplikasinya meraih jumlah unduhan terbanyak.
+                <br/>
+                <ol>
+                    <li> Most Downloaded Android App untuk aplikasi dengan jumlah unduhan terbanyak di Google Play.</li>
+                    <li> Most Downloaded Nokia S40 App untuk aplikasi dengan jumlah unduhan terbanyak di Ovi Store.</li>
+                    <li> Most Downloaded Windows Phone App untuk aplikasi dengan jumlah unduhan terbanyak di Windows Phone Store.</li>
+                    <li> Most Downloaded Windows 8 App untuk aplikasi dengan jumlah unduhan terbanyak di Windows Store.</li>
+                    <li> Most Valuable Team untuk peserta dengan total jumlah unduhan paling banyak dari semua aplikasi yang terbit.</li>
+                </ol>
+                <br/>
+                Peserta yang mendapatkan penghargaan akan menerima plakat dari panitia.<br>
+                Peserta yang aplikasinya berhasil terbit di Ovi Store atau Windows Phone Store akan mendapatkan akun developer gratis.
+            </div>
+            <br/>
+            <br/>
+            <div class="content-head">Contact Person</div>
+            <div class="competition-another-content">
+                <ul>
+                    <li>Muhammad Banirahma Syahroni (PIC CompFest App Center) – 082 160 160 016</li>
+                    <li>Email: appcenter@compfest.web.id</li>
+                </ul>
+            </div>
+        <br/><br/>
+        </div>
+        <div class="content-head"> Supported By </div><br><br>
+		<div class="competition-another-content">
+			<a href="http://www.developer.nokia.com/" target="_blank"><img  src="<?php echo base_url(); ?>assets/img/competition/nokia_developer_logo320.png"></a>
+		</div>
+		<br><br>
+	
+</div>
 <script type="text/javascript">
 $(document).ready(function() {
 		$("#oac").hide();
 		$("#mits").hide();
 		$("#rob").hide();
+		$("#cac").hide();
 		$("#cpc").show();
 		$("#edugames").hide();
 		
@@ -666,49 +742,67 @@ $(document).ready(function() {
 			$("#mits").hide();
 			$("#rob").hide();
 			$("#edugames").hide();
+			$("#cac").hide();
 			$("#cpc").show();
+			
 		});
 		$("#open-link").click(function(){
 			$("#cpc").hide();
 			$("#mits").hide();
 			$("#rob").hide();
 			$("#edugames").hide();
+			$("#cac").hide();
 			$("#oac").show();
+
 		}); 
 		$("#robot-link").click(function(){
 			$("#oac").hide();
 			$("#mits").hide();
 			$("#cpc").hide();
 			$("#edugames").hide();
+			$("#cac").hide();
 			$("#rob").show();
+			
 		});
 		$("#wa-link").click(function(){
 			$("#cpc").hide();
 			$("#oac").hide();
 			$("#rob").hide();
 			$("#edugames").hide();
+			$("#cac").hide();
 			$("#mits").show();
+			
 		}); 
 		$("#eg-link").click(function(){
 			$("#cpc").hide();
 			$("#oac").hide();
 			$("#rob").hide();
 			$("#mits").hide();
+			$("#cac").hide();
 			$("#edugames").show();
+			
+		}); 
+		$("#cac-link").click(function(){
+			$("#cpc").hide();
+			$("#oac").hide();
+			$("#rob").hide();
+			$("#mits").hide();
+			$("#edugames").hide();
+			$("#cac").show();
 		}); 
 	});
 </script>
 <style>
 .competition-thumbnail{
-	width: 225px;
-	height: 125px;
+	width: 187px;
+	height: 104px;
 	float: left;
 	
 }
 .competition-thumbnail img{
 	display: block;
-	width: 225px;
-	height : 125px;
+	width: 187px;
+	height : 104px;
 	margin: 0 auto;
 }
 </style>

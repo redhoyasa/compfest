@@ -35,6 +35,10 @@
       <?php if($team->id_event == 6 || $team->id_event == 7) { ?>
       <li <?php if ($selected == 10) echo 'class="active"'; ?>><a href="<?php echo site_url('member/prototype'); ?>">Upload Prototype</a></li>
       <?php } ?> 
+
+      <?php if($team->id_event == 8 || $team->id_event == 6 || $team->id_event == 7 ) { ?>
+        <li <?php if ($selected == 11) echo 'class="active"'; ?>><a href="<?php echo site_url('member/apps'); ?>">App Center</a></li>
+      <?php } ?>
       
       <li><a href="<?php echo site_url('auth/logout'); ?>">Keluar</a></li>
     </ul>

@@ -527,6 +527,18 @@ class Member extends Member_Controller {
 		$this->template->display('member/prototype');
 	}
 	
+	function apps() {
+	
+		$team = $this->users_model->get_login_info($this->session->userdata('email'));
+		$event = $this->kompetisi_model->getEventById($team->id_event);
+	
+		if($team->id_event != 8 && $team->id_event != 7&& $team->id_event != 6) {
+			redirect('member/dashboard');
+		}
+	
+		$this->template->display('member/apps');
+	}
+	
 	function upload_prototype() {
 			require 'DropboxUploader.php';
 	    	try {
