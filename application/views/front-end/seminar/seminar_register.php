@@ -56,11 +56,15 @@
 									<input type="checkbox" id="seminar-<?php echo $r->id_seminar?>" name="seminar-<?php echo $r->id_seminar?>" value="1"
 									<?php if(isset($s['formerror-'.$r->id_seminar])) echo "checked"; ?>>
 									<br>
+									
 									<div class="motivation">
 									Motivasi: 
-									<textarea name="motivation-<?php echo $r->id_seminar?>"><?php echo set_value('motivation-'.$r->id_seminar); ?></textarea>
+									<textarea id="motivation-<?php echo $r->id_seminar?>" name="motivation-<?php echo $r->id_seminar?>"><?php echo set_value('motivation-'.$r->id_seminar); ?></textarea>
+									<span id="motivationInfo-<?php echo $r->id_seminar?>"></span>
 									</div>
+									
 								</div>
+								
 							</div>
 							<div class="control-group">
 								<div class="controls">
