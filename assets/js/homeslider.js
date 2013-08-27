@@ -1,15 +1,15 @@
 // the procedural method
 (function($) {
-	var sliderUL = $('#seminars').css('overflow', 'hidden').children('ul'),
+	var sliderUL = $('#seminars ul'),
 		imgs = sliderUL.find('.content-text'),
 		imgWidth = 545, // 600
-		imgsLen = imgs.length, // 4
+		imgsLen = 2, // 4
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
 
-	$('#navi').show().find('a').on('click', function(event) {
-		event.preventDefault()		
+	$('#navi').show().find('a').click(function(event) {
+		event.preventDefault();		
 		var direction = $(this).data('dir'),
 			loc = imgWidth; // 600
 

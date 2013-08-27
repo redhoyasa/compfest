@@ -214,7 +214,7 @@
 #seminars{
 	width: 545px;
 	height: 250px;
-	overflow: hidden;
+	overflow: hidden ;
 }
 	#seminars ul {
 	width: 10000px;
