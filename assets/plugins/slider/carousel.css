@@ -279,13 +279,14 @@ table {
   }
 }
 
+/* Ambil alih
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
+}*/
 
 html {
   font-size: 62.5%;
@@ -382,9 +383,10 @@ hr {
   border: 0;
 }
 
+/* Ambil alih
 p {
   margin: 0 0 10px;
-}
+} */
 
 .lead {
   margin-bottom: 20px;
@@ -544,7 +546,7 @@ h4 small,
   border-bottom: 1px solid #eeeeee;
 }
 
-ul,
+/*ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
@@ -572,7 +574,7 @@ ol ol {
   padding-right: 5px;
   padding-left: 5px;
 }
-
+*/
 dl {
   margin-bottom: 20px;
 }
@@ -605,7 +607,7 @@ dd {
   }
   .dl-horizontal dd:before,
   .dl-horizontal dd:after {
-    display: table;
+  display: table;
     content: " ";
   }
   .dl-horizontal dd:after {
