@@ -36,11 +36,16 @@
 			<h1 class="content-title">Playground</h1>
 							
 				<div class="clearfix seminar-instance">
+				
+					<iframe width="1000" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en-US&amp;geocode=&amp;q=Balairung+Universitas+Indonesia,+Depok,+West+Java,+Indonesia&amp;aq=0&amp;oq=balaurung+&amp;sll=-6.367932,106.829681&amp;sspn=0.012305,0.021136&amp;ie=UTF8&amp;hq=Balairung+Universitas+Indonesia,+Depok,+West+Java,+Indonesia&amp;t=m&amp;ll=-6.355904,106.832943&amp;spn=0.029856,0.085745&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+					<br />
+					
 					<div class="playground-main-slider-button">
 						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/playground/slider-left.png"/></a>
 					</div>
 					
 					<div class="playground-main-slider">
+						<div class="data-slider" data-total="9"></div>
 						<ul>
 							<li><a class="playground-box-slider" href="1" data-axis="50" data-ordinate="80">
 								<img src="<?php echo base_url(); ?>assets/img/playground/slider-img-1.png">

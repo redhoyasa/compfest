@@ -3,7 +3,7 @@
 	var sliderUL = $('div.playground-main-slider').css('overflow', 'hidden').children('ul'),
 		imgs = sliderUL.find('a'),
 		imgWidth = 200,
-		imgsLen = 9,
+		imgsLen = $('.data-slider').data('total'),
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 

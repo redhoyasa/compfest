@@ -8,11 +8,17 @@
     clear: both;
 }
 
+iframe {
+	margin-bottom: 50px;
+	border: 2px solid #AAA;
+}
+
 .playground-main-slider {
-	width: 993px;
+	width: 950px;
 	height: 250px;
 	overflow: scroll;
 	float: left;
+	margin: 0px 10px;
 }
 
 .playground-main-slider-button{
@@ -37,7 +43,7 @@
 	display: block;
 	width: 200px;
 	height: 200px;
-	margin: 20px;
+	margin: 20px 0px 20px 20px;
 	color: black;
 	text-align: center;
 }
