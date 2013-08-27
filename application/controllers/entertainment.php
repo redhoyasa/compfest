@@ -4,7 +4,7 @@ class Entertainment extends CI_Controller {
 
 	public function index()
 	{
-		$this->template->display('front-end/entertain');
+		$this->template->display('front-end/entertainment');
 	}
 	
 	

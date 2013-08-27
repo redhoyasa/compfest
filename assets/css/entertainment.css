@@ -1,0 +1,40 @@
+h2 {
+	font-size: 30px;
+}
+h3{
+	font-size: 26px;
+}
+#entertain-wrapper{
+	display: block;
+	margin-left : 30px;
+	margin-bottom: 30px;
+}
+.entertain-content{
+	margin-bottom:30px;
+}
+.title-content {
+	margin:30px 0 0 10px;
+	
+}
+#guest-star {
+	margin-top: 20px;
+}
+	#guest-star img {
+		margin : 10px 0 10px 10px;
+	}
+td img{
+	display: block;
+	margin: 10px;
+}
+#slider{
+	height: 475px;
+	width:100%;
+}
+
+	#slider > .carousel-inner > div > img{
+		width:100%;
+	}
+	
+	.item {
+		height : 400px!important;
+	}

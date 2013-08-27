@@ -88,7 +88,7 @@
 		</tr>
 		<tr>
 			<td><a href="http://www.mustangfm.com/" target="_blank" title="Mustang 88 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/Mustang88FM.jpg" alt="Mustang 88 FM"/></a></td>
-			<td><a></a></td>
+			<td><a href="http://www.garudasaiber.web.id/" target="_blank" title="Garudasaiber.web.id"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/garudasaiber.jpg" alt="Garudasaiber.web.id"/></a></td>
 			<td><a href="http://www.swaradio1.blogspot.com/" target="_blank" title="Swa Radio 107.9 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/SwaRadio.jpg" alt="Swa Radio 107.9 FM" style="width:160px;"/></a></td>
 		</tr>
 	</table>
@@ -108,8 +108,8 @@
 			<td><a href="http://doktergratis.org/ target="_blank" title="Dokter Gratis"><img src="<?php echo base_url(); ?>assets/img/partner/support/DokterGratis.jpg" alt="Dokter Gratis"/></a></td>
 		</tr>
 		<tr>
-			<td><a href="http://doscom.org/" target="_blank" title="Doscom"><img src="<?php echo base_url(); ?>assets/img/partner/support/Doscom.jpg" alt="Doscom" style="width:160px;"/></a></td>
 			<td><a href="http://inmotion.web.id/" target="_blank" title="Inmotion" ><img src="<?php echo base_url(); ?>assets/img/partner/support/Inmotion.png" alt="Inmotion" style="width:160px;"/></a></td>
+			<td><a href="http://www.studioindependent.com/" target="_blank" title="Studio Independent"><img src="<?php echo base_url(); ?>assets/img/partner/support/StudioIndependent.jpg" alt="Studio Independent"/></a></td>
 			<td><a href=" http://ulingame.com/" target="_blank" title="Ulin Gameworks"><img src="<?php echo base_url(); ?>assets/img/partner/support/UlinGameworks.png" alt="Ulin Gameworks" style="width:160px;"/></a></td>
 		</tr>
 		<tr>
@@ -119,7 +119,7 @@
 		</tr>
 		<tr>
 			<td><a href="http://www.nightspade.com/" target="_blank" title="Night Spade"><img src="<?php echo base_url(); ?>assets/img/partner/support/Nightspade-web.png" alt="Night Spade"/></a></td>
-			<td><a href="http://www.studioindependent.com/" target="_blank" title="Studio Independent"><img src="<?php echo base_url(); ?>assets/img/partner/support/StudioIndependent.jpg" alt="Studio Independent"/></a></td>
+			<td><a href="http://doscom.org/" target="_blank" title="Doscom"><img src="<?php echo base_url(); ?>assets/img/partner/support/Doscom.jpg" alt="Doscom" style="width:160px;"/></a></td>
 			<td><a href="http://tinkerworlds.com/" target="_blank" title="Tinker"><img src="<?php echo base_url(); ?>assets/img/partner/support/TinkerLogo.png" alt="Tinker"/></a></td>
 		</tr>
 		<tr>
@@ -136,6 +136,11 @@
 			<td><a href="http://www.ngomik.com/" target="_blank" title="Ngomik"><img src="<?php echo base_url(); ?>assets/img/partner/support/Ngomik.png" alt="Ngomik"/></a></td>
 			<td><a href="http://developer.nokia.com/" target="_blank" title="Nokia Developer"><img src="<?php echo base_url(); ?>assets/img/partner/support/Dev-logo-Blue.png" alt="Nokia Developer" style="width: 280px;"/></a></td>
 			<td><a href="http://badr-interactive.com/" target="_blank" title="Badr Interactive"><img src="<?php echo base_url(); ?>assets/img/partner/support/BadrInteractive.png" alt="Badr Interactive" style="width:145px;"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.google.com/edu/programs/student-ambassador-program/" target="_blank" title="Google Student Ambassador"><img src="<?php echo base_url(); ?>assets/img/partner/support/gsa.jpg" alt="Google Student Ambassador" style="width:160px;"/></a></td>
+			<td><a> </a></td>
+			<td><a href="http://www.wacom.com/" target="_blank" title="Wacom Datascrip"><img src="<?php echo base_url(); ?>assets/img/partner/support/wacom.jpg" alt="Wacom Datascrip" /></a></td>
 		</tr>
 	</table>
 </div>
