@@ -51,12 +51,12 @@
 					<div class="playground-main-slider">
 						<div class="data-slider" data-total="9"></div>
 						<ul>
-							<li><a class="playground-box-slider" href="1" data-axis="50" data-ordinate="80">
+							<li><a class="playground-box-slider" href="1" data-axis="160" data-ordinate="195">
 								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-01.jpg">
 								<p class="playground-box-caption"> Tinker Games </p>
 								<p class="playground-box-caption2"> Game </p>
 							</a></li>
-							<li><a class="playground-box-slider" href="2" data-axis="100" data-ordinate="200">
+							<li><a class="playground-box-slider" href="2" data-axis="180" data-ordinate="195">
 								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-02.jpg">
 								<p class="playground-box-caption"> Badr Interactive </p>
 								<p class="playground-box-caption2"> Game </p>
@@ -363,6 +363,7 @@
 					
 					<div style="clear:both;"></div>
 					
+					<h1>Map</h1>
 					<div class="playground-map">
 						<div class="playground-map-pointer"></div>
 					</div>
