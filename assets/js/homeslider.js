@@ -6,7 +6,6 @@
 		imgsLen = 2, // 4
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
-		console.log(sliderUL);
 
 	$('#navi').show().find('a').click(function(event) {
 		event.preventDefault();		

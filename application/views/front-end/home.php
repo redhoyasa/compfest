@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/carousel.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" media="screen" />
-<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 
 
 <div id="middle">
@@ -112,8 +110,8 @@
 		</li>
 	</ul>
 	<div id="navi">
-		<a id="nav-left" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
-		<a id="nav-right" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
+		<a id="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
+		<a id="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
 	</div>
 </div>
 
@@ -205,4 +203,6 @@
 <script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/holder.js" type="text/javascript"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/transitions.min.js" type="text/javascript"></script>
