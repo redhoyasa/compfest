@@ -12,7 +12,19 @@ class Playground_model extends CI_Model {
 	function get_user_by($id){
 		$this->db->where('id',$id);
 		$query = $this->db->get($this->peserta);
+		echo $query;
 		return ($query->num_rows() > 0) ? $query->row() : false;
+	}
+
+	function retrieve_data($json) {
+		$data = file_get_contents("php://input");
+		$md5 = substr($data,  strlen($data) - 32)
+		if($md5 == md5(substr($data, 32 - strlen($data))));
+			$var  = json_decode($json);
+			$data = $var->{'data'};
+			$split = split('}', $data);
+			$real_data =  $split[0]+"}";
+			$hash      =  $split[1];
 	}
 
 	/**

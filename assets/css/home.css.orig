@@ -1,0 +1,232 @@
+.content p{
+	font-size:14px;
+}
+#middle{
+	clear: both;
+	margin:0 0 0 0;
+	background :white;
+	overflow: auto;
+}
+
+#content {
+	border : 0!important;
+}
+
+#slider{
+	height: 475px;
+	width:100%;
+}
+
+	#slider > .carousel-inner > div > img{
+		width:100%;
+	}
+	
+	.item {
+		height : 400px!important;
+	}
+#video-banner{
+	display : block;
+	width: 580px;
+	float: left;
+}
+#box{
+	display:block;
+	width: 530px;
+	height:325px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+#banner{
+	display:block;
+	margin-top: 20px;
+
+}
+	#banner img{
+		display:block;
+		margin: 0 auto;
+	}
+#headline{
+	display: block;
+	max-height: 545px;
+	overflow: hidden;
+}
+
+#headline-imgBox{
+	width: 270px;
+	height:180px;
+	margin: 5px 15px 5px 0;
+	background-color: #f0f0f0;
+	float: left;
+}
+
+#headline-article{
+	font-size: 10pt;
+	line-height: 14pt;
+	text-align: justify;
+	margin: 0 60px 10px 0;
+}
+
+#readmore {
+	float: right;
+	margin-right:60px;
+}
+.content img{
+	margin:0 10px 10px 0px;
+	float: left
+}
+.leftcol{
+	width: 545px;
+	float: left;
+	margin: 20px 10px 0px 25px;
+	height: 250px;
+}
+
+.rightcol{
+	width: 545px;
+	float: right;
+	margin: 20px 25px 0px 10px;
+	height: 250px;
+}	
+
+#sharebox{
+	width: 100%;
+	height: 48px;
+	margin-top: 40px;
+}
+
+#twitterbox{
+	float: left;
+	width: 1022px;
+	height: inherit;
+	background-color: #29abe2;
+}
+
+	#twitter-logo{
+		width:70px;
+		background-image: url('../img/twitter-bg.png');
+		height: inherit;
+		float: left;
+	}
+
+	#twitter-tweet{
+		margin: 7px 7px 7px 0;
+		width: 945px;
+		float: left;
+		height: 34px;
+		background-color: white;
+		overflow: hidden;
+	}
+	
+	#twitter-tweet span {
+		display: block;
+		position: relative;
+	}
+
+		#tweet{
+			float: left;
+			color: black;
+			margin-top: 9px;
+			margin-left: 5px;
+		}
+
+		#tweet-time{
+			float: left;
+			margin-top: 11px;
+			margin-left: 5px;
+			font-size: 0.9em;
+			color: #a3a3a3;
+		}		
+
+#likebox{
+	float: right;
+	width: 158px;
+	height: inherit;
+	background-image: url('../img/fb-like.png'); 
+	cursor : pointer;
+	opacity : 0.8;
+	-webkit-transition : all 0.3s ease-in-out;
+	   -moz-transition : all 0.3s ease-in-out;
+	        transition : all 0.3s ease-in-out;
+}
+
+#likebox:hover {
+	opacity : 1;
+<<<<<<< HEAD
+}	
+.competition-register-button{
+	height: 25px;
+	width: 100px;
+	float: left;
+	margin-top: 5px;
+	border-radius: 4px;
+	background-color: #007ac3;
+	color: #f2f2f2!important;
+	cursor: pointer;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;	
+}
+
+.competition-register-button:hover{
+	background-color: #00617F;
+}
+
+#competition-tulisan-button{
+	font-size: 12px;
+	margin: 3px;
+	line-height:14px;
+	text-align: center !important;
+	color: white;
+	text-indent:0em !important;
+}
+
+#competition-register-tulisan{
+	font-size: 12px;
+	margin: 3px;
+	line-height:14px;
+	text-align: center !important;
+	padding-top:3px;
+	color: white;
+	text-indent:0em !important;
+}
+.content {
+	position: relative;
+	
+}
+#navi {
+	height: 25px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+	#nav-left{
+		float: left;
+		display: block;
+	}
+	#nav-right{
+		float: right;
+		display: block;
+	}
+	#navi img{
+		height: 25px;
+		margin: 0 !important;
+	}
+
+#seminars{
+	width: 545px;
+	height: 250px;
+	overflow: hidden ;
+}
+	#seminars ul {
+	width: 10000px;
+	list-style: none;
+}
+	#seminars li {
+		float: left;
+	}
+.content-text{
+	width: 545px;
+	display:block;
+}
+=======
+>>>>>>> 5052b78816f6b23aaebb6507f67a81dc9fb9d19c

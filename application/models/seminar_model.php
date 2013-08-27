@@ -143,6 +143,10 @@ class Seminar_model extends CI_Model {
 		$this->db->insert('c_subscribe', $data);			
 	}
 
+	public function getSeminarCSV() {
+		
+	}
+
 
 	
 
