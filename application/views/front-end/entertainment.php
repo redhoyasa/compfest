@@ -10,13 +10,10 @@
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
 <li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/raisa.jpg" alt="header-bg" title="MAIN EVENT COMPFEST" id="wows1_0"/>Balairung Universitas Indonesia, 21-22 September 2013</li>
-<li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/headerbg.png" alt="header-bg" title="MAIN EVENT COMPFEST" id="wows1_0"/></li>
-<li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/headerbg0.gif" alt="header-bg" title="header-bg" id="wows1_1"/></li>
+
 </ul></div>
 <div class="ws_bullets"><div>
 <a href="#" title="header-bg"><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/tooltips/headerbg.jpg" alt="header-bg"/>1</a>
-<a href="#" title="header-bg"><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/tooltips/headerbg.jpg" alt="header-bg"/>1</a>
-<a href="#" title="header-bg"><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/tooltips/headerbg_0.jpg" alt="header-bg"/>2</a>
 </div></div>
 
 	<div class="ws_shadow"></div>

@@ -86,8 +86,7 @@
 	float: right;
 	margin: 20px 25px 0px 10px;
 	height: 250px;
-}
-
+}	
 
 #sharebox{
 	width: 100%;
@@ -211,3 +210,20 @@
 		height: 25px;
 		margin: 0 !important;
 	}
+
+#seminars{
+	width: 545px;
+	height: 250px;
+	overflow: hidden;
+}
+	#seminars ul {
+	width: 10000px;
+	list-style: none;
+}
+	#seminars li {
+		float: left;
+	}
+.content-text{
+	width: 545px;
+	display:block;
+}

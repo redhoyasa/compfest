@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/carousel.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 
 
 <div id="middle">
@@ -73,27 +75,50 @@
 ?>
 	<div style="clear:both;"></div>
 <div id="seminars" class="content leftcol">
-	<div class="content-text">
-		<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
-		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
-		<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
-		<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
-		<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
-		<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-		
-		<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-			Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-		</p>
-		<div class="competition-register-button">
-				<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
-		</div>
-	</div>
+	<ul>
+		<li>
+			<div class="content-text">
+				<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+				<div class="competition-register-button">
+						<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation in Indonesia through Research"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+				<div class="competition-register-button">
+						<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
+				</div>
+			</div>
+		</li>
+	</ul>
 	<div id="navi">
-		<div id="nav-left"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a></div>
-		<div id="nav-right"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a></div>
+		<a id="nav-left" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
+		<a id="nav-right" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
 	</div>
-
 </div>
+
+
+
 <div id="competitions-final" class="content rightcol">
 	<img id="compfinal-title" src="<?php echo base_url(); ?>assets/img/title-home/compfinal-banner.png" style="float:none;"/><br/>
 	<div class="content-text">
@@ -175,7 +200,6 @@
 
 	</div>
 </div>  
-</div>
 
 
 <script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
