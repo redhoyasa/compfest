@@ -13,6 +13,10 @@ iframe {
 	border: 2px solid #AAA;
 }
 
+.playground-header {
+	margin-top: 20px;
+}
+
 .playground-main-slider {
 	width: 950px;
 	height: 250px;
@@ -41,9 +45,9 @@ iframe {
 
 .playground-box-slider {
 	display: block;
-	width: 200px;
+	width: 180px;
 	height: 200px;
-	margin: 20px 0px 20px 20px;
+	margin: 20px;
 	color: black;
 	text-align: center;
 }
@@ -51,6 +55,11 @@ iframe {
 .playground-box-slider:hover {
 	text-decoration: none;
 	color: black;
+}
+
+.playground-box-slider img {
+	width: 150px;
+	height: 150px;
 }
 
 .playground-box-caption {
