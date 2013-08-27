@@ -8,7 +8,8 @@
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
 
-	$('#navi').show().find('a').on('click', function() {
+	$('#navi').show().find('a').on('click', function(event) {
+		event.preventDefault()		
 		var direction = $(this).data('dir'),
 			loc = imgWidth; // 600
 
