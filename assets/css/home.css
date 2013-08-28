@@ -251,7 +251,17 @@
 	.content-text p{
 		line-height: 15px; 
 	}
-
+	.content-text .title {
+		font-size: 16px;
+		line-height: 18px;
+		text-align: center;
+		width: 385px;
+		margin-bottom: 5px;
+	}
+	.content-text .desc{
+		font-size:12px;
+		text-align: justify;
+	}
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -341,6 +351,30 @@ iframe {
 	text-align: center;
 }
 
+#competitions-final{
+	width: 545px;
+	height: 280px;
+	
+}
+	#competitions-final ul {
+		list-style: none;
+		overflow: hidden ;
+		margin-top:0px;
+}
+	#competitions-final li {
+		height: 200px;
+		float: left;
+	}
+	
+#slider-mover-comp-wrapper{
+	height: 200px;
+	overflow: hidden;
+}
+.competition-slider-wrapper{
+	width: 545px;
+	display: block;
+}
+	
 .entertainment-main-slider {
 	width: 480px;
 	height: 250px;
@@ -394,5 +428,10 @@ iframe {
 }
 
 .entertainment-box-caption2 {
+	text-align: center;
+}
+
+#playground .category{
+	width: 385px;
 	text-align: center;
 }

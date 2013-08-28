@@ -55,7 +55,7 @@
 ?>
 
 <div id="headline">
-	<img id="news-title" src="<?php echo base_url(); ?>assets/img/title-home/news-banner.png" />
+	<a href="<?php echo base_url(); ?>news"><img id="news-title" src="<?php echo base_url(); ?>assets/img/title-home/news-banner.png" /></a>
 	<h3 id="headline-title" style="font-size:1.6em;"><a style="color: #007ac3;" href="<?php echo site_url('news/' . $r->url); ?>"><?php echo $r->title; ?></a></h3><br>
 	<p id="headline-date" style="font-size:0.9em;"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></p>
 	<div id="headline-imgBox"><img src="<?php echo base_url();?>assets/img/home-news.png"></div>
@@ -74,7 +74,7 @@
 ?>
 	<div style="clear:both;"></div>
 <div id="seminars" class="content leftcol">
-	<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
+	<a href="<?php echo base_url(); ?>seminar"><img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/></a> <br/>
 	<div class="register-button">
 		<a class="button"  href="<?php echo site_url(); ?>seminar/register"><p id="register-tulisan">REGISTER</p></a>
 	</div>
@@ -87,7 +87,7 @@
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 				
@@ -101,7 +101,7 @@
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -114,7 +114,7 @@
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -127,7 +127,7 @@
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -140,7 +140,7 @@
 				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -153,7 +153,7 @@
 				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -166,7 +166,7 @@
 				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -179,7 +179,7 @@
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
-				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
 			</div>
@@ -203,60 +203,276 @@
 		<a href="5">Edugames</a> |
 		<a href="6">App Center</a>
 	</div>
-	<div class="competition-main-slider-button" style="margin-right: 5px;">
-		<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+	<div id="slider-mover-comp-wrapper">
+		<ul id="slider-mover">
+			<li id="first">
+				<div class="competition-slider-wrapper" id="cp">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="4"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<div class="competition-slider-wrapper" id="oa">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="5"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>	
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<div class="competition-slider-wrapper" id="ro">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="5"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>	
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<div class="competition-slider-wrapper" id="mi">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="5"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>	
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<div class="competition-slider-wrapper" id="edu">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="5"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>	
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<div class="competition-slider-wrapper" id="ac">
+					<div class="competition-main-slider-button" style="margin-right: 5px;">
+						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+					</div>
+					<div class="competition-main-slider">
+						<div class="data-slider" data-total="5"></div>
+							<ul>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team A </p>
+									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team B </p>
+									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team C </p>
+									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Team D </p>
+									<p class="competition-box-caption2"> Universitas Margonda </p>
+									</a></li>	
+							</ul>
+						</div>
+					<div class="competition-main-slider-button" style="margin-left: 5px;">
+						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+					</div>
+
+				</div>
+			</li>
+		</ul>
 	</div>
-	<div class="competition-main-slider">
-		<div class="data-slider" data-total="4"></div>
-			<ul>
-				<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-					<p class="competition-box-caption"> Team A </p>
-					<p class="competition-box-caption2"> Universitas Indonesia </p>
-					</a></li>
-				<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-					<p class="competition-box-caption"> Team B </p>
-					<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
-					</a></li>
-				<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-					<p class="competition-box-caption"> Team C </p>
-					<p class="competition-box-caption2"> Institut Pertanian Depok </p>
-					</a></li>
-				<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-					<p class="competition-box-caption"> Team D </p>
-					<p class="competition-box-caption2"> Universitas Margonda </p>
-					</a></li>
-			</ul>
-		</div>
-		<div class="competition-main-slider-button" style="margin-left: 5px;">
-			<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
-		</div>
 </div>
 
 
 <div id="playground" class="content leftcol" style="margin-bottom: 30px">
-	<img id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/><br/>
+	<a href="<?php echo base_url(); ?>playground"><img id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/></a><br/>
 	<ul>
 		<li>
 			<div class="content-text">
 			<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
 			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
 			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
-			<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
 			</p>
 			</div>
 		</li>
 		<li>
 			<div class="content-text">
 			<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
-			<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Google Student Ambasador</p>
+			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
+			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
 			</p>
 			</div>
 		</li>
@@ -267,7 +483,7 @@
 	</div>
 </div>
 <div id="entertaiment" class="content rightcol" style="margin-bottom: 30px">
-	<img id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/><br/>
+	<a href="<?php echo base_url(); ?>entertainment"><img id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/></a><br/>
 	<img src="<?php echo base_url(); ?>assets/img/home/cs-entertain.png"/>
 	<!-- ENTERTAINMENT
 	<div class="entertainment-main-slider-button" style="margin-right: 5px;">
