@@ -5,7 +5,7 @@
 		imgWidth = 545, // 600
 		imgsLen = 8, // 4
 		current = 1,
-		interval=  10000;
+		interval=  1000;
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
 		seminar = $('#seminar-nav').show().find('a');
@@ -76,7 +76,7 @@
 		imgWidth = 545, // 600
 		imgsLen = 2, // 4
 		current = 1,
-		interval= 10000,
+		interval= 1000,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
 		
