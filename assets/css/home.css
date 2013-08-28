@@ -341,6 +341,23 @@ iframe {
 	text-align: center;
 }
 
+#competitions-final{
+	width: 545px;
+	height: 280px;
+	overflow: hidden ;
+}
+	#competitions-final ul {
+	width: 10000px;
+	list-style: none;
+}
+	#competitions-final li {
+		float: left;
+	}
+.competition-slider-wrapper{
+	width: 545px;
+	display: block;
+}
+	
 .entertainment-main-slider {
 	width: 480px;
 	height: 250px;
