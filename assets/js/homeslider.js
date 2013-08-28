@@ -131,8 +131,8 @@
 		});
 	}
 
-	var slideMover = $("div#competitions-final li#first"),
-		slideHeight = 250,
+	var slideMover = $("ul#slider-mover"),
+		slideHeight = 200,
 		slideLen = 6,
 		slideCurrent = 1,
 		totalSlideHeight = slideLen * slideHeight;
