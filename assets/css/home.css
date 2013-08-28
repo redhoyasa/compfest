@@ -5,7 +5,7 @@
 	clear: both;
 	margin:0 0 0 0;
 	background :white;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #content {
@@ -278,6 +278,11 @@
 iframe {
 	margin-bottom: 50px;
 	border: 2px solid #AAA;
+	
+}
+iframe#countdown{
+	width:1180px;
+	height:480px;
 }
 #readmore{
 	border-radius: 5px;

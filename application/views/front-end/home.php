@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/slider/carousel.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" media="screen" />
 
 
 
 <div id="middle">
-
+<iframe id="countdown" src="<?php echo base_url(); ?>countdown"></iframe>
+<!--
 <div id="this-carousel-id" class="carousel slide">
   <div class="carousel-inner">
     <div class="item active">
@@ -32,11 +32,9 @@
         <p>Caption text here</p>
       </div>
     </div>
-  </div><!-- /.carousel-inner -->
-  <!--  Next and Previous controls below
-        href values must reference the id for this carousel -->
+  </div>
     <a class="carousel-control left" href="#this-carousel-id" data-slide="prev"><span class="icon-prev"></span></a>
-    <a class="carousel-control right" href="#this-carousel-id" data-slide="next"><span class="icon-next"></span></a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next"><span class="icon-next"></span></a> -->
 </div>
 
 <br><br>
