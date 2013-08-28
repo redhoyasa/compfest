@@ -244,6 +244,9 @@
 	.leftcol li {
 		float: left;
 	}
+#seminars .details p{
+	font-size: 13px !important;
+}
 .content-text{
 	width: 545px;
 	display:block;
@@ -276,9 +279,24 @@ iframe {
 	margin-bottom: 50px;
 	border: 2px solid #AAA;
 }
-
+#readmore{
+	border-radius: 5px;
+	background: #e30613;
+	padding: 10px 20px;
+	text-align: center;
+	vertical-align: middle;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+#readmore:hover{
+	background: #91040c;
+}
+	#readmore p{
+		color: white;
+	}
 #competition-nav{
-	
+	margin-bottom: 5px;
 }
 	#competition-nav a{
 		font-size:14px;

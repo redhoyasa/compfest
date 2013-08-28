@@ -62,9 +62,11 @@
 	<p id="headline-article">
 	<?php echo substr(strip_tags($r->content),0,1500)." ..."; ?>
 	</p>
+	<a href="<?php echo site_url('news/' . $r->url); ?>">
 	<div id="readmore">
-		<a href="<?php echo site_url('news/' . $r->url); ?>">Read More</a>
+		<p>Read More</p>
 	</div>
+	</a>
 </div>	
 
 <?php
@@ -83,10 +85,11 @@
 			<div class="content-text">
 				<img class="speaker-img" src="<?php echo base_url(); ?>assets/img/seminar/home/wisnu.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -97,10 +100,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/oskar.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Speech and Natural Language Processing"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Oskar Riandi</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Oskar Riandi</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -110,10 +114,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/andri.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Solving today's Enterprise Problem with Big Data Management"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Andri Rizki</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Andri Rizki</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -123,10 +128,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/rene.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovate or Perish"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Rene Suhardono Canoneo</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Rene Suhardono Canoneo</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -136,10 +142,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/adhicipta.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Indonesian Animation Strategy Goes International"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Adhicipta R. Wirawan</p>
-				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Adhicipta R. Wirawan</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -149,10 +156,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/izak.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Advance Payment for Mobile and Community"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Izak Jenie</p>
-				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Izak Jenie</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -162,10 +170,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/dodyalfred.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Gameconomics: Turning Game Into Successful Business"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Dodi Dharma & Alfred Boediman</p>
-				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Dodi Dharma & Alfred Boediman</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
@@ -175,10 +184,11 @@
 			<div class="content-text">
 				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/firstman.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Perceptul Computing"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Firsman Marpaung</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
-				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Firsman Marpaung</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
 				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
