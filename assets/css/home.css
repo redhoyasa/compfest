@@ -344,11 +344,12 @@ iframe {
 #competitions-final{
 	width: 545px;
 	height: 280px;
-	overflow: hidden ;
+	
 }
 	#competitions-final ul {
-	width: 10000px;
+	height: 250px;
 	list-style: none;
+	overflow: hidden ;
 }
 	#competitions-final li {
 		float: left;

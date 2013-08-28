@@ -131,27 +131,20 @@
 		});
 	}
 
-	var descMover = $("div.competition-desc-mover"),
-		mapPointer = $("div.competition-map-pointer"),
-		descHeight = 350,
-		descLen = imgsLen,
-		descCurrent = 1,
-		totalDescHeight = descLen * descHeight;
-
-	$('div.competition-main-slider').show().find('a').click(function(event) {
+	var slideMover = $("div#competitions-final li#first"),
+		slideHeight = 250,
+		slideLen = 6,
+		slideCurrent = 1,
+		totalSlideHeight = slideLen * slideHeight;
+		
+		console.log(slideMover);
+	$('div#competition-nav').show().find('a').click(function(event) {
 		event.preventDefault();
-		var mapX = $(this).data('axis'),
-			mapY = $(this).data('ordinate'),
-			descId = $(this).attr('href'),
-			descLoc = -1*(descId * descHeight - descHeight);
+		var slideId = $(this).attr('href'),
+			slideLoc = -1*(slideId * slideHeight - slideHeight);
 
-		descMover.animate({
-			'margin-top': descLoc
-		});
-
-		mapPointer.animate({
-			'top': mapY,
-			'left': mapX
+		slideMover.animate({
+			'margin-top': slideLoc
 		});
 
 	});
