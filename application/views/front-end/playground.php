@@ -2,8 +2,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/style.css" />
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
-</head>
-<body style="background-color:#d7d7d7">
+	
 	<!-- Start WOWSlider.com BODY section -->
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
