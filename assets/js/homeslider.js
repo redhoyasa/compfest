@@ -5,10 +5,35 @@
 		imgWidth = 545, // 600
 		imgsLen = 8, // 4
 		current = 1,
+		interval=  10000;
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
 		seminar = $('#seminar-nav').show().find('a');
 	
+	var intervalID = setInterval(myFunction, interval);
+
+	$("#seminars").hover( function () {
+		window.clearInterval(intervalID)
+		},
+		function () {
+		intervalID = setInterval(myFunction, interval);
+	} );
+		
+	function myFunction(){
+		direction = 'next';
+		loc = imgWidth; // 600
+		current++;
+		// if first image
+		if ( current === 0 ) {
+			current = imgsLen;
+			loc = totalImgsWidth - imgWidth; // 2400 - 600 = 1800
+		} else if ( current - 1 === imgsLen ) { // Are we at end? Should we reset?
+			current = 1;
+			loc = 0;
+		}
+
+		transition(sliderUL, loc, direction);
+	}	
 	seminar.click(function(event) {
 		event.preventDefault();		
 		var direction = $(this).data('dir'),
@@ -51,9 +76,35 @@
 		imgWidth = 545, // 600
 		imgsLen = 2, // 4
 		current = 1,
+		interval= 10000,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 		console.log(sliderUL);
+		
+	var intervalID = setInterval(myFunction, interval);
+	
+	$("#playground").hover( function () {
+		window.clearInterval(intervalID)
+		},
+		function () {
+		intervalID = setInterval(myFunction, interval);
+	} );
+		
+	function myFunction(){
+		console.log('cek');
+		direction = 'next';
+		loc = imgWidth; // 600
+		current++;
+		// if first image
+		if ( current === 0 ) {
+			current = imgsLen;
+			loc = totalImgsWidth - imgWidth; // 2400 - 600 = 1800
+		} else if ( current - 1 === imgsLen ) { // Are we at end? Should we reset?
+			current = 1;
+			loc = 0;
+		}
 
+		transition(sliderUL, loc, direction);
+	}	
 	$('#playground-nav').show().find('a').click(function(event) {
 		event.preventDefault();		
 		var direction = $(this).data('dir'),
@@ -138,6 +189,9 @@
 		totalSlideHeight = slideLen * slideHeight;
 		
 		console.log(slideMover);
+	$('.competition-main-slider').show().find('a').click(function(event){
+		event.preventDefault();
+	});
 	$('div#competition-nav').show().find('a').click(function(event) {
 		event.preventDefault();
 		var slideId = $(this).attr('href'),
