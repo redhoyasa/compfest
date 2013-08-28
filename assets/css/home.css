@@ -75,19 +75,24 @@
 	float: left
 }
 .leftcol{
+	display: block;
 	width: 545px;
 	float: left;
 	margin: 20px 10px 0px 25px;
-	height: 250px;
+	height: 280px;
 }
 
 .rightcol{
+	display: block;
 	width: 545px;
 	float: right;
 	margin: 20px 25px 0px 10px;
-	height: 250px;
+	height: 280px;
 }	
-
+.speaker-img{
+	width:150px;
+	height:150px;
+}
 #sharebox{
 	width: 100%;
 	height: 48px;
@@ -152,36 +157,38 @@
 #likebox:hover {
 	opacity : 1;
 }	
-.competition-register-button{
-	height: 25px;
-	width: 100px;
+.register-button{
+	position: absolute;
+	top:5px;
+	right:0;
+	height: 40px;
+	width: 160px;
 	float: left;
-	margin-top: 5px;
 	border-radius: 4px;
-	background-color: #007ac3;
-	color: #f2f2f2!important;
+	background-color: #e30613;
+	color: #f2f2f2 !important;
 	cursor: pointer;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;	
 }
 
-.competition-register-button:hover{
-	background-color: #00617F;
+.register-button:hover{
+	background-color: #91040c;
 }
 
-#competition-tulisan-button{
-	font-size: 12px;
-	margin: 3px;
+#tulisan-button{
+	font-size: 16px;
+	margin: 10px;
 	line-height:14px;
 	text-align: center !important;
 	color: white;
 	text-indent:0em !important;
 }
 
-#competition-register-tulisan{
-	font-size: 12px;
-	margin: 3px;
+#register-tulisan{
+	font-size: 16px;
+	margin: 10px;
 	line-height:14px;
 	text-align: center !important;
 	padding-top:3px;
@@ -192,38 +199,200 @@
 	position: relative;
 	
 }
-#navi {
+.navi {
 	height: 25px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
-	#nav-left{
+	.nav-left{
 		float: left;
 		display: block;
+		-moz-transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 	}
-	#nav-right{
+	.nav-left:hover{
+		opacity: 0.5;
+	}
+	.nav-right{
 		float: right;
 		display: block;
+		-moz-transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 	}
-	#navi img{
+	
+	.nav-right:hover{
+		opacity: 0.5;
+	}
+	
+	.navi img{
 		height: 25px;
 		margin: 0 !important;
 	}
 
-#seminars{
+.leftcol{
 	width: 545px;
-	height: 250px;
+	height: 280px;
 	overflow: hidden ;
 }
-	#seminars ul {
+	.leftcol ul {
 	width: 10000px;
 	list-style: none;
 }
-	#seminars li {
+	.leftcol li {
 		float: left;
 	}
 .content-text{
 	width: 545px;
 	display:block;
+}
+	.content-text p{
+		line-height: 15px; 
+	}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+iframe {
+	margin-bottom: 50px;
+	border: 2px solid #AAA;
+}
+
+#competition-nav{
+	
+}
+	#competition-nav a{
+		font-size:14px;
+	}
+.competition-header {
+	margin-top: 20px;
+}
+
+.competition-main-slider {
+	width: 480px;
+	height: 250px;
+	overflow: scroll;
+	float: left;
+	margin: 0px 0px;
+}
+
+.competition-main-slider-button{
+	position: relative;
+	top: 45px;
+	width: 25px;
+	height: 74px;
+	float: left;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.competition-main-slider-button:hover{
+	opacity:0.5;
+}
+
+.competition-main-slider ul {
+	width: 10000px;
+	list-style: none;
+	margin-left: 0px;
+}
+
+.competition-main-slider li{
+	float: left;
+	margin: 0 5px;
+}
+
+.competition-box-slider {
+	display: block;
+	width: 150px;
+	height: 200px;
+	margin: px;
+	color: black;
+	text-align: center;
+	
+}
+
+.competition-box-slider:hover {
+	text-decoration: none;
+	color: black;
+	
+}
+
+.competition-box-slider img {
+	width: 150px;
+	height: 150px;
+}
+
+.competition-box-caption {
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.competition-box-caption2 {
+	text-align: center;
+}
+
+.entertainment-main-slider {
+	width: 480px;
+	height: 250px;
+	overflow: scroll;
+	float: left;
+	margin: 0px 0px;
+}
+
+.entertainment-main-slider-button{
+	position: relative;
+	top: 45px;
+	width: 25px;
+	height: 74px;
+	float: left;
+}
+
+.entertainment-main-slider ul {
+	width: 10000px;
+	list-style: none;
+	margin-left: 0px;
+}
+
+.entertainment-main-slider li{
+	float: left;
+	margin: 0 5px;
+}
+
+.entertainment-box-slider {
+	display: block;
+	width: 150px;
+	height: 200px;
+	margin: px;
+	color: black;
+	text-align: center;
+}
+
+.entertainment-box-slider:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.entertainment-box-slider img {
+	width: 150px;
+	height: 150px;
+}
+
+.entertainment-box-caption {
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.entertainment-box-caption2 {
+	text-align: center;
 }

@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" media="screen" />
 
 
+
 <div id="middle">
 
 <div id="this-carousel-id" class="carousel slide">
@@ -73,11 +74,14 @@
 ?>
 	<div style="clear:both;"></div>
 <div id="seminars" class="content leftcol">
+	<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
+	<div class="register-button">
+		<a class="button"  href="<?php echo site_url(); ?>seminar/register"><p id="register-tulisan">REGISTER</p></a>
+	</div>
 	<ul>
 		<li>
 			<div class="content-text">
-				<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+				<img class="speaker-img" src="<?php echo base_url(); ?>assets/img/seminar/home/wisnu.jpg" />	
 				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
 				<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
 				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
@@ -86,32 +90,104 @@
 				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
-				<div class="competition-register-button">
-						<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
-				</div>
+				
 			</div>
 		</li>
 		<li>
 			<div class="content-text">
-				<img id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/> <br/>
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation in Indonesia through Research"</p>
-				<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
-				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/oskar.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Speech and Natural Language Processing"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Oskar Riandi</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
 				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
 				
 				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
 					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
 				</p>
-				<div class="competition-register-button">
-						<a class="comp-button"  href="<?php echo site_url(); ?>competition/register"><p id="competition-register-tulisan">REGISTER</p></a>
-				</div>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/andri.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Solving today's Enterprise Problem with Big Data Management"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Andri Rizki</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/rene.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovate or Perish"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Rene Suhardono Canoneo</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/adhicipta.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Indonesian Animation Strategy Goes International"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Adhicipta R. Wirawan</p>
+				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/izak.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Advance Payment for Mobile and Community"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Izak Jenie</p>
+				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/dodyalfred.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Gameconomics: Turning Game Into Successful Business"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Dodi Dharma & Alfred Boediman</p>
+				<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/firstman.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Perceptul Computing"</p>
+				<p class="speaker" style="display:table; margin-left:10px">By Firsman Marpaung</p>
+				<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
+				<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				
+				<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				</p>
 			</div>
 		</li>
 	</ul>
-	<div id="navi">
-		<a id="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
-		<a id="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
+	<div id="seminar-nav" class="navi">
+		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
+		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
 	</div>
 </div>
 
@@ -119,28 +195,116 @@
 
 <div id="competitions-final" class="content rightcol">
 	<img id="compfinal-title" src="<?php echo base_url(); ?>assets/img/title-home/compfinal-banner.png" style="float:none;"/><br/>
-	<div class="content-text">
-		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+	<div id="competition-nav">
+		<a href="1">Programming</a> |
+		<a href="2">Open Animation</a> |
+		<a href="3">Robotic</a> |
+		<a href="4">Mobile IT</a> |
+		<a href="5">Edugames</a> |
+		<a href="6">App Center</a>
 	</div>
+	<div class="competition-main-slider-button" style="margin-right: 5px;">
+		<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+	</div>
+	<div class="competition-main-slider">
+		<div class="data-slider" data-total="4"></div>
+			<ul>
+				<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+					<p class="competition-box-caption"> Team A </p>
+					<p class="competition-box-caption2"> Universitas Indonesia </p>
+					</a></li>
+				<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+					<p class="competition-box-caption"> Team B </p>
+					<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+					</a></li>
+				<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+					<p class="competition-box-caption"> Team C </p>
+					<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+					</a></li>
+				<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+					<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+					<p class="competition-box-caption"> Team D </p>
+					<p class="competition-box-caption2"> Universitas Margonda </p>
+					</a></li>
+			</ul>
+		</div>
+		<div class="competition-main-slider-button" style="margin-left: 5px;">
+			<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+		</div>
 </div>
+
+
 <div id="playground" class="content leftcol" style="margin-bottom: 30px">
 	<img id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/><br/>
-	<div class="content-text">
-		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
-		<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
-		<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
-		<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-			Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-		</p>
-	</div>
-	<div id="navi">
-		<div id="nav-left"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a></div>
-		<div id="nav-right"><a href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a></div>
+	<ul>
+		<li>
+			<div class="content-text">
+			<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
+			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
+			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
+			<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+			</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+			<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />
+			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Game</p>
+			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
+			<p style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
+				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+			</p>
+			</div>
+		</li>
+	</ul>
+	<div class="navi" id="playground-nav">
+		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
+		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
 	</div>
 </div>
 <div id="entertaiment" class="content rightcol" style="margin-bottom: 30px">
 	<img id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/><br/>
-	<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif" />	
+	<img src="<?php echo base_url(); ?>assets/img/home/cs-entertain.png"/>
+	<!-- ENTERTAINMENT
+	<div class="entertainment-main-slider-button" style="margin-right: 5px;">
+		<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
+	</div>
+	<div class="entertainment-main-slider">
+		
+	
+		<div class="data-slider" data-total="4"></div>
+		<ul>
+			<li><a class="entertainment-box-slider" href="1" data-axis="160" data-ordinate="195">
+				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+				<p class="entertainment-box-caption"> Raiso </p>
+				<p class="entertainment-box-caption2"> Guest Star </p>
+				</a></li>
+			<li><a class="entertainment-box-slider" href="2" data-axis="180" data-ordinate="195">
+				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+				<p class="entertainment-box-caption"> Asciipella </p>
+				<p class="entertainment-box-caption2"> Fasilkom </p>
+				</a></li>
+			<li><a class="entertainment-box-slider" href="3" data-axis="700" data-ordinate="150">
+				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+				<p class="entertainment-box-caption"> Jokowi </p>
+				<p class="entertainment-box-caption2"> Gubernur </p>
+				</a></li>
+			<li><a class="entertainment-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+				<p class="entertainment-box-caption"> SBY </p>
+				<p class="entertainment-box-caption2"> Presiden </p>
+				</a></li>
+		</ul>
+	</div>
+		
+		<div class="entertainment-main-slider-button" style="margin-left: 5px;">
+			<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
+		</div>	
+	-->
 </div>
 	  <script type="text/javascript">
     		//var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
@@ -199,10 +363,9 @@
 	</div>
 </div>  
 
-
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/holder.js" type="text/javascript"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/home.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/transitions.min.js" type="text/javascript"></script>
