@@ -76,18 +76,28 @@
 }
 .leftcol{
 	display: block;
-	width: 545px;
 	float: left;
 	margin: 20px 10px 0px 25px;
-	height: 280px;
+	width: 545px;
+	height: 320px;
+	overflow: hidden ;
 }
+
+	.leftcol ul {
+		width: 10000px;
+		list-style: none;
+	}
+	.leftcol li {
+		float: left;
+	}
+	
 
 .rightcol{
 	display: block;
 	width: 545px;
 	float: right;
 	margin: 20px 25px 0px 10px;
-	height: 280px;
+	height: 320px;
 }	
 .speaker-img{
 	width:150px;
@@ -187,9 +197,11 @@
 }
 
 #register-tulisan{
-	font-size: 16px;
+	font-size: 18px;
 	margin: 10px;
 	line-height:14px;
+	font-family: myriad pro;
+	font-weight:bold;
 	text-align: center !important;
 	padding-top:3px;
 	color: white;
@@ -198,6 +210,16 @@
 .content {
 	position: relative;
 	
+}
+.content-title{
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;	
+	margin: 0 !important;	
+}
+	
+.content-title:hover{
+	opacity:0.5;
 }
 .navi {
 	height: 25px;
@@ -232,18 +254,7 @@
 		margin: 0 !important;
 	}
 
-.leftcol{
-	width: 545px;
-	height: 280px;
-	overflow: hidden ;
-}
-	.leftcol ul {
-	width: 10000px;
-	list-style: none;
-}
-	.leftcol li {
-		float: left;
-	}
+
 #seminars .details p{
 	font-size: 13px !important;
 }
@@ -303,8 +314,22 @@ iframe#countdown{
 #competition-nav{
 	margin-bottom: 5px;
 }
+
+#competition-nav:hover{
+	opacity:0.5;	
+}
+
 	#competition-nav a{
 		font-size:14px;
+		color: black;
+	}
+	
+	#competition-nav .current{
+		background: #007ac3;
+		padding : 3px 5px;
+		border-radius:5px;
+		color: white;
+		
 	}
 .competition-header {
 	margin-top: 20px;
@@ -374,23 +399,19 @@ iframe#countdown{
 	text-align: center;
 }
 
-#competitions-final{
-	width: 545px;
-	height: 280px;
-	
-}
+
 	#competitions-final ul {
 		list-style: none;
 		overflow: hidden ;
 		margin-top:0px;
 }
 	#competitions-final li {
-		height: 200px;
+		height: 230px;
 		float: left;
 	}
 	
 #slider-mover-comp-wrapper{
-	height: 200px;
+	height: 230px;
 	overflow: hidden;
 }
 .competition-slider-wrapper{

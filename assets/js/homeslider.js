@@ -7,9 +7,9 @@
 		current = 1,
 		interval=  5000;
 		totalImgsWidth = imgsLen * imgWidth; // 2400
-		console.log(sliderUL);
 		seminar = $('#seminar-nav').show().find('a');
 	
+	//auto slide start
 	var intervalID = setInterval(myFunction, interval);
 
 	$("#seminars").hover( function () {
@@ -34,6 +34,8 @@
 
 		transition(sliderUL, loc, direction);
 	}	
+	//auto slide end
+	
 	seminar.click(function(event) {
 		event.preventDefault();		
 		var direction = $(this).data('dir'),
@@ -78,8 +80,8 @@
 		current = 1,
 		interval= 5000,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
-		console.log(sliderUL);
 		
+	//auto slide start
 	var intervalID = setInterval(myFunction, interval);
 	
 	$("#playground").hover( function () {
@@ -90,7 +92,6 @@
 	} );
 		
 	function myFunction(){
-		console.log('cek');
 		direction = 'next';
 		loc = imgWidth; // 600
 		current++;
@@ -105,6 +106,7 @@
 
 		transition(sliderUL, loc, direction);
 	}	
+	//auto slide end	
 	$('#playground-nav').show().find('a').click(function(event) {
 		event.preventDefault();		
 		var direction = $(this).data('dir'),
@@ -147,13 +149,16 @@
 		imgWidth = 160,
 		imgsLen = $('.data-slider').data('total')-2,
 		current = 1,
-		totalImgsWidth = imgsLen * imgWidth; // 2400
-
+		interval= 3000,
+		totalImgsWidth = imgsLen * imgWidth,
+		nav = $('div#competition-nav').find('a'),
+		slideId = 1;
+		
+		$(nav[0]).addClass('current');
 	$('.competition-main-slider-button').show().find('a').click(function(event) {
 		event.preventDefault();
 		var direction = $(this).data('dir'),
 			loc = imgWidth; // 600
-
 		// update current value
 		( direction === 'next' ) ? ++current : --current;
 
@@ -183,26 +188,70 @@
 	}
 
 	var slideMover = $("ul#slider-mover"),
-		slideHeight = 200,
+		slideHeight = 230,
 		slideLen = 6,
 		slideCurrent = 1,
 		totalSlideHeight = slideLen * slideHeight;
 		
-		console.log(slideMover);
 	$('.competition-main-slider').show().find('a').click(function(event){
 		event.preventDefault();
 	});
 	$('div#competition-nav').show().find('a').click(function(event) {
 		event.preventDefault();
-		var slideId = $(this).attr('href'),
+		nav.removeClass('current');
+		$(this).addClass('current');
+			slideId = $(this).attr('href');
 			slideLoc = -1*(slideId * slideHeight - slideHeight);
+			console.log(slideId);
 
 		slideMover.animate({
 			'margin-top': slideLoc
 		});
 
 	});
+	
+	// auto slide start
+	var intervalID = setInterval(myFunction, interval);
 
+	$("#competitions-final").hover( function () {
+		window.clearInterval(intervalID)
+		},
+		function () {
+		intervalID = setInterval(myFunction, interval);
+	} );
+	
+	function myFunction(){
+		direction = 'next';
+		loc = imgWidth; // 600
+		++current;
+		// if first image
+		if ( current-1 < imgsLen ) {
+			loc = totalImgsWidth - imgWidth; // 2400 - 600 = 1800
+			transition(sliderUL, loc, direction);
+			
+		} else if ( current-1 === imgsLen ) { // Are we at end? Should we reset?
+			
+			transition(sliderUL, 0, direction);
+			current = 1;
+			loc = 0;
+			slideId++;
+			console.log(slideId);
+			
+			if (slideId-1 === slideLen){
+				slideId = 1;
+				console.log('masuk if')
+			}
+			slideLoc = -1*(slideId * slideHeight - slideHeight);
+			slideMover.animate({
+				'margin-top': slideLoc
+				
+			});	
+			nav.removeClass('current');
+			$(nav[slideId-1]).addClass('current');
+		}	
+	}	
+	//auto slide end
+	
 })(jQuery);
 
 //entertainment

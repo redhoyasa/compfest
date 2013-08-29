@@ -43,7 +43,6 @@ var todaystring=Date.parse(todaystring1)+(tz*1000*60*60);
 var futurestring1=(montharray[month-1]+" "+day+", "+year+" "+hour+":"+minute);
 var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
 var dd=futurestring-todaystring;
-console.log(futurestring1);
 var dday=Math.floor(dd/(60*60*1000*24)*1);
 var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
 var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
