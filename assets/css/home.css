@@ -315,9 +315,6 @@ iframe#countdown{
 	margin-bottom: 5px;
 }
 
-#competition-nav:hover{
-	opacity:0.5;	
-}
 
 	#competition-nav a{
 		font-size:14px;
@@ -478,4 +475,8 @@ iframe#countdown{
 #playground .category{
 	width: 385px;
 	text-align: center;
+}
+#playground .team-img{
+	width: 150px;
+	height:150px
 }
