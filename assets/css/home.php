@@ -466,9 +466,9 @@
 		<br/>
 		<?php
 				$db['default']['hostname'] = 'localhost';
-				$db['default']['username'] = 'k5334818_webcoba';
-				$db['default']['password'] = '0103301034';
-				$db['default']['database'] = 'k5334818_webcoba';
+				$db['default']['username'] = 'root';
+				$db['default']['password'] = '';
+				$db['default']['database'] = 'webcoba';
 
 				$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
 				mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
