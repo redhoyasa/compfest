@@ -8,10 +8,6 @@
     clear: both;
 }
 
-p, h1, h2 {
-	font-family: 'Open Sans', Tahoma, Arial, sans-serif;
-}
-
 iframe {
 	margin-bottom: 50px;
 	border: 2px solid #AAA;
