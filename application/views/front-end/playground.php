@@ -25,6 +25,21 @@
 			<div class="playground-header">
 				<img src="<?php echo base_url(); ?>assets/img/playground/header-playground.png"/>
 			</div>
+			
+			<?php
+				$db['default']['hostname'] = 'localhost';
+				$db['default']['username'] = 'root';
+				$db['default']['password'] = '';
+				$db['default']['database'] = 'webcoba';
+				
+				$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
+				mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
+				
+				$playground_sql = "SELECT *
+						         FROM playground";
+				$playground_res = mysql_query($playground_sql, $mysql) or die (mysql_error($mysql));
+				
+			?>
 
 		<div id="container">
 							
@@ -38,54 +53,32 @@
 					</div>
 					
 					<div class="playground-main-slider">
-						<div class="data-slider" data-total="9"></div>
-						<ul>
-							<li><a class="playground-box-slider" href="1" data-axis="160" data-ordinate="195">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-01.jpg">
-								<p class="playground-box-caption"> Tinker Games </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="2" data-axis="180" data-ordinate="195">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-02.jpg">
-								<p class="playground-box-caption"> Badr Interactive </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="3" data-axis="700" data-ordinate="150">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-03.jpg">
-								<p class="playground-box-caption"> Ar&Co </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="4" data-axis="50" data-ordinate="80">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-04.jpg">
-								<p class="playground-box-caption"> Tinker Games </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="5" data-axis="100" data-ordinate="200">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-05.jpg">
-								<p class="playground-box-caption"> Badr Interactive </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="6" data-axis="700" data-ordinate="150">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-06.jpg">
-								<p class="playground-box-caption"> Ar&Co </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="7" data-axis="50" data-ordinate="80">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-07.jpg">
-								<p class="playground-box-caption"> Tinker Games </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="8" data-axis="100" data-ordinate="200">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-08.jpg">
-								<p class="playground-box-caption"> Badr Interactive </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-							<li><a class="playground-box-slider" href="9" data-axis="700" data-ordinate="150">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-09.jpg">
-								<p class="playground-box-caption"> Ar&Co </p>
-								<p class="playground-box-caption2"> Game </p>
-							</a></li>
-						</ul>
+					
+					<?php
+					$totalPlayground = mysql_num_rows($playground_res);
+					?>
+					<div class="data-slider" data-total="<?php echo $totalPlayground?>"></div>
+					<ul>
+					<?php
+					
+					while ($ev = mysql_fetch_array($playground_res)) {
+						$pg_id = $ev['id'];
+						$pg_name = $ev['nama'];
+						$pg_img = str_replace(" ", "-", strtolower($pg_name));
+						$pg_coord_x = $ev['kordinat-x'];
+						$pg_coord_y = $ev['kordinat-y'];
+						$pg_cat = $ev['kategori'];
+						
+						?>
+						<li><a class="playground-box-slider" href="<?php echo $pg_id?>" data-axis="<?php echo $pg_coord_x?>" data-ordinate="<?php echo $pg_coord_y?>">
+							<img src="<?php echo base_url(); ?>assets/img/playground/<?php echo $pg_img?>.jpg">
+							<p class="playground-box-caption"> <?php echo $pg_name?></p>
+							<p class="playground-box-caption2"> <?php echo $pg_cat?></p>
+						</a></li>
+						<?php
+						
+					}
+					?>
 					</div>
 					
 					<div class="playground-main-slider-button">
@@ -95,267 +88,51 @@
 					<div style="clear:both;"></div>
 					
 					<div class="playground-main-desc">
-						<div class="playground-desc-mover">
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-01.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-02.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-03.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-04.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
+					<div class="playground-desc-mover">
 					
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-05.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
+					<?php
 					
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-06.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
+					$playground_res = mysql_query($playground_sql, $mysql) or die (mysql_error($mysql));
+					while ($ev = mysql_fetch_array($playground_res)) {
+						$pg_id = $ev['id'];
+						$pg_name = $ev['nama'];
+						$pg_img = str_replace(" ", "-", strtolower($pg_name));
+						$pg_cat = $ev['kategori'];
+						$pg_desc = $ev['deskripsi'];
+						$pg_challenge = $ev['challenge'];
 						
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-07.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
 						
+						?>
 						<div class="playground-main-desc-floater">
 							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-08.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
+								<img src="<?php echo base_url(); ?>assets/img/playground/<?php echo $pg_img?>.jpg"/>
+								<h1><?php echo $pg_name?></h1>
+								<h2><?php echo $pg_cat?></h2>
+								<?php echo $pg_desc?>
 							</div>
 							<div class="playground-side-desc-text">
 								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
+								<?php echo $pg_challenge?>
 							</div>
 						</div>
+						<?php
 						
-						<div class="playground-main-desc-floater">
-							<div class="playground-main-desc-text">
-								<img src="<?php echo base_url(); ?>assets/img/playground/desc-img-09.jpg"/>
-								<h1>Chanek!</h1>
-								<h2>Game Developer</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-								mollit anim id est laborum.</p>
-							</div>
-							<div class="playground-side-desc-text">
-								<h1>Challenges!</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-								<h1>Prize*</h1>
-								<ul>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-									<li>Lorem ipsum lala</li>
-								</ul>
-							</div>
-						</div>
+					}
+					?>
+						
 					</div>
 					</div>
 					
 					<div style="clear:both;"></div>
 					
-					<h1>Map</h1>
-					<div class="playground-map">
-						<div class="playground-map-pointer"></div>
+					<!-- BELUM ADA DATA LOKASI STAND -->
+					<div style="display:none">
+						<h1>Map</h1>
+						<div class="playground-map">
+							<div class="playground-map-pointer"></div>
+						</div>
 					</div>
+					
 				</div>
 				
 				
