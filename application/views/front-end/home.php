@@ -42,7 +42,7 @@
 	<div id="box">
 	<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>
 	</div>
-	<div id="banner">
+	<div id="banner" style="display:none;">
 		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/530x200.gif" />	
 	</div>
 </div>
@@ -58,7 +58,7 @@
 	<p id="headline-date" style="font-size:0.9em;"><?php echo date('l, F j Y G:i ', strtotime($r->timestamp)); ?></p>
 	<div id="headline-imgBox"><img src="<?php echo base_url();?>assets/img/home-news.png"></div>
 	<p id="headline-article">
-	<?php echo substr(strip_tags($r->content),0,1500)." ..."; ?>
+	<?php echo substr(strip_tags($r->content),0,300)." ..."; ?>
 	</p>
 	<a href="<?php echo site_url('news/' . $r->url); ?>">
 	<div id="readmore">
@@ -194,8 +194,8 @@
 		</li>
 	</ul>
 	<div id="seminar-nav" class="navi">
-		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
-		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
+		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-left.png" /></a>
+		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-right.png" /></a>
 	</div>
 </div>
 
@@ -242,7 +242,7 @@
 									<p class="competition-box-caption2"> Universitas Margonda </p>
 									</a></li>
 							</ul>
-						</div>
+					</div>
 					<div class="competition-main-slider-button" style="margin-left: 5px;">
 						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
 					</div>
@@ -460,289 +460,56 @@
 
 
 <div id="playground" class="content leftcol" style="margin-bottom: 30px">
-	<a href="<?php echo base_url(); ?>playground"><img class="content-title" id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/></a><br/>
+	<a href="<?php echo base_url(); ?>playground"><img class="content-title" id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/></a>
+		<br/>
+		<?php
+				$db['default']['hostname'] = 'localhost';
+				$db['default']['username'] = 'root';
+				$db['default']['password'] = '';
+				$db['default']['database'] = 'webcoba';
+
+				$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
+				mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
+
+				$playground_sql = "SELECT *
+						         FROM playground_home";
+				$playground_res = mysql_query($playground_sql, $mysql) or die (mysql_error($mysql));
+			?>
 	<ul>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-01.jpg" alt="Agate" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Agate</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Developer</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-02.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">AR&CO</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-03.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Arsanesia</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-04.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Badr Interactive</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-05.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Bistip</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-06.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Chocoarts</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-07.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Creacle</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Game Studio</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-08.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Dokter Gratis</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-09.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Doscom</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-10.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Flipbox</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-11.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Gong Studios</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-12.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Google Student Ambasador</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-13.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Studio Independent</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-14.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Inmotion</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-15.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Kartumuu</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-16.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Levitasi Hore Depok</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-17.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Males Banget</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-18.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Ngomik</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-19.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Night Spade</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-20.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Nokia Developer</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-21.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Rightarts</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-22.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-23.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Touchten Games</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-24.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Ulin Gameworks</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-			<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-25.jpg" />
-			<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Wacom Datascrip</p>
-			<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
-			<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-				Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha  
-			</p>
-			</div>
-		</li>
+		<?php
+			while ($ev = mysql_fetch_array($playground_res)) {
+			$pg_id = $ev['id'];
+			$pg_name = $ev['nama'];
+			$pg_img = str_replace(" ", "-", strtolower($pg_name));
+			$pg_coord_x = $ev['kordinat-x'];
+			$pg_coord_y = $ev['kordinat-y'];
+			$pg_cat = $ev['kategori'];
+			$pg_desc = $ev['deskripsi'];
+			$pg_twitter = $ev['twitter'];
+			$pg_desc1 = $ev['deskripsi_bebenah'];
+			$pg_display = $ev['display'];
+		?>		
+			<li style="<?php echo $pg_display ?>;">
+				<div class="content-text">
+					<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/<?php echo $pg_img?>.jpg">
+					<p class="title"><?php echo $pg_name ?></p>
+					<p class="category"><?php echo $pg_cat?></p>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/playground" data-text="Ayo datang ke playground @CompFest dan rasakan tantangan dari <?php echo $pg_name?> <?php echo $pg_twitter?>" data-size="large" data-hashtags="FantasticJourney">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<p class="desc1">"<?php echo $pg_desc?>"</p><br/>
+					<p class="desc"><?php echo $pg_desc1 ?></p>
+				</div>
+			</li>
+		<?php
+			}
+		?>
 	</ul>
 	<div class="navi" id="playground-nav">
-		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-left.png" /></a>
-		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/nav-right.png" /></a>
+		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-left.png" /></a>
+		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-right.png" /></a>
 	</div>
 </div>
+
 <div id="entertaiment" class="content rightcol" style="margin-bottom: 30px">
 	<a href="<?php echo base_url(); ?>entertainment"><img class="content-title" id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/></a><br/>
 	<img src="<?php echo base_url(); ?>assets/img/home/cs-entertain.png"/>
@@ -838,7 +605,6 @@
 		<a id="likebox" type="button" onclick="myFunction()" value=""></a>
 
 	</div>
-
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/js/homeslider.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slider/carousel.min.js" type="text/javascript"></script>

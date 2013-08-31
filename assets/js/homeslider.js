@@ -76,11 +76,10 @@
 	var sliderUL = $('#playground ul'),
 		imgs = sliderUL.find('.content-text'),
 		imgWidth = 545, // 600
-		imgsLen = 25, // 4
+		imgsLen = imgs.length-10, // 4
 		current = 1,
 		interval= 5000,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
-		
 	//auto slide start
 	var intervalID = setInterval(myFunction, interval);
 	sliderUL.css("width",totalImgsWidth);
@@ -202,7 +201,6 @@
 		$(this).addClass('current');
 			slideId = $(this).attr('href');
 			slideLoc = -1*(slideId * slideHeight - slideHeight);
-			console.log(slideId);
 
 		slideMover.animate({
 			'margin-top': slideLoc
@@ -235,11 +233,9 @@
 			current = 1;
 			loc = 0;
 			slideId++;
-			console.log(slideId);
 			
 			if (slideId-1 === slideLen){
 				slideId = 1;
-				console.log('masuk if')
 			}
 			slideLoc = -1*(slideId * slideHeight - slideHeight);
 			slideMover.animate({
