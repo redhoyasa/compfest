@@ -282,11 +282,13 @@
 	.content-text .desc{
 		font-size:12px;
 		text-align: justify;
+		text-indent: 30px;
 	}
 	.content-text .desc1{
+
 		font-style: italic;
 		font-size:12px;
-		text-align: justify;
+		text-align: center;
 		padding-right: 5px;		
 	}
 .clearfix:before,

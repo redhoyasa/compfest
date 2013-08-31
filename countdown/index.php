@@ -18,9 +18,9 @@ and on 1/10/2010 to include time zone offset.
 var current="New Compfest";        //—>enter what you want the script to display when the target date and time are reached, limit to 20 characters
 var year=2013;        //—>Enter the count down target date YEAR
 var month=08;          //—>Enter the count down target date MONTH
-var day=30;           //—>Enter the count down target date DAY
-var hour=20;          //—>Enter the count down target date HOUR (24 hour clock)
-var minute=00;        //—>Enter the count down target date MINUTE
+var day=31;           //—>Enter the count down target date DAY
+var hour=19;          //—>Enter the count down target date HOUR (24 hour clock)
+var minute=30;        //—>Enter the count down target date MINUTE
 var tz=+7;            //—>Offset for your timezone in hours from UTC (see http://wwp.greenwichmeantime.com/index.htm to find the timezone offset for your location)
 
 //—>    DO NOT CHANGE THE CODE BELOW!    <—
