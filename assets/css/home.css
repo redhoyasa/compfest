@@ -239,7 +239,7 @@
 		-webkit-transition: 0.3s;
 		-o-transition: 0.3s;
 	}
-	.nav-left:hover{
+	.nav-left:active{
 		opacity: 0.5;
 	}
 	.nav-right{
@@ -250,7 +250,7 @@
 		-o-transition: 0.3s;
 	}
 	
-	.nav-right:hover{
+	.nav-right:active{
 		opacity: 0.5;
 	}
 	
@@ -262,6 +262,15 @@
 
 #seminars .details p{
 	font-size: 13px !important;
+}
+#seminars .details{
+	margin-top: 30px;
+
+}
+.left-col {
+	width: 160px;
+	float: left;
+	display: block;
 }
 .content-text{
 	width: 545px;
@@ -496,5 +505,6 @@ iframe#countdown{
 }
 #playground .team-img{
 	width: 150px;
-	height:150px
+	height:150px;	
+	margin: 5px 10px 10px 0;
 }

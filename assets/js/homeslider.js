@@ -76,7 +76,7 @@
 	var sliderUL = $('#playground ul'),
 		imgs = sliderUL.find('.content-text'),
 		imgWidth = 545, // 600
-		imgsLen = imgs.length-10, // 4
+		imgsLen = imgs.length, // 4
 		current = 1,
 		interval= 5000,
 		totalImgsWidth = imgsLen * imgWidth; // 2400

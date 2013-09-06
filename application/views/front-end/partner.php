@@ -91,6 +91,31 @@
 			<td><a href="http://www.garudasaiber.web.id/" target="_blank" title="Garudasaiber.web.id"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/garudasaiber.jpg" alt="Garudasaiber.web.id"/></a></td>
 			<td><a href="http://www.swaradio1.blogspot.com/" target="_blank" title="Swa Radio 107.9 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/SwaRadio.jpg" alt="Swa Radio 107.9 FM" style="width:160px;"/></a></td>
 		</tr>
+		<tr>
+			<td><a href="http://rtc.ui.ac.id/" target="_blank" title="RTC UI 107.9 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/Logo-RTC.jpg" alt="RTC UI 107.9 FM"/></a></td>
+			<td><a href="http://froshfm.com/" target="_blank" title="Frosh 107.2 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/logo_frosh.jpg" alt="Frosh 107.2 FM"/></a></td>
+			<td><a href="http://www.teknojurnal.com/" target="_blank" title="Tekno Jurnal"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/LogoTeknoJurnal.jpg" alt="Tekno Jurnal" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://segitiga.net/" target="_blank" title="Segitiga.net"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/segitiganet.jpg" alt="Segitiga.net"/></a></td>
+			<td><a href="http://indonesiaonstage.com/" target="_blank" title="Indonesia on Stage"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/indonesiaonstage-logo.jpg" alt="Indonesia on Stage" /></a></td>
+			<td><a href="http://file-magz.com/" target="_blank" title="File-magz.com"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/file_logo.jpg" alt="FIle-magz.com" /></a></td>
+		</tr>	
+		<tr>
+			<td><a href="http://infokomputer.com/" target="_blank" title="Info Komputer"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/infokomputer.jpg" alt="Info Komputer" /></a></td>
+			<td><a href="http://tabloidsinyal.com/" target="_blank" title="Sinyal"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/sinyal.jpg" alt="Sinyal" /></a></td>
+			<td><a href="http://www.tabloidpcplus.com/" target="_blank" title="PC Plus"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/PCplus.jpg" alt="PC Plus" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://malesbanget.com/" target="_blank" title="Malesbanget.com"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/males-banget.png" alt="MalesBanget.com" /></a></td>
+			<td><a href="https://twitter.com/FORSELMAGZ" target="_blank" title="Forsel"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/forsel.jpg" alt="Forsel" /></a></td>
+			<td><a href="https://www.facebook.com/digicamindonesia" target="_blank" title="Digital Camera"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/digital-camera.jpg" alt="Digital Camera" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://chip.co.id/" target="_blank" title="Chip"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/chip.jpg" alt="Chip" /></a></td>
+			<td></td>
+			<td><a href="http://www.chip.co.id/" target="_blank" title="Chip Foto Video"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/CFVD.jpg" alt="Chip Foto Video" style="width:160px"/></a></td>	
+		</tr>
 	</table>
 </div>
 
@@ -139,8 +164,9 @@
 		</tr>
 		<tr>
 			<td><a href="http://www.google.com/edu/programs/student-ambassador-program/" target="_blank" title="Google Student Ambassador"><img src="<?php echo base_url(); ?>assets/img/partner/support/gsa.jpg" alt="Google Student Ambassador" style="width:160px;"/></a></td>
-			<td><a> </a></td>
+			<td></a></td>
 			<td><a href="http://www.wacom.com/" target="_blank" title="Wacom Datascrip"><img src="<?php echo base_url(); ?>assets/img/partner/support/wacom.jpg" alt="Wacom Datascrip" /></a></td>
 		</tr>
+		
 	</table>
 </div>

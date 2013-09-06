@@ -74,6 +74,20 @@
 		} 
 	}
 ?>
+	<?php
+		$db['default']['hostname'] = 'localhost';
+		$db['default']['username'] = 'root';//'k5334818_webcoba';
+		$db['default']['password'] = '';//'0103301034';
+		$db['default']['database'] = 'webcoba';
+		$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
+		mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
+		$playground_sql = "SELECT *
+						         FROM playground_home";
+		$playground_res = mysql_query($playground_sql, $mysql) or die (mysql_error($mysql));
+		$seminar_sql = "SELECT * 
+								FROM seminar_home";
+		$seminar_res = mysql_query($seminar_sql, $mysql) or die (mysql_error($mysql));
+		?>
 	<div style="clear:both;"></div>
 <div id="seminars" class="content leftcol">
 	<a href="<?php echo base_url(); ?>seminar"><img class="content-title" id="seminars-title" src="<?php echo base_url(); ?>assets/img/title-home/seminar-banner.png" style="float:none;"/></a> <br/>
@@ -81,119 +95,32 @@
 		<a class="button"  href="<?php echo site_url(); ?>seminar/register"><p id="register-tulisan">REGISTER</p></a>
 	</div>
 	<ul>
-		<li>
-			<div class="content-text">
-				<img class="speaker-img" src="<?php echo base_url(); ?>assets/img/seminar/home/wisnu.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
+		<?php
+			while ($ev = mysql_fetch_array($seminar_res)) {
+			$sm_id = $ev['id'];
+			$sm_title = $ev['title'];
+			$sm_speak = $ev['speaker'];
+			$sm_img_name = $ev['img_name'];
+			$sm_loc = $ev['location'];
+			$sm_date = $ev['date'];
+			$sm_desc = $ev['description'];
+		?>		
+			<li>
+				<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/seminar/<?php echo $sm_img_name?>.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"<?php echo $sm_title ?>"</p>
 				<div class="details">
-					<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
-					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+					<p class="speaker" style="display:table; margin-left:10px">by <?php echo $sm_speak?></p>
+					<p class="date"style="display:table; margin-left:10px"><?php echo $sm_date?></p>
+					<p class="venue"style="display:table; margin-left:10px"><?php echo $sm_loc?></p><br/>
 				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-				
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/oskar.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Speech and Natural Language Processing"</p>
-				<div class="details">				
-					<p class="speaker" style="display:table; margin-left:10px">By Oskar Riandi</p>
-					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
+				<p class="desc" style="text-indent: 30px;">
 				</p>
 			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/andri.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Solving today's Enterprise Problem with Big Data Management"</p>
-				<div class="details">				
-					<p class="speaker" style="display:table; margin-left:10px">By Andri Rizki</p>
-					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/rene.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovate or Perish"</p>
-				<div class="details">				
-					<p class="speaker" style="display:table; margin-left:10px">By Rene Suhardono Canoneo</p>
-					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/adhicipta.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Indonesian Animation Strategy Goes International"</p>
-				<div class="details">
-					<p class="speaker" style="display:table; margin-left:10px">By Adhicipta R. Wirawan</p>
-					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/izak.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Advance Payment for Mobile and Community"</p>
-				<div class="details">
-					<p class="speaker" style="display:table; margin-left:10px">By Izak Jenie</p>
-					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/dodyalfred.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Gameconomics: Turning Game Into Successful Business"</p>
-				<div class="details">
-					<p class="speaker" style="display:table; margin-left:10px">By Dodi Dharma & Alfred Boediman</p>
-					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content-text">
-				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/firstman.jpg" />	
-				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Perceptul Computing"</p>
-				<div class="details">
-					<p class="speaker" style="display:table; margin-left:10px">By Firsman Marpaung</p>
-					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
-					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
-				</div>
-				<p class="desc" style="text-indent: 30px;">Seminar tentang riset riset gitu deh pokokya. Pembicaranya dosen ane sob. Udah sering banget ke Jepang.
-					Beliau udah banyak bikin alat alat kece badai ga ada obat. Kaya alat alatnya doraemon sob. ini cuma dummy text. hahaaha 
-				</p>
-			</div>
-		</li>
+			</li>
+		<?php
+			}
+		?>
 	</ul>
 	<div id="seminar-nav" class="navi">
 		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-left.png" /></a>
@@ -464,19 +391,7 @@
 <div id="playground" class="content leftcol" style="margin-bottom: 30px">
 	<a href="<?php echo base_url(); ?>playground"><img class="content-title" id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/></a>
 		<br/>
-		<?php
-				$db['default']['hostname'] = 'localhost';
-				$db['default']['username'] = 'k5334818_webcoba';
-				$db['default']['password'] = '0103301034';
-				$db['default']['database'] = 'k5334818_webcoba';
-
-				$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
-				mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
-
-				$playground_sql = "SELECT *
-						         FROM playground_home";
-				$playground_res = mysql_query($playground_sql, $mysql) or die (mysql_error($mysql));
-			?>
+		
 	<ul>
 		<?php
 			while ($ev = mysql_fetch_array($playground_res)) {
@@ -493,11 +408,14 @@
 		?>		
 			<li style="<?php echo $pg_display ?>;">
 				<div class="content-text">
-					<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/<?php echo $pg_img?>.jpg">
+					<div class="left-col">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/playground" data-text="Ayo datang ke playground @CompFest dan rasakan tantangan dari <?php echo $pg_name?> <?php echo $pg_twitter?>" data-size="large" data-hashtags="FantasticJourney">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<img class="team-img" alt="<?php echo $pg_name ?>" src="<?php echo base_url(); ?>assets/img/home/playground/<?php echo $pg_img?>.jpg">
+					</div>
 					<p class="title"><?php echo $pg_name ?></p>
 					<p class="category"><?php echo $pg_cat?></p>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/playground" data-text="Ayo datang ke playground @CompFest dan rasakan tantangan dari <?php echo $pg_name?> <?php echo $pg_twitter?>" data-size="large" data-hashtags="FantasticJourney">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					
 					<p class="desc1">"<?php echo $pg_desc?>"</p><br/>
 					<p class="desc"><?php echo $pg_desc1 ?></p>
 				</div>
@@ -506,6 +424,7 @@
 			}
 		?>
 	</ul>
+	
 	<div class="navi" id="playground-nav">
 		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-left.png" /></a>
 		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-right.png" /></a>

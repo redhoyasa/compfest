@@ -38,3 +38,10 @@ td img{
 	.item {
 		height : 400px!important;
 	}
+#countdown{
+	width:1180px;
+	height:500px;
+}
+#content{
+	overflow: hidden !important;
+}

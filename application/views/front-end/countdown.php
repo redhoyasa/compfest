@@ -1,9 +1,7 @@
-<html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<script src="js/jquery.js" type="text/javascript"></script>
-	</head>
-	
+
+		<link href="<?php echo base_url(); ?>countdown/style.css" rel="stylesheet">
+		
+
 	<script type="text/javascript">
 	/*
 Count down until any date script-
@@ -15,15 +13,16 @@ and on 1/10/2010 to include time zone offset.
 */
 
 /*  Change the items below to create your countdown target date and announcement once the target date and time are reached.  */
-var current="We're Lanching!";        //—>enter what you want the script to display when the target date and time are reached, limit to 20 characters
+var current="New Compfest";        //—>enter what you want the script to display when the target date and time are reached, limit to 20 characters
 var year=2013;        //—>Enter the count down target date YEAR
-var month=05;          //—>Enter the count down target date MONTH
-var day=1;           //—>Enter the count down target date DAY
-var hour=20;          //—>Enter the count down target date HOUR (24 hour clock)
-var minute=00;        //—>Enter the count down target date MINUTE
+var month=08;          //—>Enter the count down target date MONTH
+var day=31;           //—>Enter the count down target date DAY
+var hour=19;          //—>Enter the count down target date HOUR (24 hour clock)
+var minute=30;        //—>Enter the count down target date MINUTE
 var tz=+7;            //—>Offset for your timezone in hours from UTC (see http://wwp.greenwichmeantime.com/index.htm to find the timezone offset for your location)
 
 //—>    DO NOT CHANGE THE CODE BELOW!    <—
+var today = new Date();
 var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 var todayy=today.getYear();
 
@@ -42,7 +41,6 @@ var todaystring=Date.parse(todaystring1)+(tz*1000*60*60);
 var futurestring1=(montharray[month-1]+" "+day+", "+year+" "+hour+":"+minute);
 var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
 var dd=futurestring-todaystring;
-console.log(futurestring1);
 var dday=Math.floor(dd/(60*60*1000*24)*1);
 var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
 var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
@@ -116,7 +114,7 @@ countdown(year,month,day,hour,minute);
 	
 	<body onload="countdown()">
 		<div id="mid">
-			<h1>WE'RE <span style="color:#ED1C24;">LAUNCHING!</span></h1>
+			<h1>NEW <span style="color:#ED1C24;">COMPFEST!</span></h1>
 			<div class="box" id="satu">
 				<div class="plus">DAYS</div>
 			</div>
@@ -132,8 +130,8 @@ countdown(year,month,day,hour,minute);
 			<div style="clear:both;height:20px;"></div>
 			<div style="clear:both;">
 				<a href="https://twitter.com/CompFest" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @CompFest</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			</div>
 		</div>
 	</body>
-</html>
+	<script src="<?php echo base_url(); ?>countdown/js/jquery.js" type="text/javascript"></script>
