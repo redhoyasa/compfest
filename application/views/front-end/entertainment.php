@@ -24,11 +24,12 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/script.js"></script>
 	<!-- End WOWSlider.com BODY section -->
 
-<div id="entertain-wrapper">	
-	<h2 class="title-content">Entertainment</h2>
+<div id="entertain-wrapper">
+	<img src="<?php echo site_url(); ?>assets/img/entertainment/header-entertainment.png" style="width:100%;" alt="">
+	
 	<div id="guest-star" class="entertain-content"> 	
 		<h3 class="title-content">Guest Star</h3>
-		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/600x200.gif" />
+		<img class="team-img raisa" src="<?php echo base_url(); ?>assets/img/entertainment/raisa-web.jpg" />
 	</div>
 	<div id="band" class="entertain-content">
 		<h3 class="title-content">Bands</h3>

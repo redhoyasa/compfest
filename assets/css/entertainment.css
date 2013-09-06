@@ -4,9 +4,14 @@ h2 {
 h3{
 	font-size: 26px;
 }
+.team-img.raisa{
+	margin: 0 auto !important;
+	border-radius: 500px;
+	border: 20px solid #E30814;
+}
+
 #entertain-wrapper{
 	display: block;
-	margin-left : 30px;
 	margin-bottom: 30px;
 }
 .entertain-content{

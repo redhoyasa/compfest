@@ -3,7 +3,7 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 	
-	<!-- Start WOWSlider.com BODY section -->
+	<!-- Start WOWSlider.com BODY section >
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
 <li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/raisa.jpg" alt="header-bg" title="MAIN EVENT COMPFEST" id="wows1_0"/>Balairung Universitas Indonesia, 21-22 September 2013</li>
@@ -356,7 +356,22 @@
 					<div class="playground-map">
 						<div class="playground-map-pointer"></div>
 					</div>
+
+		<div id="pg-subscribe">
+		<h3 id="pg-Tdetail">
+			Ayo sebarkan event ini ke teman-temanmu!
+		</h3>
+	
+		<div id="pg-share">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/seminar" data-text="Let's play at @CompFest Playground and join our #FantasticJourney" data-size="small" data-hashtags="FantasticJourney">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div class="fb-like" data-href="http://compfest.web.id/playground" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-action="recommend"></div>
+
+		</div>
+		</div>
+
 				</div>
+
 				
 				
 	</div>
