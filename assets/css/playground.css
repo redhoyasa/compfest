@@ -1,4 +1,4 @@
-.clearfix:before,
+	.clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
@@ -13,7 +13,7 @@ p, h1, h2 {
 }
 
 iframe {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	border: 2px solid #AAA;
 }
 
@@ -42,14 +42,43 @@ h1 {
 	margin-top: 20px;
 }
 
+.playground-top  {
+	width: 870px;
+	min-height:200px;
+	margin: 60px auto 60px;
+}
+
+.playground-top p { 
+	margin-top: 60px;
+	padding-right: 57px;
+	font-size: 24px;
+	line-height: 37px;
+}
+
 .playground-main-slider {
-	width: 950px;
-	height: 250px;
+	width: 900px;
+	height: 220px;
 	overflow: scroll;
 	float: left;
 	margin: 0px 10px;
 }
+.playground-how-to-play{
+	background: rgb(62, 56, 51);
+	height: 370px;
+	color: white;
+	margin-top: 20px;
+}
 
+.playground-how-to-mid  {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.playground-main-slider-wrap{
+
+}
 .playground-main-slider-button{
 	position: relative;
 	top: 35px;
@@ -66,6 +95,7 @@ h1 {
 
 .playground-main-slider li{
 	float: left;
+	margin-bottom: 20px;
 }
 
 .playground-box-slider {
@@ -99,7 +129,7 @@ h1 {
 
 .playground-main-desc {
 	width: 100%;
-	height: 300px;
+	height: 250px;
 	overflow: hidden;
 }
 
@@ -107,25 +137,32 @@ h1 {
 	width: 70%;
 	height: 100%;
 	float: left;
+	position:relative;
+	margin-left: 100px;
 }
 
-.playground-main-desc-text img {
+.playground-main-desc-img {
 	float: left;
-	margin: 20px;
-	margin-left: 0px;
+	margin-right: 40px;
+	overflow: hidden;
+}
+
+.playground-main-desc-img img {
+	position: relative;
+	top: -50px;
 }
 
 .playground-main-desc-text p {
-	text-indent: 20px;
 	margin: 0px;
 }
 
 .playground-main-desc-text h1 {
 	margin-top: 5px;
+	margin-bottom: 9px;
 }
 
 .playground-main-desc-text h2 {
-	margin-top: 5px;
+	margin-top: 0px;
 	font-size: 18px;
 }
 
@@ -134,6 +171,7 @@ h1 {
 	width: 25%;
 	height: 100%;
 	float: left;
+	display: none;
 }
 
 .playground-side-desc-text h1 {
@@ -154,18 +192,69 @@ h1 {
 	margin-top: 0px;
 }
 
-.playground-map {
-	width: 1000px;
-	height: 800px;
-	background: url('../img/playground/denah-playground.png') top center no-repeat;
-	margin: 20px 0 50px 0;
+.playground-balairungPic {
+	border: 2px solid rgb(170, 170, 170);
+	width: 499px;
+	height: 303px;
+	float: left;
+	margin: 0 10px 0 0;
+	background: url('../img/playground/ui/balairung.png');
 }
 
-.playground-map-pointer {
-	background: url('../img/playground/pinpoint.png');
-	width: 22px;
-	height: 40px;
-	position: relative;
-	top: 160px;
-	left: 195px;
+.playground-map {
+	width: 400px;
+	height: 303px;
+	float: left;
 }
+
+.playground-lokasi{
+	background: rgb(62, 56, 51);
+	padding-left: 130px;
+	height: 470px;
+	color: white;
+}
+
+.playground-lokasi h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#playground-subscribe{
+	background-color: #E40613;
+	border-radius: 5px;
+}
+#playground-share{
+		padding: 0 0 30px 40px;
+		text-align : center;
+	}	
+
+	.playground-share{
+		display: inline;
+	}
+#playground-Tdetail{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	margin:30px;
+}
+.twitter-share-button{
+	border: none;
+	margin:0;
+}
+.twitter-share-button-desc{
+	border: none;
+	margin:0;
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+
+	#playground-share{
+		padding: 0 0 30px 40px;
+		text-align : center;
+	}
+
+	.playground-share{
+		display: inline;
+	}
