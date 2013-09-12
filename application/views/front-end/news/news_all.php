@@ -13,7 +13,7 @@
 				<div class="news-thumbnail"></div>
 				<div class="news-date"><?php echo date('l, F-j-Y G:i', strtotime($r->timestamp)). " WIB"; ?></div>
 				<div class="news-content">
-				<p><?php echo substr(strip_tags($r->content,""),0,200)."  . . . "; ?></p>
+				<p><?php echo substr(strip_tags($r->content,"<iframe>"),0,200)."  . . . "; ?></p>
 				</div>
 				<!--span class="sup"><a class="news-button" href="<?php echo site_url('news/' . $r->url); ?>">Read more</a></span-->
 			</div>

@@ -2,7 +2,7 @@
 (function($) {
 	var sliderUL = $('div.playground-main-slider').css('overflow', 'hidden').children('ul'),
 		imgs = sliderUL.find('a'),
-		imgWidth = 180,
+		imgWidth = 180*5,
 		imgsLen = $('.data-slider').data('total'),
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
@@ -13,7 +13,7 @@
 			loc = imgWidth; // 600
 
 		// update current value
-		( direction === 'next' ) ? ++current : --current;
+		( direction === 'next' ) ? current+=5 : current-=5;
 
 		// if first image
 		if ( current === 0 ) {

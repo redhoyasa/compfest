@@ -40,6 +40,10 @@
 </div>
 
 <br><br>
+<div style="width:100%;"  id="running-text">
+				<iframe style="height:44px;width:100%;" src="http://localhost/animation/sam"></iframe>
+</div>
+<br><br>
 <div id="video-banner">
 	<div id="box">
 	<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>

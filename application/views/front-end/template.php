@@ -104,6 +104,8 @@
 
 			</div>
 
+
+
 			<div id="footer">
 				<!--div id="sponsors">
 					SPONSORS
@@ -115,6 +117,12 @@
 				<img src="<?php echo base_url();?>assets/img/sponmedpart.png">
 				</a>
 			</div>
+
+			
+
+		</div>
+		<div style="width:100%;"  id="running-text">
+				<iframe style="height:44px;width:100%;" src="http://localhost/animation/sam"></iframe>
 		</div>
 	</body>
 </html>

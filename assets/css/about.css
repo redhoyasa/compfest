@@ -3,11 +3,45 @@ body {
 }
 
 i {
-	font-style : italic; 
+	font-style : italic!important; 
+}
+
+.bah {
+	list-style: decimal;
+	font-weight: 900;
+	font-size: 16px;
+	color: #4e4e4e;	
+}
+
+h2 {
+	margin-bottom: 15px;
+	margin-top: 15px;	
+	font-weight: 900;
+	font-size: 20px;
+	font-style: italic;
+	color: #4e4e4e;
+}
+
+em,c {
+	font-weight: 900;
+	font-size: 16px;
+	color : #4e4e4e;
 }
 
 li {
 	line-height : 14pt;
+}
+
+.buh {
+	width: 700px;
+}
+
+.boh {
+	width: 680px;s
+}
+
+#content {
+	overflow: hidden!important;
 }
 
 #about-wrapper {
@@ -35,11 +69,19 @@ li {
 
 #about-desc {
 	width: auto;
-	height: 380px;
 	font-family : Helvetica;
 	font-size : 14px;
 	line-height: 14pt;
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-bottom: 50px;
 }
+
+.inner {
+	margin-left: 20px;
+}
+
+
 
 #about-wrapper h1 {
 	font-size: 40px;
