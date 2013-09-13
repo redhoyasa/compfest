@@ -93,7 +93,6 @@
 	
 
 .rightcol{
-	display: none;
 	width: 545px;
 	float: right;
 	margin: 20px 25px 0px 10px;
@@ -393,10 +392,8 @@ iframe#countdown{
 	display: block;
 	width: 150px;
 	height: 200px;
-	margin: px;
 	color: black;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .competition-box-slider:hover {
@@ -414,6 +411,7 @@ iframe#countdown{
 	font-weight: bold;
 	margin-bottom: 0px;
 	margin-top: 10px;
+	text-align:center;
 }
 
 .competition-box-caption2 {
@@ -447,6 +445,9 @@ iframe#countdown{
 	float: left;
 	margin: 0px 0px;
 }
+	.entertainment-main-slider p{
+		font-size: 16px;
+	}
 
 .entertainment-main-slider-button{
 	position: relative;
@@ -489,7 +490,6 @@ iframe#countdown{
 .entertainment-box-caption {
 	font-weight: bold;
 	margin-bottom: 0px;
-	margin-top: 10px;
 }
 
 .entertainment-box-caption2 {
@@ -507,4 +507,29 @@ iframe#countdown{
 	width: 150px;
 	height:150px;	
 	margin: 5px 10px 10px 0;
+}
+
+#guest-star{
+	width : 470px !important;
+	text-align: center;
+	height:200px;
+}
+	#guest-star img{
+		width:470px !important;
+	}
+	#guest-star p{
+		font-size: 26px;
+	}
+
+.featuring{
+	width : 310px !important;
+	height:200px;
+	text-align: center;
+}
+	.featuring img{
+		width:310px !important;
+	}
+.feat-box-slider{
+	text-decoration: none;
+	color: black;
 }

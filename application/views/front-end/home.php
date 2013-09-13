@@ -77,9 +77,9 @@
 ?>
 	<?php
 		$db['default']['hostname'] = 'localhost';
-		$db['default']['username'] = 'k5334818_webcoba';
-		$db['default']['password'] = '0103301034';
-		$db['default']['database'] = 'k5334818_webcoba';
+		$db['default']['username'] = 'root';//'k5334818_webcoba';
+		$db['default']['password'] = '';	//'0103301034';
+		$db['default']['database'] = 'webcoba';//'k5334818_webcoba';
 		$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
 		mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
 		$playground_sql = "SELECT *
@@ -88,6 +88,21 @@
 		$seminar_sql = "SELECT * 
 								FROM seminar_home";
 		$seminar_res = mysql_query($seminar_sql, $mysql) or die (mysql_error($mysql));
+		$finaliscp_sql = "SELECT *
+						         FROM c_finalist_cp";
+		$finaliscp_res = mysql_query($finaliscp_sql, $mysql) or die (mysql_error($mysql));
+		$finaliscp2_sql = "SELECT *
+						         FROM c_finalist_cp2";
+		$finaliscp2_res = mysql_query($finaliscp2_sql, $mysql) or die (mysql_error($mysql));
+		$finalisoa_sql = "SELECT *
+						         FROM c_finalist_oac";
+		$finalisoa_res = mysql_query($finalisoa_sql, $mysql) or die (mysql_error($mysql));
+		$finalisrosma_sql = "SELECT *
+						         FROM c_finalist_robosma";
+		$finalisrosma_res = mysql_query($finalisrosma_sql, $mysql) or die (mysql_error($mysql));
+		$finalisrosmp_sql = "SELECT *
+						         FROM c_finalist_robosmp";
+		$finalisrosmp_res = mysql_query($finalisrosmp_sql, $mysql) or die (mysql_error($mysql));
 		?>
 	<div style="clear:both;"></div>
 <div id="seminars" class="content leftcol">
@@ -138,8 +153,7 @@
 		<a href="2">Open Animation</a> |
 		<a href="3">Robotic</a> |
 		<a href="4">Mobile IT</a> |
-		<a href="5">Edugames</a> |
-		<a href="6">App Center</a>
+		<a href="5">Edugames</a> 
 	</div>
 	<div id="slider-mover-comp-wrapper">
 		<ul id="slider-mover">
@@ -149,28 +163,41 @@
 						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
 					</div>
 					<div class="competition-main-slider">
-						<div class="data-slider" data-total="4"></div>
+						<div class="data-slider" data-total=""></div>
 							<ul>
+								<?php
+									while ($ev = mysql_fetch_array($finaliscp_res)) {
+									$cp_id = $ev['id'];
+									$cp_nama = $ev['nama'];
+									$cp_inst = $ev['inst'];
+									$cp_img_name = $ev['logo'];
+								?>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
-									</a></li>
+									<img src="<?php echo $cp_img_name?>"/>
+									<p class="competition-box-caption"> <?php echo $cp_nama?> </p>
+									<p class="competition-box-caption2"> <?php echo $cp_inst?> </p>
+									</a>
+								</li>
+								<?php
+									}
+								?>
+
+								<?php
+									while ($ev = mysql_fetch_array($finaliscp2_res)) {
+									$cp_id = $ev['id'];
+									$cp_nama = $ev['nama'];
+									$cp_inst = $ev['sekolah'];
+									$cp_img_name = $ev['logo'];
+								?>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo $cp_img_name?>"/>
+									<p class="competition-box-caption"> <?php echo $cp_nama?> </p>
+									<p class="competition-box-caption2"> <?php echo $cp_inst?> </p>
+									</a>
+								</li>
+								<?php
+									}
+								?>
 							</ul>
 					</div>
 					<div class="competition-main-slider-button" style="margin-left: 5px;">
@@ -187,31 +214,20 @@
 					<div class="competition-main-slider">
 						<div class="data-slider" data-total="5"></div>
 							<ul>
-								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
-									</a></li>	
+								<?php
+									while ($ev = mysql_fetch_array($finalisoa_res)) {
+									$oa_id = $ev['id'];
+									$oa_nama = $ev['nama'];
+									$oa_role = $ev['role'];
+								?>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195" style ="padding-top:80px;">
+									<p class="competition-box-caption"> <?php echo $oa_nama?> </p>
+									<p class="competition-box-caption2"> <?php echo $oa_role?> </p>
+									</a>
+								</li>
+								<?php
+									}
+								?>
 							</ul>
 						</div>
 					<div class="competition-main-slider-button" style="margin-left: 5px;">
@@ -228,31 +244,38 @@
 					<div class="competition-main-slider">
 						<div class="data-slider" data-total="5"></div>
 							<ul>
+								<?php
+									while ($ev = mysql_fetch_array($finalisrosma_res)) {
+									$rosma_id = $ev['id'];
+									$rosma_nama = $ev['nama'];
+									$rosma_sekolah = $ev['sekolah'];
+									$rosma_logo = $ev['logo'];
+								?>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
-									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
-									</a></li>	
+									<img src="<?php echo $rosma_logo?>"/>
+									<p class="competition-box-caption"> <?php echo $rosma_sekolah?> </p>
+									<p class="competition-box-caption2"> <?php echo $rosma_sekolah?> </p>
+									</a>
+								</li>
+								<?php
+									}
+								?>
+								<?php
+									while ($ev = mysql_fetch_array($finalisrosmp_res)) {
+									$rosmp_id = $ev['id'];
+									$rosmp_nama = $ev['nama'];
+									$rosmp_sekolah = $ev['sekolah'];
+									$rosmp_logo = $ev['logo'];
+								?>
+								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+									<img src="<?php echo $rosmp_logo?>"/>
+									<p class="competition-box-caption"> <?php echo $rosmp_nama?> </p>
+									<p class="competition-box-caption2"> <?php echo $rosmp_sekolah?> </p>
+									</a>
+								</li>
+								<?php
+									}
+								?>
 							</ul>
 						</div>
 					<div class="competition-main-slider-button" style="margin-left: 5px;">
@@ -271,29 +294,64 @@
 							<ul>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									<p class="competition-box-caption"> Jakarta Mall Wiki </p>
+									<p class="competition-box-caption2"> Tama Handika </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									<p class="competition-box-caption"> Disaster Alert !</p>
+									<p class="competition-box-caption2"> BRAVO </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									<p class="competition-box-caption"> Food Manager </p>
+									<p class="competition-box-caption2"> Axe_11 </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> Gizr </p>
+									<p class="competition-box-caption2"> Mamake </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> BEKAM GUIDE </p>
+									<p class="competition-box-caption2"> DIGIT </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Traventure </p>
+									<p class="competition-box-caption2"> Overcode </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Yeah Jakarta! </p>
+									<p class="competition-box-caption2"> Satellite </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> buSpot </p>
+									<p class="competition-box-caption2"> Transys </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Pelesiran </p>
+									<p class="competition-box-caption2"> Tomos </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> BroomLight </p>
+									<p class="competition-box-caption2"> IDE Alpha </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> ARVIE </p>
+									<p class="competition-box-caption2"> CreActive </p>
 									</a></li>	
+								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Smoker's Nanny  </p>
+									<p class="competition-box-caption2"> Smoony </p>
+									</a></li>
 							</ul>
 						</div>
 					<div class="competition-main-slider-button" style="margin-left: 5px;">
@@ -312,69 +370,63 @@
 							<ul>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									<p class="competition-box-caption"> Djuhan </p>
+									<p class="competition-box-caption2"> FD2 Games </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									<p class="competition-box-caption"> MatematIkan </p>
+									<p class="competition-box-caption2"> Arrow </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									<p class="competition-box-caption"> Diseases Toucher </p>
+									<p class="competition-box-caption2"> Corner Of Developer </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> Tebak Nusantara </p>
+									<p class="competition-box-caption2"> DeadlineStudio </p>
 									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+								<li><a class="competition-box-slider" href="5" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> Lighten </p>
+									<p class="competition-box-caption2"> Electric Team </p>
 									</a></li>	
-							</ul>
-						</div>
-					<div class="competition-main-slider-button" style="margin-left: 5px;">
-						<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
-					</div>
-
-				</div>
-			</li>
-			<li>
-				<div class="competition-slider-wrapper" id="ac">
-					<div class="competition-main-slider-button" style="margin-right: 5px;">
-						<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
-					</div>
-					<div class="competition-main-slider">
-						<div class="data-slider" data-total="5"></div>
-							<ul>
-								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
+								<li><a class="competition-box-slider" href="6" data-axis="160" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team A </p>
-									<p class="competition-box-caption2"> Universitas Indonesia </p>
+									<p class="competition-box-caption"> Traveler's Diary </p>
+									<p class="competition-box-caption2"> 35FM Studio </p>
 									</a></li>
-								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
+								<li><a class="competition-box-slider" href="7" data-axis="180" data-ordinate="195">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team B </p>
-									<p class="competition-box-caption2"> Institiut Teknologi Depok </p>
+									<p class="competition-box-caption"> Eat&Run </p>
+									<p class="competition-box-caption2"> Ganesha Team </p>
 									</a></li>
-								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
+								<li><a class="competition-box-slider" href="8" data-axis="700" data-ordinate="150">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team C </p>
-									<p class="competition-box-caption2"> Institut Pertanian Depok </p>
+									<p class="competition-box-caption"> Skalaan </p>
+									<p class="competition-box-caption2"> MADFAL </p>
 									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+								<li><a class="competition-box-slider" href="9" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> Magical Firefly </p>
+									<p class="competition-box-caption2"> Mavilion </p>
 									</a></li>
-								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
+								<li><a class="competition-box-slider" href="10" data-axis="50" data-ordinate="80">
 									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-									<p class="competition-box-caption"> Team D </p>
-									<p class="competition-box-caption2"> Universitas Margonda </p>
+									<p class="competition-box-caption"> Petualangan Andi </p>
+									<p class="competition-box-caption2"> Raionstudio </p>
+									</a></li>	
+								<li><a class="competition-box-slider" href="11" data-axis="160" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Niew's Tale </p>
+									<p class="competition-box-caption2"> Wonderworks Studio </p>
+									</a></li>
+								<li><a class="competition-box-slider" href="12" data-axis="180" data-ordinate="195">
+									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<p class="competition-box-caption"> Kecap </p>
+									<p class="competition-box-caption2"> IDE Beta </p>
 									</a></li>	
 							</ul>
 						</div>
@@ -434,35 +486,50 @@
 
 <div id="entertaiment" class="content rightcol" style="margin-bottom: 30px">
 	<a href="<?php echo base_url(); ?>entertainment"><img class="content-title" id="entertainment-title" src="<?php echo base_url(); ?>assets/img/title-home/entertainment-banner.png" style="float:none;"/></a><br/>
-	<img src="<?php echo base_url(); ?>assets/img/home/cs-entertain.png"/>
-	<!-- ENTERTAINMENT
+
 	<div class="entertainment-main-slider-button" style="margin-right: 5px;">
 		<a data-dir="prev" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-left.png"/></a>
 	</div>
 	<div class="entertainment-main-slider">
 		
 	
-		<div class="data-slider" data-total="4"></div>
+		<div class="data-slider" data-total="8"></div>
 		<ul>
-			<li><a class="entertainment-box-slider" href="1" data-axis="160" data-ordinate="195">
-				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-				<p class="entertainment-box-caption"> Raiso </p>
-				<p class="entertainment-box-caption2"> Guest Star </p>
+				<li id="guest-star"><a class="guest-start-box-slider" data-axis="160" data-ordinate="195">
+				<img src="<?php echo base_url(); ?>assets/img/home/entertainment/raisa.png"/>
+				<p class="entertainment-box-caption"> Raisa </p>
 				</a></li>
 			<li><a class="entertainment-box-slider" href="2" data-axis="180" data-ordinate="195">
-				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-				<p class="entertainment-box-caption"> Asciipella </p>
-				<p class="entertainment-box-caption2"> Fasilkom </p>
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/arkha.png"/>
+				<p class="entertainment-box-caption"> Arkha </p>
 				</a></li>
 			<li><a class="entertainment-box-slider" href="3" data-axis="700" data-ordinate="150">
-				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-				<p class="entertainment-box-caption"> Jokowi </p>
-				<p class="entertainment-box-caption2"> Gubernur </p>
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/hasna.png"/>
+				<p class="entertainment-box-caption"> Hasna </p>
 				</a></li>
 			<li><a class="entertainment-box-slider" href="4" data-axis="50" data-ordinate="80">
-				<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
-				<p class="entertainment-box-caption"> SBY </p>
-				<p class="entertainment-box-caption2"> Presiden </p>
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/ggandfriends.png"/>
+				<p class="entertainment-box-caption"> GG and Friends </p>
+				</a></li>
+			<li><a class="entertainment-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/routers.png"/>
+				<p class="entertainment-box-caption"> Routers </p>
+				</a></li>
+			<li><a class="entertainment-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/astro-ansemble.png"/>
+				<p class="entertainment-box-caption"> Astro Ansemble </p>
+				</a></li>
+			<li class="featuring"><a class="feat-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/asciipella.png"/>
+				<p class="entertainment-box-caption"> Asciipella </p>
+				</a></li>
+			<li class="featuring"><a class="feat-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/marching-band.png"/>
+				<p class="entertainment-box-caption"> Marching Band </p>
+				</a></li>
+			<li class="featuring"><a class="feat-box-slider" href="4" data-axis="50" data-ordinate="80">
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/tatra-fasilkom.png"/>
+				<p class="entertainment-box-caption"> Tatra Fasilkom </p>
 				</a></li>
 		</ul>
 	</div>
@@ -470,7 +537,7 @@
 		<div class="entertainment-main-slider-button" style="margin-left: 5px;">
 			<a data-dir="next" href="#"><img src="<?php echo base_url(); ?>assets/img/home/slider-right.png"/></a>
 		</div>	
-	-->
+	
 </div>
 	  <script type="text/javascript">
     		//var url = 'http://search.twitter.com/search.json?q=from:compfest&callback=?';
