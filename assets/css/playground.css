@@ -200,3 +200,23 @@ h1 {
 	font-size: 24px;
 	margin:30px;
 }
+.twitter-share-button{
+	border: none;
+	margin:0;
+}
+.twitter-share-button-desc{
+	border: none;
+	margin:0;
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+
+	#playground-share{
+		padding: 0 0 30px 40px;
+		text-align : center;
+	}
+
+	.playground-share{
+		display: inline;
+	}

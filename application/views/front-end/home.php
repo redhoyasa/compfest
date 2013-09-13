@@ -42,7 +42,8 @@
 <br><br>
 <div id="video-banner">
 	<div id="box">
-	<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>
+	<iframe width="530" height="325" src="http://www.youtube.com/embed/EuMVXg6FlbQ" frameborder="0" allowfullscreen></iframe>
+	<!--<iframe width="530" height="325" src="http://www.youtube.com/embed/auHYjYb6ogw" frameborder="0" allowfullscreen></iframe>-->
 	</div>
 	<div id="banner" style="display:none;">
 		<img class="team-img" src="<?php echo base_url(); ?>assets/img/placehold/530x200.gif" />	
@@ -76,9 +77,9 @@
 ?>
 	<?php
 		$db['default']['hostname'] = 'localhost';
-		$db['default']['username'] = 'root';//'k5334818_webcoba';
-		$db['default']['password'] = '';//'0103301034';
-		$db['default']['database'] = 'webcoba';
+		$db['default']['username'] = 'k5334818_webcoba';
+		$db['default']['password'] = '0103301034';
+		$db['default']['database'] = 'k5334818_webcoba';
 		$mysql = mysql_connect($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
 		mysql_select_db($db['default']['database'], $mysql) or die(mysql_error());
 		$playground_sql = "SELECT *

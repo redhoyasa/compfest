@@ -1,51 +1,147 @@
-#overview-wrapper {
-	width: inherit;
-	background: white;
-	margin: 0;
-	text-align: center;
-}
-
-#overview-wrapper h1 {
-	font-size: 55px;
-	margin: 30px 0 6px;
-}
-
-#overview-wrapper h2 {
+h2 {
 	font-size: 30px;
-	margin: 4px 0 12px;
+}
+h3{
+	font-size: 26px;
+}
+.team-img.raisa{
+	margin: 0 auto !important;
+	border-radius: 500px;
+	border: 20px solid #E30814;
 }
 
-#overview-header {
-	background: url('../img/overview/header-bg.png');
-	width: 100%;
-	height: 500px;
+#entertain-wrapper{
+	display: block;
+	margin-bottom: 30px;
 }
-
-#overview-header .choose {
-	float: left;
-	width: 25%;
-	height: 100%;
-	font-size: 35px;
+.entertain-content{
+	margin-bottom:30px;
+}
+.title-content {
 	color: white;
+	background: url('../img/entertainment/title-background.png') no-repeat;
+	margin:0 auto;
+	font-family: myriad pro;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	height: 75px;
+	width: 400px;
+	display:block;
+	padding-top: 4px;
+	
+}
+#guest-star {
+	margin-top: 20px;
+}
+	#guest-img-wrapper{
+		width:825px;
+		height: 550px;
+		display: block;
+		margin-left:180px;	
+	}
+	#guest-star img {
+		float: left;
+		margin : 10px 0 10px 10px;
+	}
+	#guest-star-name{
+		padding-left: 20px;
+		display:table;
+	}
+	#ticketing{
+		margin-left: 30px;;
+		padding-left: 20px;
+		display: table;
+		width:250px;
+		height: 360px;
+	}
+	#ticketing p{
+		font-family: myriad pro;
+		font-weight: bold;
+		text-align: center;
+		font-size: 25px;
+		margin:5px 0 5px 0; 
+		color: #E30814;
+	}
+	#ticket-req {
+		background:url('../img/entertainment/ticket.png') no-repeat;
+		width:250px;
+		height: 300px;
+	}
+		#ticket-req p{
+			font-size: 20px;
+			padding-top: 110px;
+		}
+.band-wrapper{
+	display: block;
+	margin: 10px;
+}
+	.band-wrapper p{
+		text-align: center;
+		margin-top: 10px;
+		font-weight: bold;
+	}
+	.band-wrapper .deskripsi {
+		font-size: 12px;
+	}
+#slider{
+	height: 475px;
+	width:100%;
 }
 
-#overview-header #ch1:hover {
-	background: url('../img/overview/header-bg-hover-1.png');
+	#slider > .carousel-inner > div > img{
+		width:100%;
+	}
+	
+	.item {
+		height : 400px!important;
+	}
+#countdown{
+	width:1180px;
+	height:500px;
 }
-
-#overview-header #ch2:hover {
-	background: url('../img/overview/header-bg-hover-2.png');
+#content{
+	overflow: hidden !important;
 }
-
-#overview-header #ch3:hover {
-	background: url('../img/overview/header-bg-hover-3.png');
+#band-table{
+	margin: 0 auto;
 }
-
-#overview-header #ch4:hover {
-	background: url('../img/overview/header-bg-hover-4.png');
+#location-frame{
+	display:block;
+	margin:0 auto;
+	border: 2px solid #AAA	;
+	border-radius:5px;
 }
+#playground-subscribe{
+	background-color: #E40613;
+	border-radius: 5px;
+}
+#playground-share{
+		padding: 0 0 30px 40px;
+		text-align : center;
+	}	
 
-#overview-header .choose span {
-	position: relative;
-	top: 80px;
+	.playground-share{
+		display: inline;
+	}
+#playground-Tdetail{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	margin:30px;
+}
+.twitter-share-button{
+	border: none;
+	margin:0;
+}
+.venue-desc{
+	text-align: center;
+	font-family: myriad pro;
+	font-weight: bold;
+	margin :10px;
+}
+#band-table img{
+	border: 2px solid #aaa;
+	border-radius: 10px;
 }

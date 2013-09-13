@@ -71,6 +71,21 @@ class Admin extends Admin_Controller {
 		redirect(site_url('admin/seminar_user') . '/' . $id_user);
 	}
 
+	/**
+	* Mendapatkan file csv yang berisi data pendaftar seminar
+	*/
+	public function getSeminarCSV(){
+		if($this->session->userdata('event') != 2 && $this->session->userdata('event') != 0) {
+			redirect('admin');
+		}
+
+		$seminar = $this->seminar_model->get_seminar_register();
+
+		$data['seminar'] = $seminar;
+
+		$this->load->view('admin/seminar_csv', $data);
+	}
+
 	/*
 	 * Fungsi untuk menampilkan semua peserta kompetisi
 	 */

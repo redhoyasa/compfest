@@ -2,6 +2,7 @@
 	<h1>Seminar <?php echo $this->seminar_model->getSeminarById($this->uri->segment(3))->name ?></h1>
 <?php } else { ?>
 	<h1>Semua Seminar</h1>
+	<a href="<?php echo site_url('admin/getSeminarCSV') ?>" target="_blank">Unduh sebagai csv</a>
 <?php } ?>
 
 <table class="table table-striped">

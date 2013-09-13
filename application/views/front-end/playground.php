@@ -3,7 +3,13 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 	<div id="middle">
-
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <img width="1180" src="<?php echo base_url(); ?>assets/img/header-red.png">
 </div>
 			
@@ -96,8 +102,9 @@
 						<div class="playground-main-desc-floater">
 							<div class="playground-main-desc-text">
 								<img src="<?php echo base_url(); ?>assets/img/playground/<?php if ($pg_img == 'telunjuk') echo $pg_img.'.png'; else echo $pg_img.'.jpg'?>">
+
 								<h1 style="font-weight:bold;"><?php echo $pg_name?></h1>
-								<a href="https://twitter.com/share" class="twitter-share-button" style="position: absolute; top:0; right:0;"data-url="http://compfest.web.id/playground" data-text="Ayo datang ke playground @CompFest dan rasakan tantangan dari <?php echo $pg_name?> <?php echo $pg_twitter?>" data-size="large" data-hashtags="FantasticJourney">Tweet</a>
+								<a href="https://twitter.com/share" class="twitter-share-button twitter-share-button-desc" data-url="http://compfest.web.id/playground" data-text="Ayo datang ke playground @CompFest dan rasakan tantangan dari <?php echo $pg_name?> <?php echo $pg_twitter?>" data-size="large" data-hashtags="FantasticJourney">Tweet</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 								
 								<h2><?php echo $pg_cat?></h2>
@@ -137,10 +144,9 @@
 		</h3>
 	
 		<div id="playground-share">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/playground" data-text="Rasakan serunya petualangan di playground IT Expo @CompFest cek disini" data-size="small" data-hashtags="FantasticJourney" style ="">Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compfest.web.id/playground" data-text="Let's play at @CompFest Playground and join our" data-size="small" data-hashtags="FantasticJourney">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			<div class="fb-like" data-href="http://compfest.web.id/playground" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-action="recommend"></div>
-
 		</div>
 	</div>
 
