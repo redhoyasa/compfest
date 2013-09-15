@@ -158,6 +158,7 @@
 		nav = $('div#competition-nav').find('a'),
 		slideId = 1;
 		$(nav[0]).addClass('current');
+		
 	$('.competition-main-slider-button').show().find('a').click(function(event) {
 		event.preventDefault();
 		var direction = $(this).data('dir'),
@@ -193,7 +194,7 @@
 
 	var slideMover = $("ul#slider-mover"),
 		slideHeight = 230,
-		slideLen = 6,
+		slideLen = 5,
 		slideCurrent = 1,
 		totalSlideHeight = slideLen * slideHeight;
 		

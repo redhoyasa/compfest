@@ -170,10 +170,11 @@
 									$cp_id = $ev['id'];
 									$cp_nama = $ev['nama'];
 									$cp_inst = $ev['inst'];
+									$cp_img = str_replace(" ", "-", strtolower($cp_inst));
 									$cp_img_name = $ev['logo'];
 								?>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo $cp_img_name?>"/>
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/cp/<?php echo $cp_img?>.png"/>
 									<p class="competition-box-caption"> <?php echo $cp_nama?> </p>
 									<p class="competition-box-caption2"> <?php echo $cp_inst?> </p>
 									</a>
@@ -187,10 +188,11 @@
 									$cp_id = $ev['id'];
 									$cp_nama = $ev['nama'];
 									$cp_inst = $ev['sekolah'];
+									$cp_img = str_replace(" ", "-", strtolower($cp_inst));
 									$cp_img_name = $ev['logo'];
 								?>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo $cp_img_name?>"/>
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/cp/sma/<?php echo $cp_img?>.png"/>
 									<p class="competition-box-caption"> <?php echo $cp_nama?> </p>
 									<p class="competition-box-caption2"> <?php echo $cp_inst?> </p>
 									</a>
@@ -293,62 +295,62 @@
 						<div class="data-slider" data-total="5"></div>
 							<ul>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/jakarta_wiki_mall.png">
 									<p class="competition-box-caption"> Jakarta Mall Wiki </p>
 									<p class="competition-box-caption2"> Tama Handika </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/disaster_alert.png">
 									<p class="competition-box-caption"> Disaster Alert !</p>
 									<p class="competition-box-caption2"> BRAVO </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/food_manager.png">
 									<p class="competition-box-caption"> Food Manager </p>
 									<p class="competition-box-caption2"> Axe_11 </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/gizr.png">
 									<p class="competition-box-caption"> Gizr </p>
 									<p class="competition-box-caption2"> Mamake </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/bekam_guide.png">
 									<p class="competition-box-caption"> BEKAM GUIDE </p>
 									<p class="competition-box-caption2"> DIGIT </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/traventure.png">
 									<p class="competition-box-caption"> Traventure </p>
 									<p class="competition-box-caption2"> Overcode </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/yeah_jakarta.png">
 									<p class="competition-box-caption"> Yeah Jakarta! </p>
 									<p class="competition-box-caption2"> Satellite </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> buSpot </p>
 									<p class="competition-box-caption2"> Transys </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/pelesiran.png">
 									<p class="competition-box-caption"> Pelesiran </p>
 									<p class="competition-box-caption2"> Tomos </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> BroomLight </p>
 									<p class="competition-box-caption2"> IDE Alpha </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> ARVIE </p>
 									<p class="competition-box-caption2"> CreActive </p>
 									</a></li>	
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/smoony.png">
 									<p class="competition-box-caption"> Smoker's Nanny  </p>
 									<p class="competition-box-caption2"> Smoony </p>
 									</a></li>
@@ -369,62 +371,62 @@
 						<div class="data-slider" data-total="5"></div>
 							<ul>
 								<li><a class="competition-box-slider" href="1" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Djuhan </p>
 									<p class="competition-box-caption2"> FD2 Games </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="2" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/matematikan.png">
 									<p class="competition-box-caption"> MatematIkan </p>
 									<p class="competition-box-caption2"> Arrow </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="3" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Diseases Toucher </p>
 									<p class="competition-box-caption2"> Corner Of Developer </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="4" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Tebak Nusantara </p>
 									<p class="competition-box-caption2"> DeadlineStudio </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="5" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Lighten </p>
 									<p class="competition-box-caption2"> Electric Team </p>
 									</a></li>	
 								<li><a class="competition-box-slider" href="6" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Traveler's Diary </p>
 									<p class="competition-box-caption2"> 35FM Studio </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="7" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Eat&Run </p>
 									<p class="competition-box-caption2"> Ganesha Team </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="8" data-axis="700" data-ordinate="150">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/skalaan.png">
 									<p class="competition-box-caption"> Skalaan </p>
 									<p class="competition-box-caption2"> MADFAL </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="9" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Magical Firefly </p>
 									<p class="competition-box-caption2"> Mavilion </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="10" data-axis="50" data-ordinate="80">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Petualangan Andi </p>
 									<p class="competition-box-caption2"> Raionstudio </p>
 									</a></li>	
 								<li><a class="competition-box-slider" href="11" data-axis="160" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Niew's Tale </p>
 									<p class="competition-box-caption2"> Wonderworks Studio </p>
 									</a></li>
 								<li><a class="competition-box-slider" href="12" data-axis="180" data-ordinate="195">
-									<img src="<?php echo base_url(); ?>assets/img/placehold/150x150.gif">
+									<img src="<?php echo base_url(); ?>assets/img/home/finalis/apps/compfest.png">
 									<p class="competition-box-caption"> Kecap </p>
 									<p class="competition-box-caption2"> IDE Beta </p>
 									</a></li>	
