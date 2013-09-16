@@ -1,0 +1,104 @@
+	<li>
+			<div class="content-text">
+				<img class="speaker-img" src="<?php echo base_url(); ?>assets/img/seminar/home/wisnu.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Encourage Innovation in Indonesia through Research"</p>
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Wishnu Jatmiko</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+				
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/oskar.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Speech and Natural Language Processing"</p>
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Oskar Riandi</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/andri.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Solving today's Enterprise Problem with Big Data Management"</p>
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Andri Rizki</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 13.30-15.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;"></p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/rene.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovate or Perish"</p>
+				<div class="details">				
+					<p class="speaker" style="display:table; margin-left:10px">By Rene Suhardono Canoneo</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 16.00-17.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/adhicipta.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Indonesian Animation Strategy Goes International"</p>
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Adhicipta R. Wirawan</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;"> 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/izak.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Advance Payment for Mobile and Community"</p>
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Izak Jenie</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/dodyalfred.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Gameconomics: Turning Game Into Successful Business"</p>
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Dodi Dharma & Alfred Boediman</p>
+					<p class="date"style="display:table; margin-left:10px">Minggu, 22 September 2013 09.30-11.00 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/seminar/home/firstman.jpg" />	
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">"Innovation of Perceptul Computing"</p>
+				<div class="details">
+					<p class="speaker" style="display:table; margin-left:10px">By Firsman Marpaung</p>
+					<p class="date"style="display:table; margin-left:10px">Sabtu, 21 September 2013 11.00-12.30 WIB</p>
+					<p class="venue"style="display:table; margin-left:10px">Anex Room Balairung, Universitas Indonesia</p><br/>
+				</div>
+				<p class="desc" style="text-indent: 30px;">
+				</p>
+			</div>
+		</li>

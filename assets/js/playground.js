@@ -2,18 +2,16 @@
 (function($) {
 	var sliderUL = $('div.playground-main-slider').css('overflow', 'hidden').children('ul'),
 		imgs = sliderUL.find('a'),
-		imgWidth = 180*5,
-		imgsLen = $('.data-slider').data('total'),
+		imgWidth = 180,
+		imgsLen = $('.data-slider').data('total')-4,
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
-
 	$('.playground-main-slider-button').show().find('a').click(function(event) {
 		event.preventDefault();
 		var direction = $(this).data('dir'),
 			loc = imgWidth; // 600
-
 		// update current value
-		( direction === 'next' ) ? current+=5 : current-=5;
+		( direction === 'next' ) ? ++current : --current;
 
 		// if first image
 		if ( current === 0 ) {

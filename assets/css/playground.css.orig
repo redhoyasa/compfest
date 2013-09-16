@@ -63,6 +63,7 @@ h1 {
 	margin: 0px 10px;
 }
 .playground-how-to-play{
+<<<<<<< HEAD
 	background: rgb(62, 56, 51);
 	height: 370px;
 	color: white;
@@ -78,6 +79,15 @@ h1 {
 
 .playground-main-slider-wrap{
 
+=======
+	display: block;
+	margin: 0 auto;
+	width:610px;
+	margin-bottom: 10px;
+}
+.playground-main-slider-wrap{
+
+>>>>>>> 82d69c7bb0b8e667154640aec34d1b812a86a24e
 }
 .playground-main-slider-button{
 	position: relative;
@@ -129,7 +139,11 @@ h1 {
 
 .playground-main-desc {
 	width: 100%;
+<<<<<<< HEAD
 	height: 250px;
+=======
+	height: 350px;
+>>>>>>> 82d69c7bb0b8e667154640aec34d1b812a86a24e
 	overflow: hidden;
 }
 
@@ -138,7 +152,10 @@ h1 {
 	height: 100%;
 	float: left;
 	position:relative;
+<<<<<<< HEAD
 	margin-left: 100px;
+=======
+>>>>>>> 82d69c7bb0b8e667154640aec34d1b812a86a24e
 }
 
 .playground-main-desc-img {
@@ -207,32 +224,6 @@ h1 {
 	float: left;
 }
 
-<<<<<<< HEAD
-.playground-map-pointer {
-	background: url('../img/playground/pinpoint.png');
-	width: 22px;
-	height: 40px;
-	position: relative;
-	top: 160px;
-	left: 195px;
-}
-
-#pg-subscribe {
-	background-color: #E40613;
-	border-radius: 5px;
-}
-
-#pg-share{
-		padding: 0 0 30px 40px;
-		text-align : center;
-	}
-
-	.pg-share{
-		display: inline;
-	}
-
-#pg-Tdetail{
-=======
 .playground-lokasi{
 	background: rgb(62, 56, 51);
 	padding-left: 130px;
@@ -258,15 +249,11 @@ h1 {
 		display: inline;
 	}
 #playground-Tdetail{
->>>>>>> 27ebe4b918290187891c6a0722260dc587163e54
 	color: white;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 24px;
 	margin:30px;
-<<<<<<< HEAD
-}
-=======
 }
 .twitter-share-button{
 	border: none;
@@ -288,4 +275,3 @@ h1 {
 	.playground-share{
 		display: inline;
 	}
->>>>>>> 27ebe4b918290187891c6a0722260dc587163e54

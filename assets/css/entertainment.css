@@ -18,19 +18,53 @@ h3{
 	margin-bottom:30px;
 }
 .title-content {
-	margin:30px 0 0 10px;
+	color: white;
+	background: url('../img/entertainment/title-background.png') no-repeat;
+	margin:0 auto;
+	font-family: myriad pro;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	height: 75px;
+	width: 400px;
+	display:block;
+	padding-top: 4px;
 	
 }
 #guest-star {
 	margin-top: 20px;
 }
+	#guest-img-wrapper{
+		width:825px;
+		height: 550px;
+		display: block;
+		margin-left:335px;	
+	}
 	#guest-star img {
+		float: left;
 		margin : 10px 0 10px 10px;
 	}
-td img{
+	#guest-star-name{
+		padding-left: 20px;
+		display:table;
+	}
+	#ticketing{
+		margin-left: 30px;;
+		padding: 20px;
+		display: table;
+	}
+.band-wrapper{
 	display: block;
 	margin: 10px;
 }
+	.band-wrapper p{
+		text-align: center;
+		margin-top: 10px;
+		font-weight: bold;
+	}
+	.band-wrapper .deskripsi {
+		font-size: 12px;
+	}
 #slider{
 	height: 475px;
 	width:100%;
@@ -43,3 +77,18 @@ td img{
 	.item {
 		height : 400px!important;
 	}
+#countdown{
+	width:1180px;
+	height:500px;
+}
+#content{
+	overflow: hidden !important;
+}
+#band-table{
+	margin: 0 auto;
+}
+#location-frame{
+	display:block;
+	margin:0 auto;
+	border: 2px solid #AAA
+}

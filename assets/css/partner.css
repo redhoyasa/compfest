@@ -21,7 +21,25 @@
 	margin-top: 50px;
 	overflow : hidden;
 }
+#sponsor-partner img{
+	-moz-transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+}
+#sponsor-partner img:hover{
+	opacity:0.5;
+}
+.medsup img{
+	-moz-transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+}
+.medsup img:hover{
+	opacity:0.5;
+}
 	#sponsor {
+		margin-left: 60px;
+		margin-right: 20px;
 		display: block;
 		width : 50%;
 		float : left;
@@ -34,7 +52,7 @@
 	}
 	#partner {
 		display: block;
-		width: 50%;
+		width: 40%;
 		float : left;
 	}
 		#partner table {
@@ -68,4 +86,21 @@
 		margin : 0 auto;
 	}
 	
+#sponsor-small td{
 	
+	vertical-align: middle;
+	padding : 10px 0 10px 0;
+}
+	#sponsor-small img{
+		margin :10px;
+		width : 100px;
+	}
+
+#sponsor-mid td{
+	vertical-align: middle;
+	padding : 10px 0 10px 0;
+}
+	#sponsor-mid img{
+		width : 160px;
+		margin :5px;
+	}

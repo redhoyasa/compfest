@@ -8,13 +8,37 @@
 <div id="sponsor-partner">
 	<div id="sponsor">
 		<div class="title">SPONSORS</div>
-		<table style="margin: 0 auto;">
+		<table id="sponsor" style="margin: 0 auto;">
 			<tr>
 				<td><a href="http://www.ibm.com/id/en/" target="_blank" title="IBM"><img src="<?php echo base_url(); ?>assets/img/partner/sponsor/ibm.jpg" alt="IBM"/></a></td>
 				<td><a href="http://software.intel.com/" target="_blank" title="Intel Software"><img src="<?php echo base_url(); ?>assets/img/partner/sponsor/Intel-Software-300x274.png" alt="Intel Software" style="width: 215px;"/></a></td>
 			</tr>
 			<tr>
-				<td><a href="http://www.bankmandiri.co.id/" target="_blank" title="Bank Mandiri"><img src="<?php echo base_url(); ?>assets/img/partner/sponsor/bank-mandiri.jpg" alt="Bank Mandiri" style="width: 260px;"/></a></td>
+				<td><a href="http://www.bankmandiri.co.id/" target="_blank" title="Bank Mandiri"><img src="<?php echo base_url(); ?>assets/img/partner/sponsor/bank-mandiri.jpg" alt="Bank Mandiri" style="width: 280px;"/></a></td>
+				<td>
+					<table id="sponsor-mid"> 
+						<tr>
+							<td><a href="http://www.semerbakcoffee.com/" target="_blank" title="Semerbak Coffee"><img src="<?php echo base_url(); ?>assets/img/partner/sponsor/SemerbakLogo.jpg" alt="Semerbak Coffee"/></a></td>
+							<td><a href="http://speedup.co.id/" target="_blank" title="Speed Up"><img  src="<?php echo base_url(); ?>assets/img/partner/sponsor/Logo-SpeedUp.png" alt="Speed Up"/></a></td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<tr>
+				<td><a href="http://www.telkomsel.com/" target="_blank" title="Telkomsel"><img style="width:280px;" src="<?php echo base_url(); ?>assets/img/partner/sponsor/telkomsel.png" alt="Telkomsel"/></a></td>
+				<td>
+					<table id="sponsor-small">
+						<tr>
+							<td><a href="http://www.pandi.or.id/" target="_blank" title=".ID"><img style="width:70px;" src="<?php echo base_url(); ?>assets/img/partner/sponsor/id.png" alt=".ID"/></a></td>
+							<td><a href="http://www.skkmigas.go.id/" target="_blank" title="SKK Migas"><img  src="<?php echo base_url(); ?>assets/img/partner/sponsor/skkmigas.png" alt="SKK Migas"/></a></td>
+							<td><a href="http://www.medcoenergi.com/" target="_blank" title="Medco Energi"><img  src="<?php echo base_url(); ?>assets/img/partner/sponsor/medco-energi.png" alt="Medco Energi"/></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="http://samsunginnovationlab.com/" target="_blank" title="Samsung MSCI"><img  style="width:250px;" src="<?php echo base_url(); ?>assets/img/partner/sponsor/samsung.png" alt="Samsung MSCI"/></a></td>
 			</tr>
 		</table>
 	</div>
@@ -88,8 +112,33 @@
 		</tr>
 		<tr>
 			<td><a href="http://www.mustangfm.com/" target="_blank" title="Mustang 88 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/Mustang88FM.jpg" alt="Mustang 88 FM"/></a></td>
-			<td><a href="http://www.garudasaiber.web.id/" target="_blank" title="Garudasaiber.web.id"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/garudasaiber.jpg" alt="Garudasaiber.web.id"/></a></td>
+			<td><a href="http://www.chip.co.id/" target="_blank" title="Chip Foto Video"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/CFVD.jpg" alt="Chip Foto Video" style="width:160px"/></a></td>
 			<td><a href="http://www.swaradio1.blogspot.com/" target="_blank" title="Swa Radio 107.9 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/SwaRadio.jpg" alt="Swa Radio 107.9 FM" style="width:160px;"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://rtc.ui.ac.id/" target="_blank" title="RTC UI 107.9 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/Logo-RTC.jpg" alt="RTC UI 107.9 FM"/></a></td>
+			<td><a href="http://froshfm.com/" target="_blank" title="Frosh 107.2 FM"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/logo_frosh.jpg" alt="Frosh 107.2 FM"/></a></td>
+			<td><a href="http://www.teknojurnal.com/" target="_blank" title="Tekno Jurnal"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/LogoTeknoJurnal.jpg" alt="Tekno Jurnal" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://segitiga.net/" target="_blank" title="Segitiga.net"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/segitiganet.jpg" alt="Segitiga.net"/></a></td>
+			<td><a href="http://indonesiaonstage.com/" target="_blank" title="Indonesia on Stage"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/indonesiaonstage-logo.jpg" alt="Indonesia on Stage" /></a></td>
+			<td><a href="http://file-magz.com/" target="_blank" title="File-magz.com"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/file_logo.jpg" alt="FIle-magz.com" /></a></td>
+		</tr>	
+		<tr>
+			<td><a href="http://infokomputer.com/" target="_blank" title="Info Komputer"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/infokomputer.jpg" alt="Info Komputer" /></a></td>
+			<td><a href="http://tabloidsinyal.com/" target="_blank" title="Sinyal"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/sinyal.jpg" alt="Sinyal" /></a></td>
+			<td><a href="http://www.tabloidpcplus.com/" target="_blank" title="PC Plus"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/PCplus.jpg" alt="PC Plus" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://malesbanget.com/" target="_blank" title="Malesbanget.com"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/males-banget.png" alt="MalesBanget.com" /></a></td>
+			<td><a href="https://twitter.com/FORSELMAGZ" target="_blank" title="Forsel"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/forsel.jpg" alt="Forsel" /></a></td>
+			<td><a href="https://www.facebook.com/digicamindonesia" target="_blank" title="Digital Camera"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/digital-camera.jpg" alt="Digital Camera" /></a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="http://chip.co.id/" target="_blank" title="Chip"><img src="<?php echo base_url(); ?>assets/img/partner/medpart/chip.jpg" alt="Chip" /></a></td>
+			<td></td>	
 		</tr>
 	</table>
 </div>
@@ -139,8 +188,23 @@
 		</tr>
 		<tr>
 			<td><a href="http://www.google.com/edu/programs/student-ambassador-program/" target="_blank" title="Google Student Ambassador"><img src="<?php echo base_url(); ?>assets/img/partner/support/gsa.jpg" alt="Google Student Ambassador" style="width:160px;"/></a></td>
-			<td><a> </a></td>
+			<td><a href="http://inkubatorit.com/" target="_blank" title="Inkubator IT ITB"><img src="<?php echo base_url(); ?>assets/img/partner/support/Inkubator.png" alt="Inkubator IT ITB"/></a></td>
 			<td><a href="http://www.wacom.com/" target="_blank" title="Wacom Datascrip"><img src="<?php echo base_url(); ?>assets/img/partner/support/wacom.jpg" alt="Wacom Datascrip" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://ristekfasilkom.com/" target="_blank" title="RISTEK"><img src="<?php echo base_url(); ?>assets/img/partner/support/logoRistek.jpg" alt="RISTEK" style="width:160px;"/></a></td>
+			<td><a href="http://idgeekgirls.com/" target="_blank" title="id GeekGirls"><img src="<?php echo base_url(); ?>assets/img/partner/support/idGeekGirls.png" alt="id GeekGirls"/></a></td>
+			<td><a href="http://icehousecorp.com/" target="_blank" title="Ice House"><img src="<?php echo base_url(); ?>assets/img/partner/support/icehouse.png" alt="Ice House"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://mic.cs.ui.ac.id/" target="_blank" title="Microsoft Innovation Center Universitas Indonesia"><img src="<?php echo base_url(); ?>assets/img/partner/support/mic-ui.png" alt="Microsoft Innovation Center Universitas Indonesia"/></a></td>
+			<td><a href="http://nulab-inc.com/" target="_blank" title="Nulab"><img src="<?php echo base_url(); ?>assets/img/partner/support/nulab.png" alt="Nulab" /></a></td>
+			<td><a href="http://www.telunjuk.com/" target="_blank" title="Telunjuk.com"><img src="<?php echo base_url(); ?>assets/img/partner/support/telunjuk.png" alt="Telunjuk.com" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://depokcreative.net/" target="_blank" title="Depok Creative"><img src="<?php echo base_url(); ?>assets/img/partner/support/depok-creative.png" alt="Depok Creative"/></a></td>
+			<td></td>
+			<td><a href="http://www.runagames.com/" target="_blank" title="Runa Games"><img src="<?php echo base_url(); ?>assets/img/partner/support/runa.jpg" alt="Runa Games" /></a></td>
 		</tr>
 	</table>
 </div>

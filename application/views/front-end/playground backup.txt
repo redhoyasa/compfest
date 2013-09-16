@@ -1,0 +1,357 @@
+<div id="playground" class="content leftcol" style="margin-bottom: 30px">
+	<a href="<?php echo base_url(); ?>playground"><img class="content-title" id="playground-title" src="<?php echo base_url(); ?>assets/img/title-home/playground-banner.png" style="float:none;"/></a>
+		<br/>
+	<ul>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/nightspade.jpg" alt="Agate" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Night Spade</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Nightspade is a mobile game development studio located in Bandung, Indonesia. We love crafting games targeting various kind of mobile operating system such as iOS, Android, Windows 8, symbian, and even Meego. We aspire to deliver happiness trough mobile games and will continue to do so for the centuries to come.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/chocoarts.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Chocoarts</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					We are passionate game developers who want our games to be your chocolate, sweet and special. Oh, and also, we love chocolate very much :) Yummy!
+				</p>
+			</div>
+		</li> </li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/tinker.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tinker Games</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Tinker Games is a mobile game developer studio based on Bandung founded in November of 2011, focusing on creating new experience in gaming through exciting story, unique challenges and addictive gameplay.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/ulin.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Ulin Games</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					We're here to become FRIEND with people around the world in fun and creative ways!
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/agate.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Agate</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Agate Studio is award-winning game developer based in Bandung, Indonesia. Our focus is developing and publishing high quality entertainment games to end-user as well as delivering solution for corporate and brand via advergame, training / e-learning / simulation game and e-learning game. For more inquiries, feel free to contact us. We would be more than happy to assist you!
+                  
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/arsanesia.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Arsanesia</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Arsanesia was derived from Sansekerta word of Arsa (pleasure and 
+					excitement) and Greek word of Nesos (islands). We named our team after 
+					Arsanesia as we believe it defines our team vision and values upon which
+					 we are aiming, to be the largest digital entertainment company in 
+					preserving and introducing Indonesian culture to the world.					
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/touchten.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Touchten</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					TouchTen - What's in a name?Ten (天) means sky or heaven in Japanese. TouchTen reflects our aspiration to reach for the sky.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/creacle.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Creacle</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Creacle is an amazing game studio located in Yogyakarta that have a 
+					dream to bring local culture to the world using Creative Media. We 
+					create game for multiple platforms. Support us and let the fun begin  
+				</p>
+				</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/independent.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">The Studio Independent</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					StudioIndependent berlokasi di Depok, memulai bisnis mereka sebagai games developer flash dan Mobile Games. ~We are crafting creativity into games and make it fun.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-10.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Tanoshii Studio</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Tanoshii Creative Studio (Tanoshii Studio) is an independent games and  digital interactive storybook developer studio based in Depok, West  Java, Indonesia.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/kartumuu.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Kartumuu</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					KartuMuu adalah kartu ucapan praktis dan personal untuk berbagi perasaan kepada orang terdekat. Dengan KartuMuu, memilih dan mengirim kartu akan menjadi kegiatan yang menyenangkan.Kamu hanya perlu menggerakan mouse kami dan segalanya akan beres. Praktis dan personal:)
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/dokter-gratis.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Dokter Gratis</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Aplikasi konsultasi kesehatan langsung dengan Dokter tersertifikasi di Indonesia. Kini anda dapat konsultasi langsung dengan Dokter tanpa harus antri di Rumah Sakit atau Klinik. Melalui Dokter Gratis anda dapat live chat mengenai Dokter Umum, Diabetes, Kesehatan Wanita, Kesehatan Bayi, Kesehatan Anak, Konsultasi Kehamilan, dan Kesehatan Pria. 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/flipbox.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Flipbox</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					We have intention to explore what's your business needs, your problems, and your ideas are. So we can expose the solutions into the reality that you can use to improve your business value and your business process.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/inmotion.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Inmotion</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					We are a game and multimedia development studio based in Bandung, Indonesia. We concentrate on building games and apps that help brands communicate their messages better. We believe with quality games and apps, messages can be delivered with better clarity and can leave a better and longer lasting impression. We build for desktop PCs as well as mobile gadgets. We are platform agnostics, we will use any platform (or any combination of them) best for a particular project.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/telunjuk.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Telunjuk</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					situs pencari dan pembanding (search engine and comparison) yang
+					memberikan pengalaman baru dalam berbelanja online kepada smart 
+					shoppers Indonesia. Kami  akan membantu mengefektifkan waktu smart Shoppers
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/bistip.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Bistip</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Gatau Ini Apaan</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Nitip apa aja, dari mana aja, Bistip mempertemukan traveler dengan penitip barang 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/dycode.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Dycode</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					PT. Dycode Cominfotech Development or DyCode is a
+					dynamic award-winning software development company from Bandung, 
+					Indonesia. It’s founded in 2007 by highlighting the word “DyCode” – 
+					Dynamic and Code – as the company trademark.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/badr.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Badr Interactive</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;"> 
+					Some apps we have made for our clients. We help clients develop apps that fit their business needs. Some apps we made for free as one of our charity to the society.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/desc-img-19.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Sribu</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Kami inovatif, modest, proaktif, aim-high, caring dan trustworthy 
+					Sribu dibuat untuk memberikan masyarakat kesempatan untuk 
+					berkreatif dan memberikan bisnis usaha suatu solusi desain yang 
+					berkualitas dan tanpa resiko
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/ngomik.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Ngomik</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Ngomik.com adalah sebuah Digital Comic Publishing Platform dimana baca, jual, beli dan publikasi komik menjadi lebih mudah dan menyenangkan.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-21.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Ice House</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Our work demonstrates our dedication to building your idea, as the most 
+					technologically ahead, cost-effective team in the mobile space.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/rigarts.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Rigarts</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Hi! We are Rigarts 
+					Animation. an entertainment Company, based on 3D Computer Animation.We 
+					started as a small team consist of animator, modeller, 2D, 3D artist, 
+					scriptwriter and editor, We won several local animation award. And we 
+					have confident to start our services professionally , focuses mainly in 
+					providing animation & multimedia services for local and 
+					international market to produce high quality 3D animations
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-23.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Manimonki</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Studio animasi asal Indonesia.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/playground/desc-img-25.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Nulab</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					We develop collaborative software tools
+					aimed at facilitating effective work communication and collaboration.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/runa.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Runa</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Startup Non-Games</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					RUNA adalah perusahaan yang berinovasi pada Character Marketing dan satu-satunya di Indonesia yang berorientasi pada Character Based Design & Development untuk mendukung aktivitas marketing para client, baik produk dan service baru diluncurkan atau yang sudah ada.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/IDGeekGirls.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">IDGeekGirls</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					idGeekGirls adalah komunitas yang dijalankan oleh dan untuk geek 
+					girls di Indonesia. Kami adalah media untuk geek girls Indonesia saling 
+					berhubungan, bertemu, berbagi dan berdiskusi minat dan pengetahuan.
+					Sebagai sister chapter dari SG Geek Girls dan Philippine Geek Girls (PGG),
+					 kami ingin semua geek girls di Indonesia maju bersama. 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/levitasi-hore.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Levitasi Hore</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Komunitas Fotografi Levitasi Indonesia. Terinspirasi oleh foto-foto levitasi Natsumi Hayashi di http://yowayowacamera.com 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/doscom.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Doscom</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Dinus Open Source Community (DOSCOM) 
+					merupakan sebuah komunitas yang terdiri dari mahasiswa, pelajar dan 
+					masyarakat yang aktif dalam penggunaan Open Source Software (OSS). 
+					Komunitas ini dulunya bernama Gabungan Linuxer Mahasiswa Dian Nuswantoro
+					 (GLADIATOR) yang dibentuk pada tanggal 27 November 2003 oleh Universitas Dian Nuswantoro.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/depok-creative.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Depok Creative</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Depok Creative adalah perkumpulan insan-insan yang memiliki 
+					ketertarikan dengan industri kreatif di kota Depok. Kami senantiasa 
+					memberikan informasi dan inspirasi bagi para insan kreatif di kota ini. 
+					Tujuan jangka panjang kami adalah membangkitkan potensi ekonomi dari 
+					industri kreatif kota Depok.
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/gsa.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Google Student Ambasador</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					The Google Student Ambassador Program is an opportunity for students to act 
+					as liaisons between Google and their universities. 
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="content-text">
+				<img class="team-img" src="<?php echo base_url(); ?>assets/img/home/playground/mbcd.jpg" />
+				<p class="title" style="display:table; margin-left:10px; font-weight: bold;">Males Banget</p>
+				<p class="category" style="display:table; margin-left:10px; font-weight: bold;">Komunitas</p><br/>
+				<p class="desc" style="text-indent: 30px;">
+					Malesbanget.com adalah website kesukaan kita semua sejak 2002! Ayo 
+					subscribe untuk jadi penonton pertama video-video terbaru dari MBDC!
+				</p>
+			</div>
+		</li>
+	</ul>
+	<div class="navi" id="playground-nav">
+		<a class="nav-left" data-dir="prev" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-left.png" /></a>
+		<a class="nav-right" data-dir="next" href="#">	<img src="<?php echo base_url(); ?>assets/img/home/nav-right.png" /></a>
+	</div>
+</div>

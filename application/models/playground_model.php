@@ -1,54 +1,55 @@
 <?php if(!defined('BASEPATH')) exit('No Direct script access allowed');
 
 class Playground_model extends CI_Model {
-	public $peserta    = 'c_playground_peserta';
-	public $playground = 'c_playground';
-	public $game       = 'c_playground_game';
+	public $table = 'playground';
+	public $primary_key = 'id';
 	
 	function __construct() {
 		parent::__construct();
 	}
 	
-	function get_user_by($id){
-		$this->db->where('id',$id);
-		$query = $this->db->get($this->peserta);
-		echo $query;
-		return ($query->num_rows() > 0) ? $query->row() : false;
+	function get_all_page($level = -1) {
+		if($level != -1) {
+			$this->db->where('parent', $level);
+		}
+		$this->db->order_by('position', 'asc'); 
+		$query = $this->db->get($this->table);
+		return ($query->num_rows() > 0) ? $query->result() : false;
 	}
 
-	function retrieve_data($json) {
-		$data = file_get_contents("php://input");
-		$md5 = substr($data,  strlen($data) - 32)
-		if($md5 == md5(substr($data, 32 - strlen($data))));
-			$var  = json_decode($json);
-			$data = $var->{'data'};
-			$split = split('}', $data);
-			$real_data =  $split[0]+"}";
-			$hash      =  $split[1];
+	function get_page($id) {
+		$this->db->where('id_page',$id); 
+		$query = $this->db->get($this->table);
+		if ($query->num_rows() > 0) {
+			$list = $query->result();
+			return $list[0];
+		} else {
+			return false;
+		}
+	}
+	
+	function get_page_url($url) {
+		$this->db->where('url',$url); 
+		$query = $this->db->get($this->table);
+		if ($query->num_rows() > 0) {
+			$list = $query->result();
+			return $list[0];
+		} else {
+			return false;
+		}
 	}
 
-	/**
-	* Insert a new user according their ID's
-	* $data = array (
-	* 			'id'			=>  user's ID
-	* 			'nama'  		=>  user's name
-	*			'email'			=>  user's email
-	*			'twitter' 		=>  user's twitter
-	*			'tim'			=>  user's tim
-	*			'point_used'	=>  0 (default)
-	* 		  );
-	*/
-	function insert_user($data){
-		return $this->db->insert($this->peserta, $data);
+	function save_page($data) {
+		$this->db->insert($this->table, $data);
 	}
 
-
-	function point_decrease($id, $minus){
-		$query = $this->db->query("UPDATE ".$this->peserta." SET point_used = point_used - ".$minus." WHERE id='".$id."'");
+	function update_page($id, $data) {
+		$this->db->where('id_page', $id);
+		$this->db->update($this->table, $data);
 	}
 
-	function point_increase($id, $plus){
-		$this->db->query("UPDATE ".$this->peserta." SET point_used = point_used + ".$plus." WHERE id='".$id."'"); 
+	function delete_page($id) {
+		$this->db->where('id_page', $id);
+		$this->db->delete($this->table); 
 	}
-
 }

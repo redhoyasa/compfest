@@ -7,7 +7,11 @@ class Entertainment extends CI_Controller {
 		$this->template->display('front-end/entertainment');
 	}
 	
-	
+	public function betabok()
+	{
+		$this->template->display('front-end/overview');
+	}
+
 }
 
 
