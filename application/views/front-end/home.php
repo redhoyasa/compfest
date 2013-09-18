@@ -1,11 +1,26 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" media="screen" />
-
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/style.css" />
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/jquery.js"></script>
 
 
 <div id="middle">
+	<div id="wowslider-container1">
+		<div class="ws_images">
+			<ul>
+				<li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/header-red.png" alt="header-bg" title="MAIN EVENT COMPFEST" id="wows1_0"/></li>
+				<li><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/images/raisa.png" alt="header-bg" title="GUEST STAR" id="wows1_0"/></li>
+			</ul>
+		</div>
+		<div class="ws_bullets" style="display:none"><div>
+		<a href="#" title="header-bg"><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/tooltips/headerbg.jpg" alt="header-bg"/>1</a>
+		<a href="#" title="header-bg"><img src="<?php echo base_url(); ?>assets/plugins/WOWSlider/data1/tooltips/headerbg.jpg" alt="header-bg"/>1</a>
+		</div></div>
 
-<img width="1180" src="<?php echo base_url(); ?>assets/img/header-red.png">
+		<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/WOWSlider/engine1/script.js"></script>
 
 <!--
 <div id="this-carousel-id" class="carousel slide">
@@ -498,8 +513,7 @@
 		<div class="data-slider" data-total="8"></div>
 		<ul>
 				<li id="guest-star"><a class="guest-start-box-slider" data-axis="160" data-ordinate="195">
-				<img src="<?php echo base_url(); ?>assets/img/home/entertainment/raisa.png"/>
-				<p class="entertainment-box-caption"> Raisa </p>
+				<img src="<?php echo base_url(); ?>assets/img/entertainment/raisa-banner.png"/>
 				</a></li>
 			<li><a class="entertainment-box-slider" href="2" data-axis="180" data-ordinate="195">
 				<img src="<?php echo base_url(); ?>assets/img/entertainment/arkha.png"/>

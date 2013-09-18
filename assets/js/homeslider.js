@@ -288,6 +288,7 @@
 		imgs = sliderUL.find('a'),
 		imgWidth = 160,
 		imgsLen = 11,
+		interval= 3000,
 		current = 1,
 		totalImgsWidth = imgsLen * imgWidth; // 2400
 
@@ -329,9 +330,7 @@
 			( direction === 'next' ) ? ++current : --current;
 
 		}
-		console.log(loc);
-
-		console.log(current);
+		
 		transition(sliderUL, loc, direction);
 	});
 
@@ -371,5 +370,49 @@
 		});
 
 	});
+	//auto slide start
+	var intervalID = setInterval(myFunction, interval);
+	$("#playground").hover( function () {
+		window.clearInterval(intervalID)
+		},
+		function () {
+		intervalID = setInterval(myFunction, interval);
+	} );
+		
+	function myFunction(){
+		direction = 'next';
+		loc = imgWidth; // 600
+		
+		// if first image
+		if (current >=6 && current <= 10 && direction==="next" ){
+			loc = 2*imgWidth; // 2400 - 600 = 1800
+			direction = 'next';
+			current = current+2;
+		} else if (current === 1 && direction==='next'){
+			loc = 3*imgWidth; // 2400 - 600 = 1800
+			direction = 'next';
+			current = 4;
+		} else if ( current === 0) {
+			current = imgsLen;
+			loc = totalImgsWidth - imgWidth; // 2400 - 600 = 1800
+			direction = 'next';
+		} else if ( current - 1 === imgsLen ) { // Are we at end? Should we reset?
+			current = 1;
+			loc = 0;
+		} else {
+			current++;
+		}
+
+		if ( current === 0 ) {
+			current = imgsLen;
+			loc = totalImgsWidth - imgWidth; // 2400 - 600 = 1800
+		} else if ( current - 1 === imgsLen ) { // Are we at end? Should we reset?
+			current = 1;
+			loc = 0;
+		}
+
+		transition(sliderUL, loc, direction);
+	}	
+	//auto slide end	
 
 })(jQuery);
